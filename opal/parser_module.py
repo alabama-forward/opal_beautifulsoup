@@ -35,11 +35,13 @@ class NewsParser(ABC):
 
         print(f"Successfully processed {len(responses)} out of {len(urls)} URLs")
         return responses, successful_urls
-
+    #This becomes a required element for all subclasses.
+    #This is done to ensure that class extensions have requred functionality
     @abstractmethod
     def parse_article(self, html: str, url: str) -> Dict[str, Any]:
         """Each news site parser must implement this method"""
 
+    #This parent function saves all the URLs extracted into a list for later
     def parse_articles(self, urls: List[str]) -> str:
         """Parse multiple articles and return JSON string"""
         responses, successful_urls = self.make_request(urls)
@@ -110,6 +112,8 @@ class Parser1819(NewsParser):
 class ParserDailyNews(NewsParser):
     """Parser specific to Alabama Daily News"""
 
+    #We redefine a parser withing this specific subclass because
+    #Each news site has its own unique structure we have to navigate
     def parse_article(self, html: str, url: str) -> Dict[str, Any]:
         soup = BeautifulSoup(html, 'html.parser')
         article = {
@@ -126,14 +130,15 @@ class ParserDailyNews(NewsParser):
         if title_tag:
             article['title'] = title_tag.string.strip() if title_tag.string else 'No Title'
 
-        # Extract author and date - with error handling
+        # Extract author and date from DailyNews specifically - with error handling
         author_div = soup.find('span', class_='author vcard')
         if author_div and author_div.find('a'):
             article['author'] = author_div.find('a').text.strip()
         else:
             # Explicitly handle the case when author is not found
             article['author'] = 'Unknown Author'
-
+        
+        #Extracts author date from DailyNews specifically
         author_date = soup.find('span', class_='post-date')
         if author_date and author_date.find('a'):
             article['date'] = author_date.find('a').text.strip()

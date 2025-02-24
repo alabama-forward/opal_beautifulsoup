@@ -1,0 +1,19 @@
+[project]
+name = "opal"
+version = "1.0.0"
+description = "BeautifulSoup based parser for local news sites in Alabama"
+authors = [
+    {name = "Gabri Cabán Cubero, Alabama Forward"}
+]
+license = {text = "MIT License"}
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "requests",
+    "beautifulsoup4"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
