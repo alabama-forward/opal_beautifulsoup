@@ -1,5 +1,5 @@
 """
-run_parser.py - Simple script to run the integrated parser
+main.py - Simple script to run the integrated parser
 """
 import json
 import argparse
