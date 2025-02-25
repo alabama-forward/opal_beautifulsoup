@@ -1,6 +1,6 @@
 [project]
 name = "opal"
-version = "1.0.0"
+version = "0.1.0"
 description = "BeautifulSoup based parser for local news sites in Alabama"
 authors = [
     {name = "Gabri Cabán Cubero, Alabama Forward"}
