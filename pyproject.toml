@@ -10,7 +10,9 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "requests",
-    "beautifulsoup4"
+    "beautifulsoup4",
+    "setuptools",
+    "typing"
 ]
 
 [build-system]
