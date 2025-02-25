@@ -36,7 +36,7 @@ class NewsParser(ABC):
         print(f"Successfully processed {len(responses)} out of {len(urls)} URLs")
         return responses, successful_urls
     #This becomes a required element for all subclasses.
-    #This is done to ensure that class extensions have requred functionality
+    #This is done to ensure that class extensions have required functionality
     @abstractmethod
     def parse_article(self, html: str, url: str) -> Dict[str, Any]:
         """Each news site parser must implement this method"""
