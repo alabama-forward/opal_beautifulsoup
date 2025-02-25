@@ -59,8 +59,11 @@ class NewsParser(ABC):
 class Parser1819(NewsParser):
     """Parser specifically for 1819news.com"""
 
+    #defines the primary parsing function.
     def parse_article(self, html: str, url:str) -> Dict[str, Any]:
         soup = BeautifulSoup(html, 'html.parser')
+        
+        #json object structure for result
         article = {
             'url':'',
             'title': '',
