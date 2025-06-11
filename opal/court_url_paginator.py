@@ -47,21 +47,13 @@ def build_court_url(base_url: str, page_number: int) -> str:
         Updated URL with new page number
     """
     try:
-        # First, decode the URL to work with it
-        decoded_url = unquote(base_url)
-        
-        # Replace the page number
+        # The URL is already properly formatted, just replace the page number
         # Pattern: page~(size~25~number~X~totalElements~Y~totalPages~Z)
         new_url = re.sub(
-            r'(page~\(.*?number~)\d+',
+            r'(page~\%28.*?number~)\d+',
             f'\\g<1>{page_number}',
-            decoded_url
+            base_url
         )
-        
-        # Re-encode special characters to match original format
-        # The URL uses ~ instead of URL encoding for structure
-        # and %2a2f for forward slashes in dates
-        new_url = new_url.replace('/', '%2a2f')
         
         return new_url
         
