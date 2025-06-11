@@ -82,9 +82,14 @@ def extract_total_pages_from_first_load(url: str, parser) -> int:
         # Try to extract total pages from the page content or URL updates
         # After JavaScript execution, the URL might be updated with totalPages
         if hasattr(parser, 'driver') and parser.driver:
+            # Wait a bit for any URL updates
+            import time
+            time.sleep(2)
+            
             current_url = parser.driver.current_url
             _, total_pages = parse_court_url(current_url)
             if total_pages and total_pages > 0:
+                print(f"Detected {total_pages} total pages from URL")
                 return total_pages
                 
         # Default to 1 if we can't determine
