@@ -2,3 +2,5 @@ beautifulsoup4
 requests
 setuptools
 typing
+selenium>=4.0.0
+webdriver-manager>=4.0.0

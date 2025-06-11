@@ -6,6 +6,7 @@ import argparse
 from datetime import datetime
 from opal.integrated_parser import IntegratedNewsParser
 from opal.parser_module import Parser1819, ParserDailyNews
+from opal.court_case_parser import CourtCaseParser
 
 def main():
     """
@@ -25,7 +26,7 @@ def main():
     console_arguments.add_argument('--max_pages', type=int, required=False, default=None,
                                    help='Max number of pages to process. Optional but recommended')
     console_arguments.add_argument('--parser', type=str, required=True, default=None,
-                                choices=['Parser1819', 'ParserDailyNews'],
+                                choices=['Parser1819', 'ParserDailyNews', 'court'],
                                 help='Pick an available parser')
 
     # Pass command-line arguments
@@ -33,7 +34,8 @@ def main():
 
     parsers = {
         'Parser1819': Parser1819,
-        'ParserDailyNews': ParserDailyNews
+        'ParserDailyNews': ParserDailyNews,
+        'court': CourtCaseParser
     }
 
     #Print progress
@@ -60,24 +62,51 @@ def main():
 
    # Print results
     parsed_data = json.loads(news_urls)
-    if parsed_data['success']:
-        print(f"\nSuccessfully processed {parsed_data['total_articles']} articles")
-
-        # Save to file
-        with open(f"{today}_{news_parser_class}.json", 'w', encoding='utf-8') as f:
-            json.dump(parsed_data, f, indent=4, ensure_ascii=False)
-            print(f"\nResults saved to '{today}_{news_parser_class}.json'")
-
-        # Print first article as example
-        if parsed_data['articles']:
-            print("\nFirst article preview:")
-            article = parsed_data['articles'][0]
-            print(f"Title: {article['title']}")
-            print(f"Author: {article['author']}")
-            print(f"Date: {article['date']}")
-            print(f"Number of paragraphs: {article['line_count']}")
+    
+    # Check if this is court data or news data
+    if args.parser == 'court':
+        # Handle court case results
+        if parsed_data.get('status') == 'success':
+            print(f"\nSuccessfully processed {parsed_data['total_cases']} court cases")
+            
+            # Save to file
+            parser_name = args.parser
+            with open(f"{today}_{parser_name}.json", 'w', encoding='utf-8') as f:
+                json.dump(parsed_data, f, indent=4, ensure_ascii=False)
+                print(f"\nResults saved to '{today}_{parser_name}.json'")
+            
+            # Print first case as example
+            if parsed_data['cases']:
+                print("\nFirst case preview:")
+                case = parsed_data['cases'][0]
+                print(f"Court: {case['court']}")
+                print(f"Case Number: {case['case_number']['text']}")
+                print(f"Case Title: {case['case_title']}")
+                print(f"Filed Date: {case['filed_date']}")
+                print(f"Status: {case['status']}")
+        else:
+            print(f"\nError occurred: {parsed_data.get('error', 'Unknown error')}")
     else:
-        print(f"\nError occurred: {parsed_data['error']}")
+        # Handle news article results
+        if parsed_data['success']:
+            print(f"\nSuccessfully processed {parsed_data['total_articles']} articles")
+
+            # Save to file
+            parser_name = args.parser
+            with open(f"{today}_{parser_name}.json", 'w', encoding='utf-8') as f:
+                json.dump(parsed_data, f, indent=4, ensure_ascii=False)
+                print(f"\nResults saved to '{today}_{parser_name}.json'")
+
+            # Print first article as example
+            if parsed_data['articles']:
+                print("\nFirst article preview:")
+                article = parsed_data['articles'][0]
+                print(f"Title: {article['title']}")
+                print(f"Author: {article['author']}")
+                print(f"Date: {article['date']}")
+                print(f"Number of paragraphs: {article['line_count']}")
+        else:
+            print(f"\nError occurred: {parsed_data['error']}")
 
 if __name__ == "__main__":
     main()
