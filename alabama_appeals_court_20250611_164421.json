@@ -1,0 +1,834 @@
+{
+    "status": "success",
+    "total_cases": 75,
+    "extraction_date": "2025-06-11",
+    "extraction_time": "16:44:21",
+    "pages_processed": 3,
+    "cases": [
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0424",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/d024d958-58a1-41c9-9fae-39c645c7977e"
+            },
+            "case_title": "Frank Thomas Shumate, Jr. v. Berry Contracting L.P. d/b/a Bay Ltd.",
+            "classification": "Appeal - Civil - Injunction Other",
+            "filed_date": "06/10/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0427",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/6c90e5f5-429f-42d6-b8c0-9abd283f549d"
+            },
+            "case_title": "Joseph McDaniel, Jr. v. Barbara Wright.",
+            "classification": "Appeal - Probate - Wills/Trusts/Estates",
+            "filed_date": "06/10/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0416",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/9f00e7ec-4b83-4cb0-9ce0-0a79a96d3497"
+            },
+            "case_title": "RB Custom Construction, LLC v. Stephen Cutter and Alyssa Cutter",
+            "classification": "Appeal - Tort - Fraud",
+            "filed_date": "06/09/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0422",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/c4242691-e28d-4536-ac65-7177ec157451"
+            },
+            "case_title": "Maxwell \"Mike\" Blackmon v. Randy Brock.",
+            "classification": "Appeal - Civil - Election Contest",
+            "filed_date": "06/06/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0402",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/5613eaf7-d584-42e5-a8f4-10ec30f19c75"
+            },
+            "case_title": "Todd Campbell; Lukas Dale Cobb; Richard David Ekblad; Yancey Eston, III; Dale Johnson; Tersheikiya King; Christopher Allen Kitts; Jennifer Marie Kitts; Peter Lenoir III; Tara J. Lenoir; Tommy P. Murdoch; Helen E. Murdoch; Rebekah Neece; Sharon S. Oenning; Sandra Norsworthy Summer; and Elia V. Uribe v. D.R. Horton, Inc.; D.R. Horton, Inc.-Birmingham; and Bethel Engineering, Inc.",
+            "classification": "Appeal - Contracts - Commercial",
+            "filed_date": "06/05/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0400",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/0a697d08-43f2-4d19-b8b2-6da8c2e97467"
+            },
+            "case_title": "James S. Anderson; Aneisha Brown; Clint Brown; Gill Carleton; Paula Carleton; Joel Carrino; Lisa Carrino; Rachel Condone; Thomas Condone; Douglas Corporaal; Patricia Corporaal; Carl Courtney; Patt Courtney; Pierce Michael Courtney; Cliff Covington; Pamela Covington; Dawanda Finley; Gavin Finley; Amber Frazier; Dylan Frazier; John Genna; Stephany Genna; Richard Haight; Sandra Haight; Dylan Hess; Savanna Hess; Darius Jones; Kevin Jones; Angel Lanier; Len Lanier; Bradley James Latta; Stephanie Dian",
+            "classification": "Appeal - Contracts - Commercial",
+            "filed_date": "06/05/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0403",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/b42b0722-ec13-4a67-b234-200c5c176c63"
+            },
+            "case_title": "Christopher P. Bonati; Dena Renee Battaglia; James Robert Battaglia; Tracie B. Huffman; Horace Childress; Kelly Paige Childress; Janice McConnell Ferguson; Beverly Annette Ferguson; Colette Fristrom; Kenneth Fristrom; Barbara Legault Garner; Anthony Michael Helferich; Monica Lynn Helferich; Helen Henry; Audre N. McGriff; Michelle Nielsen; Ronald Nielsen; Michelle Rogers; Robert E. Rogers; John Rhea Silvernail; Heather Silvernail Terrell; James Nicholas Stosh; Lindsey Ellen Stosh; Jeremiah Thorne",
+            "classification": "Appeal - Contracts - Commercial",
+            "filed_date": "06/05/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0398",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/74930b1b-5142-4128-bf0f-10ba2f47c98b"
+            },
+            "case_title": "Anthony Austin; Carriss Austin; James C. Balster; Misty Balster; Michael R. Duncan; Sandra J. Duncan; Bruce J. Falcon; Linda Falcon; David Domingo Foxen; Jessica Foxen; Ronald Hampton; Doris Griffin Hampton; Christopher Allen Isbel; Emily Taylor Isbel; Cheryl Denise Junkin Martin; Jackie K. Martin; Brian L. Morrow; Danelle N. Morrow; Pamela Rae Murphy; Carl Edward Ray; Dianna B. Ray; Christopher Lee Santmyer; Gulnara Santmyer; Kenneth Marcus Spencer; Marlene Spencer; Kristi Stoker; Virginia R. W",
+            "classification": "Appeal - Contracts - Commercial",
+            "filed_date": "06/04/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0393",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/10734f08-0be2-4f6b-99b7-ed65e23ecc3b"
+            },
+            "case_title": "Ryan Hess v. Will Pecue.",
+            "classification": "Appeal - Tort - Fraud",
+            "filed_date": "06/04/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0397",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/b8253dbf-36d3-4d34-8980-eb4f315fc981"
+            },
+            "case_title": "Heather M. Burns; Kevin M. Burns;  Amy L. Cockrell; David M. Cockrell; Reba Prentiss Divine; Naomi Fretwell; Dorothy Goodwin; Amanda Madden; John Francis Madden III; Edward A. Martin; Patricia L. Martin; Steve Messer; Theresa Messer; Craig D. Rhodes; Mahaileanne Rhodes; Douglas Thomas Rioux; Gina Denise Rioux; David Russell Sherling II; Whitney Elizabeth Sherling; Constance Sutton; Ralph Sutton; Joyce Tujague; Jacqueline Lindsey Watson; and Carolyn Ann Wiest v. D.R. Horton, Inc.; D.R. Horton, In",
+            "classification": "Appeal - Contracts - Commercial",
+            "filed_date": "06/04/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0396",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/35a973ac-d22a-49da-be8f-b0fa5a610fa0"
+            },
+            "case_title": "Nickolas Aloi; Katie M. Aloi; Kevin Joseph Arnold; Jacqueline M. Arnold; John Franklin Baggett; Jay Blackburn; Erika Blackburn; Nicholas Burgett; Stephanie Burgett; James Howard Castle; April Moss Castle; Thomas M. Chandler; Andrea L. Chandler; Joni Blaine Dobbins; Jennifer Megan Farren; Joel A. Frame; Zachary J. Gaines; Anna C. Gaines; Zachary Hahn; Maishe N. Hall; Edward T. Harrington; Kimberly Michele Harrington; Joseph Jeremiah Hebert; Maryna Ivanovna Hebert; James K. Howell; Stephanie Jean",
+            "classification": "Appeal - Contracts - Commercial",
+            "filed_date": "06/04/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0394",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/468c3fa2-7a57-4d9e-a21e-f219948162cd"
+            },
+            "case_title": "Cindy Fountaine v. Hospice of Marshall County Foundation, Inc. d/b/a Shepherd's Cove; Karen Denton; and Stacy Higdon.",
+            "classification": "Appeal - Tort - Fraud",
+            "filed_date": "06/03/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0389",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/fc840943-a039-47a6-80b8-615a51b3dc84"
+            },
+            "case_title": "Sela Joseph v. Caritas of Birmingham.",
+            "classification": "Appeal - Tort - Negligence General/Other",
+            "filed_date": "06/03/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0388",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/82afdee2-18c5-4bd6-b6ef-5db03c5afec7"
+            },
+            "case_title": "George Thomas v. City of Cordova.",
+            "classification": "Appeal - Contracts - Commercial",
+            "filed_date": "06/03/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0385",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/401503d5-69cf-4911-ad28-53b5e52c1146"
+            },
+            "case_title": "Alavest, LLC v. Harbortown Townhomes Owners Association, Inc.",
+            "classification": "Appeal - Real Property - Other",
+            "filed_date": "05/30/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0380",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/2abc04a7-395b-4a64-9e58-1b3e0ea06e8e"
+            },
+            "case_title": "H. Jerome Thompson, individually and d/b/a Thompson and Associates v. The Security Title Guarantee Corporation of Baltimore and Gary Clint Ogles.",
+            "classification": "Appeal - Tort - Malpractice Legal",
+            "filed_date": "05/29/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0379",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/d11feb6f-5333-477f-a64d-006c9a67a510"
+            },
+            "case_title": "Margaret Sue Mikul v. Howard Moore and Charles Lloyd.",
+            "classification": "Appeal - Real Property - Other",
+            "filed_date": "05/29/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0374",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/9d485d14-a08b-4dbf-ae30-6ed61708b790"
+            },
+            "case_title": "Yellow River Properties, LLC v. Anthony Carter.",
+            "classification": "Appeal - Tort - Other",
+            "filed_date": "05/27/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0377",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/5fcd66b7-007a-4e49-9248-a1259a2cbbf7"
+            },
+            "case_title": "Hannah Holloway v. Austin Carter as Co-Personal Representative of The Estate of Mertha Carter.",
+            "classification": "Appeal - Tort - Conversion",
+            "filed_date": "05/27/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0369",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/7ec60c87-949f-4e8f-a22c-23505105a75b"
+            },
+            "case_title": "Perrione Benford Sanders and Tamica Benford v. Tamara Smith.",
+            "classification": "Appeal - Tort - Negligence Vehicular",
+            "filed_date": "05/27/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0371",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/3c3e47fd-36e9-4b73-b059-1d1c8a165bee"
+            },
+            "case_title": "James and Son Metal Products, Inc., and McCreless Holdings, LLC v. Renasant Bank.",
+            "classification": "Appeal - Tort - Other",
+            "filed_date": "05/25/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0368",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/fd0e772d-7fb6-48fa-a6d2-96edbf3ed42e"
+            },
+            "case_title": "Leonard L. Hixon v. Premier Medical Group, Inc.",
+            "classification": "Appeal - Tort - Other",
+            "filed_date": "05/23/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0376",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/3c62d96a-de8b-424d-b690-8ebe0498e102"
+            },
+            "case_title": "Pinpoint Locating, Inc v. The Water Works and Gas Board of the City of Red Bay.",
+            "classification": "Appeal - Contracts - Other",
+            "filed_date": "05/22/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0360",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/d3078e6e-a644-41fd-8ffc-62184cd83274"
+            },
+            "case_title": "Sydney Claire Frosch v. City of Birmingham.",
+            "classification": "Appeal - Tort - Negligence General/Other",
+            "filed_date": "05/22/2025",
+            "status": "Closed"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0357",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/ddf09cf4-8df1-444e-9206-0c5652f9a1e0"
+            },
+            "case_title": "Tara Grall v. William Grall and G-Team, P.C.",
+            "classification": "Appeal - Contracts - Other",
+            "filed_date": "05/21/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0366",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/a400886f-31d3-4881-8aa7-2bf3a4120c2b"
+            },
+            "case_title": "Walter Anthony Henley v. James Calvert.",
+            "classification": "Appeal - Contracts - Real Property",
+            "filed_date": "05/19/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0359",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/a40edf86-6e5b-4ef8-adad-786cac6862ee"
+            },
+            "case_title": "Laura Givens and Turning Point Legal, P.C. v. Norma M. Wells, Rachel D. Syx, and Avvocatessa, LLC, d/b/a Journey Law Firm.",
+            "classification": "Appeal - Tort - Negligence General/Other",
+            "filed_date": "05/19/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0350",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/b87d8d93-3733-47f8-9f84-e4e62a8b2ea9"
+            },
+            "case_title": "Nevaeh Williams v. Melissa Stevens.",
+            "classification": "Appeal - Tort - Negligence General/Other",
+            "filed_date": "05/15/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0355",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/559bb433-fffe-4fd2-a883-31814ce7eaff"
+            },
+            "case_title": "Erin McNulty v. Pro Impact Physical Therapy and Sports Performance, LLC; Daniel O'Bryant.",
+            "classification": "Appeal - Tort - Negligence General/Other",
+            "filed_date": "05/15/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0346",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/f873fed4-7e07-425c-93af-59b20c646e3c"
+            },
+            "case_title": "Tara Grall v. William Grall and G-Team, P.C.",
+            "classification": "Appeal - Civil - Discovery",
+            "filed_date": "05/15/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0342",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/947252a6-0760-438c-a23e-13ed6d8ae926"
+            },
+            "case_title": "John Doe v. Robert Clay Webb.",
+            "classification": "Appeal - Tort - Negligence General/Other",
+            "filed_date": "05/14/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0354",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/78ecb2f9-37a1-4a99-b0b5-c5ae3e44711c"
+            },
+            "case_title": "Jessica Bugge v. Jeb S. Fannin, specially sitting as Circuit Judge for Talladega County, Alabama.",
+            "classification": "Appeal - Family Law - Contempt",
+            "filed_date": "05/14/2025",
+            "status": "Closed"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0338",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/257687b3-0ad6-41ae-839c-881c8ec694e2"
+            },
+            "case_title": "Estate of Arthur L. Bacon v. Tom Larkin.",
+            "classification": "Appeal - Probate - Wills/Trusts/Estates",
+            "filed_date": "05/14/2025",
+            "status": "Closed"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0387",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/7289c5ad-16a7-4084-89b9-f747d4c1485a"
+            },
+            "case_title": "Kena LaJuan Marino v. Nolan Phillip Marino.",
+            "classification": "Appeal - Real Property - Other",
+            "filed_date": "05/13/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0351",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/cce3367b-4bf7-4bef-9b76-673cd233404b"
+            },
+            "case_title": "Calvin Bowman v. Estate of William Chenoweth.",
+            "classification": "Appeal - Real Property - Other",
+            "filed_date": "05/12/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0352",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/55e2db7c-91f9-49a7-b0c0-1778b514d0f3"
+            },
+            "case_title": "Perry Lofton and Lynn Lofton v. Marvin B. Lofton and Levert Lofton.",
+            "classification": "Appeal - Real Property - Other",
+            "filed_date": "05/12/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0340",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/c77537bb-98bc-42fb-91d4-11ea61888126"
+            },
+            "case_title": "Monica Taylor v. City of Mobile Police Department.",
+            "classification": "Appeal - Civil - Civil Rights Other",
+            "filed_date": "05/07/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0300",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/6997525f-0bb6-4b18-a93e-8b26c27b68bf"
+            },
+            "case_title": "Rosie Lee Murphy v. Donna Leslie Executive Director, Clarence Pugh Director, Katrina Hawkins Housing Urban Development CaraStar Residential Director, Thomas White Director, Willemina Case Manager, Dr. Danell Lee Psychiatrist, Kento Turner Director, Dr. Shah Psychiatrist, Staff CeCe, Staff Tonya, and Nurse Ynita.",
+            "classification": "Appeal - Civil - Civil Rights Other",
+            "filed_date": "05/07/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0297",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/be10c9d6-65c4-48ed-a6a9-cad01becbe74"
+            },
+            "case_title": "Timothy Brian Johnson and Phillip Barnes v. Judith Mayers.",
+            "classification": "Appeal - Probate - Wills/Trusts/Estates",
+            "filed_date": "05/06/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0303",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/80e066e4-2686-4689-b411-b739a522664a"
+            },
+            "case_title": "Mobile Nursing and Rehabilitation Center, LLC; Michael Britton, \"Michelle Newsome\" v. Jeanne Sliman, as Personal Representative of the Estate of Ernest.",
+            "classification": "Appeal - Tort - Malpractice Medical",
+            "filed_date": "05/06/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0411",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/db27473a-f729-451b-9c7d-071ebce7dad7"
+            },
+            "case_title": "Charles Jacob Jordan v. Lorien Watson.",
+            "classification": "Appeal - Tort - Wrongful Death",
+            "filed_date": "05/02/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0293",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/f146a934-ff8f-4ef1-9896-5b5ec65c4774"
+            },
+            "case_title": "The City of Mountain Brook, Alabama v. Rodney E. Miller and Mary Leah Miller.",
+            "classification": "Appeal - Tort - Negligence General/Other",
+            "filed_date": "05/02/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0288",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/58b291e1-c4e9-4d54-ab13-9d5488454a40"
+            },
+            "case_title": "F Family South, LLC v. Property Owners Association of Ono Island, Inc.",
+            "classification": "Appeal - Real Property - Other",
+            "filed_date": "05/01/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0284",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/fde49af2-6d42-4a10-bb90-8f76c39dc105"
+            },
+            "case_title": "Ellis Franklin v. Baptist Medical Center.",
+            "classification": "Appeal - Civil - Civil Rights Other",
+            "filed_date": "04/29/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0299",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/117c7cb1-10ec-43e9-a225-2b3ee5eedbde"
+            },
+            "case_title": "Timothy Weakly and Cassandra Dawson v. Bradley Tyler Combs, Rob Dickson, and Alysa Dickson.",
+            "classification": "Appeal - Real Property - Title",
+            "filed_date": "04/29/2025",
+            "status": "Closed"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0295",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/91c62157-0684-4a47-ad34-a1e8b07f7ce3"
+            },
+            "case_title": "Timothy Weakly and Cassandra Dawson v. Bradley Tyler Combs, Rob Dickson, and Alysa Dickson.",
+            "classification": "Appeal - Real Property - Title",
+            "filed_date": "04/29/2025",
+            "status": "Closed"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0298",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/9d910f15-8c2c-4e51-ae6c-df12577091b9"
+            },
+            "case_title": "Timothy Weakly and Cassandra Dawson v. Bradley Tyler Combs, Rob Dickson, and Alysa Dickson.",
+            "classification": "Appeal - Real Property - Title",
+            "filed_date": "04/29/2025",
+            "status": "Closed"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0269",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/e104d58f-8958-44f3-a527-fcbfc1b12a9a"
+            },
+            "case_title": "William David Evans II and Estate of William Martin Evans v. Catherine Martha Evans.",
+            "classification": "Appeal - Probate - Wills/Trusts/Estates",
+            "filed_date": "04/25/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0262",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/e0d51455-a679-48dc-8cad-25d53d63a1dc"
+            },
+            "case_title": "Beverly Owen Barber v. Alabama State Bar.",
+            "classification": "Appeal - Alabama State Bar - Discipline",
+            "filed_date": "04/23/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0265",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/f96f8f21-b2a4-4b6e-8181-dd0667369590"
+            },
+            "case_title": "Denzell Jenkins v. Brandon Blaze Everette.",
+            "classification": "Appeal - Other - Civil Rights Other",
+            "filed_date": "04/22/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0263",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/5b577923-dc91-4e7c-9346-aa7f9f1cd4ce"
+            },
+            "case_title": "Jason L. Burch v. Troy Bank and Trust Company.",
+            "classification": "Appeal - Tort - Negligence General/Other",
+            "filed_date": "04/22/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0271",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/505a75a6-c45e-453a-8052-47f27f15e23a"
+            },
+            "case_title": "Charity (Sampson) Haney v. Prime Health Services, Gadsden, LLC dba Riverview Regional Medical Center.",
+            "classification": "Appeal - Tort - Malpractice Medical",
+            "filed_date": "04/22/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0286",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/3dfe7e6e-784d-4104-8e7c-70e3ac36f262"
+            },
+            "case_title": "Kathleen Duncan v. SFR3-030 AS AGT Joseph Stewart.",
+            "classification": "Appeal - Tort - Fraud",
+            "filed_date": "04/21/2025",
+            "status": "Closed"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0255",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/1aca60e0-0e82-4902-be0d-a5f7693c40c6"
+            },
+            "case_title": "Frederick Tildon Skelton, IV and Brian Rutledge Skelton v. Loree J. Skelton, individually, as trustee of the Rheta S. Skelton 2015 Revocable Trust, and as personal representative of the Estate of Rheta S. Skelton; and the South Haven Corporation..",
+            "classification": "Appeal - Tort - Other",
+            "filed_date": "04/17/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0258",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/712108eb-04eb-40f5-8287-80025f6f6ddf"
+            },
+            "case_title": "Carol Plott v. Elizabeth Ann Henderson.",
+            "classification": "Appeal - Tort - Negligence Vehicular",
+            "filed_date": "04/17/2025",
+            "status": "Closed"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0254",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/f6e19fb2-fa93-4430-bb38-8cf13c205f16"
+            },
+            "case_title": "Wendell Dwayne O'Neal v. LVNV Funding, LLC.",
+            "classification": "Appeal - Contracts - Commercial",
+            "filed_date": "04/16/2025",
+            "status": "Closed"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0245",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/f9f3a99a-64db-4acd-b7da-fb643ccaa758"
+            },
+            "case_title": "Rita Parris v. The Home Depot USA and Mark Hamilton.",
+            "classification": "Appeal - Tort - Products Liability (AEMLD)",
+            "filed_date": "04/16/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0241",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/ae57184b-c782-4978-ad3e-85f30c22cb95"
+            },
+            "case_title": "George Trawick v. Terrell Washington and Terrance Pugh.",
+            "classification": "Appeal - Civil - Injunction Employment",
+            "filed_date": "04/16/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0248",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/a835bdb8-4e44-403b-a78e-32b3ce97f8a8"
+            },
+            "case_title": "Krystal Millhouse, as heir to the Estate of Paul Montrez Graham v. Savannah Hall.",
+            "classification": "Appeal - Civil - Declaratory Judgment",
+            "filed_date": "04/15/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0242",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/fbdd7714-e247-4e4c-a599-58b440454f08"
+            },
+            "case_title": "Brian Smith; Baltic Holdings, LLC; Arrowhead LM, LLC; Bay Pine LMP, LLC; and Kowalgia Investment Zero, LLC v. ARC Realty, LLC; Joy Dill; Stacey McKinley; Eric McKinley; Big Fish Real Estate Group at Lake Martin, LLC; The Closing Agency, LLC, dba Lake Martin Closing; and Martha Louise McKee-Blackham",
+            "classification": "Appeal - Contracts - Arbitration",
+            "filed_date": "04/15/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0232",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/6153121d-5cc3-45b2-bce7-cf85fa212d88"
+            },
+            "case_title": "Estate of Arthur L. Bacon v. Tom Larkin.",
+            "classification": "Appeal - Contracts - Personal",
+            "filed_date": "04/11/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0230",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/9085ec3f-43e7-47f2-a48e-f15815059ac9"
+            },
+            "case_title": "Donald Joe Barber v. State of Alabama and George C. Day.",
+            "classification": "Appeal - Civil - Civil Rights Other",
+            "filed_date": "04/10/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0229",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/9a686e03-003d-48c8-a30d-49d2e8ec7f69"
+            },
+            "case_title": "Suzanne Prentice v. Felix Firestone and Melissa Murdock Jenkins.",
+            "classification": "Appeal - Probate - Wills/Trusts/Estates",
+            "filed_date": "04/10/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0228",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/4f0279df-4c25-4979-b4ce-2f928662f19b"
+            },
+            "case_title": "Sunstone Properties, LLC v. Ceramic Harmony International, Inc.",
+            "classification": "Appeal - Tort - Bad Faith",
+            "filed_date": "04/09/2025",
+            "status": "Closed"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0227",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/118127a5-7530-4975-91c1-fd43e674a2c3"
+            },
+            "case_title": "Southampton 100, LLC v. Alabama Department of Revenue.",
+            "classification": "Appeal - Civil - Declaratory Judgment",
+            "filed_date": "04/08/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0226",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/c6a3392f-d46b-4f04-8a53-75f7b972f8e6"
+            },
+            "case_title": "Maxwell \"Mike\" Blackmon v. Randy Brock.",
+            "classification": "Appeal - Civil - Election Contest",
+            "filed_date": "04/07/2025",
+            "status": "Closed"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0225",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/e06f9092-7691-4754-aaee-45223a915391"
+            },
+            "case_title": "The Board of Trustees of the University of Alabama for its Division, University Hospital v. Phillip Terrell Dobbins.",
+            "classification": "Appeal - Contracts - Insurance",
+            "filed_date": "04/07/2025",
+            "status": "Closed"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0224",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/f3c1ac97-ce41-4ac5-a331-0172daf714b5"
+            },
+            "case_title": "Kristina Campbell and Matthew Campbell v. American Bankers Insurance Company of Florida.",
+            "classification": "Appeal - Contracts - Arbitration",
+            "filed_date": "04/07/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0223",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/46f7b75a-4044-410d-b4b7-8ddc7e5c1639"
+            },
+            "case_title": "Driven Auto Sales, LLC and William Jason Sanderson v. Delroy Tulloch.",
+            "classification": "Appeal - Tort - Bad Faith",
+            "filed_date": "04/03/2025",
+            "status": "Closed"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0212",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/fd1edb0c-ef9e-42fe-a395-00b30281834d"
+            },
+            "case_title": "Arthur Hicks and Coleman Auto Parts v. Anthony Hicks.",
+            "classification": "Appeal - Civil - Declaratory Judgment",
+            "filed_date": "04/02/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0209",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/ef50d3c0-e1ff-4a38-8f52-585b52e6c81e"
+            },
+            "case_title": "Mentha Onell Rabon v. Will Lee, Annie Lee, and Alfred Lewis.",
+            "classification": "Appeal - Tort - Wrongful Death",
+            "filed_date": "04/01/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0210",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/b7e6d8ac-13c7-4dc2-ae3a-a0841ac759e6"
+            },
+            "case_title": "William Welch v. Julie Jones",
+            "classification": "Appeal - Contracts - Personal",
+            "filed_date": "04/01/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0208",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/c42fe086-78c0-4206-947a-ab03ad0377f7"
+            },
+            "case_title": "Murray Lee and Kimberly Lee v. EFS Inc. doing business as Quik Pawn Shop.",
+            "classification": "Appeal - Tort - Wantonness",
+            "filed_date": "04/01/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0206",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/01d57980-0c0d-4659-a7db-18946eb70e73"
+            },
+            "case_title": "Ruby Barton as Executor for the Estate of Rodriguez Garth v. James Talley in his official capacity.",
+            "classification": "Appeal - Civil - Forfeitures",
+            "filed_date": "03/31/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0221",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/9bb87d67-698c-41c4-8453-a20363637709"
+            },
+            "case_title": "Alice Grayek v. Estate of Robert Kelly; Debra Johnson and heirs; and Land (empty).",
+            "classification": "Appeal - Real Property - Other",
+            "filed_date": "03/31/2025",
+            "status": "Open"
+        }
+    ]
+}
