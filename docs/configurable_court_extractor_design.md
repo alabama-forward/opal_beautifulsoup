@@ -890,15 +890,19 @@ if __name__ == "__main__":
 
 ### Command Line Interface
 
-**Line 345-372**: Argument parser setup with all configuration options and help text.
+**Line 781-807**: Argument parser setup with `--url` option and all configuration options with help text.
 
-**Line 374-388**: Main execution with parameter validation and function call.
+**Line 811-819**: Custom URL handling that bypasses all parameter validation when `--url` is provided.
+
+**Line 821-854**: Parameter validation and function execution for search-parameter mode.
 
 ## Key Design Decisions Explained
 
 1. **Builder Pattern**: Separates URL construction complexity from business logic
-2. **Parameter Validation**: Ensures required combinations are provided (custom dates)
-3. **Progressive Enhancement**: Starts with defaults, allows selective customization
-4. **Error Recovery**: Graceful handling when page counts can't be determined
-5. **Output Consistency**: Maintains same format as original extractor
-6. **User Feedback**: Real-time progress and parameter confirmation
+2. **Dual-Mode Operation**: Supports both parameter-based search and pre-built URL input
+3. **Parameter Validation**: Ensures required combinations are provided (custom dates)
+4. **Progressive Enhancement**: Starts with defaults, allows selective customization
+5. **Error Recovery**: Graceful handling when page counts can't be determined
+6. **Output Consistency**: Maintains same format as original extractor
+7. **User Feedback**: Real-time progress and parameter confirmation
+8. **URL Flexibility**: Custom URLs override all search parameters for maximum flexibility
