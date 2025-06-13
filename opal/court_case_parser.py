@@ -16,7 +16,7 @@ from bs4 import BeautifulSoup
 from .parser_module import NewsParser
 
 
-class CourtCaseParser(NewsParser):
+class ParserAppealsAL(NewsParser):
     """Parser for Alabama Appeals Court Public Portal using Selenium for JavaScript rendering"""
     
     def __init__(self, headless: bool = True, rate_limit_seconds: int = 3):

@@ -4,7 +4,7 @@ Full test script for the court parser with multiple pages
 """
 import json
 from datetime import datetime
-from opal.court_case_parser import CourtCaseParser
+from opal.court_case_parser import ParserAppealsAL
 from opal.court_url_paginator import build_court_url
 
 def test_court_parser_full():
@@ -18,7 +18,7 @@ def test_court_parser_full():
     print(f"Start time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     
     # Create parser instance
-    parser = CourtCaseParser(headless=True, rate_limit_seconds=3)
+    parser = ParserAppealsAL(headless=True, rate_limit_seconds=3)
     
     try:
         # First, load the initial page to see how many total pages there are

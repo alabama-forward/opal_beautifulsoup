@@ -68,7 +68,7 @@ def extract_total_pages_from_first_load(url: str, parser) -> int:
     
     Args:
         url: Initial URL (page 0)
-        parser: CourtCaseParser instance to make the request
+        parser: ParserAppealsAL instance to make the request
         
     Returns:
         Total number of pages
@@ -106,7 +106,7 @@ def paginate_court_urls(base_url: str, parser=None) -> List[str]:
     
     Args:
         base_url: Initial court search URL (page 0)
-        parser: Optional CourtCaseParser instance to determine total pages dynamically
+        parser: Optional ParserAppealsAL instance to determine total pages dynamically
         
     Returns:
         List of URLs for all pages

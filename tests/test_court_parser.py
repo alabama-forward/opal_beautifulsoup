@@ -3,7 +3,7 @@
 Test script for the court parser
 """
 import json
-from opal.court_case_parser import CourtCaseParser
+from opal.court_case_parser import ParserAppealsAL
 
 def test_court_parser():
     """Test the court parser with a single page"""
@@ -15,7 +15,7 @@ def test_court_parser():
     print(f"URL: {test_url[:100]}...")
     
     # Create parser instance
-    parser = CourtCaseParser(headless=True, rate_limit_seconds=2)
+    parser = ParserAppealsAL(headless=True, rate_limit_seconds=2)
     
     try:
         # Parse just the first page

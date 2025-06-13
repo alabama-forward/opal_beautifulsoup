@@ -6,7 +6,7 @@ import argparse
 from datetime import datetime
 from opal.integrated_parser import IntegratedNewsParser
 from opal.parser_module import Parser1819, ParserDailyNews
-from opal.court_case_parser import CourtCaseParser
+from opal.court_case_parser import ParserAppealsAL
 
 def main():
     """
@@ -35,7 +35,7 @@ def main():
     parsers = {
         'Parser1819': Parser1819,
         'ParserDailyNews': ParserDailyNews,
-        'court': CourtCaseParser
+        'court': ParserAppealsAL
     }
 
     #Print progress

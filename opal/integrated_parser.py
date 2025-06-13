@@ -7,7 +7,7 @@ import json
 from opal.parser_module import NewsParser
 from opal.url_catcher_module import get_all_news_urls
 from opal.court_url_paginator import paginate_court_urls, is_court_url
-from opal.court_case_parser import CourtCaseParser
+from opal.court_case_parser import ParserAppealsAL
 
 class IntegratedNewsParser:
     """Class to handle both URL collection and article parsing"""
@@ -34,7 +34,7 @@ class IntegratedNewsParser:
             JSON string containing all parsed articles
         """
         # Check if this is a court URL
-        if is_court_url(base_url) and isinstance(self.parser, CourtCaseParser):
+        if is_court_url(base_url) and isinstance(self.parser, ParserAppealsAL):
             # Handle court case processing
             print("Processing court case data...")
             

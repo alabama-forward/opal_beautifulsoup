@@ -5,7 +5,7 @@ This script will process all available pages
 """
 import json
 from datetime import datetime
-from opal.court_case_parser import CourtCaseParser
+from opal.court_case_parser import ParserAppealsAL
 from opal.court_url_paginator import parse_court_url
 
 def extract_all_court_cases():
@@ -28,7 +28,7 @@ def extract_all_court_cases():
     print()
     
     # Create parser instance
-    parser = CourtCaseParser(headless=True, rate_limit_seconds=2)
+    parser = ParserAppealsAL(headless=True, rate_limit_seconds=2)
     
     try:
         all_cases = []
