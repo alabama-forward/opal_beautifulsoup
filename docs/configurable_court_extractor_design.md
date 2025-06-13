@@ -179,6 +179,57 @@ your_url = "https://publicportal.alappeals.gov/portal/search/case/results?criter
 result = extract_court_cases_with_params(custom_url=your_url, max_pages=10)
 ```
 
+## Dynamic Court ID Discovery
+
+### The Problem with Dynamic IDs
+
+Modern web applications often generate session-specific or dynamic identifiers that change between visits. The Alabama Appeals Court portal appears to use dynamic court IDs that are assigned during the user's session rather than being static, predictable values.
+
+### Solution Approach
+
+**Option 1: Automatic Discovery (Recommended)**
+The `discover_court_ids()` method navigates to the court's search interface and programmatically extracts the current court IDs by:
+
+1. **Loading the search page** - Navigates to the main case search interface
+2. **Inspecting form elements** - Locates the court selection dropdown or form elements
+3. **Extracting ID mappings** - Parses the HTML to find court names and their corresponding dynamic IDs
+4. **Caching for session** - Stores the discovered IDs for the duration of the session
+
+**Option 2: Manual Discovery**
+If automatic discovery fails, users can:
+
+1. **Inspect browser network traffic** - Use browser developer tools to monitor the search requests
+2. **Extract court ID from URL** - Copy a working search URL and extract the court ID parameter
+3. **Set manually** - Use `set_court_id_manually()` to override the discovered ID
+
+**Option 3: URL Bypass (Fallback)**
+When court ID discovery completely fails, users can:
+
+1. **Use browser to build URL** - Manually configure search on the website
+2. **Copy complete URL** - Get the full URL with embedded parameters
+3. **Use --url option** - Pass the pre-built URL directly, bypassing all parameter building
+
+### Implementation Benefits
+
+1. **Resilient to changes** - Automatically adapts to new court ID schemes
+2. **Fallback options** - Multiple strategies when automatic discovery fails
+3. **User-friendly** - Handles complexity behind the scenes
+4. **Transparent** - Shows discovered IDs to user for verification
+
+### Usage Examples with Dynamic IDs
+
+```bash
+# Let the system discover court IDs automatically
+python configurable_court_extractor.py --court civil --date-period 1m
+
+# If discovery fails, fall back to custom URL
+python configurable_court_extractor.py --url "https://publicportal.alappeals.gov/portal/search/case/results?criteria=..."
+
+# For debugging: manually set a court ID
+search_builder = CourtSearchBuilder()
+search_builder.set_court_id_manually('civil', 'discovered-session-id-12345')
+```
+
 ## Technical Implementation Details
 
 ### URL Encoding Strategy
@@ -316,22 +367,24 @@ class CourtSearchBuilder:
         self.base_url = "https://publicportal.alappeals.gov/portal/search/case/results"
         
         # Court definitions with their specific IDs and configurations
+        # NOTE: Court IDs may be dynamically assigned by the website
+        # These IDs should be discovered through session initialization
         self.courts = {
             'civil': {
                 'name': 'Alabama Civil Court of Appeals',
-                'id': '68f021c4-6a44-4735-9a76-5360b2e8af13',
+                'id': None,  # Will be discovered dynamically
                 'case_prefix': 'CL',
                 'categories': ['Appeal', 'Certiorari', 'Original Proceeding', 'Petition']
             },
             'criminal': {
                 'name': 'Alabama Court of Criminal Appeals', 
-                'id': 'criminal-court-id',  # Need actual ID
+                'id': None,  # Will be discovered dynamically
                 'case_prefix': 'CR',
                 'categories': ['Appeal', 'Certiorari', 'Original Proceeding', 'Petition']
             },
             'supreme': {
                 'name': 'Alabama Supreme Court',
-                'id': 'supreme-court-id',  # Need actual ID
+                'id': None,  # Will be discovered dynamically
                 'case_prefix': 'SC',
                 'categories': ['Appeal', 'Certiorari', 'Original Proceeding', 'Petition', 'Certified Question']
             }
@@ -348,6 +401,7 @@ class CourtSearchBuilder:
         }
         
         self.current_court = 'civil'  # Default court
+        self.session_initialized = False
         self.reset_params()
     
     def reset_params(self):
@@ -355,7 +409,7 @@ class CourtSearchBuilder:
         court_info = self.courts[self.current_court]
         self.params = {
             'advanced': 'false',
-            'courtID': court_info['id'],
+            'courtID': court_info['id'],  # May be None until discovered
             'page': {
                 'size': 500,
                 'number': 0,
@@ -376,6 +430,72 @@ class CourtSearchBuilder:
                 'excludeClosed': 'false'
             }
         }
+    
+    def discover_court_ids(self, parser_instance):
+        """
+        Discover court IDs by navigating to the website and inspecting the court selection interface
+        
+        Args:
+            parser_instance: Instance of ParserAppealsAL with active WebDriver
+        """
+        try:
+            # Navigate to the main search page
+            search_page_url = "https://publicportal.alappeals.gov/portal/search/case"
+            parser_instance.driver.get(search_page_url)
+            
+            # Wait for the page to load
+            from selenium.webdriver.support.ui import WebDriverWait
+            from selenium.webdriver.support import expected_conditions as EC
+            from selenium.webdriver.common.by import By
+            
+            wait = WebDriverWait(parser_instance.driver, 10)
+            
+            # Look for court selection dropdown or options
+            # This is a placeholder - actual implementation would need to inspect the HTML structure
+            court_selector = wait.until(EC.presence_of_element_located((By.ID, "court-selector")))
+            
+            # Extract court options and their IDs
+            # Implementation would parse the HTML to find court names and their corresponding IDs
+            court_options = court_selector.find_elements(By.TAG_NAME, "option")
+            
+            for option in court_options:
+                court_name = option.text.lower()
+                court_id = option.get_attribute("value")
+                
+                # Map court names to our court keys
+                if "civil" in court_name and "appeals" in court_name:
+                    self.courts['civil']['id'] = court_id
+                elif "criminal" in court_name and "appeals" in court_name:
+                    self.courts['criminal']['id'] = court_id
+                elif "supreme" in court_name:
+                    self.courts['supreme']['id'] = court_id
+            
+            self.session_initialized = True
+            print("Successfully discovered court IDs:")
+            for court_key, court_info in self.courts.items():
+                print(f"  {court_info['name']}: {court_info['id']}")
+                
+        except Exception as e:
+            print(f"Warning: Could not discover court IDs automatically: {e}")
+            print("Falling back to hardcoded IDs or manual discovery")
+            # Fallback to known working IDs (may be outdated)
+            self.courts['civil']['id'] = '68f021c4-6a44-4735-9a76-5360b2e8af13'
+            self.courts['criminal']['id'] = 'fallback-criminal-id'
+            self.courts['supreme']['id'] = 'fallback-supreme-id'
+    
+    def set_court_id_manually(self, court_key, court_id):
+        """
+        Manually set a court ID if automatic discovery fails
+        
+        Args:
+            court_key: 'civil', 'criminal', or 'supreme'
+            court_id: The discovered court ID string
+        """
+        if court_key in self.courts:
+            self.courts[court_key]['id'] = court_id
+            print(f"Manually set {court_key} court ID to: {court_id}")
+        else:
+            raise ValueError(f"Invalid court key: {court_key}")
     
     def set_court(self, court_key):
         """
@@ -620,10 +740,23 @@ def extract_court_cases_with_params(
         # Build search URL from parameters
         search_builder = CourtSearchBuilder()
         
+        # Create parser instance early for court ID discovery
+        parser = ParserAppealsAL(headless=True, rate_limit_seconds=2)
+        
+        # Discover court IDs if not already done
+        if not search_builder.session_initialized:
+            print("Discovering court IDs from website...")
+            search_builder.discover_court_ids(parser)
+        
         # Set court
         search_builder.set_court(court)
         court_info = search_builder.get_court_info()
         court_name = court_info['name']
+        
+        # Verify court ID was discovered
+        if court_info['id'] is None:
+            raise ValueError(f"Could not discover court ID for {court_name}. "
+                           "Try using the --url option with a pre-built search URL instead.")
         
         # Set date range
         if date_period == 'custom':
@@ -660,8 +793,9 @@ def extract_court_cases_with_params(
     print(f"Max pages: {max_pages or 'All available'}")
     print()
     
-    # Create parser instance
-    parser = ParserAppealsAL(headless=True, rate_limit_seconds=2)
+    # Create parser instance (may have been created earlier for court ID discovery)
+    if 'parser' not in locals():
+        parser = ParserAppealsAL(headless=True, rate_limit_seconds=2)
     
     try:
         # First, get the first page to determine total pages
