@@ -1,5 +1,5 @@
 """
-opal_module.py - Opposing Positions and Lingo Parser
+opal_module.py - Oppositional Positions in Alabama
 Base module for parsing different news sources
 """
 

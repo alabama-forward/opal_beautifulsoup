@@ -16,7 +16,7 @@ setup(
     },
     author="Gabriel Cabán Cubero",
     author_email="cabancubero@gmail.com",
-    description="OPAL - Opposing Positions and Lingo Parser",
+    description="OPAL - Oppositional Positions in Alabama",
     keywords="news, parser, web-scraping",
     python_requires=">=3.6",
 )

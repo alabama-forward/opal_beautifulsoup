@@ -1,4 +1,4 @@
-"""OPAL - Opposing Positions and Lingo Parser"""
+"""OPAL - Oppositional Positions in Alabama"""
 
 from opal.parser_module import BaseParser, Parser1819, ParserDailyNews
 from opal.integrated_parser import IntegratedNewsParser

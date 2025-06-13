@@ -1,4 +1,4 @@
-**OPaL (Opposing Positions and Lingo)**
+**OPAL (Oppositional Positions in Alabama)**
 
 This is a practice program that accepts articles from 1819news and Alabama Daily News and returns article contents as json objects for use in language analysis projects.
 
