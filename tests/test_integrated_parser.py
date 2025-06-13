@@ -2,7 +2,7 @@
 import json
 import pytest
 from unittest.mock import patch, MagicMock
-from opal.integrated_parser import IntegratedNewsParser
+from opal.integrated_parser import IntegratedParser
 from opal.parser_module import Parser1819
 
 @patch('opal.url_catcher_module.get_all_news_urls')
@@ -21,7 +21,7 @@ def test_process_site(mock_make_request, mock_get_urls):
         ]
         
         # Test the integrated parser
-        parser = IntegratedNewsParser(Parser1819)
+        parser = IntegratedParser(Parser1819)
         result = parser.process_site("https://example.com", "/article", 10)
         
         # Parse result and verify

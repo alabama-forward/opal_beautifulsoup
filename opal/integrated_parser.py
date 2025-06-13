@@ -9,8 +9,8 @@ from opal.url_catcher_module import get_all_news_urls
 from opal.court_url_paginator import paginate_court_urls, is_court_url
 from opal.court_case_parser import ParserAppealsAL
 
-class IntegratedNewsParser:
-    """Class to handle both URL collection and article parsing"""
+class IntegratedParser:
+    """Class to handle both URL collection and parsing for news articles and court records"""
 
     def __init__(self, parser_class: Type[BaseParser]):
         """

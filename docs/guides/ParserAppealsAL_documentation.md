@@ -172,14 +172,14 @@ Processes multiple pages of results and combines them.
 
 ### 3. Integration with OPAL System
 
-The parser integrates with OPAL through the `IntegratedNewsParser` class:
+The parser integrates with OPAL through the `IntegratedParser` class:
 
 ```python
-from opal.integrated_parser import IntegratedNewsParser
+from opal.integrated_parser import IntegratedParser
 from your_parser import YourCourtParser
 
 # Create parser instance
-parser = IntegratedNewsParser(YourCourtParser)
+parser = IntegratedParser(YourCourtParser)
 
 # Process court data
 result = parser.process_site(

@@ -4,7 +4,7 @@ main.py - Simple script to run the integrated parser
 import json
 import argparse
 from datetime import datetime
-from opal.integrated_parser import IntegratedNewsParser
+from opal.integrated_parser import IntegratedParser
 from opal.parser_module import Parser1819, ParserDailyNews
 from opal.court_case_parser import ParserAppealsAL
 
@@ -50,7 +50,7 @@ def main():
 
 
     # Create parser instance
-    news_parser = IntegratedNewsParser(news_parser_class)
+    news_parser = IntegratedParser(news_parser_class)
 
     #Save the arguments to the news_items variable
     news_urls = news_parser.process_site(
