@@ -18,7 +18,7 @@ Create a new file `opal/court_case_parser.py` with the following specifications:
    - BeautifulSoup for HTML parsing
    - Standard libraries for URL manipulation and JSON output
 
-2. **Create `CourtCaseParser` class** that extends `NewsParser`:
+2. **Create `CourtCaseParser` class** that extends `BaseParser`:
    - Override `make_request()` to use Selenium/Playwright instead of requests
    - Implement JavaScript rendering with appropriate wait conditions
    - Add rate limiting (minimum 2-3 seconds between requests)

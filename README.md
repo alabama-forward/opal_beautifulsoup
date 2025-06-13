@@ -4,9 +4,9 @@ This is a practice program that accepts articles from 1819news and Alabama Daily
 
 **SETUP:** Run the setup file to download requirements. The tests don't work at this time because they are in development. 
 
-**USAGE:** This project is a specific application of the beautifulsoup package to support the extract and analysis of conservative news sites in Alabama. This is built by progressives in Alabama for progressives in Alabama. The NewsParser object can be updated to include additional news sources if desired.
+**USAGE:** This project is a specific application of the beautifulsoup package to support the extract and analysis of conservative news sites in Alabama. This is built by progressives in Alabama for progressives in Alabama. The BaseParser object can be updated to include additional news sources if desired.
 
-**FEATURES:** This project is based on beautifulsoup4. It is built using OOP with the primary object being the NewsParser. The site-specific parsers are extensions of the parent NewsParser class.
+**FEATURES:** This project is based on beautifulsoup4. It is built using OOP with the primary object being the BaseParser. The site-specific parsers are extensions of the parent BaseParser class.
 
 There are two parsers at this time: Parser1819 and ParserDailyNews. New parsers will be added in the future. You can run this program in your terminal. When you run the file you should enter your:
 --url: base url

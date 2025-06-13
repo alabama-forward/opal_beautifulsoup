@@ -4,7 +4,7 @@ integrated_parser.py - Combines URL collection and article parsing functionality
 
 from typing import Type
 import json
-from opal.parser_module import NewsParser
+from opal.parser_module import BaseParser
 from opal.url_catcher_module import get_all_news_urls
 from opal.court_url_paginator import paginate_court_urls, is_court_url
 from opal.court_case_parser import ParserAppealsAL
@@ -12,12 +12,12 @@ from opal.court_case_parser import ParserAppealsAL
 class IntegratedNewsParser:
     """Class to handle both URL collection and article parsing"""
 
-    def __init__(self, parser_class: Type[NewsParser]):
+    def __init__(self, parser_class: Type[BaseParser]):
         """
         Initialize with specific parser class
         
         Args:
-            parser_class: Class reference to specific NewsParser implementation
+            parser_class: Class reference to specific BaseParser implementation
         """
         self.parser = parser_class()
 

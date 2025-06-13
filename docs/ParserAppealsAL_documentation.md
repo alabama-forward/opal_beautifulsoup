@@ -18,11 +18,11 @@
 ### Class Hierarchy
 
 ```
-NewsParser (Abstract Base Class)
+BaseParser (Abstract Base Class)
     └── ParserAppealsAL
 ```
 
-ParserAppealsAL inherits from the `NewsParser` base class, which defines the common interface for all parsers in the OPAL system. It overrides key methods to provide court-specific functionality.
+ParserAppealsAL inherits from the `BaseParser` base class, which defines the common interface for all parsers in the OPAL system. It overrides key methods to provide court-specific functionality.
 
 ## Dependencies
 
@@ -52,9 +52,9 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
-from your_project.parser_module import NewsParser
+from your_project.parser_module import BaseParser
 
-class YourCourtParser(NewsParser):
+class YourCourtParser(BaseParser):
     def __init__(self, headless=True, rate_limit_seconds=3):
         super().__init__()
         self.headless = headless

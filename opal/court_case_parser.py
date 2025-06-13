@@ -13,10 +13,10 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
-from .parser_module import NewsParser
+from .parser_module import BaseParser
 
 
-class ParserAppealsAL(NewsParser):
+class ParserAppealsAL(BaseParser):
     """Parser for Alabama Appeals Court Public Portal using Selenium for JavaScript rendering"""
     
     def __init__(self, headless: bool = True, rate_limit_seconds: int = 3):

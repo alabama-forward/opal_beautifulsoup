@@ -9,8 +9,8 @@ from abc import ABC, abstractmethod
 from bs4 import BeautifulSoup
 import requests
 
-class NewsParser(ABC):
-    """Base class defining the interface for news site parsers"""
+class BaseParser(ABC):
+    """Base class defining the interface for all parsers (news, court cases, etc.)"""
 
     def make_request(self, urls: List[str]) -> Tuple[List[str], List[str]]:
         """Shared request functionality for all parsers"""
@@ -39,7 +39,7 @@ class NewsParser(ABC):
     #This is done to ensure that class extensions have required functionality
     @abstractmethod
     def parse_article(self, html: str, url: str) -> Dict[str, Any]:
-        """Each news site parser must implement this method"""
+        """Each parser must implement this method"""
 
     #This parent function saves all the URLs extracted into a list for later
     def parse_articles(self, urls: List[str]) -> str:
@@ -56,7 +56,7 @@ class NewsParser(ABC):
         return json.dumps(all_articles, indent=4, ensure_ascii=False)
 
 # Specific parser for 1819 News
-class Parser1819(NewsParser):
+class Parser1819(BaseParser):
     """Parser specifically for 1819news.com"""
 
     #defines the primary parsing function.
@@ -112,7 +112,7 @@ class Parser1819(NewsParser):
 
         return article
 
-class ParserDailyNews(NewsParser):
+class ParserDailyNews(BaseParser):
     """Parser specific to Alabama Daily News"""
 
     #We redefine a parser withing this specific subclass because
