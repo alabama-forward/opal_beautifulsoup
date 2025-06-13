@@ -158,6 +158,8 @@ python configurable_court_extractor.py --court civil --case-category Appeal --da
 ```
 
 #### Option 2: Use Pre-built URL with Embedded Search Terms
+⚠️  **WARNING**: Custom URLs are temporary and session-based. They may stop working when the website session expires.
+
 ```bash
 # Use your existing URL with search terms already embedded
 python configurable_court_extractor.py --url "https://publicportal.alappeals.gov/portal/search/case/results?criteria=~%28advanced~false~courtID~%2768f021c4-6a44-4735-9a76-5360b2e8af13~page~%28size~25~number~0~totalElements~0~totalPages~0%29~sort~%28sortBy~%27caseHeader.filedDate~sortDesc~true%29~case~%28caseCategoryID~1000000~caseNumberQueryTypeID~10463~caseTitleQueryTypeID~300054~filedDateChoice~%27-1y~filedDateStart~%2706%2a2f11%2a2f2024~filedDateEnd~%2706%2a2f11%2a2f2025~excludeClosed~false%29%29"
@@ -269,11 +271,11 @@ The Alabama Appeals Court portal uses a complex nested URL structure:
 
 ### 1. Flexibility
 - **Before**: Fixed search parameters in hardcoded URL
-- **After**: Configurable search criteria via parameters
+- **After**: Configurable search criteria via parameters OR custom URLs
 
 ### 2. Maintainability
 - **Before**: URL changes require code modification
-- **After**: URL structure centralized in builder class
+- **After**: URL structure centralized in builder class with dynamic discovery
 
 ### 3. Usability
 - **Before**: Developers need to understand complex URL structure
@@ -286,6 +288,14 @@ The Alabama Appeals Court portal uses a complex nested URL structure:
 ### 5. Documentation
 - **Before**: Search parameters hidden in URL
 - **After**: Clear parameter documentation and examples
+
+### 6. Resilience to Changes
+- **Before**: Hardcoded court IDs break when website changes
+- **After**: Automatic discovery adapts to dynamic court ID schemes
+
+### 7. Multiple Fallback Options
+- **Before**: Script fails completely if URL structure changes
+- **After**: Automatic discovery → manual discovery → custom URL bypass
 
 ## Integration with Existing Code
 
@@ -734,6 +744,10 @@ def extract_court_cases_with_params(
     if custom_url:
         # Use the provided URL directly
         print("Using custom URL with embedded search parameters")
+        print("⚠️  WARNING: Custom URLs contain session-specific parameters that expire.")
+        print("   This URL will only work temporarily and may become invalid after your browser session ends.")
+        print("   For reliable, repeatable searches, use the CLI search parameters instead of --url option.")
+        print()
         base_url = custom_url
         court_name = "Custom Search"  # Generic name since we don't know the court
     else:
@@ -945,6 +959,10 @@ def main():
     # If URL is provided, skip all parameter validation
     if args.url:
         print("Using custom URL - all search parameter options will be ignored")
+        print("⚠️  IMPORTANT: Custom URLs are session-based and temporary!")
+        print("   Your URL may stop working when the court website session expires.")
+        print("   Consider using CLI search parameters for reliable, repeatable searches.")
+        print()
         extract_court_cases_with_params(
             custom_url=args.url,
             max_pages=args.max_pages,
