@@ -228,17 +228,20 @@ class BaseParser(ABC):
 - **Output**: HTML content and successful URLs
 - **Error Handling**: Continues on failure, reports errors
 
-#### parse_articles()
-- **Purpose**: Coordinate parsing of multiple URLs
-- **Input**: List of URLs
-- **Output**: JSON string of all parsed data
-- **Process**: Fetches HTML, calls parse_article(), combines results
 
 #### parse_article() (abstract)
 - **Purpose**: Extract data from single HTML page
 - **Input**: HTML content and URL
 - **Output**: Dictionary of extracted data
 - **Implementation**: Must be defined by each parser subclass
+
+
+#### parse_articles()
+- **Purpose**: Coordinate parsing of multiple URLs
+- **Input**: List of URLs
+- **Output**: JSON string of all parsed data
+- **Process**: Fetches HTML, calls parse_article(), combines results
+
 
 ## Implementation Examples
 
@@ -264,13 +267,13 @@ class MyNewsParser(BaseParser):
         }
         
         # Extract title
-        title_elem = soup.find('h1', class_='article-title')
-        if title_elem:
+        title_element = soup.find('h1', class_='article-title') #These classes are website specific
+        if title_element:
             article['title'] = title_elem.get_text(strip=True)
         
         # Extract author
-        author_elem = soup.find('span', class_='byline')
-        if author_elem:
+        author_element = soup.find('span', class_='byline')
+        if author_element:
             article['author'] = author_elem.get_text(strip=True)
         
         # Extract content paragraphs
@@ -334,7 +337,7 @@ def parse_article(self, html: str, url: str) -> Dict[str, Any]:
 ## Best Practices
 
 ### 1. Respect Website Policies
-- Check robots.txt
+- Check robots.txt (example: https://1819news.com/robots.txt)
 - Add delays between requests
 - Use appropriate User-Agent headers
 - Don't overwhelm servers
