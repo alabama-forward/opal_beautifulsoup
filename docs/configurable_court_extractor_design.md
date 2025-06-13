@@ -357,7 +357,7 @@ class CourtSearchBuilder:
             'advanced': 'false',
             'courtID': court_info['id'],
             'page': {
-                'size': 25,
+                'size': 500,
                 'number': 0,
                 'totalElements': 0,
                 'totalPages': 0
