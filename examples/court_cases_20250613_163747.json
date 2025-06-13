@@ -1,0 +1,295 @@
+{
+    "status": "success",
+    "search_parameters": {
+        "court": "civil",
+        "date_period": "1m",
+        "start_date": null,
+        "end_date": null,
+        "case_number_filter": null,
+        "case_title_filter": null,
+        "case_category": null,
+        "exclude_closed": false,
+        "custom_url": null
+    },
+    "total_cases": 25,
+    "extraction_date": "2025-06-13",
+    "extraction_time": "16:37:47",
+    "pages_processed": 1,
+    "cases": [
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0432",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/71da46bb-c5e0-4729-b65a-a47a108189b2"
+            },
+            "case_title": "Charles Donald Bagsby, Jr.; Melanie Marie Bagsby; Ester Bell Campbell; Raymond C. Campbell; Johnathon DeRosia; Brigette Amber DeRosia; Helen Dials; Evan Elliott; Felicia Elliott; Caroline D. Evans; Kevin Lashley Evans; Charles D. Franklin; John Isacc Gordon; Barbara Howard Gordon; Danielle Latrice Hale; Charles Henderson; Alfred J. Jackson; Dwan Y. Jackson; Ryan Oneal Jackson; Andre Demetrius Lambert; Joyce Marie Lambert; Clinton F. Mack; Vanessia E. Mack; Meiko Martin; Glenda McQuirter; Rodney",
+            "classification": "Appeal - Contracts - Commercial",
+            "filed_date": "06/11/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0424",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/d024d958-58a1-41c9-9fae-39c645c7977e"
+            },
+            "case_title": "Frank Thomas Shumate, Jr. v. Berry Contracting L.P. d/b/a Bay Ltd.",
+            "classification": "Appeal - Civil - Injunction Other",
+            "filed_date": "06/10/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0433",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/213b6433-50e1-4d70-a8df-ccf8953533db"
+            },
+            "case_title": "U.S. Bank Trust National Association, as trustee of the Igloo Series IV Trust and SN Servicing Corporation v. Marco J. Bonilla.",
+            "classification": "Appeal - Real Property - Other",
+            "filed_date": "06/10/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0427",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/6c90e5f5-429f-42d6-b8c0-9abd283f549d"
+            },
+            "case_title": "Joseph McDaniel, Jr. v. Barbara Wright.",
+            "classification": "Appeal - Probate - Wills/Trusts/Estates",
+            "filed_date": "06/10/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0430",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/f9fc6065-d0dd-423c-b6be-b7ef4f9ee824"
+            },
+            "case_title": "Adam Matthew Springer v. Kyle Burt, Kolton Burt, Michael Culliton, Todd Dudley and Johnny Taylor.",
+            "classification": "Appeal - Tort - Other",
+            "filed_date": "06/10/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0416",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/9f00e7ec-4b83-4cb0-9ce0-0a79a96d3497"
+            },
+            "case_title": "RB Custom Construction, LLC v. Stephen Cutter and Alyssa Cutter",
+            "classification": "Appeal - Tort - Fraud",
+            "filed_date": "06/09/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0429",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/4f8689c1-b7a2-41be-bef7-89c73f85e2e1"
+            },
+            "case_title": "City of Montgomery v. Staci Belyeu.",
+            "classification": "Appeal - Tort - Premises Liability",
+            "filed_date": "06/09/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0422",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/c4242691-e28d-4536-ac65-7177ec157451"
+            },
+            "case_title": "Maxwell \"Mike\" Blackmon v. Randy Brock.",
+            "classification": "Appeal - Civil - Election Contest",
+            "filed_date": "06/06/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0402",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/5613eaf7-d584-42e5-a8f4-10ec30f19c75"
+            },
+            "case_title": "Todd Campbell; Lukas Dale Cobb; Richard David Ekblad; Yancey Eston, III; Dale Johnson; Tersheikiya King; Christopher Allen Kitts; Jennifer Marie Kitts; Peter Lenoir III; Tara J. Lenoir; Tommy P. Murdoch; Helen E. Murdoch; Rebekah Neece; Sharon S. Oenning; Sandra Norsworthy Summer; and Elia V. Uribe v. D.R. Horton, Inc.; D.R. Horton, Inc.-Birmingham; and Bethel Engineering, Inc.",
+            "classification": "Appeal - Contracts - Commercial",
+            "filed_date": "06/05/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0400",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/0a697d08-43f2-4d19-b8b2-6da8c2e97467"
+            },
+            "case_title": "James S. Anderson; Aneisha Brown; Clint Brown; Gill Carleton; Paula Carleton; Joel Carrino; Lisa Carrino; Rachel Condone; Thomas Condone; Douglas Corporaal; Patricia Corporaal; Carl Courtney; Patt Courtney; Pierce Michael Courtney; Cliff Covington; Pamela Covington; Dawanda Finley; Gavin Finley; Amber Frazier; Dylan Frazier; John Genna; Stephany Genna; Richard Haight; Sandra Haight; Dylan Hess; Savanna Hess; Darius Jones; Kevin Jones; Angel Lanier; Len Lanier; Bradley James Latta; Stephanie Dian",
+            "classification": "Appeal - Contracts - Commercial",
+            "filed_date": "06/05/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0403",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/b42b0722-ec13-4a67-b234-200c5c176c63"
+            },
+            "case_title": "Christopher P. Bonati; Dena Renee Battaglia; James Robert Battaglia; Tracie B. Huffman; Horace Childress; Kelly Paige Childress; Janice McConnell Ferguson; Beverly Annette Ferguson; Colette Fristrom; Kenneth Fristrom; Barbara Legault Garner; Anthony Michael Helferich; Monica Lynn Helferich; Helen Henry; Audre N. McGriff; Michelle Nielsen; Ronald Nielsen; Michelle Rogers; Robert E. Rogers; John Rhea Silvernail; Heather Silvernail Terrell; James Nicholas Stosh; Lindsey Ellen Stosh; Jeremiah Thorne",
+            "classification": "Appeal - Contracts - Commercial",
+            "filed_date": "06/05/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0398",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/74930b1b-5142-4128-bf0f-10ba2f47c98b"
+            },
+            "case_title": "Anthony Austin; Carriss Austin; James C. Balster; Misty Balster; Michael R. Duncan; Sandra J. Duncan; Bruce J. Falcon; Linda Falcon; David Domingo Foxen; Jessica Foxen; Ronald Hampton; Doris Griffin Hampton; Christopher Allen Isbel; Emily Taylor Isbel; Cheryl Denise Junkin Martin; Jackie K. Martin; Brian L. Morrow; Danelle N. Morrow; Pamela Rae Murphy; Carl Edward Ray; Dianna B. Ray; Christopher Lee Santmyer; Gulnara Santmyer; Kenneth Marcus Spencer; Marlene Spencer; Kristi Stoker; Virginia R. W",
+            "classification": "Appeal - Contracts - Commercial",
+            "filed_date": "06/04/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0393",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/10734f08-0be2-4f6b-99b7-ed65e23ecc3b"
+            },
+            "case_title": "Ryan Hess v. Will Pecue.",
+            "classification": "Appeal - Tort - Fraud",
+            "filed_date": "06/04/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0397",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/b8253dbf-36d3-4d34-8980-eb4f315fc981"
+            },
+            "case_title": "Heather M. Burns; Kevin M. Burns;  Amy L. Cockrell; David M. Cockrell; Reba Prentiss Divine; Naomi Fretwell; Dorothy Goodwin; Amanda Madden; John Francis Madden III; Edward A. Martin; Patricia L. Martin; Steve Messer; Theresa Messer; Craig D. Rhodes; Mahaileanne Rhodes; Douglas Thomas Rioux; Gina Denise Rioux; David Russell Sherling II; Whitney Elizabeth Sherling; Constance Sutton; Ralph Sutton; Joyce Tujague; Jacqueline Lindsey Watson; and Carolyn Ann Wiest v. D.R. Horton, Inc.; D.R. Horton, In",
+            "classification": "Appeal - Contracts - Commercial",
+            "filed_date": "06/04/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0396",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/35a973ac-d22a-49da-be8f-b0fa5a610fa0"
+            },
+            "case_title": "Nickolas Aloi; Katie M. Aloi; Kevin Joseph Arnold; Jacqueline M. Arnold; John Franklin Baggett; Jay Blackburn; Erika Blackburn; Nicholas Burgett; Stephanie Burgett; James Howard Castle; April Moss Castle; Thomas M. Chandler; Andrea L. Chandler; Joni Blaine Dobbins; Jennifer Megan Farren; Joel A. Frame; Zachary J. Gaines; Anna C. Gaines; Zachary Hahn; Maishe N. Hall; Edward T. Harrington; Kimberly Michele Harrington; Joseph Jeremiah Hebert; Maryna Ivanovna Hebert; James K. Howell; Stephanie Jean",
+            "classification": "Appeal - Contracts - Commercial",
+            "filed_date": "06/04/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0394",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/468c3fa2-7a57-4d9e-a21e-f219948162cd"
+            },
+            "case_title": "Cindy Fountaine v. Hospice of Marshall County Foundation, Inc. d/b/a Shepherd's Cove; Karen Denton; and Stacy Higdon.",
+            "classification": "Appeal - Tort - Fraud",
+            "filed_date": "06/03/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0389",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/fc840943-a039-47a6-80b8-615a51b3dc84"
+            },
+            "case_title": "Sela Joseph v. Caritas of Birmingham.",
+            "classification": "Appeal - Tort - Negligence General/Other",
+            "filed_date": "06/03/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0388",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/82afdee2-18c5-4bd6-b6ef-5db03c5afec7"
+            },
+            "case_title": "George Thomas v. City of Cordova.",
+            "classification": "Appeal - Contracts - Commercial",
+            "filed_date": "06/03/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0385",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/401503d5-69cf-4911-ad28-53b5e52c1146"
+            },
+            "case_title": "Alavest, LLC v. Harbortown Townhomes Owners Association, Inc.",
+            "classification": "Appeal - Real Property - Other",
+            "filed_date": "05/30/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0380",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/2abc04a7-395b-4a64-9e58-1b3e0ea06e8e"
+            },
+            "case_title": "H. Jerome Thompson, individually and d/b/a Thompson and Associates v. The Security Title Guarantee Corporation of Baltimore and Gary Clint Ogles.",
+            "classification": "Appeal - Tort - Malpractice Legal",
+            "filed_date": "05/29/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0379",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/d11feb6f-5333-477f-a64d-006c9a67a510"
+            },
+            "case_title": "Margaret Sue Mikul v. Howard Moore and Charles Lloyd.",
+            "classification": "Appeal - Real Property - Other",
+            "filed_date": "05/29/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0374",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/9d485d14-a08b-4dbf-ae30-6ed61708b790"
+            },
+            "case_title": "Yellow River Properties, LLC v. Anthony Carter.",
+            "classification": "Appeal - Tort - Other",
+            "filed_date": "05/27/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0377",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/5fcd66b7-007a-4e49-9248-a1259a2cbbf7"
+            },
+            "case_title": "Hannah Holloway v. Austin Carter as Co-Personal Representative of The Estate of Mertha Carter.",
+            "classification": "Appeal - Tort - Conversion",
+            "filed_date": "05/27/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0369",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/7ec60c87-949f-4e8f-a22c-23505105a75b"
+            },
+            "case_title": "Perrione Benford Sanders and Tamica Benford v. Tamara Smith.",
+            "classification": "Appeal - Tort - Negligence Vehicular",
+            "filed_date": "05/27/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0371",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/3c3e47fd-36e9-4b73-b059-1d1c8a165bee"
+            },
+            "case_title": "James and Son Metal Products, Inc., and McCreless Holdings, LLC v. Renasant Bank.",
+            "classification": "Appeal - Tort - Other",
+            "filed_date": "05/25/2025",
+            "status": "Open"
+        }
+    ]
+}

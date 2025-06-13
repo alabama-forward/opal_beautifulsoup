@@ -1,0 +1,108 @@
+{
+    "status": "success",
+    "search_parameters": {
+        "court": "civil",
+        "date_period": "7d",
+        "start_date": null,
+        "end_date": null,
+        "case_number_filter": null,
+        "case_title_filter": null,
+        "case_category": null,
+        "exclude_closed": false,
+        "custom_url": null
+    },
+    "total_cases": 8,
+    "extraction_date": "2025-06-13",
+    "extraction_time": "16:32:59",
+    "pages_processed": 1,
+    "cases": [
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0432",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/71da46bb-c5e0-4729-b65a-a47a108189b2"
+            },
+            "case_title": "Charles Donald Bagsby, Jr.; Melanie Marie Bagsby; Ester Bell Campbell; Raymond C. Campbell; Johnathon DeRosia; Brigette Amber DeRosia; Helen Dials; Evan Elliott; Felicia Elliott; Caroline D. Evans; Kevin Lashley Evans; Charles D. Franklin; John Isacc Gordon; Barbara Howard Gordon; Danielle Latrice Hale; Charles Henderson; Alfred J. Jackson; Dwan Y. Jackson; Ryan Oneal Jackson; Andre Demetrius Lambert; Joyce Marie Lambert; Clinton F. Mack; Vanessia E. Mack; Meiko Martin; Glenda McQuirter; Rodney",
+            "classification": "Appeal - Contracts - Commercial",
+            "filed_date": "06/11/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0424",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/d024d958-58a1-41c9-9fae-39c645c7977e"
+            },
+            "case_title": "Frank Thomas Shumate, Jr. v. Berry Contracting L.P. d/b/a Bay Ltd.",
+            "classification": "Appeal - Civil - Injunction Other",
+            "filed_date": "06/10/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0433",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/213b6433-50e1-4d70-a8df-ccf8953533db"
+            },
+            "case_title": "U.S. Bank Trust National Association, as trustee of the Igloo Series IV Trust and SN Servicing Corporation v. Marco J. Bonilla.",
+            "classification": "Appeal - Real Property - Other",
+            "filed_date": "06/10/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0427",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/6c90e5f5-429f-42d6-b8c0-9abd283f549d"
+            },
+            "case_title": "Joseph McDaniel, Jr. v. Barbara Wright.",
+            "classification": "Appeal - Probate - Wills/Trusts/Estates",
+            "filed_date": "06/10/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0430",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/f9fc6065-d0dd-423c-b6be-b7ef4f9ee824"
+            },
+            "case_title": "Adam Matthew Springer v. Kyle Burt, Kolton Burt, Michael Culliton, Todd Dudley and Johnny Taylor.",
+            "classification": "Appeal - Tort - Other",
+            "filed_date": "06/10/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0416",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/9f00e7ec-4b83-4cb0-9ce0-0a79a96d3497"
+            },
+            "case_title": "RB Custom Construction, LLC v. Stephen Cutter and Alyssa Cutter",
+            "classification": "Appeal - Tort - Fraud",
+            "filed_date": "06/09/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0429",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/4f8689c1-b7a2-41be-bef7-89c73f85e2e1"
+            },
+            "case_title": "City of Montgomery v. Staci Belyeu.",
+            "classification": "Appeal - Tort - Premises Liability",
+            "filed_date": "06/09/2025",
+            "status": "Open"
+        },
+        {
+            "court": "Alabama Supreme Court",
+            "case_number": {
+                "text": "SC-2025-0422",
+                "link": "/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/c4242691-e28d-4536-ac65-7177ec157451"
+            },
+            "case_title": "Maxwell \"Mike\" Blackmon v. Randy Brock.",
+            "classification": "Appeal - Civil - Election Contest",
+            "filed_date": "06/06/2025",
+            "status": "Open"
+        }
+    ]
+}
