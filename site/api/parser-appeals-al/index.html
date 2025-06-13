@@ -20,7 +20,7 @@
     
     
       
-        <title>Alabama Appeals Court Public Portal Scraper - Implementation Instructions - OPAL - Oppositional Positions in Alabama</title>
+        <title>ParserAppealsAL API Reference - OPAL - Oppositional Positions in Alabama</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#alabama-appeals-court-public-portal-scraper-implementation-instructions" class="md-skip">
+        <a href="#parserappealsal-api-reference" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Alabama Appeals Court Public Portal Scraper - Implementation Instructions
+              ParserAppealsAL API Reference
             
           </span>
         </div>
@@ -268,7 +268,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../architecture/" class="md-tabs__link">
+        <a href="../../developer/architecture/" class="md-tabs__link">
           
   
   
@@ -649,7 +649,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../architecture/" class="md-nav__link">
+      <a href="../../developer/architecture/" class="md-nav__link">
         
   
   
@@ -672,7 +672,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../BaseParser_web_scraping_guide/" class="md-nav__link">
+      <a href="../../developer/BaseParser_web_scraping_guide/" class="md-nav__link">
         
   
   
@@ -695,7 +695,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../creating-parsers/" class="md-nav__link">
+      <a href="../../developer/creating-parsers/" class="md-nav__link">
         
   
   
@@ -718,7 +718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ParserAppealsAL_documentation/" class="md-nav__link">
+      <a href="../../developer/ParserAppealsAL_documentation/" class="md-nav__link">
         
   
   
@@ -866,100 +866,64 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#class-definition" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      Class Definition
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-by-step-implementation-instructions" class="md-nav__link">
+  <a href="#constructor-parameters" class="md-nav__link">
     <span class="md-ellipsis">
-      Step-by-Step Implementation Instructions
+      Constructor Parameters
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Step-by-Step Implementation Instructions">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Methods
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#step-1-update-dependencies" class="md-nav__link">
+  <a href="#setup_driver" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 1: Update Dependencies
+      setup_driver()
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-2-create-court-case-parser-module" class="md-nav__link">
+  <a href="#extract_court_data" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 2: Create Court Case Parser Module
+      extract_court_data()
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-3-create-custom-url-pagination-handler" class="md-nav__link">
+  <a href="#parse_case_row" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 3: Create Custom URL Pagination Handler
+      parse_case_row()
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-4-implement-data-extraction-logic" class="md-nav__link">
+  <a href="#get_case_details" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 4: Implement Data Extraction Logic
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-5-define-output-format" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 5: Define Output Format
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-6-integrate-with-opal-cli" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 6: Integrate with OPAL CLI
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-7-handle-technical-requirements" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 7: Handle Technical Requirements
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-8-testing-urls" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 8: Testing URLs
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-9-final-integration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 9: Final Integration
+      get_case_details()
     </span>
   </a>
   
@@ -971,9 +935,69 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#expected-deliverables" class="md-nav__link">
+  <a href="#usage-example" class="md-nav__link">
     <span class="md-ellipsis">
-      Expected Deliverables
+      Usage Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#output-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      Output Format
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#special-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Special Features
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Special Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#selenium-webdriver" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selenium WebDriver
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Handling
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rate-limiting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rate Limiting
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes
     </span>
   </a>
   
@@ -995,166 +1019,127 @@
 
 
 
-<h1 id="alabama-appeals-court-public-portal-scraper-implementation-instructions">Alabama Appeals Court Public Portal Scraper - Implementation Instructions<a class="headerlink" href="#alabama-appeals-court-public-portal-scraper-implementation-instructions" title="Permanent link">&para;</a></h1>
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>Create a court case scraper extension for OPAL that extracts tabular data from the Alabama Appeals Court Public Portal. The scraper must handle JavaScript-rendered content, complex URL-based pagination, and preserve both text and link references.</p>
-<h2 id="step-by-step-implementation-instructions">Step-by-Step Implementation Instructions<a class="headerlink" href="#step-by-step-implementation-instructions" title="Permanent link">&para;</a></h2>
-<h3 id="step-1-update-dependencies">Step 1: Update Dependencies<a class="headerlink" href="#step-1-update-dependencies" title="Permanent link">&para;</a></h3>
-<p>Add the following to <code>requirements.txt</code> and <code>pyproject.toml</code>:
-- <code>selenium&gt;=4.0.0</code> or <code>playwright&gt;=1.40.0</code> (for JavaScript rendering)
-- <code>webdriver-manager&gt;=4.0.0</code> (if using Selenium for automatic driver management)</p>
-<h3 id="step-2-create-court-case-parser-module">Step 2: Create Court Case Parser Module<a class="headerlink" href="#step-2-create-court-case-parser-module" title="Permanent link">&para;</a></h3>
-<p>Create a new file <code>opal/court_case_parser.py</code> with the following specifications:</p>
-<ol>
-<li><strong>Import necessary libraries</strong>:</li>
-<li>Selenium/Playwright for JavaScript rendering</li>
-<li>BeautifulSoup for HTML parsing</li>
-<li>
-<p>Standard libraries for URL manipulation and JSON output</p>
-</li>
-<li>
-<p><strong>Create <code>CourtCaseParser</code> class</strong> that extends <code>BaseParser</code>:</p>
-</li>
-<li>Override <code>make_request()</code> to use Selenium/Playwright instead of requests</li>
-<li>Implement JavaScript rendering with appropriate wait conditions</li>
-<li>
-<p>Add rate limiting (minimum 2-3 seconds between requests)</p>
-</li>
-<li>
-<p><strong>Implement <code>parse_table_row()</code> method</strong> to extract:</p>
-</li>
-<li>Court name from <code>&lt;td class="text-start"&gt;</code> (column 1)</li>
-<li>Case number text and href from <code>&lt;a href="/portal/court/..."&gt;</code> (column 2)</li>
-<li>Case title from <code>&lt;td class="text-start"&gt;</code> (column 3)</li>
-<li>Classification from <code>&lt;td class="text-start"&gt;</code> (column 4)</li>
-<li>Filed date from <code>&lt;td class="text-start"&gt;</code> (column 5)</li>
-<li>Open/Closed status from <code>&lt;td class="text-start"&gt;</code> (column 6)</li>
-</ol>
-<h3 id="step-3-create-custom-url-pagination-handler">Step 3: Create Custom URL Pagination Handler<a class="headerlink" href="#step-3-create-custom-url-pagination-handler" title="Permanent link">&para;</a></h3>
-<p>Create <code>opal/court_url_paginator.py</code> with:</p>
-<ol>
-<li><strong>URL parser function</strong> to:</li>
-<li>Extract and decode the complex URL parameters</li>
-<li>Identify current page number from <code>page~(number~X)</code></li>
-<li>
-<p>Extract total pages from <code>totalPages~X</code></p>
-</li>
-<li>
-<p><strong>URL builder function</strong> to:</p>
-</li>
-<li>Take base URL and page number</li>
-<li>Update <code>page~(number~X)</code> parameter</li>
-<li>Maintain all other search parameters</li>
-<li>
-<p>Handle special encoding (<code>~</code>, <code>%2a2f</code>, etc.)</p>
-</li>
-<li>
-<p><strong>Pagination iterator</strong> that:</p>
-</li>
-<li>Starts at page 0</li>
-<li>Continues until reaching <code>totalPages</code></li>
-<li>Yields properly formatted URLs for each page</li>
-</ol>
-<h3 id="step-4-implement-data-extraction-logic">Step 4: Implement Data Extraction Logic<a class="headerlink" href="#step-4-implement-data-extraction-logic" title="Permanent link">&para;</a></h3>
-<p>In <code>CourtCaseParser</code>, create <code>parse_all_cases()</code> method that:</p>
-<ol>
-<li><strong>Initialize browser driver</strong> (Selenium/Playwright)</li>
-<li><strong>Load first page</strong> and extract total pages from URL</li>
-<li><strong>For each page</strong>:</li>
-<li>Navigate to page URL</li>
-<li>Wait for table to load (use explicit waits)</li>
-<li>Extract all table rows</li>
-<li>Parse each row using <code>parse_table_row()</code></li>
-<li>Store results with preserved link references</li>
-<li><strong>Close browser driver</strong> when complete</li>
-<li><strong>Return combined results</strong> from all pages as single dataset</li>
-</ol>
-<h3 id="step-5-define-output-format">Step 5: Define Output Format<a class="headerlink" href="#step-5-define-output-format" title="Permanent link">&para;</a></h3>
-<p>Structure the output JSON as:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;success&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">&quot;total_cases&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">317</span><span class="p">,</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">&quot;extraction_date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-06-11&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nt">&quot;cases&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="p">{</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">      </span><span class="nt">&quot;court&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Alabama Supreme Court&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">      </span><span class="nt">&quot;case_number&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">        </span><span class="nt">&quot;text&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SC-2025-0424&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">        </span><span class="nt">&quot;link&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/d024d958-58a1-41c9-9fae-39c645c7977e&quot;</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">      </span><span class="p">},</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">      </span><span class="nt">&quot;case_title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Frank Thomas Shumate, Jr. v. Berry Contracting L.P. d/b/a Bay Ltd.&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">      </span><span class="nt">&quot;classification&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Appeal - Civil - Injunction Other&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">      </span><span class="nt">&quot;filed_date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;06/10/2025&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Open&quot;</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">  </span><span class="p">]</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="p">}</span>
-</code></pre></div></p>
-<h3 id="step-6-integrate-with-opal-cli">Step 6: Integrate with OPAL CLI<a class="headerlink" href="#step-6-integrate-with-opal-cli" title="Permanent link">&para;</a></h3>
-<p>Modify existing OPAL files:</p>
-<ol>
-<li><strong>Update <code>opal/__init__.py</code></strong>:</li>
-<li>Add <code>from .court_case_parser import CourtCaseParser</code></li>
-<li>
-<p>Add <code>from .court_url_paginator import paginate_court_urls</code></p>
-</li>
-<li>
-<p><strong>Update <code>opal/integrated_parser.py</code></strong>:</p>
-</li>
-<li>Add conditional logic to handle court case URLs differently</li>
-<li>
-<p>Use <code>paginate_court_urls</code> instead of <code>get_all_news_urls</code> for court sites</p>
-</li>
-<li>
-<p><strong>Update <code>opal/main.py</code></strong>:</p>
-</li>
-<li>Add <code>--parser court</code> option to argparse choices</li>
-<li>Add court parser to the parser selection logic</li>
-<li>Adjust output filename format for court data</li>
-</ol>
-<h3 id="step-7-handle-technical-requirements">Step 7: Handle Technical Requirements<a class="headerlink" href="#step-7-handle-technical-requirements" title="Permanent link">&para;</a></h3>
-<p>Implement the following in <code>CourtCaseParser</code>:</p>
-<ol>
-<li><strong>JavaScript rendering</strong>:</li>
-<li>Wait for table element to be present</li>
-<li>Wait for data rows to load</li>
-<li>
-<p>Handle any loading spinners or dynamic content</p>
-</li>
-<li>
-<p><strong>Error handling</strong>:</p>
-</li>
-<li>Timeout exceptions for slow page loads</li>
-<li>Missing table elements</li>
-<li>Network errors</li>
-<li>
-<p>Browser crashes</p>
-</li>
-<li>
-<p><strong>Rate limiting</strong>:</p>
-</li>
-<li>Add configurable delay between page requests (default 3 seconds)</li>
-<li>Respect server response times</li>
-</ol>
-<h3 id="step-8-testing-urls">Step 8: Testing URLs<a class="headerlink" href="#step-8-testing-urls" title="Permanent link">&para;</a></h3>
-<p>Use these URLs for testing:
-- <strong>First page</strong>: <code>https://publicportal.alappeals.gov/portal/search/case/results?criteria=~%28advanced~false~courtID~%2768f021c4-6a44-4735-9a76-5360b2e8af13~page~%28size~25~number~0~totalElements~0~totalPages~0%29~sort~%28sortBy~%27caseHeader.filedDate~sortDesc~true%29~case~%28caseCategoryID~1000000~caseNumberQueryTypeID~10463~caseTitleQueryTypeID~300054~filedDateChoice~%27-1y~filedDateStart~%2706%2a2f11%2a2f2024~filedDateEnd~%2706%2a2f11%2a2f2025~excludeClosed~false%29%29</code>
-- <strong>Second page</strong>: Same URL but with <code>page~(number~1)</code> and updated <code>totalElements~317~totalPages~13</code></p>
-<h3 id="step-9-final-integration">Step 9: Final Integration<a class="headerlink" href="#step-9-final-integration" title="Permanent link">&para;</a></h3>
-<ol>
-<li>Test the complete flow with: <code>python -m opal --url [court_url] --parser court</code></li>
-<li>Ensure output file is created with court case data in tabular format</li>
-<li>Verify all pages are scraped and combined into single result set</li>
-<li>Confirm case number links are preserved in the output</li>
-</ol>
-<h2 id="expected-deliverables">Expected Deliverables<a class="headerlink" href="#expected-deliverables" title="Permanent link">&para;</a></h2>
-<ol>
-<li><code>opal/court_case_parser.py</code> - Main parser for court data</li>
-<li><code>opal/court_url_paginator.py</code> - URL pagination handler</li>
-<li>Updated <code>opal/__init__.py</code>, <code>opal/integrated_parser.py</code>, and <code>opal/main.py</code></li>
-<li>Updated <code>requirements.txt</code> and <code>pyproject.toml</code> with new dependencies</li>
-<li>JSON output file with all court cases in structured format</li>
-</ol>
+<h1 id="parserappealsal-api-reference">ParserAppealsAL API Reference<a class="headerlink" href="#parserappealsal-api-reference" title="Permanent link">&para;</a></h1>
+<p>Parser for <a href="https://publicportal.alappeals.gov/">Alabama Appeals Court Public Portal</a>.</p>
+<h2 id="class-definition">Class Definition<a class="headerlink" href="#class-definition" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">ParserAppealsAL</span><span class="p">(</span><span class="n">BaseParser</span><span class="p">):</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">url</span><span class="o">=</span><span class="s2">&quot;https://publicportal.alappeals.gov/portal/search/case/results&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="constructor-parameters">Constructor Parameters<a class="headerlink" href="#constructor-parameters" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>url</code></td>
+<td>str</td>
+<td>Portal URL</td>
+<td>Base URL for court portal</td>
+</tr>
+</tbody>
+</table>
+<h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h2>
+<h3 id="setup_driver">setup_driver()<a class="headerlink" href="#setup_driver" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">setup_driver</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">Chrome</span>
+</code></pre></div>
+Sets up Chrome WebDriver with appropriate options.</p>
+<p><strong>Returns</strong>: Configured Chrome WebDriver instance</p>
+<h3 id="extract_court_data">extract_court_data()<a class="headerlink" href="#extract_court_data" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">extract_court_data</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">]</span>
+</code></pre></div>
+Main method to extract court case data.</p>
+<p><strong>Returns</strong>: List of court case dictionaries</p>
+<h3 id="parse_case_row">parse_case_row()<a class="headerlink" href="#parse_case_row" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">parse_case_row</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">row</span><span class="p">:</span> <span class="n">WebElement</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span>
+</code></pre></div>
+Parses individual case row from search results.</p>
+<p><strong>Parameters</strong>:
+- <code>row</code>: Selenium WebElement representing a case row</p>
+<p><strong>Returns</strong>: Dictionary with case information</p>
+<h3 id="get_case_details">get_case_details()<a class="headerlink" href="#get_case_details" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">get_case_details</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">case_url</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span>
+</code></pre></div>
+Fetches detailed information for a specific case.</p>
+<p><strong>Parameters</strong>:
+- <code>case_url</code>: URL to the case details page</p>
+<p><strong>Returns</strong>: Dictionary with detailed case information</p>
+<h2 id="usage-example">Usage Example<a class="headerlink" href="#usage-example" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">opal.ParserAppealsAL</span><span class="w"> </span><span class="kn">import</span> <span class="n">ParserAppealsAL</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="c1"># Create parser instance</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">parser</span> <span class="o">=</span> <span class="n">ParserAppealsAL</span><span class="p">()</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="c1"># Extract court cases</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="n">cases</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">extract_court_data</span><span class="p">()</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="c1"># Save to JSON</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="n">parser</span><span class="o">.</span><span class="n">save_to_json</span><span class="p">(</span><span class="n">cases</span><span class="p">,</span> <span class="s2">&quot;court_cases.json&quot;</span><span class="p">)</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="c1"># Process cases</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="k">for</span> <span class="n">case</span> <span class="ow">in</span> <span class="n">cases</span><span class="p">:</span>
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Case: </span><span class="si">{</span><span class="n">case</span><span class="p">[</span><span class="s1">&#39;case_number&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Title: </span><span class="si">{</span><span class="n">case</span><span class="p">[</span><span class="s1">&#39;case_title&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Status: </span><span class="si">{</span><span class="n">case</span><span class="p">[</span><span class="s1">&#39;status&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="output-format">Output Format<a class="headerlink" href="#output-format" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">{</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="nt">&quot;case_number&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-CV-001234&quot;</span><span class="p">,</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span><span class="nt">&quot;case_title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;State of Alabama v. John Doe&quot;</span><span class="p">,</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">  </span><span class="nt">&quot;court&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Alabama Court of Civil Appeals&quot;</span><span class="p">,</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">  </span><span class="nt">&quot;date_filed&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-01-10&quot;</span><span class="p">,</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Active&quot;</span><span class="p">,</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">  </span><span class="nt">&quot;judge&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Hon. Jane Smith&quot;</span><span class="p">,</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">  </span><span class="nt">&quot;parties&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">    </span><span class="nt">&quot;appellant&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;John Doe&quot;</span><span class="p">,</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">    </span><span class="nt">&quot;appellee&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;State of Alabama&quot;</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">  </span><span class="p">},</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="w">  </span><span class="nt">&quot;attorneys&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;James Johnson&quot;</span><span class="p">,</span>
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="w">      </span><span class="nt">&quot;role&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Attorney for Appellant&quot;</span>
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a><span class="w">  </span><span class="p">],</span>
+<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a><span class="w">  </span><span class="nt">&quot;docket_entries&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a><span class="w">      </span><span class="nt">&quot;date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-01-10&quot;</span><span class="p">,</span>
+<a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a><span class="w">      </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Notice of Appeal Filed&quot;</span><span class="p">,</span>
+<a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a><span class="w">      </span><span class="nt">&quot;document_url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://publicportal.alappeals.gov/document/12345&quot;</span>
+<a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-6-24" name="__codelineno-6-24" href="#__codelineno-6-24"></a><span class="w">  </span><span class="p">]</span>
+<a id="__codelineno-6-25" name="__codelineno-6-25" href="#__codelineno-6-25"></a><span class="p">}</span>
+</code></pre></div>
+<h2 id="special-features">Special Features<a class="headerlink" href="#special-features" title="Permanent link">&para;</a></h2>
+<h3 id="selenium-webdriver">Selenium WebDriver<a class="headerlink" href="#selenium-webdriver" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Automatically installs ChromeDriver</li>
+<li>Handles JavaScript-rendered content</li>
+<li>Supports dynamic page interactions</li>
+</ul>
+<h3 id="error-handling">Error Handling<a class="headerlink" href="#error-handling" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Retries failed page loads</li>
+<li>Handles stale element exceptions</li>
+<li>Logs detailed error information</li>
+</ul>
+<h3 id="rate-limiting">Rate Limiting<a class="headerlink" href="#rate-limiting" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Includes delays between requests</li>
+<li>Respects server load</li>
+</ul>
+<h2 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Requires Chrome browser installed</li>
+<li>Uses Selenium for JavaScript support</li>
+<li>Handles pagination automatically</li>
+<li>Extracts both case list and detailed case information</li>
+<li>Includes comprehensive error handling for web automation</li>
+</ul>
 
 
 
