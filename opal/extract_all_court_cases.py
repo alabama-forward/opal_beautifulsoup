@@ -10,13 +10,13 @@ from opal.court_url_paginator import parse_court_url
 
 def extract_all_court_cases():
     """Extract all court cases from all available pages"""
-    
+
     # Base URL for Alabama Appeals Court
     base_url = "https://publicportal.alappeals.gov/portal/search/case/results?criteria=~%28advanced~false~courtID~%2768f021c4-6a44-4735-9a76-5360b2e8af13~page~%28size~25~number~0~totalElements~0~totalPages~0%29~sort~%28sortBy~%27caseHeader.filedDate~sortDesc~true%29~case~%28caseCategoryID~1000000~caseNumberQueryTypeID~10463~caseTitleQueryTypeID~300054~filedDateChoice~%27-1y~filedDateStart~%2706%2a2f11%2a2f2024~filedDateEnd~%2706%2a2f11%2a2f2025~excludeClosed~false%29%29"
-    
+
     # URL from the last page that shows the real total
     last_page_url = "https://publicportal.alappeals.gov/portal/search/case/results?criteria=~%28advanced~false~courtID~%2768f021c4-6a44-4735-9a76-5360b2e8af13~page~%28size~25~number~12~totalElements~318~totalPages~13%29~sort~%28sortBy~%27caseHeader.filedDate~sortDesc~true%29~case~%28caseCategoryID~1000000~caseNumberQueryTypeID~10463~caseTitleQueryTypeID~300054~filedDateChoice~%27-1y~filedDateStart~%2706%2a2f11%2a2f2024~filedDateEnd~%2706%2a2f11%2a2f2025~excludeClosed~false%29%29"
-    
+
     # Extract the total pages from the last page URL
     _, total_pages = parse_court_url(last_page_url)
     total_pages = total_pages or 13  # Fallback to 13 if parsing fails

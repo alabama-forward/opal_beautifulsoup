@@ -37,11 +37,11 @@ class IntegratedNewsParser:
         if is_court_url(base_url) and isinstance(self.parser, ParserAppealsAL):
             # Handle court case processing
             print("Processing court case data...")
-            
+
             # Get paginated URLs for court portal
             urls = paginate_court_urls(base_url, self.parser)
             print(f"Found {len(urls)} pages to process")
-            
+
             # Parse all court cases
             result = self.parser.parse_all_cases(base_url, urls)
             return json.dumps(result, indent=4, ensure_ascii=False)
