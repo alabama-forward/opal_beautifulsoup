@@ -26,7 +26,7 @@ def main():
     console_arguments.add_argument('--max_pages', type=int, required=False, default=None,
                                    help='Max number of pages to process. Optional but recommended')
     console_arguments.add_argument('--parser', type=str, required=True, default=None,
-                                choices=['Parser1819', 'ParserDailyNews', 'court'],
+                                choices=['Parser1819', 'ParserDailyNews', 'ParserAppealsAL'],
                                 help='Pick an available parser')
 
     # Pass command-line arguments
@@ -35,7 +35,7 @@ def main():
     parsers = {
         'Parser1819': Parser1819,
         'ParserDailyNews': ParserDailyNews,
-        'court': ParserAppealsAL
+        'ParserAppealsAL': ParserAppealsAL
     }
 
     #Print progress
@@ -64,7 +64,7 @@ def main():
     parsed_data = json.loads(news_urls)
     
     # Check if this is court data or news data
-    if args.parser == 'court':
+    if args.parser == 'ParserAppealsAL':
         # Handle court case results
         if parsed_data.get('status') == 'success':
             print(f"\nSuccessfully processed {parsed_data['total_cases']} court cases")

@@ -4,7 +4,7 @@ Complete command-line reference for the Alabama Appeals Court parser.
 
 ## Overview
 
-ParserAppealsAL is the specialized parser for extracting case data from the Alabama Appeals Court Public Portal. It's accessed through the main OPAL CLI using `--parser court`.
+ParserAppealsAL is the specialized parser for extracting case data from the Alabama Appeals Court Public Portal. It's accessed through the main OPAL CLI using `--parser ParserAppealsAL`.
 
 ## Quick Start
 
@@ -12,14 +12,14 @@ ParserAppealsAL is the specialized parser for extracting case data from the Alab
 # Basic court case extraction
 python -m opal \
     --url "https://publicportal.alappeals.gov/portal/search/case/results" \
-    --parser court \
+    --parser ParserAppealsAL \
     --output my_cases.json
 ```
 
 ## Command Syntax
 
 ```bash
-python -m opal --url <COURT_URL> --parser court [OPTIONS]
+python -m opal --url <COURT_URL> --parser ParserAppealsAL [OPTIONS]
 ```
 
 ## Required Arguments
@@ -38,10 +38,10 @@ The Alabama Appeals Court portal URL to scrape.
 --url "https://publicportal.alappeals.gov/portal/search/case/results?criteria=..."
 ```
 
-### `--parser court`
+### `--parser ParserAppealsAL`
 Specifies to use the ParserAppealsAL court parser.
 
-**Must be exactly:** `court`
+**Must be exactly:** `ParserAppealsAL`
 
 ## Optional Arguments
 
@@ -92,7 +92,7 @@ Set the logging verbosity level.
 # Extract court cases with default settings
 python -m opal \
     --url "https://publicportal.alappeals.gov/portal/search/case/results" \
-    --parser court
+    --parser ParserAppealsAL
 ```
 
 ### Custom Output File
@@ -194,7 +194,7 @@ The parser generates JSON output with this structure:
 
 ```bash
 # Extract and show total cases
-python -m opal --url "..." --parser court --output cases.json
+python -m opal --url "..." --parser ParserAppealsAL --output cases.json
 cat cases.json | jq '.metadata.total_cases'
 ```
 
@@ -283,7 +283,7 @@ For more sophisticated court case extraction with search parameters, filtering, 
 
 ## Comparison with Alternatives
 
-| Feature | Basic CLI (`--parser court`) | Configurable Extractor |
+| Feature | Basic CLI (`--parser ParserAppealsAL`) | Configurable Extractor |
 |---------|------------------------------|------------------------|
 | Search filters | ❌ None | ✅ Date, category, court, case number |
 | Output formats | JSON only | JSON + CSV |

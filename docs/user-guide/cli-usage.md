@@ -15,7 +15,7 @@ python -m opal --url <URL> --parser <PARSER> [OPTIONS]
 | Argument | Description | Example |
 |----------|-------------|---------|
 | `--url` | The base URL to scrape | `https://1819news.com/` |
-| `--parser` | Parser to use | `Parser1819`, `ParserDailyNews`, `court` |
+| `--parser` | Parser to use | `Parser1819`, `ParserDailyNews`, `ParserAppealsAL` |
 
 ### Optional Arguments
 
@@ -56,7 +56,7 @@ Basic court case extraction:
 ```bash
 python -m opal \
     --url https://publicportal.alappeals.gov/portal/search/case/results \
-    --parser court \
+    --parser ParserAppealsAL \
     --output court_cases.json
 ```
 
@@ -64,12 +64,12 @@ python -m opal \
 
 ## ParserAppealsAL CLI Guide
 
-The ParserAppealsAL parser (`--parser court`) is specifically designed for extracting case data from the Alabama Appeals Court Public Portal.
+The ParserAppealsAL parser (`--parser ParserAppealsAL`) is specifically designed for extracting case data from the Alabama Appeals Court Public Portal.
 
 ### Basic Usage
 
 ```bash
-python -m opal --url <COURT_URL> --parser court [OPTIONS]
+python -m opal --url <COURT_URL> --parser ParserAppealsAL [OPTIONS]
 ```
 
 ### Supported URLs
@@ -84,7 +84,7 @@ The parser works with Alabama Appeals Court URLs:
 | Option | Description | Default | Example |
 |--------|-------------|---------|---------|
 | `--url` | Court portal URL | Required | See examples below |
-| `--parser` | Must be `court` | Required | `court` |
+| `--parser` | Must be `ParserAppealsAL` | Required | `ParserAppealsAL` |
 | `--output` | Output JSON file | `opal_output.json` | `appeals_cases.json` |
 | `--max_pages` | Max pages to process | `5` | `10` |
 | `--log-level` | Logging verbosity | `INFO` | `DEBUG` |
@@ -97,7 +97,7 @@ The parser works with Alabama Appeals Court URLs:
 # Extract court cases from a search results URL
 python -m opal \
     --url "https://publicportal.alappeals.gov/portal/search/case/results?criteria=..." \
-    --parser court \
+    --parser ParserAppealsAL \
     --output alabama_appeals.json \
     --log-level INFO
 ```
@@ -108,7 +108,7 @@ python -m opal \
 # Save to specific file with detailed logging
 python -m opal \
     --url "https://publicportal.alappeals.gov/portal/search/case/results" \
-    --parser court \
+    --parser ParserAppealsAL \
     --output civil_appeals_2024.json \
     --log-level DEBUG
 ```
@@ -119,7 +119,7 @@ python -m opal \
 # Process only first 3 pages of results
 python -m opal \
     --url "https://publicportal.alappeals.gov/portal/search/case/results" \
-    --parser court \
+    --parser ParserAppealsAL \
     --max_pages 3 \
     --output limited_results.json
 ```
@@ -199,7 +199,7 @@ python -m opal.configurable_court_extractor \
 
 ```bash
 # Extract just case numbers
-python -m opal --url "..." --parser court --output cases.json
+python -m opal --url "..." --parser ParserAppealsAL --output cases.json
 cat cases.json | jq '.cases[].case_number.text'
 
 # Count cases by status
