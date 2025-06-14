@@ -1352,9 +1352,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#-parser-court" class="md-nav__link">
+  <a href="#-parser-parserappealsal" class="md-nav__link">
     <span class="md-ellipsis">
-      --parser court
+      --parser ParserAppealsAL
     </span>
   </a>
   
@@ -1696,16 +1696,16 @@
 <h1 id="parserappealsal-cli-reference">ParserAppealsAL CLI Reference<a class="headerlink" href="#parserappealsal-cli-reference" title="Permanent link">&para;</a></h1>
 <p>Complete command-line reference for the Alabama Appeals Court parser.</p>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>ParserAppealsAL is the specialized parser for extracting case data from the Alabama Appeals Court Public Portal. It's accessed through the main OPAL CLI using <code>--parser court</code>.</p>
+<p>ParserAppealsAL is the specialized parser for extracting case data from the Alabama Appeals Court Public Portal. It's accessed through the main OPAL CLI using <code>--parser ParserAppealsAL</code>.</p>
 <h2 id="quick-start">Quick Start<a class="headerlink" href="#quick-start" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Basic court case extraction</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span>--url<span class="w"> </span><span class="s2">&quot;https://publicportal.alappeals.gov/portal/search/case/results&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span>--parser<span class="w"> </span>court<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span>--parser<span class="w"> </span>ParserAppealsAL<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span>--output<span class="w"> </span>my_cases.json
 </code></pre></div>
 <h2 id="command-syntax">Command Syntax<a class="headerlink" href="#command-syntax" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span>--url<span class="w"> </span>&lt;COURT_URL&gt;<span class="w"> </span>--parser<span class="w"> </span>court<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span>--url<span class="w"> </span>&lt;COURT_URL&gt;<span class="w"> </span>--parser<span class="w"> </span>ParserAppealsAL<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span>
 </code></pre></div>
 <h2 id="required-arguments">Required Arguments<a class="headerlink" href="#required-arguments" title="Permanent link">&para;</a></h2>
 <h3 id="-url-url"><code>--url &lt;URL&gt;</code><a class="headerlink" href="#-url-url" title="Permanent link">&para;</a></h3>
@@ -1718,9 +1718,9 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>--url<span class="w"> </span><span class="s2">&quot;https://publicportal.alappeals.gov/portal/search/case/results&quot;</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>--url<span class="w"> </span><span class="s2">&quot;https://publicportal.alappeals.gov/portal/search/case/results?criteria=...&quot;</span>
 </code></pre></div></p>
-<h3 id="-parser-court"><code>--parser court</code><a class="headerlink" href="#-parser-court" title="Permanent link">&para;</a></h3>
+<h3 id="-parser-parserappealsal"><code>--parser ParserAppealsAL</code><a class="headerlink" href="#-parser-parserappealsal" title="Permanent link">&para;</a></h3>
 <p>Specifies to use the ParserAppealsAL court parser.</p>
-<p><strong>Must be exactly:</strong> <code>court</code></p>
+<p><strong>Must be exactly:</strong> <code>ParserAppealsAL</code></p>
 <h2 id="optional-arguments">Optional Arguments<a class="headerlink" href="#optional-arguments" title="Permanent link">&para;</a></h2>
 <h3 id="-output-filename"><code>--output &lt;FILENAME&gt;</code><a class="headerlink" href="#-output-filename" title="Permanent link">&para;</a></h3>
 <p>Specify the output JSON file path.</p>
@@ -1754,7 +1754,7 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># Extract court cases with default settings</span>
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span>--url<span class="w"> </span><span class="s2">&quot;https://publicportal.alappeals.gov/portal/search/case/results&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span>--parser<span class="w"> </span>court
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span>--parser<span class="w"> </span>ParserAppealsAL
 </code></pre></div>
 <h3 id="custom-output-file">Custom Output File<a class="headerlink" href="#custom-output-file" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># Save to specific file</span>
@@ -1833,7 +1833,7 @@
 <h2 id="working-with-results">Working with Results<a class="headerlink" href="#working-with-results" title="Permanent link">&para;</a></h2>
 <h3 id="view-case-count">View Case Count<a class="headerlink" href="#view-case-count" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1"># Extract and show total cases</span>
-<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span>--url<span class="w"> </span><span class="s2">&quot;...&quot;</span><span class="w"> </span>--parser<span class="w"> </span>court<span class="w"> </span>--output<span class="w"> </span>cases.json
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span>--url<span class="w"> </span><span class="s2">&quot;...&quot;</span><span class="w"> </span>--parser<span class="w"> </span>ParserAppealsAL<span class="w"> </span>--output<span class="w"> </span>cases.json
 <a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>cat<span class="w"> </span>cases.json<span class="w"> </span><span class="p">|</span><span class="w"> </span>jq<span class="w"> </span><span class="s1">&#39;.metadata.total_cases&#39;</span>
 </code></pre></div>
 <h3 id="extract-specific-fields">Extract Specific Fields<a class="headerlink" href="#extract-specific-fields" title="Permanent link">&para;</a></h3>
@@ -1911,7 +1911,7 @@
 <thead>
 <tr>
 <th>Feature</th>
-<th>Basic CLI (<code>--parser court</code>)</th>
+<th>Basic CLI (<code>--parser ParserAppealsAL</code>)</th>
 <th>Configurable Extractor</th>
 </tr>
 </thead>

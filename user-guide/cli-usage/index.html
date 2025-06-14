@@ -1972,7 +1972,7 @@
 <tr>
 <td><code>--parser</code></td>
 <td>Parser to use</td>
-<td><code>Parser1819</code>, <code>ParserDailyNews</code>, <code>court</code></td>
+<td><code>Parser1819</code>, <code>ParserDailyNews</code>, <code>ParserAppealsAL</code></td>
 </tr>
 </tbody>
 </table>
@@ -2028,14 +2028,14 @@
 <p>Basic court case extraction:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span>--url<span class="w"> </span>https://publicportal.alappeals.gov/portal/search/case/results<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span>--parser<span class="w"> </span>court<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span>--parser<span class="w"> </span>ParserAppealsAL<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span>--output<span class="w"> </span>court_cases.json
 </code></pre></div>
 <p><strong>Note</strong>: For advanced court extraction with search filters, use the <a href="../configurable_court_extractor/">Configurable Court Extractor</a> instead.</p>
 <h2 id="parserappealsal-cli-guide">ParserAppealsAL CLI Guide<a class="headerlink" href="#parserappealsal-cli-guide" title="Permanent link">&para;</a></h2>
-<p>The ParserAppealsAL parser (<code>--parser court</code>) is specifically designed for extracting case data from the Alabama Appeals Court Public Portal.</p>
+<p>The ParserAppealsAL parser (<code>--parser ParserAppealsAL</code>) is specifically designed for extracting case data from the Alabama Appeals Court Public Portal.</p>
 <h3 id="basic-usage">Basic Usage<a class="headerlink" href="#basic-usage" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span>--url<span class="w"> </span>&lt;COURT_URL&gt;<span class="w"> </span>--parser<span class="w"> </span>court<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span>--url<span class="w"> </span>&lt;COURT_URL&gt;<span class="w"> </span>--parser<span class="w"> </span>ParserAppealsAL<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span>
 </code></pre></div>
 <h3 id="supported-urls">Supported URLs<a class="headerlink" href="#supported-urls" title="Permanent link">&para;</a></h3>
 <p>The parser works with Alabama Appeals Court URLs:</p>
@@ -2062,9 +2062,9 @@
 </tr>
 <tr>
 <td><code>--parser</code></td>
-<td>Must be <code>court</code></td>
+<td>Must be <code>ParserAppealsAL</code></td>
 <td>Required</td>
-<td><code>court</code></td>
+<td><code>ParserAppealsAL</code></td>
 </tr>
 <tr>
 <td><code>--output</code></td>
@@ -2091,7 +2091,7 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># Extract court cases from a search results URL</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span>--url<span class="w"> </span><span class="s2">&quot;https://publicportal.alappeals.gov/portal/search/case/results?criteria=...&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span>--parser<span class="w"> </span>court<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span>--parser<span class="w"> </span>ParserAppealsAL<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">    </span>--output<span class="w"> </span>alabama_appeals.json<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">    </span>--log-level<span class="w"> </span>INFO
 </code></pre></div>
@@ -2099,7 +2099,7 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># Save to specific file with detailed logging</span>
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span>--url<span class="w"> </span><span class="s2">&quot;https://publicportal.alappeals.gov/portal/search/case/results&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span>--parser<span class="w"> </span>court<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span>--parser<span class="w"> </span>ParserAppealsAL<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span>--output<span class="w"> </span>civil_appeals_2024.json<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">    </span>--log-level<span class="w"> </span>DEBUG
 </code></pre></div>
@@ -2107,7 +2107,7 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># Process only first 3 pages of results</span>
 <a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">    </span>--url<span class="w"> </span><span class="s2">&quot;https://publicportal.alappeals.gov/portal/search/case/results&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span>--parser<span class="w"> </span>court<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span>--parser<span class="w"> </span>ParserAppealsAL<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">    </span>--max_pages<span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">    </span>--output<span class="w"> </span>limited_results.json
 </code></pre></div>
@@ -2171,7 +2171,7 @@
 <h3 id="integration-with-other-tools">Integration with Other Tools<a class="headerlink" href="#integration-with-other-tools" title="Permanent link">&para;</a></h3>
 <h4 id="processing-results-with-jq">Processing Results with jq<a class="headerlink" href="#processing-results-with-jq" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># Extract just case numbers</span>
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span>--url<span class="w"> </span><span class="s2">&quot;...&quot;</span><span class="w"> </span>--parser<span class="w"> </span>court<span class="w"> </span>--output<span class="w"> </span>cases.json
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span>--url<span class="w"> </span><span class="s2">&quot;...&quot;</span><span class="w"> </span>--parser<span class="w"> </span>ParserAppealsAL<span class="w"> </span>--output<span class="w"> </span>cases.json
 <a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>cat<span class="w"> </span>cases.json<span class="w"> </span><span class="p">|</span><span class="w"> </span>jq<span class="w"> </span><span class="s1">&#39;.cases[].case_number.text&#39;</span>
 <a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>
 <a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="c1"># Count cases by status</span>
