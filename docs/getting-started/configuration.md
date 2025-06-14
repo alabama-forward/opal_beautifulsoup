@@ -77,7 +77,7 @@ results = extract_court_cases_with_params(
 )
 ```
 
-See [Configurable Court Extractor](../configurable_court_extractor.md) for detailed configuration options.
+See [Configurable Court Extractor](../user-guide/configurable_court_extractor.md) for detailed configuration options.
 
 ## Output Configuration
 
