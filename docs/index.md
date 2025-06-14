@@ -12,7 +12,6 @@ Welcome to OPAL's documentation! OPAL is a web scraping tool that extracts conte
 
 ## Quick Start
 
-```bash
 #Install OPAL
 pip install -e .
 
