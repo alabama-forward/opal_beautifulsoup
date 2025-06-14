@@ -13,10 +13,10 @@
       
       
       
-        <link rel="prev" href="../../api/parser-daily-news/">
+        <link rel="prev" href="../architecture/">
       
       
-        <link rel="next" href="../workflows/">
+        <link rel="next" href="../error_handling/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Architecture - OPAL - Oppositional Positions in Alabama</title>
+        <title>Workflows - OPAL - Oppositional Positions in Alabama</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#architecture" class="md-skip">
+        <a href="#workflows" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Architecture
+              Workflows
             
           </span>
         </div>
@@ -294,7 +294,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../architecture/" class="md-tabs__link">
           
   
   
@@ -934,6 +934,29 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -951,7 +974,7 @@
   
   
   <span class="md-ellipsis">
-    Architecture
+    Workflows
     
   </span>
   
@@ -964,7 +987,7 @@
   
   
   <span class="md-ellipsis">
-    Architecture
+    Workflows
     
   </span>
   
@@ -987,37 +1010,19 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#core-components" class="md-nav__link">
+  <a href="#court-id-discovery-workflow" class="md-nav__link">
     <span class="md-ellipsis">
-      Core Components
+      Court ID Discovery Workflow
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Core Components">
+    <nav class="md-nav" aria-label="Court ID Discovery Workflow">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#baseparser" class="md-nav__link">
+  <a href="#implementation-details" class="md-nav__link">
     <span class="md-ellipsis">
-      BaseParser
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#parser-classes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Parser Classes
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#main-module" class="md-nav__link">
-    <span class="md-ellipsis">
-      Main Module
+      Implementation Details
     </span>
   </a>
   
@@ -1029,46 +1034,19 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#class-hierarchy" class="md-nav__link">
+  <a href="#dynamic-pagination-workflow" class="md-nav__link">
     <span class="md-ellipsis">
-      Class Hierarchy
+      Dynamic Pagination Workflow
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-flow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Data Flow
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key-design-patterns" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key Design Patterns
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Key Design Patterns">
+    <nav class="md-nav" aria-label="Dynamic Pagination Workflow">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#template-method-pattern" class="md-nav__link">
+  <a href="#steps" class="md-nav__link">
     <span class="md-ellipsis">
-      Template Method Pattern
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#factory-pattern" class="md-nav__link">
-    <span class="md-ellipsis">
-      Factory Pattern
+      Steps:
     </span>
   </a>
   
@@ -1080,37 +1058,19 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#extension-points" class="md-nav__link">
+  <a href="#session-management-workflow" class="md-nav__link">
     <span class="md-ellipsis">
-      Extension Points
+      Session Management Workflow
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Extension Points">
+    <nav class="md-nav" aria-label="Session Management Workflow">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#adding-new-parsers" class="md-nav__link">
+  <a href="#key-considerations" class="md-nav__link">
     <span class="md-ellipsis">
-      Adding New Parsers
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#customizing-output" class="md-nav__link">
-    <span class="md-ellipsis">
-      Customizing Output
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#adding-features" class="md-nav__link">
-    <span class="md-ellipsis">
-      Adding Features
+      Key Considerations:
     </span>
   </a>
   
@@ -1118,6 +1078,114 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-recovery-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Recovery Workflow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Error Recovery Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#error-types-and-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Types and Handling:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-extraction-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Extraction Workflow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Extraction Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-points-extracted" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Points Extracted:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integration Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#command-line-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command-Line Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-optimization-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance Optimization Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing Workflow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Testing Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#test-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Categories:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#debugging-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Debugging Workflow
+    </span>
+  </a>
   
 </li>
       
@@ -1125,29 +1193,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../workflows/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Workflows
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -1492,37 +1537,19 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#core-components" class="md-nav__link">
+  <a href="#court-id-discovery-workflow" class="md-nav__link">
     <span class="md-ellipsis">
-      Core Components
+      Court ID Discovery Workflow
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Core Components">
+    <nav class="md-nav" aria-label="Court ID Discovery Workflow">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#baseparser" class="md-nav__link">
+  <a href="#implementation-details" class="md-nav__link">
     <span class="md-ellipsis">
-      BaseParser
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#parser-classes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Parser Classes
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#main-module" class="md-nav__link">
-    <span class="md-ellipsis">
-      Main Module
+      Implementation Details
     </span>
   </a>
   
@@ -1534,46 +1561,19 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#class-hierarchy" class="md-nav__link">
+  <a href="#dynamic-pagination-workflow" class="md-nav__link">
     <span class="md-ellipsis">
-      Class Hierarchy
+      Dynamic Pagination Workflow
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-flow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Data Flow
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key-design-patterns" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key Design Patterns
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Key Design Patterns">
+    <nav class="md-nav" aria-label="Dynamic Pagination Workflow">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#template-method-pattern" class="md-nav__link">
+  <a href="#steps" class="md-nav__link">
     <span class="md-ellipsis">
-      Template Method Pattern
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#factory-pattern" class="md-nav__link">
-    <span class="md-ellipsis">
-      Factory Pattern
+      Steps:
     </span>
   </a>
   
@@ -1585,37 +1585,19 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#extension-points" class="md-nav__link">
+  <a href="#session-management-workflow" class="md-nav__link">
     <span class="md-ellipsis">
-      Extension Points
+      Session Management Workflow
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Extension Points">
+    <nav class="md-nav" aria-label="Session Management Workflow">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#adding-new-parsers" class="md-nav__link">
+  <a href="#key-considerations" class="md-nav__link">
     <span class="md-ellipsis">
-      Adding New Parsers
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#customizing-output" class="md-nav__link">
-    <span class="md-ellipsis">
-      Customizing Output
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#adding-features" class="md-nav__link">
-    <span class="md-ellipsis">
-      Adding Features
+      Key Considerations:
     </span>
   </a>
   
@@ -1623,6 +1605,114 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-recovery-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Recovery Workflow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Error Recovery Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#error-types-and-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Types and Handling:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-extraction-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Extraction Workflow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Extraction Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-points-extracted" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Points Extracted:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integration Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#command-line-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command-Line Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-optimization-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance Optimization Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing Workflow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Testing Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#test-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Categories:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#debugging-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Debugging Workflow
+    </span>
+  </a>
   
 </li>
       
@@ -1642,76 +1732,260 @@
 
 
 
-<h1 id="architecture">Architecture<a class="headerlink" href="#architecture" title="Permanent link">&para;</a></h1>
-<p>OPAL follows a modular architecture that makes it easy to add new parsers and extend functionality.</p>
-<h2 id="core-components">Core Components<a class="headerlink" href="#core-components" title="Permanent link">&para;</a></h2>
-<h3 id="baseparser">BaseParser<a class="headerlink" href="#baseparser" title="Permanent link">&para;</a></h3>
-<p>The foundation of all parsers, providing:
-- Common web scraping functionality
-- Error handling and retry logic
-- Logging infrastructure
-- Output formatting</p>
-<h3 id="parser-classes">Parser Classes<a class="headerlink" href="#parser-classes" title="Permanent link">&para;</a></h3>
-<p>Each website has its own parser class that inherits from BaseParser:
-- <code>Parser1819</code>: For 1819 News
-- <code>ParserDailyNews</code>: For Alabama Daily News
-- <code>ParserAppealsAL</code>: For Alabama Appeals Court</p>
-<h3 id="main-module">Main Module<a class="headerlink" href="#main-module" title="Permanent link">&para;</a></h3>
-<p>The <code>__main__.py</code> module handles:
-- Command-line argument parsing
-- Parser instantiation
-- Execution flow
-- Output management</p>
-<h2 id="class-hierarchy">Class Hierarchy<a class="headerlink" href="#class-hierarchy" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>BaseParser
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├── Parser1819
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>├── ParserDailyNews
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>└── ParserAppealsAL
+<h1 id="workflows">Workflows<a class="headerlink" href="#workflows" title="Permanent link">&para;</a></h1>
+<p>This document describes the internal workflows and processing patterns used by OPAL parsers, particularly focusing on the court parsing system.</p>
+<h2 id="court-id-discovery-workflow">Court ID Discovery Workflow<a class="headerlink" href="#court-id-discovery-workflow" title="Permanent link">&para;</a></h2>
+<p>The CourtSearchBuilder automatically discovers available courts and their IDs from the Alabama Appeals Court portal:</p>
+<pre class="mermaid"><code>graph TD
+    A[Navigate to Search Page] --&gt; B[Wait for Page Load]
+    B --&gt; C{Court Elements Found?}
+    C --&gt;|Yes| D[Extract Court Options]
+    C --&gt;|No| E[Use Fallback IDs]
+    D --&gt; F[Parse Court Names and IDs]
+    F --&gt; G[Store Court Mapping]
+    E --&gt; G</code></pre>
+<h3 id="implementation-details">Implementation Details<a class="headerlink" href="#implementation-details" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Navigation</strong>: Load <code>https://publicportal.alappeals.gov/portal/search/case</code></li>
+<li><strong>Element Detection</strong>: Look for court selection elements</li>
+<li><strong>Data Extraction</strong>: Parse option elements for court names and values</li>
+<li><strong>Fallback Strategy</strong>: Use known court ID for civil court if discovery fails</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Actual implementation in CourtSearchBuilder</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">discover_court_ids</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parser_instance</span><span class="p">):</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>        <span class="c1"># Navigate to search page</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        <span class="n">parser_instance</span><span class="o">.</span><span class="n">driver</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://publicportal.alappeals.gov/portal/search/case&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>        <span class="c1"># Wait for page load</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>        <span class="c1"># Try to find court selection elements</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>        <span class="n">court_elements</span> <span class="o">=</span> <span class="n">parser_instance</span><span class="o">.</span><span class="n">driver</span><span class="o">.</span><span class="n">find_elements</span><span class="p">(</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>            <span class="n">By</span><span class="o">.</span><span class="n">XPATH</span><span class="p">,</span> 
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>            <span class="s2">&quot;//select[@id=&#39;court&#39;] | //select[contains(@name, &#39;court&#39;)] | //div[contains(@class, &#39;court&#39;)]&quot;</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>        <span class="p">)</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>        <span class="k">if</span> <span class="n">court_elements</span><span class="p">:</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>            <span class="c1"># Extract court IDs from dropdown options</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>            <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">court_elements</span><span class="p">:</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>                <span class="n">options</span> <span class="o">=</span> <span class="n">element</span><span class="o">.</span><span class="n">find_elements</span><span class="p">(</span><span class="n">By</span><span class="o">.</span><span class="n">TAG_NAME</span><span class="p">,</span> <span class="s2">&quot;option&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>                <span class="k">for</span> <span class="n">option</span> <span class="ow">in</span> <span class="n">options</span><span class="p">:</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>                    <span class="n">court_name</span> <span class="o">=</span> <span class="n">option</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>                    <span class="n">court_id</span> <span class="o">=</span> <span class="n">option</span><span class="o">.</span><span class="n">get_attribute</span><span class="p">(</span><span class="s2">&quot;value&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>                    <span class="c1"># Map court names to internal keys</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>                    <span class="k">if</span> <span class="s2">&quot;civil&quot;</span> <span class="ow">in</span> <span class="n">court_name</span> <span class="ow">and</span> <span class="s2">&quot;appeals&quot;</span> <span class="ow">in</span> <span class="n">court_name</span><span class="p">:</span>
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>                        <span class="bp">self</span><span class="o">.</span><span class="n">courts</span><span class="p">[</span><span class="s1">&#39;civil&#39;</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">court_id</span>
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>                    <span class="k">elif</span> <span class="s2">&quot;criminal&quot;</span> <span class="ow">in</span> <span class="n">court_name</span> <span class="ow">and</span> <span class="s2">&quot;appeals&quot;</span> <span class="ow">in</span> <span class="n">court_name</span><span class="p">:</span>
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>                        <span class="bp">self</span><span class="o">.</span><span class="n">courts</span><span class="p">[</span><span class="s1">&#39;criminal&#39;</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">court_id</span>
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>                    <span class="k">elif</span> <span class="s2">&quot;supreme&quot;</span> <span class="ow">in</span> <span class="n">court_name</span><span class="p">:</span>
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>                        <span class="bp">self</span><span class="o">.</span><span class="n">courts</span><span class="p">[</span><span class="s1">&#39;supreme&#39;</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">court_id</span>
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>        <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>            <span class="c1"># Use known working ID for civil court</span>
+<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">courts</span><span class="p">[</span><span class="s1">&#39;civil&#39;</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;68f021c4-6a44-4735-9a76-5360b2e8af13&#39;</span>
+<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>
+<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>        <span class="c1"># Fallback to known civil court ID</span>
+<a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">courts</span><span class="p">[</span><span class="s1">&#39;civil&#39;</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;68f021c4-6a44-4735-9a76-5360b2e8af13&#39;</span>
 </code></pre></div>
-<h2 id="data-flow">Data Flow<a class="headerlink" href="#data-flow" title="Permanent link">&para;</a></h2>
+<h2 id="dynamic-pagination-workflow">Dynamic Pagination Workflow<a class="headerlink" href="#dynamic-pagination-workflow" title="Permanent link">&para;</a></h2>
+<p>The system handles JavaScript-based pagination:</p>
+<pre class="mermaid"><code>graph TD
+    A[Load First Page] --&gt; B[Extract Current URL]
+    B --&gt; C[Parse Page Info from URL]
+    C --&gt; D{Total Pages &gt; 1?}
+    D --&gt;|Yes| E[Generate Page URLs]
+    D --&gt;|No| F[Process Single Page]
+    E --&gt; G[Process Each Page]
+    G --&gt; H[Aggregate Results]
+    F --&gt; H</code></pre>
+<h3 id="steps">Steps:<a class="headerlink" href="#steps" title="Permanent link">&para;</a></h3>
 <ol>
-<li><strong>Input</strong>: User provides URL and parser type via CLI</li>
-<li><strong>Initialization</strong>: Main module creates parser instance</li>
-<li><strong>Scraping</strong>: Parser fetches and processes web pages</li>
-<li><strong>Extraction</strong>: Parser extracts structured data</li>
-<li><strong>Output</strong>: Data saved to JSON file</li>
+<li><strong>Initial Load</strong>: Load search results first page</li>
+<li><strong>URL Analysis</strong>: Extract pagination data from JavaScript-updated URL</li>
+<li><strong>Page Generation</strong>: Create URLs for all result pages</li>
+<li><strong>Sequential Processing</strong>: Load and extract data from each page</li>
+<li><strong>Result Aggregation</strong>: Combine all extracted cases</li>
 </ol>
-<h2 id="key-design-patterns">Key Design Patterns<a class="headerlink" href="#key-design-patterns" title="Permanent link">&para;</a></h2>
-<h3 id="template-method-pattern">Template Method Pattern<a class="headerlink" href="#template-method-pattern" title="Permanent link">&para;</a></h3>
-<p>BaseParser defines the scraping workflow:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">BaseParser</span><span class="p">:</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">scrape</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">setup</span><span class="p">()</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>        <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">extract_data</span><span class="p">()</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">save_output</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-</code></pre></div></p>
-<h3 id="factory-pattern">Factory Pattern<a class="headerlink" href="#factory-pattern" title="Permanent link">&para;</a></h3>
-<p>Parser selection based on command-line argument:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">parsers</span> <span class="o">=</span> <span class="p">{</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="s1">&#39;Parser1819&#39;</span><span class="p">:</span> <span class="n">Parser1819</span><span class="p">,</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="s1">&#39;ParserDailyNews&#39;</span><span class="p">:</span> <span class="n">ParserDailyNews</span><span class="p">,</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="s1">&#39;court&#39;</span><span class="p">:</span> <span class="n">ParserAppealsAL</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">}</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="n">parser_class</span> <span class="o">=</span> <span class="n">parsers</span><span class="p">[</span><span class="n">args</span><span class="o">.</span><span class="n">parser</span><span class="p">]</span>
-</code></pre></div></p>
-<h2 id="extension-points">Extension Points<a class="headerlink" href="#extension-points" title="Permanent link">&para;</a></h2>
-<h3 id="adding-new-parsers">Adding New Parsers<a class="headerlink" href="#adding-new-parsers" title="Permanent link">&para;</a></h3>
-<ol>
-<li>Create new class inheriting from BaseParser</li>
-<li>Implement required methods:</li>
-<li><code>extract_article_data()</code></li>
-<li><code>get_article_links()</code></li>
-<li><code>parse_article()</code></li>
-<li>Register in main module</li>
-</ol>
-<h3 id="customizing-output">Customizing Output<a class="headerlink" href="#customizing-output" title="Permanent link">&para;</a></h3>
-<p>Override <code>format_output()</code> method to customize data structure.</p>
-<h3 id="adding-features">Adding Features<a class="headerlink" href="#adding-features" title="Permanent link">&para;</a></h3>
+<h2 id="session-management-workflow">Session Management Workflow<a class="headerlink" href="#session-management-workflow" title="Permanent link">&para;</a></h2>
+<p>Handling session-based URLs and expiration:</p>
+<pre class="mermaid"><code>graph TD
+    A[Receive Custom URL] --&gt; B{Check URL Age}
+    B --&gt;|Fresh| C[Use URL Directly]
+    B --&gt;|Possibly Expired| D[Warn User]
+    D --&gt; E{User Proceeds?}
+    E --&gt;|Yes| C
+    E --&gt;|No| F[Request New Search]
+    C --&gt; G[Process Results]
+    G --&gt; H{Session Valid?}
+    H --&gt;|Yes| I[Continue Processing]
+    H --&gt;|No| J[Session Expired Error]</code></pre>
+<h3 id="key-considerations">Key Considerations:<a class="headerlink" href="#key-considerations" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Authentication: Add login methods</li>
-<li>Caching: Implement request caching</li>
-<li>Rate limiting: Add delay mechanisms</li>
+<li>URLs contain session tokens that expire after ~30 minutes</li>
+<li>System warns users about potentially expired URLs</li>
+<li>Provides clear error messages when sessions expire</li>
+<li>Suggests creating new search for expired sessions</li>
 </ul>
+<h2 id="error-recovery-workflow">Error Recovery Workflow<a class="headerlink" href="#error-recovery-workflow" title="Permanent link">&para;</a></h2>
+<p>Robust error handling throughout the extraction process:</p>
+<pre class="mermaid"><code>graph TD
+    A[Start Extraction] --&gt; B{Error Occurred?}
+    B --&gt;|No| C[Continue Processing]
+    B --&gt;|Yes| D{Error Type}
+    D --&gt;|Timeout| E[Retry with Backoff]
+    D --&gt;|Element Not Found| F[Skip and Log]
+    D --&gt;|Driver Crash| G[Restart Driver]
+    D --&gt;|Network Error| H[Wait and Retry]
+    E --&gt; I{Retry Successful?}
+    I --&gt;|Yes| C
+    I --&gt;|No| J[Log Error and Continue]
+    F --&gt; J
+    G --&gt; K[Reinitialize and Resume]
+    H --&gt; I</code></pre>
+<h3 id="error-types-and-handling">Error Types and Handling:<a class="headerlink" href="#error-types-and-handling" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Selenium Timeouts</strong>: Retry with exponential backoff</li>
+<li><strong>Stale Elements</strong>: Re-locate elements before interaction</li>
+<li><strong>Driver Crashes</strong>: Restart driver and resume from last page</li>
+<li><strong>Network Errors</strong>: Implement retry logic with delays</li>
+</ol>
+<h2 id="data-extraction-workflow">Data Extraction Workflow<a class="headerlink" href="#data-extraction-workflow" title="Permanent link">&para;</a></h2>
+<p>Extracting case information from court pages:</p>
+<pre class="mermaid"><code>graph TD
+    A[Page Loaded] --&gt; B[Locate Case Table]
+    B --&gt; C[Find All Case Rows]
+    C --&gt; D[For Each Row]
+    D --&gt; E[Extract Case Number]
+    E --&gt; F[Extract Case Link]
+    F --&gt; G[Extract Case Title]
+    G --&gt; H[Extract Metadata]
+    H --&gt; I[Validate Data]
+    I --&gt; J{Valid?}
+    J --&gt;|Yes| K[Add to Results]
+    J --&gt;|No| L[Log Warning]
+    K --&gt; M{More Rows?}
+    L --&gt; M
+    M --&gt;|Yes| D
+    M --&gt;|No| N[Return Results]</code></pre>
+<h3 id="data-points-extracted">Data Points Extracted:<a class="headerlink" href="#data-points-extracted" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Case number and detail link</li>
+<li>Case title</li>
+<li>Court name</li>
+<li>Classification/type</li>
+<li>Filing date</li>
+<li>Current status</li>
+</ul>
+<h2 id="integration-workflow">Integration Workflow<a class="headerlink" href="#integration-workflow" title="Permanent link">&para;</a></h2>
+<p>How OPAL components work together:</p>
+<pre class="mermaid"><code>graph TD
+    A[User Request] --&gt; B{Use Custom URL?}
+    B --&gt;|Yes| C[extract_court_cases_with_params with custom_url]
+    B --&gt;|No| D[CourtSearchBuilder]
+    D --&gt; E[discover_court_ids with ParserAppealsAL]
+    E --&gt; F[Build Search Parameters]
+    F --&gt; G[build_url]
+    C --&gt; H[ParserAppealsAL.parse_article]
+    G --&gt; H
+    H --&gt; I[court_url_paginator functions]
+    I --&gt; J[Process All Pages]
+    J --&gt; K[Aggregate Results]
+    K --&gt; L[Generate JSON/CSV Output]</code></pre>
+<h2 id="command-line-workflow">Command-Line Workflow<a class="headerlink" href="#command-line-workflow" title="Permanent link">&para;</a></h2>
+<p>Processing flow for CLI usage:</p>
+<pre class="mermaid"><code>graph TD
+    A[Parse CLI Arguments] --&gt; B{URL Provided?}
+    B --&gt;|Yes| C[Use Custom URL Path]
+    B --&gt;|No| D[Validate Search Parameters]
+    D --&gt; E[extract_court_cases_with_params]
+    C --&gt; E
+    E --&gt; F[CourtSearchBuilder.discover_court_ids]
+    F --&gt; G[Build Search URL]
+    G --&gt; H[ParserAppealsAL Processing]
+    H --&gt; I[Paginate Results]
+    I --&gt; J[Save JSON Output]
+    J --&gt; K[Save CSV Output]
+    K --&gt; L[Display Summary]</code></pre>
+<h2 id="performance-optimization-workflow">Performance Optimization Workflow<a class="headerlink" href="#performance-optimization-workflow" title="Permanent link">&para;</a></h2>
+<p>Strategies for efficient extraction:</p>
+<ol>
+<li><strong>Batch Processing</strong></li>
+<li>Process multiple pages concurrently where possible</li>
+<li>
+<p>Aggregate results before writing to disk</p>
+</li>
+<li>
+<p><strong>Caching Strategy</strong></p>
+</li>
+<li>Cache court IDs after discovery</li>
+<li>
+<p>Reuse WebDriver instance across pages</p>
+</li>
+<li>
+<p><strong>Rate Limiting</strong></p>
+</li>
+<li>Implement delays between requests</li>
+<li>
+<p>Respect server resources</p>
+</li>
+<li>
+<p><strong>Memory Management</strong></p>
+</li>
+<li>Process large result sets in chunks</li>
+<li>Clear driver cache periodically</li>
+</ol>
+<h2 id="testing-workflow">Testing Workflow<a class="headerlink" href="#testing-workflow" title="Permanent link">&para;</a></h2>
+<p>Ensuring reliability:</p>
+<pre class="mermaid"><code>graph TD
+    A[Unit Tests] --&gt; B[Integration Tests]
+    B --&gt; C[End-to-End Tests]
+    C --&gt; D{All Pass?}
+    D --&gt;|Yes| E[Deploy]
+    D --&gt;|No| F[Fix Issues]
+    F --&gt; A</code></pre>
+<h3 id="test-categories">Test Categories:<a class="headerlink" href="#test-categories" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Unit Tests</strong>: Individual function testing</li>
+<li><strong>Integration Tests</strong>: Component interaction</li>
+<li><strong>End-to-End Tests</strong>: Full extraction workflows</li>
+<li><strong>Performance Tests</strong>: Load and speed testing</li>
+</ol>
+<h2 id="debugging-workflow">Debugging Workflow<a class="headerlink" href="#debugging-workflow" title="Permanent link">&para;</a></h2>
+<p>Troubleshooting extraction issues:</p>
+<ol>
+<li>
+<p><strong>Enable Debug Logging</strong>
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">)</span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Run in Non-Headless Mode</strong>
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">parser</span> <span class="o">=</span> <span class="n">ParserAppealsAL</span><span class="p">(</span><span class="n">headless</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Add Breakpoints</strong></p>
+</li>
+<li>Inspect page state</li>
+<li>Verify element selection</li>
+<li>
+<p>Check data extraction</p>
+</li>
+<li>
+<p><strong>Save Screenshots</strong>
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">driver</span><span class="o">.</span><span class="n">save_screenshot</span><span class="p">(</span><span class="s2">&quot;debug_state.png&quot;</span><span class="p">)</span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Export Page Source</strong>
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;page_source.html&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">driver</span><span class="o">.</span><span class="n">page_source</span><span class="p">)</span>
+</code></pre></div></p>
+</li>
+</ol>
 
 
 
