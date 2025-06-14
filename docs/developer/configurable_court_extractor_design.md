@@ -2,7 +2,7 @@
 
 ## Problem Statement
 
-The current `extract_all_court_cases.py` has hardcoded search parameters in the URL, making it inflexible for different search criteria. Users cannot easily change:
+A former version of `extract_all_court_cases.py` had hardcoded search parameters in the URL, making it inflexible for different search criteria. Users couldn't dynamically change:
 - Date ranges
 - Case number filters
 - Case title filters
@@ -18,10 +18,14 @@ I designed a configurable court extractor that separates URL construction from d
 
 **Purpose**: Encapsulates the complex URL building logic for Alabama Appeals Court searches.
 
-**Why I designed it this way**:
+#### **Why I designed it this way**:
+
 - **Separation of Concerns**: URL building is separate from data extraction
+
 - **Maintainability**: Changes to URL structure only affect one class
+
 - **Reusability**: Can be used by different scripts or tools
+
 - **Readability**: Clear methods for each search parameter
 
 ```python
@@ -187,9 +191,9 @@ result = extract_court_cases_with_params(custom_url=your_url, max_pages=10)
 
 Modern web applications often generate session-specific or dynamic identifiers that change between visits. The Alabama Appeals Court portal appears to use dynamic court IDs that are assigned during the user's session rather than being static, predictable values.
 
-### Solution Approach
+### Solution
 
-**Option 1: Automatic Discovery (Recommended)**
+**Chosen Solution: Automatic Discovery**
 The `discover_court_ids()` method navigates to the court's search interface and programmatically extracts the current court IDs by:
 
 1. **Loading the search page** - Navigates to the main case search interface
@@ -242,6 +246,7 @@ The Alabama Appeals Court portal uses a complex nested URL structure:
 ```
 
 **My approach**:
+
 1. Build parameters as nested dictionaries
 2. Convert to the portal's specific encoding format
 3. Handle special characters and escaping automatically
@@ -267,7 +272,7 @@ The Alabama Appeals Court portal uses a complex nested URL structure:
 - Real-time feedback on processing status
 - Clear indication of completion
 
-## Advantages Over Current Implementation
+## Advantages Over Former Implementation
 
 ### 1. Flexibility
 - **Before**: Fixed search parameters in hardcoded URL
@@ -299,18 +304,12 @@ The Alabama Appeals Court portal uses a complex nested URL structure:
 
 ## Integration with Existing Code
 
-The new extractor can coexist with the current implementation:
+The new extractor coexists with the current implementation:
 - Uses the same `ParserAppealsAL` class
 - Produces the same JSON/CSV output format
 - Follows the same error handling patterns
 
 ## Future Enhancements
-
-### Additional Search Parameters
-- Court type selection
-- Attorney name filters
-- Case status filters
-- Judge name filters
 
 ### Advanced Features
 - Save/load search configurations
