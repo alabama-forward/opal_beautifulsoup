@@ -88,9 +88,9 @@ nav:
     - Creating New Parsers: developer/creating-parsers.md
     - ParserAppealsAL Documentation: developer/ParserAppealsAL_documentation.md
     - Court Extractor Design: developer/configurable_court_extractor_design.md
-    - Court Scraper Analysis: developer/court_scraper_analysis.md
+    # - Court Scraper Analysis: developer/court_scraper_analysis.md
     # - Court Scraper Requirements: developer/court_scraper_requirements.md
-    - Alabama Appeals Instructions: developer/alabama_appeals_court_scraper_instructions.md
+    # - Alabama Appeals Instructions: developer/alabama_appeals_court_scraper_instructions.md
     - User Agent Headers Guide: developer/user_agent_headers_guide.md
   - About:
     - Contributing: about/contributing.md
