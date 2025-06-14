@@ -33,6 +33,9 @@ theme:
   - search.highlight
   - content.code.copy
 
+extra_javascript:
+  - https://unpkg.com/mermaid@10.6.1/dist/mermaid.min.js
+
 plugins:
   - search
   - autorefs
