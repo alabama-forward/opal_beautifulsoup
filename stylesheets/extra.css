@@ -2,12 +2,12 @@
 
 /* Root variables for consistent theming */
 :root {
-  --opal-primary: #1976d2;
-  --opal-secondary: #388e3c;
+  --opal-primary: #B53D1A;
+  --opal-secondary: #363D4A;
   --opal-accent: #ff5722;
-  --opal-text-primary: #212121;
-  --opal-text-secondary: #757575;
-  --opal-background: #fafafa;
+  --opal-text-primary: #363D4A;
+  --opal-text-secondary: #B53D1A;
+  --opal-background: #EBE5D6;
   --opal-surface: #ffffff;
   --opal-border: #e0e0e0;
   --opal-code-bg: #f5f5f5;
@@ -20,8 +20,8 @@
 
 /* Dark mode variables */
 [data-md-color-scheme="slate"] {
-  --opal-primary: #64b5f6;
-  --opal-secondary: #81c784;
+  --opal-primary: #B53D1A;
+  --opal-secondary: #EBE5D6;
   --opal-accent: #ff7043;
   --opal-text-primary: #ffffff;
   --opal-text-secondary: #b0b0b0;
