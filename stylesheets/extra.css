@@ -60,7 +60,7 @@
 
 /* Enhanced code blocks */
 .md-typeset .highlight {
-  background-color: var(--opal-code-bg);
+  background-color: var(#EBE5D6);
   border-radius: 8px;
   border: 1px solid var(--opal-border);
   margin: 1rem 0;
