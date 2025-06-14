@@ -13,10 +13,6 @@
       
       
       
-        <link rel="prev" href="../court_scraper_analysis/">
-      
-      
-        <link rel="next" href="../user_agent_headers_guide/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +20,7 @@
     
     
       
-        <title>Alabama Appeals Instructions - OPAL - Oppositional Positions in Alabama</title>
+        <title>Alabama Appeals Court Public Portal Scraper - Implementation Instructions - OPAL - Oppositional Positions in Alabama</title>
       
     
     
@@ -112,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Alabama Appeals Instructions
+              Alabama Appeals Court Public Portal Scraper - Implementation Instructions
             
           </span>
         </div>
@@ -290,12 +286,10 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../architecture/" class="md-tabs__link">
           
   
@@ -888,31 +882,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -925,7 +916,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Developer Guide
@@ -1088,208 +1079,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../court_scraper_analysis/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Court Scraper Analysis
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Alabama Appeals Instructions
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    Alabama Appeals Instructions
-    
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-by-step-implementation-instructions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step-by-Step Implementation Instructions
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Step-by-Step Implementation Instructions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1-update-dependencies" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 1: Update Dependencies
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2-create-court-case-parser-module" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 2: Create Court Case Parser Module
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-3-create-custom-url-pagination-handler" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 3: Create Custom URL Pagination Handler
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-4-implement-data-extraction-logic" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 4: Implement Data Extraction Logic
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-5-define-output-format" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 5: Define Output Format
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-6-integrate-with-opal-cli" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 6: Integrate with OPAL CLI
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-7-handle-technical-requirements" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 7: Handle Technical Requirements
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-8-testing-urls" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 8: Testing URLs
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-9-final-integration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 9: Final Integration
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#expected-deliverables" class="md-nav__link">
-    <span class="md-ellipsis">
-      Expected Deliverables
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
