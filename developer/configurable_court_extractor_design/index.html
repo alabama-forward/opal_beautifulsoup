@@ -1161,6 +1161,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="1. CourtSearchBuilder Class">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-i-designed-it-this-way" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why I designed it this way:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -1347,9 +1362,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#solution-approach" class="md-nav__link">
+  <a href="#solution" class="md-nav__link">
     <span class="md-ellipsis">
-      Solution Approach
+      Solution
     </span>
   </a>
   
@@ -1421,13 +1436,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#advantages-over-current-implementation" class="md-nav__link">
+  <a href="#advantages-over-former-implementation" class="md-nav__link">
     <span class="md-ellipsis">
-      Advantages Over Current Implementation
+      Advantages Over Former Implementation
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Advantages Over Current Implementation">
+    <nav class="md-nav" aria-label="Advantages Over Former Implementation">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1516,15 +1531,6 @@
   
     <nav class="md-nav" aria-label="Future Enhancements">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#additional-search-parameters" class="md-nav__link">
-    <span class="md-ellipsis">
-      Additional Search Parameters
-    </span>
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#advanced-features" class="md-nav__link">
@@ -1649,29 +1655,6 @@
   
   <span class="md-ellipsis">
     Court Scraper Analysis
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../court_scraper_requirements/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Court Scraper Requirements
     
   </span>
   
@@ -1894,6 +1877,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="1. CourtSearchBuilder Class">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-i-designed-it-this-way" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why I designed it this way:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -2080,9 +2078,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#solution-approach" class="md-nav__link">
+  <a href="#solution" class="md-nav__link">
     <span class="md-ellipsis">
-      Solution Approach
+      Solution
     </span>
   </a>
   
@@ -2154,13 +2152,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#advantages-over-current-implementation" class="md-nav__link">
+  <a href="#advantages-over-former-implementation" class="md-nav__link">
     <span class="md-ellipsis">
-      Advantages Over Current Implementation
+      Advantages Over Former Implementation
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Advantages Over Current Implementation">
+    <nav class="md-nav" aria-label="Advantages Over Former Implementation">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2249,15 +2247,6 @@
   
     <nav class="md-nav" aria-label="Future Enhancements">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#additional-search-parameters" class="md-nav__link">
-    <span class="md-ellipsis">
-      Additional Search Parameters
-    </span>
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#advanced-features" class="md-nav__link">
@@ -2378,7 +2367,7 @@
 
 <h1 id="configurable-court-extractor-design">Configurable Court Extractor Design<a class="headerlink" href="#configurable-court-extractor-design" title="Permanent link">&para;</a></h1>
 <h2 id="problem-statement">Problem Statement<a class="headerlink" href="#problem-statement" title="Permanent link">&para;</a></h2>
-<p>The current <code>extract_all_court_cases.py</code> has hardcoded search parameters in the URL, making it inflexible for different search criteria. Users cannot easily change:
+<p>A former version of <code>extract_all_court_cases.py</code> had hardcoded search parameters in the URL, making it inflexible for different search criteria. Users couldn't dynamically change:
 - Date ranges
 - Case number filters
 - Case title filters
@@ -2388,11 +2377,21 @@
 <h2 id="architecture">Architecture<a class="headerlink" href="#architecture" title="Permanent link">&para;</a></h2>
 <h3 id="1-courtsearchbuilder-class">1. CourtSearchBuilder Class<a class="headerlink" href="#1-courtsearchbuilder-class" title="Permanent link">&para;</a></h3>
 <p><strong>Purpose</strong>: Encapsulates the complex URL building logic for Alabama Appeals Court searches.</p>
-<p><strong>Why I designed it this way</strong>:
-- <strong>Separation of Concerns</strong>: URL building is separate from data extraction
-- <strong>Maintainability</strong>: Changes to URL structure only affect one class
-- <strong>Reusability</strong>: Can be used by different scripts or tools
-- <strong>Readability</strong>: Clear methods for each search parameter</p>
+<h4 id="why-i-designed-it-this-way"><strong>Why I designed it this way</strong>:<a class="headerlink" href="#why-i-designed-it-this-way" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><strong>Separation of Concerns</strong>: URL building is separate from data extraction</p>
+</li>
+<li>
+<p><strong>Maintainability</strong>: Changes to URL structure only affect one class</p>
+</li>
+<li>
+<p><strong>Reusability</strong>: Can be used by different scripts or tools</p>
+</li>
+<li>
+<p><strong>Readability</strong>: Clear methods for each search parameter</p>
+</li>
+</ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">CourtSearchBuilder</span><span class="p">:</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">base_url</span> <span class="o">=</span> <span class="s2">&quot;https://publicportal.alappeals.gov/portal/search/case/results&quot;</span>
@@ -2526,8 +2525,8 @@
 <h2 id="dynamic-court-id-discovery">Dynamic Court ID Discovery<a class="headerlink" href="#dynamic-court-id-discovery" title="Permanent link">&para;</a></h2>
 <h3 id="the-problem-with-dynamic-ids">The Problem with Dynamic IDs<a class="headerlink" href="#the-problem-with-dynamic-ids" title="Permanent link">&para;</a></h3>
 <p>Modern web applications often generate session-specific or dynamic identifiers that change between visits. The Alabama Appeals Court portal appears to use dynamic court IDs that are assigned during the user's session rather than being static, predictable values.</p>
-<h3 id="solution-approach">Solution Approach<a class="headerlink" href="#solution-approach" title="Permanent link">&para;</a></h3>
-<p><strong>Option 1: Automatic Discovery (Recommended)</strong>
+<h3 id="solution">Solution<a class="headerlink" href="#solution" title="Permanent link">&para;</a></h3>
+<p><strong>Chosen Solution: Automatic Discovery</strong>
 The <code>discover_court_ids()</code> method navigates to the court's search interface and programmatically extracts the current court IDs by:</p>
 <ol>
 <li><strong>Loading the search page</strong> - Navigates to the main case search interface</li>
@@ -2572,10 +2571,12 @@ When court ID discovery completely fails, users can:</p>
 <p>The Alabama Appeals Court portal uses a complex nested URL structure:
 <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>?criteria=~%28advanced~false~courtID~%27{court_id}~page~%28...%29~sort~%28...%29~case~%28...%29%29
 </code></pre></div></p>
-<p><strong>My approach</strong>:
-1. Build parameters as nested dictionaries
-2. Convert to the portal's specific encoding format
-3. Handle special characters and escaping automatically</p>
+<p><strong>My approach</strong>:</p>
+<ol>
+<li>Build parameters as nested dictionaries</li>
+<li>Convert to the portal's specific encoding format</li>
+<li>Handle special characters and escaping automatically</li>
+</ol>
 <h3 id="error-handling">Error Handling<a class="headerlink" href="#error-handling" title="Permanent link">&para;</a></h3>
 <p><strong>Graceful degradation</strong>:
 - If total page count can't be determined, process incrementally
@@ -2591,7 +2592,7 @@ When court ID discovery completely fails, users can:</p>
 <p><strong>Progress reporting</strong>:
 - Real-time feedback on processing status
 - Clear indication of completion</p>
-<h2 id="advantages-over-current-implementation">Advantages Over Current Implementation<a class="headerlink" href="#advantages-over-current-implementation" title="Permanent link">&para;</a></h2>
+<h2 id="advantages-over-former-implementation">Advantages Over Former Implementation<a class="headerlink" href="#advantages-over-former-implementation" title="Permanent link">&para;</a></h2>
 <h3 id="1-flexibility">1. Flexibility<a class="headerlink" href="#1-flexibility" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>Before</strong>: Fixed search parameters in hardcoded URL</li>
@@ -2628,18 +2629,11 @@ When court ID discovery completely fails, users can:</p>
 <li><strong>After</strong>: Automatic discovery → manual discovery → custom URL bypass</li>
 </ul>
 <h2 id="integration-with-existing-code">Integration with Existing Code<a class="headerlink" href="#integration-with-existing-code" title="Permanent link">&para;</a></h2>
-<p>The new extractor can coexist with the current implementation:
+<p>The new extractor coexists with the current implementation:
 - Uses the same <code>ParserAppealsAL</code> class
 - Produces the same JSON/CSV output format
 - Follows the same error handling patterns</p>
 <h2 id="future-enhancements">Future Enhancements<a class="headerlink" href="#future-enhancements" title="Permanent link">&para;</a></h2>
-<h3 id="additional-search-parameters">Additional Search Parameters<a class="headerlink" href="#additional-search-parameters" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Court type selection</li>
-<li>Attorney name filters</li>
-<li>Case status filters</li>
-<li>Judge name filters</li>
-</ul>
 <h3 id="advanced-features">Advanced Features<a class="headerlink" href="#advanced-features" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Save/load search configurations</li>
