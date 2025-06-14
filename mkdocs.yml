@@ -42,7 +42,11 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - admonition
   - pymdownx.details
   - pymdownx.tabbed:
@@ -58,13 +62,30 @@ nav:
     - Configuration: getting-started/configuration.md
   - User Guide:
     - CLI Usage: user-guide/cli-usage.md
+    - Command Line Tools: user-guide/command_line_tools.md
+    - Configurable Court Extractor: user-guide/configurable_court_extractor.md
     - Available Parsers: user-guide/parsers.md
     - Output Formats: user-guide/output-formats.md
+  - API Reference:
+    - Complete API Reference: api_reference.md
+    - Data Structures: api/data_structures.md
+    - ParserAppealsAL: api/parser-appeals-al.md
+    - Court URL Paginator: api/court_url_paginator.md
+    - Base Parser: api/base-parser.md
+    - Parser1819: api/parser-1819.md
+    - ParserDailyNews: api/parser-daily-news.md
   - Developer Guide:
     - Architecture: developer/architecture.md
+    - Workflows: developer/workflows.md
+    - Error Handling: developer/error_handling.md
     - BaseParser Guide: developer/BaseParser_web_scraping_guide.md
     - Creating New Parsers: developer/creating-parsers.md
-    - ParserAppealsAL Documention: developer/ParserAppealsAL_documentation.md
+    - ParserAppealsAL Documentation: developer/ParserAppealsAL_documentation.md
+    - Court Extractor Design: developer/configurable_court_extractor_design.md
+    - Court Scraper Analysis: developer/court_scraper_analysis.md
+    - Court Scraper Requirements: developer/court_scraper_requirements.md
+    - Alabama Appeals Instructions: developer/alabama_appeals_court_scraper_instructions.md
+    - User Agent Headers Guide: developer/user_agent_headers_guide.md
   - About:
     - Contributing: about/contributing.md
     - License: about/license.md
