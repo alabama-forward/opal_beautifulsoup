@@ -1,4 +1,4 @@
-# API Reference
+# Reference Guide
 
 Complete reference for all OPAL components and their integration points.
 
