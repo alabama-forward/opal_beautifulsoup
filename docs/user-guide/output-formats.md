@@ -1,107 +1,58 @@
 # Output Formats
 
-OPAL outputs scraped data in structured JSON format for easy analysis and processing.
+For detailed output examples with real data, see [Output Examples](output-examples.md).
 
-## JSON Structure
+## Overview
 
-### News Articles
+OPAL produces structured data in two main formats:
+- **JSON**: Complete data with all fields and metadata
+- **CSV**: Court data in spreadsheet format (court scraping only)
 
-```json
-{
-  "results": [
-    {
-      "title": "Article headline",
-      "content": "Full article text...",
-      "date": "2024-01-15",
-      "author": "John Doe",
-      "url": "https://example.com/article-url",
-      "tags": ["politics", "alabama"],
-      "image_url": "https://example.com/image.jpg"
-    }
-  ],
-  "metadata": {
-    "source": "Parser1819",
-    "base_url": "https://1819news.com/",
-    "scraped_at": "2024-01-15T10:30:00Z",
-    "total_items": 50,
-    "pages_scraped": 5
-  }
-}
-```
+## Data Processing
 
-### Court Cases
-
-```json
-{
-  "results": [
-    {
-      "case_number": "2024-CV-001234",
-      "case_title": "State v. Defendant",
-      "court": "Alabama Court of Civil Appeals",
-      "date_filed": "2024-01-10",
-      "status": "Active",
-      "parties": {
-        "plaintiff": "State of Alabama",
-        "defendant": "John Doe"
-      },
-      "docket_entries": [
-        {
-          "date": "2024-01-10",
-          "description": "Case filed",
-          "document_url": "https://example.com/doc.pdf"
-        }
-      ]
-    }
-  ],
-  "metadata": {
-    "source": "ParserAppealsAL",
-    "scraped_at": "2024-01-15T10:30:00Z",
-    "total_cases": 25
-  }
-}
-```
-
-## Working with Output
-
-### Python Example
-
+### Python Analysis
 ```python
 import json
+import pandas as pd
 
-# Load scraped data
-with open('opal_output.json', 'r') as f:
+# Load and analyze news data
+with open('output.json', 'r') as f:
     data = json.load(f)
 
-# Access articles
-for article in data['results']:
-    print(f"Title: {article['title']}")
-    print(f"Date: {article['date']}")
-    print(f"URL: {article['url']}")
-    print("---")
-
-# Get metadata
-print(f"Total items: {data['metadata']['total_items']}")
+# Convert to DataFrame for analysis
+df = pd.DataFrame(data['articles'])
+print(f"Found {len(df)} articles")
+print(df['date'].value_counts())
 ```
 
-### Data Analysis
+### Excel Integration
+- JSON files can be imported into Excel using Power Query
+- CSV files open directly in Excel
+- Use pivot tables for data analysis
 
-The JSON output can be easily imported into:
-- Pandas DataFrames for analysis
-- Excel/CSV for spreadsheet work
-- Database systems for storage
-- Visualization tools for insights
+### Database Storage
+The structured JSON format works well with:
+- MongoDB (document storage)
+- PostgreSQL (JSON columns)
+- SQLite (for small datasets)
 
-## Error Handling
+## Advanced Processing
 
-Failed scrapes include error information:
-
-```json
-{
-  "results": [],
-  "metadata": {
-    "source": "Parser1819",
-    "error": "Connection timeout",
-    "scraped_at": "2024-01-15T10:30:00Z"
-  }
-}
+### Filtering Results
+```python
+# Filter articles by date
+recent_articles = [
+    article for article in data['articles'] 
+    if article['date'] >= '2024-01-01'
+]
 ```
+
+### Data Validation
+```python
+# Check for missing data
+for article in data['articles']:
+    if not article.get('title'):
+        print(f"Missing title: {article}")
+```
+
+For complete output structure and real examples, see [Output Examples](output-examples.md).
