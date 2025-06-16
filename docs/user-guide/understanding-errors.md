@@ -2,6 +2,8 @@
 
 This guide helps you understand common error messages when using OPAL and provides solutions to fix them. Don't worry - most errors have simple solutions!
 
+**For developers**: See [Error Handling](../developer/error_handling.md) for technical implementation details and error handling strategies.
+
 ## Common Installation and Setup Errors
 
 ### Error: "python is not recognized" (Windows)

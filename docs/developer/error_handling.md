@@ -1,6 +1,8 @@
 # Error Handling
 
-OPAL includes comprehensive error handling mechanisms to ensure robust data extraction. This document covers error types, handling strategies, and troubleshooting guidance.
+OPAL includes comprehensive error handling mechanisms to ensure robust data extraction. This document covers error types, handling strategies, and troubleshooting guidance **for developers**.
+
+**For users experiencing errors**: See [Understanding Errors](../user-guide/understanding-errors.md) for user-friendly explanations and solutions.
 
 ## Error Categories
 
