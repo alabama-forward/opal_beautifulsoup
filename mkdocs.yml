@@ -79,13 +79,14 @@ nav:
     - Configurable Court Extractor: user-guide/configurable_court_extractor.md
     - Available Parsers: user-guide/parsers.md
   - Class Reference:
-    - Complete Reference Guide: reference_guide.md
+    - Parser Classes Overview: reference/parser-classes-overview.md
     - Data Structures: reference/data_structures.md
     - ParserAppealsAL: reference/parser-appeals-al.md
-    - Court URL Paginator: reference/court_url_paginator.md
-    - Base Parser: reference/base-parser.md
     - Parser1819: reference/parser-1819.md
     - ParserDailyNews: reference/parser-daily-news.md
+    - Base Parser: reference/base-parser.md
+    - Court Extractor Classes: reference/court-extractor-classes.md
+    - Court URL Paginator: reference/court_url_paginator.md
   - Developer Guide:
     - Architecture: developer/architecture.md
     - Workflows: developer/workflows.md

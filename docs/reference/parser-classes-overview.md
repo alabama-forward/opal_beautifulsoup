@@ -1,6 +1,6 @@
-# Reference Guide
+# Parser Classes Overview
 
-Complete reference for all OPAL components and their integration points.
+Complete reference for all OPAL parser classes and their integration points.
 
 ## Core Components
 
