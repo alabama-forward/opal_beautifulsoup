@@ -161,7 +161,7 @@ Click any example to load it into the builder:
     <div class="example-card" onclick="loadExample('court-basic')">
         <h4>⚖️ Basic Court Cases</h4>
         <p>Extract court cases from Alabama Appeals</p>
-        <code>python -m opal --url https://publicportal.alappeals.gov/portal/search/case/results --parser court --max_pages 3</code>
+        <code>python -m opal --url https://publicportal.alappeals.gov/portal/search/case/results --parser ParserAppealsAL --max_pages 3</code>
     </div>
     
     <div class="example-card" onclick="loadExample('news-daily')">
@@ -230,7 +230,7 @@ Click any example to load it into the builder:
                 <option value="">Auto-detect from URL</option>
                 <option value="Parser1819">Parser1819 (for 1819news.com)</option>
                 <option value="ParserDailyNews">ParserDailyNews (for aldailynews.com)</option>
-                <option value="court">court (for court portal)</option>
+                <option value="ParserAppealsAL">ParserAppealsAL (for court portal)</option>
             </select>
         </div>
 
@@ -448,7 +448,7 @@ const examples = {
     'court-basic': {
         commandType: 'basic',
         url: 'https://publicportal.alappeals.gov/portal/search/case/results',
-        parser: 'court',
+        parser: 'ParserAppealsAL',
         maxPages: '3'
     },
     'news-daily': {
@@ -544,7 +544,7 @@ function updateParser() {
             parser.value = 'ParserDailyNews';
             suffix.value = '';
         } else if (url.includes('publicportal.alappeals.gov')) {
-            parser.value = 'court';
+            parser.value = 'ParserAppealsAL';
             suffix.value = '';
         } else {
             parser.value = '';
@@ -553,7 +553,7 @@ function updateParser() {
     }
     
     // Show/hide suffix based on parser
-    if (parser.value === 'court') {
+    if (parser.value === 'ParserAppealsAL') {
         suffixGroup.style.display = 'none';
     } else {
         suffixGroup.style.display = 'block';
@@ -620,7 +620,7 @@ function buildBasicCommand(validation) {
     
     // Optional parameters
     const suffix = document.getElementById('suffix').value;
-    if (suffix && parser !== 'court') {
+    if (suffix && parser !== 'ParserAppealsAL') {
         command += ` --suffix ${suffix}`;
     }
     

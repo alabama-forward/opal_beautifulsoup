@@ -78,11 +78,11 @@ Now let's scrape some court case data. This uses Selenium, so it might take a bi
 
 Run this command:
 ```bash
-python -m opal --url https://publicportal.alappeals.gov/portal/search/case/results --parser court --max_pages 2
+python -m opal --url https://publicportal.alappeals.gov/portal/search/case/results --parser ParserAppealsAL --max_pages 2
 ```
 
 Parameters explained:
-- `--parser court` - Uses the court-specific parser
+- `--parser ParserAppealsAL` - Uses the Alabama Appeals Court parser
 - `--max_pages 2` - Limits to 2 pages of results
 
 ### Step 2: What Happens During Court Scraping

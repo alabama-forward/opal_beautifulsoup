@@ -204,7 +204,7 @@ selenium.common.exceptions.NoSuchElementException: Message: no such element: Una
 2. **Try a different URL**:
    ```bash
    # Use the basic court URL
-   python -m opal --url https://publicportal.alappeals.gov/portal/search/case/results --parser court --max_pages 2
+   python -m opal --url https://publicportal.alappeals.gov/portal/search/case/results --parser ParserAppealsAL --max_pages 2
    ```
 
 3. **Website may have changed**:

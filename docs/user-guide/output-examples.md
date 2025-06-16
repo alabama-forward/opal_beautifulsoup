@@ -92,7 +92,7 @@ Output structure is identical, but content comes from Alabama Daily News:
 
 When you run:
 ```bash
-python -m opal --url https://publicportal.alappeals.gov/portal/search/case/results --parser court
+python -m opal --url https://publicportal.alappeals.gov/portal/search/case/results --parser ParserAppealsAL
 ```
 
 You get both JSON and CSV files. Here's the JSON structure:

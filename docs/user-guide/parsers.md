@@ -34,7 +34,7 @@ OPAL includes several parsers for different Alabama news and government websites
   - Case details extraction
 - **Usage**:
   ```bash
-  python -m opal --url https://publicportal.alappeals.gov/portal/search/case/results --parser court
+  python -m opal --url https://publicportal.alappeals.gov/portal/search/case/results --parser ParserAppealsAL
   ```
 
 ## Parser Capabilities

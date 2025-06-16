@@ -39,7 +39,7 @@ python -m opal --url https://www.aldailynews.com/ --parser ParserDailyNews --max
 
 **Basic Court Scraping:**
 ```bash
-python -m opal --url https://publicportal.alappeals.gov/portal/search/case/results --parser court
+python -m opal --url https://publicportal.alappeals.gov/portal/search/case/results --parser ParserAppealsAL
 ```
 
 **Advanced Court Search:**
@@ -58,7 +58,7 @@ python -m opal.configurable_court_extractor --court criminal --date-period 1m --
 | Parameter | Description | Required | Example |
 |-----------|-------------|----------|---------|
 | `--url` | Base URL of the website to scrape | Yes | `https://1819news.com/` |
-| `--parser` | Parser to use (`Parser1819`, `ParserDailyNews`, `court`) | Yes | `Parser1819` |
+| `--parser` | Parser to use (`Parser1819`, `ParserDailyNews`, `ParserAppealsAL`) | Yes | `Parser1819` |
 | `--suffix` | URL suffix to filter articles | No | `/news/item` |
 | `--max_pages` | Maximum number of pages to scrape | No | `5` |
 

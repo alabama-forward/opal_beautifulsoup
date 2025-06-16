@@ -101,7 +101,7 @@ python -m opal \
 # Save to specific file
 python -m opal \
     --url "https://publicportal.alappeals.gov/portal/search/case/results" \
-    --parser court \
+    --parser ParserAppealsAL \
     --output alabama_appeals_2024.json
 ```
 

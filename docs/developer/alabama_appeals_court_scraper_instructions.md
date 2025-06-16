@@ -99,7 +99,7 @@ Modify existing OPAL files:
    - Use `paginate_court_urls` instead of `get_all_news_urls` for court sites
 
 3. **Update `opal/main.py`**:
-   - Add `--parser court` option to argparse choices
+   - Add `--parser ParserAppealsAL` option to argparse choices
    - Add court parser to the parser selection logic
    - Adjust output filename format for court data
 
@@ -127,7 +127,7 @@ Use these URLs for testing:
 - **Second page**: Same URL but with `page~(number~1)` and updated `totalElements~317~totalPages~13`
 
 ### Step 9: Final Integration
-1. Test the complete flow with: `python -m opal --url [court_url] --parser court`
+1. Test the complete flow with: `python -m opal --url [court_url] --parser ParserAppealsAL`
 2. Ensure output file is created with court case data in tabular format
 3. Verify all pages are scraped and combined into single result set
 4. Confirm case number links are preserved in the output

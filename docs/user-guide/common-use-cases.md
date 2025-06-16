@@ -129,7 +129,7 @@ echo "0 8 * * * /path/to/daily_digest.sh" | crontab -
 **Commands**:
 ```bash
 # Basic weekly court scraping
-python -m opal --url https://publicportal.alappeals.gov/portal/search/case/results --parser court --max_pages 5 --output weekly_court_cases.json
+python -m opal --url https://publicportal.alappeals.gov/portal/search/case/results --parser ParserAppealsAL --max_pages 5 --output weekly_court_cases.json
 
 # Or use the configurable extractor for more control
 python -m opal.configurable_court_extractor --court civil --date-period 7d --exclude-closed --max-pages 10 --output-prefix weekly_civil

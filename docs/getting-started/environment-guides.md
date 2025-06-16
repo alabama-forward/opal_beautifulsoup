@@ -580,7 +580,7 @@ python -m opal --url https://1819news.com/ --parser Parser1819 --max_pages 1
 ### 3. Court Scraping Test
 ```bash
 # Test court functionality (uses Chrome)
-python -m opal --url https://publicportal.alappeals.gov/portal/search/case/results --parser court --max_pages 1
+python -m opal --url https://publicportal.alappeals.gov/portal/search/case/results --parser ParserAppealsAL --max_pages 1
 ```
 
 ### 4. Check Output
