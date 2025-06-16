@@ -90,8 +90,7 @@ nav:
     - Architecture: developer/architecture.md
     - Workflows: developer/workflows.md
     - Error Handling: developer/error_handling.md
-    - BaseParser Guide: developer/BaseParser_web_scraping_guide.md
-    - Creating New Parsers: developer/creating-parsers.md
+    - Creating Custom Parsers: developer/creating-custom-parsers.md
     - ParserAppealsAL Documentation: developer/ParserAppealsAL_documentation.md
     - Court Extractor Design: developer/configurable_court_extractor_design.md
     # - Court Scraper Analysis: developer/court_scraper_analysis.md
