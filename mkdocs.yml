@@ -71,6 +71,9 @@ nav:
   - User Guide:
     - CLI Usage: user-guide/cli-usage.md
     - Output Examples: user-guide/output-examples.md
+    - Common Use Cases: user-guide/common-use-cases.md
+    - Working with Output Data: user-guide/working-with-output-data.md
+    - Understanding Errors: user-guide/understanding-errors.md
     - Command Line Tools: user-guide/command_line_tools.md
     - Configurable Court Extractor: user-guide/configurable_court_extractor.md
     - Available Parsers: user-guide/parsers.md
