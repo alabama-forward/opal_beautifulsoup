@@ -64,6 +64,8 @@ nav:
   - Home: index.md 
   - Getting Started:
     - Complete Setup Guide: getting-started/complete-setup-guide.md
+    - Prerequisites Checker: getting-started/prerequisites-checker.md
+    - Environment-Specific Guides: getting-started/environment-guides.md
     - Quick Start Tutorial: getting-started/quickstart-tutorial.md
     - Installation: getting-started/installation.md
     - Quick Start: getting-started/quickstart.md
