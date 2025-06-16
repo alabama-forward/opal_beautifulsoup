@@ -91,7 +91,7 @@ nav:
     - Workflows: developer/workflows.md
     - Error Handling: developer/error_handling.md
     - Creating Custom Parsers: developer/creating-custom-parsers.md
-    - ParserAppealsAL Documentation: developer/ParserAppealsAL_documentation.md
+    - Creating Court Parsers: developer/creating-court-parsers.md
     - Court Extractor Design: developer/configurable_court_extractor_design.md
     # - Court Scraper Analysis: developer/court_scraper_analysis.md
     # - Court Scraper Requirements: developer/court_scraper_requirements.md

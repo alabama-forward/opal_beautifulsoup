@@ -1,8 +1,8 @@
-# ParserAppealsAL Documentation
+# Creating Court Parsers with OPAL
 
 ## Overview
 
-`ParserAppealsAL` is a specialized parser designed to extract court case data from the Alabama Appeals Court Public Portal. Unlike traditional web scrapers that use simple HTTP requests, this parser employs Selenium WebDriver to handle JavaScript-rendered content, making it capable of extracting data from dynamic web applications.
+This guide explains how to create parsers for court websites using OPAL's framework. We'll use `ParserAppealsAL` as our reference implementation, which extracts court case data from the Alabama Appeals Court Public Portal. Court parsers typically differ from news parsers because they often need to handle JavaScript-rendered content, complex table structures, and paginated results.
 
 ## Key Features
 
