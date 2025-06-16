@@ -69,14 +69,13 @@ nav:
     - Quick Start Tutorial: getting-started/quickstart-tutorial.md
     - Configuration: getting-started/configuration.md
   - User Guide:
-    - CLI Usage: user-guide/cli-usage.md
+    - CLI Reference: user-guide/cli-reference.md
     - Interactive Command Builder: user-guide/command-builder.md
     - Visual Flow Diagrams: user-guide/visual-flow-diagrams.md
     - Output Examples: user-guide/output-examples.md
     - Common Use Cases: user-guide/common-use-cases.md
     - Working with Output Data: user-guide/working-with-output-data.md
     - Understanding Errors: user-guide/understanding-errors.md
-    - Command Line Tools: user-guide/command_line_tools.md
     - Configurable Court Extractor: user-guide/configurable_court_extractor.md
     - Available Parsers: user-guide/parsers.md
   - Class Reference:
