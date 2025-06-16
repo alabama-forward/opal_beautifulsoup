@@ -1619,7 +1619,7 @@
 <li>
 <p><strong>Update <code>opal/main.py</code></strong>:</p>
 </li>
-<li>Add <code>--parser court</code> option to argparse choices</li>
+<li>Add <code>--parser ParserAppealsAL</code> option to argparse choices</li>
 <li>Add court parser to the parser selection logic</li>
 <li>Adjust output filename format for court data</li>
 </ol>
@@ -1653,7 +1653,7 @@
 - <strong>Second page</strong>: Same URL but with <code>page~(number~1)</code> and updated <code>totalElements~317~totalPages~13</code></p>
 <h3 id="step-9-final-integration">Step 9: Final Integration<a class="headerlink" href="#step-9-final-integration" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Test the complete flow with: <code>python -m opal --url [court_url] --parser court</code></li>
+<li>Test the complete flow with: <code>python -m opal --url [court_url] --parser ParserAppealsAL</code></li>
 <li>Ensure output file is created with court case data in tabular format</li>
 <li>Verify all pages are scraped and combined into single result set</li>
 <li>Confirm case number links are preserved in the output</li>

@@ -1994,10 +1994,10 @@
 <p>Now let's scrape some court case data. This uses Selenium, so it might take a bit longer.</p>
 <h3 id="step-1-basic-court-scrape">Step 1: Basic Court Scrape<a class="headerlink" href="#step-1-basic-court-scrape" title="Permanent link">&para;</a></h3>
 <p>Run this command:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span>--url<span class="w"> </span>https://publicportal.alappeals.gov/portal/search/case/results<span class="w"> </span>--parser<span class="w"> </span>court<span class="w"> </span>--max_pages<span class="w"> </span><span class="m">2</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span>--url<span class="w"> </span>https://publicportal.alappeals.gov/portal/search/case/results<span class="w"> </span>--parser<span class="w"> </span>ParserAppealsAL<span class="w"> </span>--max_pages<span class="w"> </span><span class="m">2</span>
 </code></pre></div></p>
 <p>Parameters explained:
-- <code>--parser court</code> - Uses the court-specific parser
+- <code>--parser ParserAppealsAL</code> - Uses the Alabama Appeals Court parser
 - <code>--max_pages 2</code> - Limits to 2 pages of results</p>
 <h3 id="step-2-what-happens-during-court-scraping">Step 2: What Happens During Court Scraping<a class="headerlink" href="#step-2-what-happens-during-court-scraping" title="Permanent link">&para;</a></h3>
 <p>You'll see:
