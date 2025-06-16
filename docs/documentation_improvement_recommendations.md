@@ -62,7 +62,7 @@ def check_prerequisites():
 **Status**: ✅ COMPLETED - Created `check_prerequisites.py` script and `/docs/getting-started/prerequisites-checker.md`
 **Priority**: MEDIUM - Reduces support requests
 
-### 5. Add Visual Flow Diagrams
+### 5. ✅ Add Visual Flow Diagrams - COMPLETED
 Create diagrams illustrating:
 - **Data flow**: Website → Parser → Output File
 - **Parser selection**: Decision tree for choosing the right parser
@@ -71,6 +71,7 @@ Create diagrams illustrating:
 
 **Tools**: Use Mermaid diagrams (already configured in mkdocs.yml)
 
+**Status**: ✅ COMPLETED - Created `/docs/user-guide/visual-flow-diagrams.md`
 **Priority**: MEDIUM - Enhances understanding
 
 ### 6. ✅ Create a "Common Use Cases" Guide - COMPLETED
@@ -137,7 +138,7 @@ Create separate guides for:
 **Status**: ✅ COMPLETED - Created `/docs/getting-started/environment-guides.md`
 **Priority**: MEDIUM - Reduces platform-specific issues
 
-### 10. Create an Interactive Command Builder
+### 10. ✅ Create an Interactive Command Builder - COMPLETED
 Develop a documentation page with:
 - **Interactive form**: Checkboxes and dropdowns for options
 - **Live preview**: Command updates as users select options
@@ -147,6 +148,7 @@ Develop a documentation page with:
 
 **Implementation**: Could use JavaScript in MkDocs
 
+**Status**: ✅ COMPLETED - Created `/docs/user-guide/command-builder.md`
 **Priority**: LOW - Nice-to-have enhancement
 
 ## Implementation Roadmap
@@ -168,9 +170,10 @@ Develop a documentation page with:
 8. ✅ Environment-Specific Guides (#9) - DONE
 9. ✅ Consolidated duplicate content across existing documentation
 
-### Phase 4 (Long-term - Week 6+)
-9. Visual Flow Diagrams (#5)
-10. Interactive Command Builder (#10)
+### Phase 4 (Long-term - Week 6+) - ✅ COMPLETED
+9. ✅ Visual Flow Diagrams (#5) - DONE
+10. ✅ Interactive Command Builder (#10) - DONE
+11. ✅ Consolidated duplicate content across existing documentation
 
 ## Success Metrics
 - Reduced setup-related support questions

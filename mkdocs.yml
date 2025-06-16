@@ -72,6 +72,8 @@ nav:
     - Configuration: getting-started/configuration.md
   - User Guide:
     - CLI Usage: user-guide/cli-usage.md
+    - Interactive Command Builder: user-guide/command-builder.md
+    - Visual Flow Diagrams: user-guide/visual-flow-diagrams.md
     - Output Examples: user-guide/output-examples.md
     - Common Use Cases: user-guide/common-use-cases.md
     - Working with Output Data: user-guide/working-with-output-data.md
