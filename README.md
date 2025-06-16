@@ -7,13 +7,13 @@ OPAL is a powerful web scraping tool designed to extract and analyze content fro
 
 ## 📚 Documentation
 
-For comprehensive documentation, tutorials, and examples, visit our **[Documentation Website](https://alabama-forward.github.io/opal_beautifulsoup/)**.
+For comprehensive documentation, tutorials, and examples, visit our **[Documentation Website](https://alabama-forward.github.io/opal/)**.
 
 ### Quick Links
-- [Complete Setup Guide](https://alabama-forward.github.io/opal_beautifulsoup/getting-started/complete-setup-guide/)
-- [Quick Start Tutorial](https://alabama-forward.github.io/opal_beautifulsoup/getting-started/quickstart-tutorial/)
-- [CLI Reference](https://alabama-forward.github.io/opal_beautifulsoup/user-guide/cli-reference/)
-- [Output Examples](https://alabama-forward.github.io/opal_beautifulsoup/user-guide/output-examples/)
+- [Complete Setup Guide](https://alabama-forward.github.io/opal/getting-started/complete-setup-guide/)
+- [Quick Start Tutorial](https://alabama-forward.github.io/opal/getting-started/quickstart-tutorial/)
+- [CLI Reference](https://alabama-forward.github.io/opal/user-guide/cli-reference/)
+- [Output Examples](https://alabama-forward.github.io/opal/user-guide/output-examples/)
 
 ## 🚀 Quick Start
 
@@ -29,8 +29,8 @@ For comprehensive documentation, tutorials, and examples, visit our **[Documenta
 python check_prerequisites.py
 
 # 2. Clone the repository
-git clone https://github.com/alabama-forward/opal_beautifulsoup
-cd opal_beautifulsoup
+git clone https://github.com/alabama-forward/opal
+cd opal
 
 # 3. Install OPAL
 pip install -e .
@@ -88,7 +88,7 @@ python -m opal.configurable_court_extractor --case-number "2024-CA-001"
 
 ### Custom Parsers
 
-OPAL's extensible architecture makes it easy to add new content sources. See our [Creating Custom Parsers](https://alabama-forward.github.io/opal_beautifulsoup/developer/creating-custom-parsers/) guide.
+OPAL's extensible architecture makes it easy to add new content sources. See our [Creating Custom Parsers](https://alabama-forward.github.io/opal/developer/creating-custom-parsers/) guide.
 
 ## 📋 Output Format
 
@@ -159,8 +159,8 @@ Built by progressives in Alabama, for progressives in Alabama.
 
 ## 📞 Support
 
-- **Documentation**: [OPAL Docs](https://alabama-forward.github.io/opal_beautifulsoup/)
-- **Issues**: [GitHub Issues](https://github.com/alabama-forward/opal_beautifulsoup/issues)
+- **Documentation**: [OPAL Docs](https://alabama-forward.github.io/opal/)
+- **Issues**: [GitHub Issues](https://github.com/alabama-forward/opal/issues)
 - **Contact**: gabri@alforward.org
 
 ---

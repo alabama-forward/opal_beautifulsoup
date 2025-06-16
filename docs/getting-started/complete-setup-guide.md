@@ -8,8 +8,8 @@ If you're already familiar with Python development:
 
 ```bash
 # Clone and install
-git clone https://github.com/alabama-forward/opal_beautifulsoup
-cd opal_beautifulsoup
+git clone https://github.com/alabama-forward/opal
+cd opal
 pip install -e .
 ```
 
@@ -64,7 +64,7 @@ pip3 --version        # macOS/Linux
 2. **Download OPAL**:
    ```bash
    # Clone repository (recommended)
-   git clone https://github.com/alabama-forward/opal_beautifulsoup .
+   git clone https://github.com/alabama-forward/opal .
    
    # OR download ZIP from GitHub and extract here
    ```

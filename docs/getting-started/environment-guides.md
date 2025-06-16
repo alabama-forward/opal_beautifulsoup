@@ -53,7 +53,7 @@ mkdir C:\opal-project
 cd C:\opal-project
 
 # Download OPAL
-git clone https://github.com/your-repo/opal_beautifulsoup .
+git clone https://github.com/your-repo/opal .
 # OR download and extract ZIP file to this folder
 ```
 
@@ -198,7 +198,7 @@ mkdir ~/opal-project
 cd ~/opal-project
 
 # Download OPAL
-git clone https://github.com/your-repo/opal_beautifulsoup .
+git clone https://github.com/your-repo/opal .
 ```
 
 ### Step 3: Set Up Virtual Environment
@@ -313,7 +313,7 @@ mkdir ~/opal-project
 cd ~/opal-project
 
 # Download OPAL
-git clone https://github.com/your-repo/opal_beautifulsoup .
+git clone https://github.com/your-repo/opal .
 
 # Create virtual environment
 python3 -m venv venv
@@ -359,7 +359,7 @@ sudo dnf install google-chrome-stable -y
 # Same as Ubuntu steps above
 mkdir ~/opal-project
 cd ~/opal-project
-git clone https://github.com/your-repo/opal_beautifulsoup .
+git clone https://github.com/your-repo/opal .
 python3 -m venv venv
 source venv/bin/activate
 pip install -e .
@@ -374,7 +374,7 @@ sudo pacman -S python python-pip git google-chrome
 # Set up OPAL
 mkdir ~/opal-project
 cd ~/opal-project
-git clone https://github.com/your-repo/opal_beautifulsoup .
+git clone https://github.com/your-repo/opal .
 python -m venv venv
 source venv/bin/activate
 pip install -e .
@@ -445,8 +445,8 @@ Google Colab provides a pre-configured Python environment. Here's how to set up 
 #### Step 2: Download OPAL
 ```python
 # Clone OPAL repository
-!git clone https://github.com/your-repo/opal_beautifulsoup
-%cd opal_beautifulsoup
+!git clone https://github.com/your-repo/opal
+%cd opal
 
 # Install OPAL
 !pip install -e .

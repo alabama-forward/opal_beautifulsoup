@@ -56,7 +56,7 @@ ModuleNotFoundError: No module named 'opal'
 
 3. **Check you're in the right directory**:
    ```bash
-   # Make sure you're in the opal_beautifulsoup folder
+   # Make sure you're in the opal folder
    ls -la  # Should see setup.py or pyproject.toml
    ```
 

@@ -206,8 +206,8 @@ Run the checker before installing OPAL to catch issues early:
 
 ```bash
 # Download OPAL
-git clone https://github.com/your-repo/opal_beautifulsoup
-cd opal_beautifulsoup
+git clone https://github.com/your-repo/opal
+cd opal
 
 # Check prerequisites first
 python check_prerequisites.py
