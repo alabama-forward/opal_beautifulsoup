@@ -4,17 +4,14 @@ This is a web scraping tool that extracts content from Alabama news sites and co
 
 **SETUP:** 
 ```bash
-# Install dependencies
-pip install -r requirements.txt
-# or
+# Check your system first
+python check_prerequisites.py
+
+# Install OPAL
 pip install -e .
 ```
 
-**Dependencies:**
-- beautifulsoup4 - HTML parsing
-- requests - HTTP requests for news sites
-- selenium - Browser automation for JavaScript-rendered content
-- webdriver-manager - Automatic ChromeDriver management 
+For detailed setup instructions, see the [Complete Setup Guide](docs/getting-started/complete-setup-guide.md). 
 
 **USAGE:** This project is a specific application of the beautifulsoup package to support the extract and analysis of conservative news sites in Alabama. This is built by progressives in Alabama for progressives in Alabama. The BaseParser object can be updated to include additional news sources if desired.
 

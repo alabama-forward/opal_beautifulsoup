@@ -2,6 +2,14 @@
 
 This guide will walk you through setting up OPAL from scratch, even if you're new to Python development. We'll cover everything you need to get started.
 
+## Before You Start
+
+🔍 **Check Your System First**: Run our [Prerequisites Checker](prerequisites-checker.md) to verify your system is ready and identify any issues early.
+
+```bash
+python check_prerequisites.py
+```
+
 ## Prerequisites Overview
 
 Before installing OPAL, you'll need:
@@ -12,115 +20,61 @@ Before installing OPAL, you'll need:
 
 ## Step 1: Install Python
 
-### Windows
+**For detailed platform-specific installation instructions, see [Environment-Specific Guides](environment-guides.md).**
 
-1. **Download Python**:
-   - Go to [python.org/downloads](https://python.org/downloads)
-   - Click "Download Python" (get version 3.8 or higher)
-   - Run the installer
+### Quick Installation Summary
 
-2. **Important Installation Settings**:
-   - ✅ Check "Add Python to PATH" at the bottom of the installer
-   - Click "Install Now"
-   - Wait for installation to complete
+**Windows**: Download from python.org (✅ check "Add Python to PATH")  
+**macOS**: Use Homebrew (`brew install python3`) or download from python.org  
+**Linux**: Use package manager (`sudo apt install python3 python3-pip python3-venv`)
 
-3. **Verify Installation**:
-   - Open Command Prompt (search for "cmd" in Start menu)
-   - Type: `python --version`
-   - You should see: `Python 3.x.x`
+### Verify Installation
+```bash
+# Check Python version (should be 3.8+)
+python --version      # Windows
+python3 --version     # macOS/Linux
 
-### macOS
-
-1. **Check if Python is Installed**:
-   - Open Terminal (found in Applications > Utilities)
-   - Type: `python3 --version`
-   - If you see a version number, skip to Step 2
-
-2. **Install Python** (if needed):
-   - Install Homebrew first (if not installed):
-     ```bash
-     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-     ```
-   - Install Python:
-     ```bash
-     brew install python3
-     ```
-
-3. **Verify Installation**:
-   ```bash
-   python3 --version
-   ```
-
-### Linux (Ubuntu/Debian)
-
-1. **Update Package List**:
-   ```bash
-   sudo apt update
-   ```
-
-2. **Install Python and pip**:
-   ```bash
-   sudo apt install python3 python3-pip python3-venv
-   ```
-
-3. **Verify Installation**:
-   ```bash
-   python3 --version
-   ```
+# Check pip is available
+pip --version         # Windows  
+pip3 --version        # macOS/Linux
+```
 
 ## Step 2: Set Up Your Project Directory
 
 1. **Create a folder for OPAL**:
-   
-   Windows (Command Prompt):
-   ```cmd
-   mkdir C:\opal-project
-   cd C:\opal-project
-   ```
-   
-   macOS/Linux (Terminal):
    ```bash
-   mkdir ~/opal-project
-   cd ~/opal-project
+   # Create project directory
+   mkdir opal-project
+   cd opal-project
    ```
 
 2. **Download OPAL**:
-   - Option A: Download ZIP from GitHub
-     - Go to the OPAL repository
-     - Click "Code" → "Download ZIP"
-     - Extract to your opal-project folder
+   ```bash
+   # Clone repository (recommended)
+   git clone https://github.com/alabama-forward/opal_beautifulsoup .
    
-   - Option B: Use git (if installed):
-     ```bash
-     git clone [repository-url] .
-     ```
+   # OR download ZIP from GitHub and extract here
+   ```
+
+**Platform-specific commands**: See [Environment-Specific Guides](environment-guides.md) for detailed OS-specific instructions.
 
 ## Step 3: Create a Virtual Environment
 
 A virtual environment keeps OPAL's dependencies separate from other Python projects.
 
-### Windows
-```cmd
-python -m venv venv
-venv\Scripts\activate
-```
-
-You'll see `(venv)` appear in your command prompt when activated.
-
-### macOS/Linux
 ```bash
-python3 -m venv venv
-source venv/bin/activate
+# Create virtual environment
+python -m venv venv          # Windows
+python3 -m venv venv         # macOS/Linux
+
+# Activate virtual environment  
+source venv/bin/activate     # macOS/Linux
+venv\Scripts\activate        # Windows
 ```
 
-You'll see `(venv)` appear in your terminal when activated.
+You'll see `(venv)` appear in your prompt when activated.
 
-### Troubleshooting Virtual Environment
-
-If you get an error about execution policies on Windows:
-```powershell
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-```
+**Troubleshooting**: See [Environment-Specific Guides](environment-guides.md) for platform-specific activation issues.
 
 ## Step 4: Install OPAL and Dependencies
 
