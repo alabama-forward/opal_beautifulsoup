@@ -23,7 +23,9 @@ python -m opal --url https://publicportal.alappeals.gov/portal/search/case/resul
 
 ## Documentation Overview
 
+- **[Prerequisites Checker](getting-started/prerequisites-checker.md)** - Verify your system is ready for OPAL
 - **[Complete Setup Guide](getting-started/complete-setup-guide.md)** - Step-by-step installation for beginners
+- **[Environment-Specific Guides](getting-started/environment-guides.md)** - Setup instructions for Windows, Mac, Linux, and cloud
 - **[Quick Start Tutorial](getting-started/quickstart-tutorial.md)** - Hands-on tutorial with real examples
 - **[Output Examples](user-guide/output-examples.md)** - See exactly what OPAL produces
 - **[User Guide](user-guide/cli-usage.md)** - Detailed usage instructions
