@@ -67,8 +67,6 @@ nav:
     - Prerequisites Checker: getting-started/prerequisites-checker.md
     - Environment-Specific Guides: getting-started/environment-guides.md
     - Quick Start Tutorial: getting-started/quickstart-tutorial.md
-    - Installation: getting-started/installation.md
-    - Quick Start: getting-started/quickstart.md
     - Configuration: getting-started/configuration.md
   - User Guide:
     - CLI Usage: user-guide/cli-usage.md
@@ -81,7 +79,6 @@ nav:
     - Command Line Tools: user-guide/command_line_tools.md
     - Configurable Court Extractor: user-guide/configurable_court_extractor.md
     - Available Parsers: user-guide/parsers.md
-    - Output Formats: user-guide/output-formats.md
   - Class Reference:
     - Complete Reference Guide: reference_guide.md
     - Data Structures: reference/data_structures.md

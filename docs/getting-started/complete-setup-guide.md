@@ -2,6 +2,19 @@
 
 This guide will walk you through setting up OPAL from scratch, even if you're new to Python development. We'll cover everything you need to get started.
 
+## Quick Install (For Experienced Users)
+
+If you're already familiar with Python development:
+
+```bash
+# Clone and install
+git clone https://github.com/alabama-forward/opal_beautifulsoup
+cd opal_beautifulsoup
+pip install -e .
+```
+
+**Requirements**: Python 3.8+, Google Chrome (for court scraping), Internet connection
+
 ## Before You Start
 
 🔍 **Check Your System First**: Run our [Prerequisites Checker](prerequisites-checker.md) to verify your system is ready and identify any issues early.
