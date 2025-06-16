@@ -1,26 +1,21 @@
-#Installation
+# Installation
 
-##Requirements
+For detailed step-by-step installation instructions, please see the [Complete Setup Guide](complete-setup-guide.md).
 
-- Python 3.6 or higher
-- Chrome browser (for court parser)
+## Quick Install
 
-##Install from Source
+If you're already familiar with Python development:
 
 ```bash
-# Clone the repository
+# Clone and install
 git clone https://github.com/alabama-forward/opal_beautifulsoup
-cd opal
-
-#Install dependencies
-pip install -r requirements.txt
-
-#Install OPAL
+cd opal_beautifulsoup
 pip install -e .
 ```
 
-##Verify Installation
-```bash
-#Check OPAL is installed
-python -m opal --help
-```
+## Requirements
+- Python 3.8+
+- Google Chrome (for court scraping)
+- Internet connection
+
+For troubleshooting and platform-specific instructions, see the [Complete Setup Guide](complete-setup-guide.md).
