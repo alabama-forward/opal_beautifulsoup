@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Environment-Specific Setup Guides"
+---
+
 # Environment-Specific Setup Guides
 
 This guide provides detailed setup instructions for different operating systems and environments. Choose your platform below for specific instructions.

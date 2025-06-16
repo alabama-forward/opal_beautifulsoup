@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Creating Custom Parsers"
+---
+
 # Creating Custom Parsers
 
 This comprehensive guide covers everything you need to know about creating custom parsers for OPAL, from web scraping fundamentals to practical implementation.

@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Contributing to OPAL"
+---
+
 # Contributing to OPAL
 
 We welcome contributions to OPAL! This guide will help you get started.

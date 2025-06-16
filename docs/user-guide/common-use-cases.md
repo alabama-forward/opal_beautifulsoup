@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Common Use Cases"
+---
+
 # Common Use Cases
 
 This guide shows you how to use OPAL for specific real-world scenarios. Each use case includes the exact commands, expected outputs, and practical tips.

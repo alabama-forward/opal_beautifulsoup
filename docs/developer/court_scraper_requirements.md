@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Court Case Scraper Extension Requirements"
+---
+
 # Court Case Scraper Extension Requirements
 
 To help you build this court case scraper extension while maintaining OPAL's modularity, I'll need the following information:

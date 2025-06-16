@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Configurable Court Extractor"
+---
+
 # Configurable Court Extractor
 
 The Configurable Court Extractor (`opal.configurable_court_extractor`) provides advanced searching and filtering capabilities for the Alabama Appeals Court portal. It includes both programmatic and command-line interfaces for extracting court data with precise control over search parameters.

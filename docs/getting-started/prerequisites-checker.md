@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Prerequisites Checker"
+---
+
 # Prerequisites Checker
 
 Before installing OPAL, run our prerequisites checker to verify your system is ready. This tool will identify potential issues and provide specific solutions.

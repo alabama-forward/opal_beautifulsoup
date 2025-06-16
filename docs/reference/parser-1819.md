@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Parser1819 API Reference"
+---
+
 # Parser1819 API Reference
 
 Parser for [1819 News](https://1819news.com/) website.

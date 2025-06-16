@@ -1,3 +1,8 @@
+---
+layout: default
+title: "License"
+---
+
 # License
 
 OPAL is released under the MIT License.

@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Court URL Paginator"
+---
+
 # Court URL Paginator
 
 The Court URL Paginator module (`opal.court_url_paginator`) provides utilities for handling pagination in the Alabama Appeals Court Public Portal. It includes functions for parsing, building, and generating paginated URLs.

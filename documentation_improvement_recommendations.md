@@ -1,3 +1,129 @@
+# Documentation Transition: GitHub to Jekyll
+
+## Key Questions for Migration Planning
+
+1. **What's your current documentation structure?** (folders, naming conventions, how files are organized)
+
+My documentation structure is housed in the docs folder and uses the mkdocs.yml file outside of the docs folder for structure. When built, it exists in the site folder.
+
+2. **Do you want to use GitHub Pages for hosting**, or deploy Jekyll elsewhere?
+
+Github pages will be the only host.
+
+3. **Which Jekyll theme interests you?** (Minimal, Cayman, Just the Docs, or custom?)
+
+I want a minimalist theme.
+
+4. **Do you need features like:** search, navigation sidebar, versioning, or multi-language support?
+
+I want my documentation to have search and navigation, but not versioning or multi-language support.
+
+5. **Are you using any GitHub-specific markdown features** that might need adjustment? (relative links, GitHub-flavored markdown extensions)
+
+Not that I know of. Please review my docs folder and sites folder to understand the current structure.
+
+6. **Do you want a blog section** alongside your documentation?
+
+No blog
+
+7. **Any custom branding requirements?** (colors, logos, fonts)
+
+No
+
+8. **Do you need to preserve existing URLs** for SEO/backwards compatibility?
+
+I only have one url for my documentation right now. 
+
+9. **What's your technical comfort level** with Ruby, Liquid templating, and YAML?
+
+Please do not overcomplicate my documentation. I want my documentation to look similar to that on this page: https://alabama-forward.github.io/appsscript/docs/
+
+10. **Do you need automated deployment** (GitHub Actions) or will you build/deploy manually? I need github actions
+
+---
+
+## Jekyll Migration Plan
+
+Based on your requirements and the reference site, here's a simplified migration plan from MkDocs to Jekyll:
+
+### Recommended Setup
+
+1. **Theme**: Use **Jekyll's default Minima theme** or **no theme**
+   - Ultra-simple, content-focused design matching your reference
+   - Clean markdown rendering
+   - Minimal CSS overhead
+   - Easy to maintain without Ruby/Liquid complexity
+
+2. **Simplified Project Structure**:
+   ```
+   opal_beautifulsoup/
+   ├── _config.yml          # Minimal Jekyll configuration
+   ├── index.md             # Home page
+   ├── docs/                # Keep your existing structure!
+   │   ├── getting-started/
+   │   ├── user-guide/
+   │   ├── reference/
+   │   ├── developer/
+   │   └── about/
+   └── .github/
+       └── workflows/
+           └── pages.yml     # GitHub Actions workflow
+   ```
+
+3. **Key Migration Tasks**:
+   - Create minimal `_config.yml` (5-10 lines)
+   - Add simple front matter to markdown files
+   - Keep your existing folder structure
+   - Use basic markdown for all content
+   - Add simple navigation in index.md or sidebar
+
+4. **GitHub Actions Workflow**:
+   ```yaml
+   name: Deploy Jekyll to GitHub Pages
+   on:
+     push:
+       branches: [ main ]
+   jobs:
+     build-and-deploy:
+       runs-on: ubuntu-latest
+       steps:
+         - uses: actions/checkout@v3
+         - uses: actions/jekyll-build-pages@v1
+         - uses: actions/deploy-pages@v1
+   ```
+
+### Simplified Migration Checklist
+
+- [ ] Create minimal `_config.yml` file
+- [ ] Add basic front matter to markdown files (just title and layout)
+- [ ] Create simple index.md with navigation links
+- [ ] Remove MkDocs-specific syntax (:::admonitions, tabs)
+- [ ] Set up GitHub Pages in repository settings
+- [ ] Add GitHub Actions workflow for deployment
+- [ ] Test all internal links work
+
+### Example `_config.yml` (minimal):
+```yaml
+title: OPAL Documentation
+description: Web scraping toolkit for Alabama news and court data
+baseurl: "/opal_beautifulsoup"
+url: "https://yourusername.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+```
+
+### Example Front Matter (for each .md file):
+```yaml
+---
+layout: default
+title: "Page Title"
+---
+```
+
+---
+
 # Documentation Improvement Recommendations for OPAL
 
 ## Overview

@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Available Parsers"
+---
+
 # Available Parsers
 
 OPAL includes several parsers for different Alabama news and government websites.

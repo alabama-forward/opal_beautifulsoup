@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Working with Output Data"
+---
+
 # Working with Output Data
 
 This tutorial shows you how to open, analyze, and work with the data OPAL produces. Whether you're new to data analysis or just getting started with JSON files, this guide will help you unlock the value in your scraped data.

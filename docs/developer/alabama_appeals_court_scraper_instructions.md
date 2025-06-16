@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Alabama Appeals Court Public Portal Scraper - Implementation Instructions"
+---
+
 # Alabama Appeals Court Public Portal Scraper - Implementation Instructions
 
 ## Overview

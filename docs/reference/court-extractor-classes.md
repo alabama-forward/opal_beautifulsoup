@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Configurable Court Extractor Class Reference"
+---
+
 # Configurable Court Extractor Class Reference
 
 This document provides the complete class reference for the Configurable Court Extractor, including class definitions, method signatures, and usage examples.

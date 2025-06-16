@@ -1,3 +1,8 @@
+---
+layout: default
+title: "User-Agent Headers Guide"
+---
+
 # User-Agent Headers Guide
 
 ## What is a User-Agent?

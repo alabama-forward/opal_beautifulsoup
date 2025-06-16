@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Architecture"
+---
+
 # Architecture
 
 OPAL follows a modular architecture that makes it easy to add new parsers and extend functionality.

@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Visual Flow Diagrams"
+---
+
 # Visual Flow Diagrams
 
 This page provides visual diagrams to help you understand how OPAL works internally. These flowcharts show the data flow, decision processes, and system architecture.

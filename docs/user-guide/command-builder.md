@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Interactive Command Builder"
+---
+
 # Interactive Command Builder
 
 Build your OPAL commands with this interactive tool. Select your options and get the exact command to run.

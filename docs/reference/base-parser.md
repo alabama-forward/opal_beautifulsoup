@@ -1,3 +1,8 @@
+---
+layout: default
+title: "BaseParser API Reference"
+---
+
 # BaseParser API Reference
 
 The `BaseParser` class provides the foundation for all OPAL parsers.

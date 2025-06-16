@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Quick Start Tutorial"
+---
+
 # Quick Start Tutorial
 
 Welcome! This hands-on tutorial will walk you through your first OPAL scraping tasks. By the end, you'll have successfully scraped both news articles and court cases.

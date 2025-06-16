@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Complete Setup Guide"
+---
+
 # Complete Setup Guide
 
 This guide will walk you through setting up OPAL from scratch, even if you're new to Python development. We'll cover everything you need to get started.

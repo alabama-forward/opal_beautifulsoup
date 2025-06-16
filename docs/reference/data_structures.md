@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Data Structures"
+---
+
 # Data Structures
 
 This document describes the data structures returned by OPAL parsers and extractors.

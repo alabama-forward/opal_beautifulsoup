@@ -1,3 +1,8 @@
+---
+layout: default
+title: "ParserAppealsAL CLI Reference"
+---
+
 # ParserAppealsAL CLI Reference
 
 Complete command-line reference for the Alabama Appeals Court parser.

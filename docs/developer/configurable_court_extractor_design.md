@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Configurable Court Extractor Design"
+---
+
 # Configurable Court Extractor Design
 
 ## Problem Statement

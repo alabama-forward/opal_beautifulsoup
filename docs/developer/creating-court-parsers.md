@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Creating Court Parsers with OPAL"
+---
+
 # Creating Court Parsers with OPAL
 
 ## Overview

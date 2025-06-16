@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Court Scraper Analysis"
+---
+
 # Court Scraper Analysis
 
 The ParserAppealsAL scraper is different from the news scrapers. This is because of the courts' use of JavaScript, which renders content dynamically. 

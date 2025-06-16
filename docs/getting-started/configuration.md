@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Configuration"
+---
+
 # Configuration
 
 OPAL can be configured through command-line arguments, environment variables, and parser-specific options.

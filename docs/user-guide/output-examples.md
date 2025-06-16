@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Output Examples"
+---
+
 # Output Examples
 
 This page shows you exactly what data OPAL produces when scraping different sources. Understanding the output format helps you plan how to use the data.

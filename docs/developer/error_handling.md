@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Error Handling"
+---
+
 # Error Handling
 
 OPAL includes comprehensive error handling mechanisms to ensure robust data extraction. This document covers error types, handling strategies, and troubleshooting guidance **for developers**.

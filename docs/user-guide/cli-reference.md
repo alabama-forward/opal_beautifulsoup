@@ -1,3 +1,8 @@
+---
+layout: default
+title: "CLI Reference"
+---
+
 # CLI Reference
 
 OPAL provides command-line tools for scraping Alabama news sites and court records. For the easiest way to build commands, use our **[Interactive Command Builder](command-builder.md)** which provides a visual interface with examples and real-time validation.

@@ -1,3 +1,8 @@
+---
+layout: default
+title: "OPAL - Oppositional Positions in ALabama"
+---
+
 # OPAL - Oppositional Positions in ALabama
 
 Welcome to OPAL's documentation! OPAL is a web scraping tool that extracts content from websites like Alabama news sites and court records.

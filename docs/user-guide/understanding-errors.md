@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Understanding Errors"
+---
+
 # Understanding Errors
 
 This guide helps you understand common error messages when using OPAL and provides solutions to fix them. Don't worry - most errors have simple solutions!

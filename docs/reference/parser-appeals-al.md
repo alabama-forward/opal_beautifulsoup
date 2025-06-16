@@ -1,3 +1,8 @@
+---
+layout: default
+title: "ParserAppealsAL API Reference"
+---
+
 # ParserAppealsAL API Reference
 
 Parser for [Alabama Appeals Court Public Portal](https://publicportal.alappeals.gov/).

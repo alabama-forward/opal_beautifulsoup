@@ -1,0 +1,25 @@
+title: OPAL Documentation
+description: Web scraping toolkit for Alabama news and court data
+baseurl: "/opal_beautifulsoup"
+url: "https://yourusername.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Exclude files from build
+exclude:
+  - README.md
+  - requirements.txt
+  - setup.py
+  - .gitignore
+  - mkdocs.yml
+  - site/
+  - src/
+  - tests/
+  - scripts/
+  - __pycache__/
+  - "*.pyc"
+  - .pytest_cache/
+  - venv/
+  - .env

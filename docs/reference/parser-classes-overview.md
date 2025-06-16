@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Parser Classes Overview"
+---
+
 # Parser Classes Overview
 
 Complete reference for all OPAL parser classes and their integration points.

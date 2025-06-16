@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Workflows"
+---
+
 # Workflows
 
 This document describes the internal workflows and processing patterns used by OPAL parsers. For comprehensive visual diagrams showing the complete data flow, architecture, and decision trees, see **[Visual Flow Diagrams](../user-guide/visual-flow-diagrams.md)**.

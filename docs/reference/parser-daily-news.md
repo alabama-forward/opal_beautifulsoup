@@ -1,3 +1,8 @@
+---
+layout: default
+title: "ParserDailyNews API Reference"
+---
+
 # ParserDailyNews API Reference
 
 Parser for [Alabama Daily News](https://www.aldailynews.com/) website.
