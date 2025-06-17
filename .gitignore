@@ -11,6 +11,7 @@ ENV/
 # MkDocs
 site/
 .cache/
+# Note: docs/ is NOT ignored because GitHub Pages serves from it
 
 # IDE
 .vscode/

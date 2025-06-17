@@ -1,0 +1,2398 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Web scraper used to search Alabama websites">
+      
+      
+        <meta name="author" content="Gabriel Cabán Cubero">
+      
+      
+        <link rel="canonical" href="https://alabama-forward.github.io/opal/user-guide/visual-flow-diagrams/">
+      
+      
+        <link rel="prev" href="../parsers/ParserDailyNews/">
+      
+      
+        <link rel="next" href="../output-examples/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Visual Flow Diagrams - OPAL - Oppositional Positions in Alabama</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#visual-flow-diagrams" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://alabama-forward.github.io/opal/" title="OPAL - Oppositional Positions in Alabama" class="md-header__button md-logo" aria-label="OPAL - Oppositional Positions in Alabama" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OPAL - Oppositional Positions in Alabama
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Visual Flow Diagrams
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/alabama-forward/opal" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    alabama-forward/opal
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../getting-started/" class="md-tabs__link">
+          
+  
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  User Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../developer/" class="md-tabs__link">
+          
+  
+  
+  Developer Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../about/" class="md-tabs__link">
+          
+  
+  
+  About
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://alabama-forward.github.io/opal/" title="OPAL - Oppositional Positions in Alabama" class="md-nav__button md-logo" aria-label="OPAL - Oppositional Positions in Alabama" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    OPAL - Oppositional Positions in Alabama
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/alabama-forward/opal" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    alabama-forward/opal
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/prerequisites-checker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Prerequisites Checker
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/complete-setup-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Complete Setup Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/environment-guides/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Environment-Specific Guides
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configuration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/quickstart-tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quick Start Tutorial
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    User Guide
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            User Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cli-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CLI Reference
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../command-builder/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Interactive Command Builder
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Parsers
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Parsers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../parsers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Available Parsers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../parsers/ParserAppealsAL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Alabama Appeals Court
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../parsers/Parser1819/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1819 News
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../parsers/ParserDailyNews/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Daily News
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Visual Flow Diagrams
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Visual Flow Diagrams
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#opal-system-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      OPAL System Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-flow-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Flow Architecture
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Flow Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#news-scraping-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      News Scraping Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#court-scraping-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Court Scraping Flow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parser-selection-decision-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parser Selection Decision Tree
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pagination-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pagination Handling
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pagination Handling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#news-site-pagination" class="md-nav__link">
+    <span class="md-ellipsis">
+      News Site Pagination
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#court-portal-pagination" class="md-nav__link">
+    <span class="md-ellipsis">
+      Court Portal Pagination
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-transformation-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Transformation Process
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Transformation Process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#news-article-transformation" class="md-nav__link">
+    <span class="md-ellipsis">
+      News Article Transformation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#court-case-transformation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Court Case Transformation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-handling-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Handling Flow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integration Architecture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-optimization-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance Optimization Flow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#command-processing-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command Processing Flow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#session-management-court-scraping" class="md-nav__link">
+    <span class="md-ellipsis">
+      Session Management (Court Scraping)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visual-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual Summary
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../output-examples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Output Examples
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common-use-cases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Common Use Cases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../working-with-output-data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Working with Output Data
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../understanding-errors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Understanding Errors
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configurable_court_extractor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configurable Court Extractor
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Developer Guide
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Developer Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/workflows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Workflows
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/creating-custom-parsers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Creating Custom Parsers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/creating-court-parsers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Creating Court Parsers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/error_handling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Error Handling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Class Reference
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            Class Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/class-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/base-parser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Base Parser
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/parser-classes-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Parser Classes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/data_structures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Structures
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/court-extractor-classes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Court Extractor Classes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/court_url_paginator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Court URL Paginator
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/configurable_court_extractor_design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Court Extractor Design
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/user_agent_headers_guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    User Agent Headers Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            About
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/contributing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contributing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    License
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#opal-system-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      OPAL System Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-flow-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Flow Architecture
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Flow Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#news-scraping-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      News Scraping Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#court-scraping-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Court Scraping Flow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parser-selection-decision-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parser Selection Decision Tree
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pagination-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pagination Handling
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pagination Handling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#news-site-pagination" class="md-nav__link">
+    <span class="md-ellipsis">
+      News Site Pagination
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#court-portal-pagination" class="md-nav__link">
+    <span class="md-ellipsis">
+      Court Portal Pagination
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-transformation-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Transformation Process
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Transformation Process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#news-article-transformation" class="md-nav__link">
+    <span class="md-ellipsis">
+      News Article Transformation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#court-case-transformation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Court Case Transformation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-handling-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Handling Flow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integration Architecture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-optimization-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance Optimization Flow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#command-processing-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command Processing Flow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#session-management-court-scraping" class="md-nav__link">
+    <span class="md-ellipsis">
+      Session Management (Court Scraping)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visual-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual Summary
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="visual-flow-diagrams">Visual Flow Diagrams<a class="headerlink" href="#visual-flow-diagrams" title="Permanent link">&para;</a></h1>
+<p>This page provides visual diagrams to help you understand how OPAL works internally. These flowcharts show the data flow, decision processes, and system architecture.</p>
+<h2 id="opal-system-overview">OPAL System Overview<a class="headerlink" href="#opal-system-overview" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>graph TD
+    A[User Command] --&gt; B{Parser Type?}
+    B --&gt;|News| C[News Parser Flow]
+    B --&gt;|Court| D[Court Parser Flow]
+
+    C --&gt; E[URL Collection]
+    E --&gt; F[Article Extraction]
+    F --&gt; G[JSON Output]
+
+    D --&gt; H[Court Portal Access]
+    H --&gt; I[Case Data Extraction]
+    I --&gt; J[JSON + CSV Output]
+
+    G --&gt; K[Data Analysis]
+    J --&gt; K
+    K --&gt; L[Insights &amp; Reports]</code></pre>
+<h2 id="data-flow-architecture">Data Flow Architecture<a class="headerlink" href="#data-flow-architecture" title="Permanent link">&para;</a></h2>
+<h3 id="news-scraping-flow">News Scraping Flow<a class="headerlink" href="#news-scraping-flow" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>graph TD
+    A[Website URL] --&gt; B[BaseParser Detection]
+    B --&gt; C{Which Parser?}
+
+    C --&gt;|1819news.com| D[Parser1819]
+    C --&gt;|aldailynews.com| E[ParserDailyNews]
+    C --&gt;|Other| F[Generic Parser]
+
+    D --&gt; G[URL Collection Module]
+    E --&gt; G
+    F --&gt; G
+
+    G --&gt; H[Paginate Website]
+    H --&gt; I[Extract Article URLs]
+    I --&gt; J[Filter by Suffix]
+    J --&gt; K[Process Each Article]
+
+    K --&gt; L[Parse HTML]
+    L --&gt; M[Extract: Title, Author, Date, Content]
+    M --&gt; N[Validate Data]
+    N --&gt; O[Add to Results]
+
+    O --&gt; P{More Articles?}
+    P --&gt;|Yes| K
+    P --&gt;|No| Q[Generate JSON Output]
+
+    Q --&gt; R[Save to File]
+    R --&gt; S[Display Summary]</code></pre>
+<h3 id="court-scraping-flow">Court Scraping Flow<a class="headerlink" href="#court-scraping-flow" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>graph TD
+    A[Court Portal URL] --&gt; B[Launch Chrome Browser]
+    B --&gt; C[Navigate to Search Page]
+    C --&gt; D[Wait for JavaScript Load]
+    D --&gt; E[Discover Court IDs]
+
+    E --&gt; F{Search Method?}
+    F --&gt;|Custom URL| G[Use Provided URL]
+    F --&gt;|Parameters| H[Build Search URL]
+
+    H --&gt; I[CourtSearchBuilder]
+    I --&gt; J[Set Court Type]
+    J --&gt; K[Set Date Range]
+    K --&gt; L[Set Filters]
+    L --&gt; M[Generate URL]
+
+    G --&gt; N[Load First Page]
+    M --&gt; N
+
+    N --&gt; O[Extract Page Count]
+    O --&gt; P[Generate All Page URLs]
+    P --&gt; Q[Process Each Page]
+
+    Q --&gt; R[Parse HTML Table]
+    R --&gt; S[Extract Case Data]
+    S --&gt; T[Validate Fields]
+    T --&gt; U[Add to Results]
+
+    U --&gt; V{More Pages?}
+    V --&gt;|Yes| Q
+    V --&gt;|No| W[Close Browser]
+
+    W --&gt; X[Generate JSON Output]
+    X --&gt; Y[Generate CSV Output]
+    Y --&gt; Z[Display Summary]</code></pre>
+<h2 id="parser-selection-decision-tree">Parser Selection Decision Tree<a class="headerlink" href="#parser-selection-decision-tree" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>graph TD
+    A[Start: User Provides URL] --&gt; B{URL Contains?}
+
+    B --&gt;|1819news.com| C[Use Parser1819]
+    B --&gt;|aldailynews.com| D[Use ParserDailyNews]
+    B --&gt;|publicportal.alappeals.gov| E[Use ParserAppealsAL]
+    B --&gt;|Other| F[Error: Unsupported Site]
+
+    C --&gt; G[News Scraping Mode]
+    D --&gt; G
+    E --&gt; H[Court Scraping Mode]
+    F --&gt; I[Show Supported Sites]
+
+    G --&gt; J[Requires: --suffix parameter]
+    H --&gt; K[Requires: Chrome Browser]
+
+    J --&gt; L[Output: JSON with articles]
+    K --&gt; M[Output: JSON + CSV with cases]</code></pre>
+<h2 id="pagination-handling">Pagination Handling<a class="headerlink" href="#pagination-handling" title="Permanent link">&para;</a></h2>
+<h3 id="news-site-pagination">News Site Pagination<a class="headerlink" href="#news-site-pagination" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>graph TD
+    A[Start: Base URL] --&gt; B[Load Homepage]
+    B --&gt; C[Discover Navigation Pattern]
+    C --&gt; D{Pagination Type?}
+
+    D --&gt;|URL Parameters| E[Extract Page Numbers]
+    D --&gt;|Next/Previous Links| F[Follow Link Pattern]
+    D --&gt;|Load More Button| G[Simulate Clicks]
+
+    E --&gt; H[Generate Page URLs]
+    F --&gt; I[Crawl Sequential Pages]
+    G --&gt; J[Dynamic Loading]
+
+    H --&gt; K[Process All Pages]
+    I --&gt; K
+    J --&gt; K
+
+    K --&gt; L[Extract Article URLs]
+    L --&gt; M[Filter by Suffix]
+    M --&gt; N[Remove Duplicates]
+    N --&gt; O[Return URL List]</code></pre>
+<h3 id="court-portal-pagination">Court Portal Pagination<a class="headerlink" href="#court-portal-pagination" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>graph TD
+    A[Search Results URL] --&gt; B[Parse URL Parameters]
+    B --&gt; C[Extract: criteria, page, size]
+    C --&gt; D[Determine Total Pages]
+
+    D --&gt; E{How Many Pages?}
+    E --&gt;|1 Page| F[Process Single Page]
+    E --&gt;|Multiple| G[Generate Page URLs]
+
+    F --&gt; H[Extract Cases]
+    G --&gt; I[For Each Page]
+
+    I --&gt; J[Update Page Parameter]
+    J --&gt; K[Load Page with Selenium]
+    K --&gt; L[Wait for Content]
+    L --&gt; M[Extract Cases]
+    M --&gt; N{More Pages?}
+
+    N --&gt;|Yes| I
+    N --&gt;|No| O[Combine All Results]
+
+    H --&gt; P[Return Cases]
+    O --&gt; P</code></pre>
+<h2 id="data-transformation-process">Data Transformation Process<a class="headerlink" href="#data-transformation-process" title="Permanent link">&para;</a></h2>
+<h3 id="news-article-transformation">News Article Transformation<a class="headerlink" href="#news-article-transformation" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>graph LR
+    A[Raw HTML] --&gt; B[BeautifulSoup Parse]
+    B --&gt; C[Element Selection]
+    C --&gt; D[Text Extraction]
+    D --&gt; E[Data Cleaning]
+    E --&gt; F[Structure Creation]
+
+    subgraph "Before"
+        G["&lt;article&gt;&lt;h1&gt;Title&lt;/h1&gt;&lt;p&gt;Content...&lt;/p&gt;&lt;/article&gt;"]
+    end
+
+    subgraph "After"
+        H["{\n  'title': 'Title',\n  'content': 'Content...',\n  'author': 'Author',\n  'date': '2024-01-15'\n}"]
+    end
+
+    A -.-&gt; G
+    F -.-&gt; H</code></pre>
+<h3 id="court-case-transformation">Court Case Transformation<a class="headerlink" href="#court-case-transformation" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>graph LR
+    A[HTML Table] --&gt; B[Row Extraction]
+    B --&gt; C[Cell Processing]
+    C --&gt; D[Link Extraction]
+    D --&gt; E[Date Parsing]
+    E --&gt; F[JSON Structure]
+
+    subgraph "Before"
+        G["&lt;tr&gt;&lt;td&gt;CL-2024-001&lt;/td&gt;&lt;td&gt;Case Title&lt;/td&gt;&lt;/tr&gt;"]
+    end
+
+    subgraph "After"
+        H["{\n  'case_number': {\n    'text': 'CL-2024-001',\n    'link': '/case/detail/123'\n  },\n  'case_title': 'Case Title'\n}"]
+    end
+
+    A -.-&gt; G
+    F -.-&gt; H</code></pre>
+<h2 id="error-handling-flow">Error Handling Flow<a class="headerlink" href="#error-handling-flow" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>graph TD
+    A[Operation Start] --&gt; B{Error Occurred?}
+    B --&gt;|No| C[Continue Processing]
+    B --&gt;|Yes| D{Error Type?}
+
+    D --&gt;|Network| E[Retry with Backoff]
+    D --&gt;|Element Not Found| F[Try Alternative Selector]
+    D --&gt;|Browser Crash| G[Restart Browser]
+    D --&gt;|Permission| H[Check File Access]
+    D --&gt;|Rate Limit| I[Wait and Retry]
+
+    E --&gt; J{Retry Successful?}
+    F --&gt; K{Alternative Found?}
+    G --&gt; L[Reinitialize Driver]
+    H --&gt; M[Change Output Location]
+    I --&gt; N[Resume Processing]
+
+    J --&gt;|Yes| C
+    J --&gt;|No| O[Log Error &amp; Continue]
+    K --&gt;|Yes| C
+    K --&gt;|No| O
+    L --&gt; C
+    M --&gt; C
+    N --&gt; C
+
+    C --&gt; P[Complete Successfully]
+    O --&gt; Q[Partial Success]</code></pre>
+<h2 id="integration-architecture">Integration Architecture<a class="headerlink" href="#integration-architecture" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>graph TD
+    A[CLI Interface] --&gt; B[main.py]
+    B --&gt; C[IntegratedParser]
+    C --&gt; D{URL Analysis}
+
+    D --&gt;|News URL| E[url_catcher_module]
+    D --&gt;|Court URL| F[court_url_paginator]
+
+    E --&gt; G[BaseParser Classes]
+    F --&gt; H[ParserAppealsAL]
+
+    G --&gt; I[Parser1819]
+    G --&gt; J[ParserDailyNews]
+
+    I --&gt; K[Article Processing]
+    J --&gt; K
+    H --&gt; L[Case Processing]
+
+    K --&gt; M[JSON Output]
+    L --&gt; N[JSON + CSV Output]
+
+    M --&gt; O[File System]
+    N --&gt; O
+
+    subgraph "Configuration"
+        P[CourtSearchBuilder]
+        Q[Search Parameters]
+        R[URL Building]
+    end
+
+    F --&gt; P
+    P --&gt; Q
+    Q --&gt; R
+    R --&gt; H</code></pre>
+<h2 id="performance-optimization-flow">Performance Optimization Flow<a class="headerlink" href="#performance-optimization-flow" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>graph TD
+    A[Start Scraping] --&gt; B[Check Rate Limits]
+    B --&gt; C[Monitor Memory Usage]
+    C --&gt; D[Process in Batches]
+
+    D --&gt; E{Resource Check}
+    E --&gt;|OK| F[Continue Processing]
+    E --&gt;|High Memory| G[Clear Cache]
+    E --&gt;|Rate Limited| H[Implement Delay]
+
+    F --&gt; I[Extract Data]
+    G --&gt; J[Garbage Collection]
+    H --&gt; K[Wait Period]
+
+    J --&gt; F
+    K --&gt; F
+
+    I --&gt; L{More Data?}
+    L --&gt;|Yes| B
+    L --&gt;|No| M[Finalize Output]
+
+    M --&gt; N[Performance Report]
+    N --&gt; O[Complete]</code></pre>
+<h2 id="command-processing-flow">Command Processing Flow<a class="headerlink" href="#command-processing-flow" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>graph TD
+    A[User Command] --&gt; B[Parse Arguments]
+    B --&gt; C[Validate Parameters]
+    C --&gt; D{Validation Result?}
+
+    D --&gt;|Valid| E[Initialize Components]
+    D --&gt;|Invalid| F[Show Error &amp; Help]
+
+    E --&gt; G[Set Up Environment]
+    G --&gt; H[Check Prerequisites]
+    H --&gt; I{Prerequisites Met?}
+
+    I --&gt;|Yes| J[Execute Scraping]
+    I --&gt;|No| K[Show Requirements]
+
+    J --&gt; L[Monitor Progress]
+    L --&gt; M[Handle Errors]
+    M --&gt; N[Generate Output]
+    N --&gt; O[Display Results]
+
+    F --&gt; P[Exit with Error]
+    K --&gt; P
+    O --&gt; Q[Exit Successfully]</code></pre>
+<h2 id="session-management-court-scraping">Session Management (Court Scraping)<a class="headerlink" href="#session-management-court-scraping" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>graph TD
+    A[Court URL Provided] --&gt; B{URL Type?}
+
+    B --&gt;|Fresh Search| C[Build New Session]
+    B --&gt;|Custom URL| D[Check Session Age]
+
+    C --&gt; E[Navigate to Portal]
+    D --&gt; F{Session Valid?}
+
+    F --&gt;|Yes| G[Use Existing Session]
+    F --&gt;|No| H[Warn User]
+    F --&gt;|Unknown| I[Attempt to Use]
+
+    E --&gt; J[Discover Court IDs]
+    G --&gt; K[Start Extraction]
+    H --&gt; L[Suggest New Search]
+    I --&gt; M[Monitor for Errors]
+
+    J --&gt; N[Build Search Parameters]
+    N --&gt; O[Generate Search URL]
+    O --&gt; K
+
+    K --&gt; P[Extract Data]
+    M --&gt; Q{Session Expired?}
+
+    Q --&gt;|Yes| L
+    Q --&gt;|No| P
+
+    P --&gt; R[Complete Successfully]
+    L --&gt; S[Exit with Message]</code></pre>
+<h2 id="visual-summary">Visual Summary<a class="headerlink" href="#visual-summary" title="Permanent link">&para;</a></h2>
+<p>These diagrams show how OPAL:</p>
+<ol>
+<li><strong>Processes different types of content</strong> (news vs court data)</li>
+<li><strong>Handles complex pagination</strong> across different website structures  </li>
+<li><strong>Makes intelligent parser selections</strong> based on URL patterns</li>
+<li><strong>Transforms raw HTML</strong> into structured, usable data</li>
+<li><strong>Manages errors gracefully</strong> with fallback strategies</li>
+<li><strong>Optimizes performance</strong> through batching and rate limiting</li>
+<li><strong>Handles browser sessions</strong> for JavaScript-heavy sites</li>
+</ol>
+<p>Understanding these flows helps you:
+- <strong>Debug issues</strong> by following the process step-by-step
+- <strong>Optimize your scraping</strong> by understanding bottlenecks
+- <strong>Extend OPAL</strong> by knowing where to add new functionality
+- <strong>Troubleshoot errors</strong> by identifying which component failed</p>
+<p>For more technical details, see the <a href="../../developer/architecture/">Developer Guide</a>.</p>
+<p>For practical usage examples, see <a href="../common-use-cases/">Common Use Cases</a>.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/alabama-forward/opal" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10.6.1/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
