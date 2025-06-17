@@ -11,46 +11,46 @@ OPAL includes several specialized parsers designed to extract court case data fr
 
 | Parser | Source | Command | Description |
 |--------|--------|---------|-------------|
-| ParserAppealsAL | Alabama Appellate Courts | `appeals-al` | Extracts appellate court decisions |
-| Parser1819 | 1819 News | `parser-1819` | Scrapes legal news from 1819 News |
-| ParserDailyNews | Daily News sites | `daily-news` | Extracts court news from daily publications |
+| ParserAppealsAL | Alabama Appellate Courts | `ParserAppealsAL` | Extracts appellate court decisions |
+| Parser1819 | 1819 News | `Parser1819` | Scrapes legal news from 1819 News |
+| ParserDailyNews | Daily News sites | `ParserDailyNews` | Extracts court news from daily publications |
 
 ## Parser Details
 
-### [Alabama Appeals Court Parser](./appeals-al.md)
-<span class="parser-badge">appeals-al</span>
+### [Alabama Appeals Court Parser](./ParserAppealsAL.md)
+<span class="parser-badge">ParserAppealsAL</span>
 
 The primary parser for extracting appellate court decisions from Alabama's official court websites.
 
 **Key Features:**
-- Date range filtering
-- Case type categorization
-- Full opinion text extraction
-- Metadata parsing (case numbers, parties, judges)
+- JavaScript rendering with Selenium
+- Court case metadata extraction
+- Pagination handling
+- Rate limiting protection
 
 **Example:**
 ```bash
-opal parse appeals-al --start-date 2024-01-01
+python -m opal --url "https://publicportal.alacourt.gov" --parser ParserAppealsAL
 ```
 
-### [1819 News Parser](./parser-1819.md)
-<span class="parser-badge">parser-1819</span>
+### [1819 News Parser](./Parser1819.md)
+<span class="parser-badge">Parser1819</span>
 
 Specialized parser for the 1819 News website, focusing on legal and court-related news.
 
 **Key Features:**
-- Article categorization
-- Author extraction
-- Related case linking
-- Comment parsing
+- Article text extraction
+- Author and date parsing
+- Line-by-line content storage
+- URL pattern filtering
 
 **Example:**
 ```bash
-opal parse parser-1819 --category legal
+python -m opal --url "https://1819news.com/" --parser Parser1819
 ```
 
-### [Daily News Parser](./daily-news.md)
-<span class="parser-badge">daily-news</span>
+### [Daily News Parser](./ParserDailyNews.md)
+<span class="parser-badge">ParserDailyNews</span>
 
 General-purpose parser for various Alabama daily news websites covering court cases.
 
