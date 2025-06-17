@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Complete guide to using the ParserAppealsAL parser for scraping Alabama appellate court decisions">
+        <meta name="description" content="Guide to using the Parser1819 for scraping articles from 1819 News">
       
       
         <meta name="author" content="Gabriel Cabán Cubero">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Alabama Appeals Court Parser (ParserAppealsAL) - OPAL - Oppositional Positions in Alabama</title>
+        <title>1819 News Parser (Parser1819) - OPAL - Oppositional Positions in Alabama</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#alabama-appeals-court-parser-parserappealsal" class="md-skip">
+        <a href="#1819-news-parser-parser1819" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Alabama Appeals Court Parser (ParserAppealsAL)
+              1819 News Parser (Parser1819)
             
           </span>
         </div>
@@ -1429,27 +1429,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#javascript-rendering" class="md-nav__link">
+  <a href="#content-extraction" class="md-nav__link">
     <span class="md-ellipsis">
-      JavaScript Rendering
+      Content Extraction
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#rate-limiting" class="md-nav__link">
+  <a href="#structured-output" class="md-nav__link">
     <span class="md-ellipsis">
-      Rate Limiting
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#headless-mode" class="md-nav__link">
-    <span class="md-ellipsis">
-      Headless Mode
+      Structured Output
     </span>
   </a>
   
@@ -1504,18 +1495,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#processing-multiple-pages" class="md-nav__link">
+  <a href="#filtering-by-url-pattern" class="md-nav__link">
     <span class="md-ellipsis">
-      Processing Multiple Pages
+      Filtering by URL Pattern
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#integration-with-scripts" class="md-nav__link">
+  <a href="#processing-specific-sections" class="md-nav__link">
     <span class="md-ellipsis">
-      Integration with Scripts
+      Processing Specific Sections
     </span>
   </a>
   
@@ -1537,18 +1528,60 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#daily-court-updates" class="md-nav__link">
+  <a href="#daily-news-monitoring" class="md-nav__link">
     <span class="md-ellipsis">
-      Daily Court Updates
+      Daily News Monitoring
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#specific-court-monitoring" class="md-nav__link">
+  <a href="#keyword-analysis" class="md-nav__link">
     <span class="md-ellipsis">
-      Specific Court Monitoring
+      Keyword Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#author-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Author Tracking
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parser-specific-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parser-Specific Behavior
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parser-Specific Behavior">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#html-structure-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      HTML Structure Handling
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Handling
     </span>
   </a>
   
@@ -1579,9 +1612,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#debug-mode" class="md-nav__link">
+  <a href="#debug-tips" class="md-nav__link">
     <span class="md-ellipsis">
-      Debug Mode
+      Debug Tips
     </span>
   </a>
   
@@ -1593,20 +1626,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#performance-considerations" class="md-nav__link">
+  <a href="#performance-optimization" class="md-nav__link">
     <span class="md-ellipsis">
-      Performance Considerations
+      Performance Optimization
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#error-handling" class="md-nav__link">
+  <a href="#integration-examples" class="md-nav__link">
     <span class="md-ellipsis">
-      Error Handling
+      Integration Examples
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Integration Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#csv-export" class="md-nav__link">
+    <span class="md-ellipsis">
+      CSV Export
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1644,58 +1692,56 @@
 
 
 
-<p><a href="/">Home</a> &gt; <a href="/user-guide/">User Guide</a> &gt; <a href="/user-guide/parsers/">Parsers</a> &gt; Alabama Appeals Court Parser</p>
-<h1 id="alabama-appeals-court-parser-parserappealsal">Alabama Appeals Court Parser (ParserAppealsAL)<a class="headerlink" href="#alabama-appeals-court-parser-parserappealsal" title="Permanent link">&para;</a></h1>
-<p><span class="parser-badge">ParserAppealsAL</span></p>
-<p>The Alabama Appeals Court Parser (<code>ParserAppealsAL</code>) is OPAL's specialized parser for extracting court case data from the Alabama Appeals Court Public Portal.</p>
+<p><a href="/">Home</a> &gt; <a href="/user-guide/">User Guide</a> &gt; <a href="/user-guide/parsers/">Parsers</a> &gt; 1819 News Parser</p>
+<h1 id="1819-news-parser-parser1819">1819 News Parser (Parser1819)<a class="headerlink" href="#1819-news-parser-parser1819" title="Permanent link">&para;</a></h1>
+<p><span class="parser-badge">Parser1819</span></p>
+<p>The 1819 News Parser (<code>Parser1819</code>) is designed to extract articles from the 1819 News website, focusing on Alabama political and legal news coverage.</p>
 <div class="admonition abstract">
 <p class="admonition-title">Overview</p>
-<p>This parser uses Selenium to handle JavaScript-rendered content on the Alabama Appeals Court website, extracting comprehensive case data including case numbers, titles, filing dates, and case status.</p>
+<p>This parser extracts article content, metadata, and structure from 1819 News, providing comprehensive data for analysis of Alabama news coverage.</p>
 </div>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
 <ul>
 <li>OPAL installed and configured</li>
-<li>Chrome/Chromium browser installed</li>
 <li>Internet connection</li>
-<li>Basic understanding of command-line tools</li>
+<li>Basic command-line knowledge</li>
 </ul>
 <h2 id="basic-usage">Basic Usage<a class="headerlink" href="#basic-usage" title="Permanent link">&para;</a></h2>
 <h3 id="simple-extraction">Simple Extraction<a class="headerlink" href="#simple-extraction" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Extract court cases from Alabama Appeals Court</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span>--url<span class="w"> </span><span class="s2">&quot;https://publicportal.alacourt.gov&quot;</span><span class="w"> </span>--parser<span class="w"> </span>ParserAppealsAL
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Extract articles from 1819 News</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span>--url<span class="w"> </span><span class="s2">&quot;https://1819news.com/&quot;</span><span class="w"> </span>--parser<span class="w"> </span>Parser1819
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># With max pages limit</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span>--url<span class="w"> </span><span class="s2">&quot;https://publicportal.alacourt.gov&quot;</span><span class="w"> </span>--parser<span class="w"> </span>ParserAppealsAL<span class="w"> </span>--max_pages<span class="w"> </span><span class="m">5</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># With pagination limit</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span>--url<span class="w"> </span><span class="s2">&quot;https://1819news.com/&quot;</span><span class="w"> </span>--parser<span class="w"> </span>Parser1819<span class="w"> </span>--max_pages<span class="w"> </span><span class="m">5</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1"># With URL suffix filter</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span>--url<span class="w"> </span><span class="s2">&quot;https://1819news.com/&quot;</span><span class="w"> </span>--parser<span class="w"> </span>Parser1819<span class="w"> </span>--suffix<span class="w"> </span><span class="s2">&quot;/news/item&quot;</span>
 </code></pre></div>
 <h3 id="command-line-arguments">Command Line Arguments<a class="headerlink" href="#command-line-arguments" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Required arguments</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>--url<span class="w">        </span><span class="c1"># Base URL of the court website</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>--parser<span class="w">     </span><span class="c1"># Must be &quot;ParserAppealsAL&quot;</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>--url<span class="w">        </span><span class="c1"># Base URL (https://1819news.com/)</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>--parser<span class="w">     </span><span class="c1"># Must be &quot;Parser1819&quot;</span>
 <a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
 <a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c1"># Optional arguments</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>--max_pages<span class="w">  </span><span class="c1"># Maximum number of pages to scrape</span>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>--suffix<span class="w">     </span><span class="c1"># URL suffix (not typically used for court parser)</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>--suffix<span class="w">     </span><span class="c1"># URL suffix to filter article pages</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>--max_pages<span class="w">  </span><span class="c1"># Maximum number of pages to process</span>
 </code></pre></div>
 <h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
-<h3 id="javascript-rendering">JavaScript Rendering<a class="headerlink" href="#javascript-rendering" title="Permanent link">&para;</a></h3>
-<p>The parser uses Selenium WebDriver to:
-- Handle dynamic JavaScript content
-- Navigate through court portal pages
-- Extract data from rendered tables
-- Handle pagination automatically</p>
-<h3 id="rate-limiting">Rate Limiting<a class="headerlink" href="#rate-limiting" title="Permanent link">&para;</a></h3>
+<h3 id="content-extraction">Content Extraction<a class="headerlink" href="#content-extraction" title="Permanent link">&para;</a></h3>
+<p>The parser extracts:
+- Article title
+- Author information
+- Publication date
+- Full article text (line by line)
+- Article URL</p>
+<h3 id="structured-output">Structured Output<a class="headerlink" href="#structured-output" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Built-in rate limiting (3 seconds default between requests)</li>
-<li>Prevents overwhelming the court website</li>
-<li>Configurable through parser initialization</li>
-</ul>
-<h3 id="headless-mode">Headless Mode<a class="headerlink" href="#headless-mode" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Runs in headless mode by default (no browser window)</li>
-<li>Can be configured to show browser for debugging</li>
+<li>Articles are parsed line by line</li>
+<li>Preserves paragraph structure</li>
+<li>Maintains text formatting</li>
+<li>Counts total lines for analysis</li>
 </ul>
 <h2 id="data-fields-extracted">Data Fields Extracted<a class="headerlink" href="#data-fields-extracted" title="Permanent link">&para;</a></h2>
-<p>The parser extracts the following information for each case:</p>
 <table>
 <thead>
 <tr>
@@ -1706,155 +1752,198 @@
 </thead>
 <tbody>
 <tr>
-<td>court</td>
-<td>Court name</td>
-<td>"01-AUTAUGA"</td>
+<td>url</td>
+<td>Article URL</td>
+<td>"https://1819news.com/news/item/..."</td>
 </tr>
 <tr>
-<td>case_number</td>
-<td>Case number with link</td>
-<td>{"text": "01-CC-1983-000002.00", "link": "url"}</td>
+<td>title</td>
+<td>Article title</td>
+<td>"Alabama Legislature Passes New Bill"</td>
 </tr>
 <tr>
-<td>case_title</td>
-<td>Full case title</td>
-<td>"JOHN DOE VS JANE DOE"</td>
+<td>author</td>
+<td>Article author</td>
+<td>"John Smith"</td>
 </tr>
 <tr>
-<td>filed_date</td>
-<td>Date case was filed</td>
-<td>"06/28/1985"</td>
+<td>date</td>
+<td>Publication date</td>
+<td>"March 15, 2024"</td>
 </tr>
 <tr>
-<td>status</td>
-<td>Current case status</td>
-<td>"CLOSED"</td>
+<td>line_count</td>
+<td>Number of text lines</td>
+<td>45</td>
 </tr>
 <tr>
-<td>case_url</td>
-<td>Direct link to case</td>
-<td>Full URL to case details</td>
+<td>line_content</td>
+<td>Article text by line</td>
+<td>{"line 1": "First paragraph...", ...}</td>
 </tr>
 </tbody>
 </table>
 <h2 id="output-format">Output Format<a class="headerlink" href="#output-format" title="Permanent link">&para;</a></h2>
 <h3 id="json-structure">JSON Structure<a class="headerlink" href="#json-structure" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;success&quot;</span><span class="p">,</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-15T10:30:45&quot;</span><span class="p">,</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="nt">&quot;total_cases&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">150</span><span class="p">,</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="nt">&quot;page_info&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="nt">&quot;current_page&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="nt">&quot;total_pages&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="nt">&quot;results_per_page&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span>
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">  </span><span class="p">},</span>
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">  </span><span class="nt">&quot;cases&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">    </span><span class="p">{</span>
-<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">      </span><span class="nt">&quot;court&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;01-AUTAUGA&quot;</span><span class="p">,</span>
-<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">      </span><span class="nt">&quot;case_number&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">        </span><span class="nt">&quot;text&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;01-CC-1983-000002.00&quot;</span><span class="p">,</span>
-<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">        </span><span class="nt">&quot;link&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://v2.alacourt.com/frmCaseDetail.aspx?caseID=...&quot;</span>
-<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">      </span><span class="p">},</span>
-<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">      </span><span class="nt">&quot;case_title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;JOHN DOE VS JANE DOE&quot;</span><span class="p">,</span>
-<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">      </span><span class="nt">&quot;filed_date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;06/28/1985&quot;</span><span class="p">,</span>
-<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CLOSED&quot;</span><span class="p">,</span>
-<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">      </span><span class="nt">&quot;case_url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://v2.alacourt.com/frmCaseDetail.aspx?caseID=...&quot;</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nt">&quot;success&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="nt">&quot;total_articles&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="p">,</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-15T10:30:45&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="nt">&quot;site_info&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="nt">&quot;base_url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://1819news.com/&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="nt">&quot;pages_processed&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">  </span><span class="p">},</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">  </span><span class="nt">&quot;articles&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">      </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://1819news.com/news/item/example-article&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">      </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Alabama Legislature Considers New Education Bill&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">      </span><span class="nt">&quot;author&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Jane Doe&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">      </span><span class="nt">&quot;date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;March 14, 2024&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">      </span><span class="nt">&quot;line_count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">32</span><span class="p">,</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">      </span><span class="nt">&quot;line_content&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">        </span><span class="nt">&quot;line 1&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The Alabama Legislature is considering...&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">        </span><span class="nt">&quot;line 2&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The bill, sponsored by Senator...&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">        </span><span class="nt">&quot;line 3&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Education advocates say...&quot;</span>
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">      </span><span class="p">}</span>
 <a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">    </span><span class="p">}</span>
 <a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">  </span><span class="p">]</span>
 <a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="p">}</span>
 </code></pre></div>
 <h2 id="advanced-usage">Advanced Usage<a class="headerlink" href="#advanced-usage" title="Permanent link">&para;</a></h2>
-<h3 id="processing-multiple-pages">Processing Multiple Pages<a class="headerlink" href="#processing-multiple-pages" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Process first 10 pages</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span>--url<span class="w"> </span><span class="s2">&quot;https://publicportal.alacourt.gov&quot;</span><span class="w"> </span>--parser<span class="w"> </span>ParserAppealsAL<span class="w"> </span>--max_pages<span class="w"> </span><span class="m">10</span>
+<h3 id="filtering-by-url-pattern">Filtering by URL Pattern<a class="headerlink" href="#filtering-by-url-pattern" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Only process articles with specific URL patterns</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span>--url<span class="w"> </span><span class="s2">&quot;https://1819news.com/&quot;</span><span class="w"> </span>--parser<span class="w"> </span>Parser1819<span class="w"> </span>--suffix<span class="w"> </span><span class="s2">&quot;/news/politics&quot;</span>
 <a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># Process all available pages (use with caution)</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span>--url<span class="w"> </span><span class="s2">&quot;https://publicportal.alacourt.gov&quot;</span><span class="w"> </span>--parser<span class="w"> </span>ParserAppealsAL
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># Multiple patterns (in script)</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>python<span class="w"> </span>script_with_multiple_suffixes.py
 </code></pre></div>
-<h3 id="integration-with-scripts">Integration with Scripts<a class="headerlink" href="#integration-with-scripts" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">opal.court_case_parser</span><span class="w"> </span><span class="kn">import</span> <span class="n">ParserAppealsAL</span>
+<h3 id="processing-specific-sections">Processing Specific Sections<a class="headerlink" href="#processing-specific-sections" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">opal.parser_module</span><span class="w"> </span><span class="kn">import</span> <span class="n">Parser1819</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">opal.integrated_parser</span><span class="w"> </span><span class="kn">import</span> <span class="n">IntegratedParser</span>
 <a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1"># Create parser instance</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="n">court_parser</span> <span class="o">=</span> <span class="n">IntegratedParser</span><span class="p">(</span><span class="n">ParserAppealsAL</span><span class="p">)</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1"># Create parser for specific section</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="n">news_parser</span> <span class="o">=</span> <span class="n">IntegratedParser</span><span class="p">(</span><span class="n">Parser1819</span><span class="p">)</span>
 <a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="c1"># Process court website</span>
-<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="n">results</span> <span class="o">=</span> <span class="n">court_parser</span><span class="o">.</span><span class="n">process_site</span><span class="p">(</span>
-<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>    <span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;https://publicportal.alacourt.gov&quot;</span><span class="p">,</span>
-<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>    <span class="n">max_pages</span><span class="o">=</span><span class="mi">5</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="c1"># Process politics section</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="n">politics_articles</span> <span class="o">=</span> <span class="n">news_parser</span><span class="o">.</span><span class="n">process_site</span><span class="p">(</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>    <span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;https://1819news.com/news/politics/&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>    <span class="n">max_pages</span><span class="o">=</span><span class="mi">10</span>
 <a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="p">)</span>
-<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>
-<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="c1"># Parse results</span>
-<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
-<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">results</span><span class="p">)</span>
-<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Found </span><span class="si">{</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;total_cases&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> cases&quot;</span><span class="p">)</span>
 </code></pre></div>
 <h2 id="common-use-cases">Common Use Cases<a class="headerlink" href="#common-use-cases" title="Permanent link">&para;</a></h2>
-<h3 id="daily-court-updates">Daily Court Updates<a class="headerlink" href="#daily-court-updates" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># Daily scrape with date in filename</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nv">DATE</span><span class="o">=</span><span class="k">$(</span>date<span class="w"> </span>+%Y-%m-%d<span class="k">)</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span>--url<span class="w"> </span><span class="s2">&quot;https://publicportal.alacourt.gov&quot;</span><span class="w"> </span>--parser<span class="w"> </span>ParserAppealsAL<span class="w"> </span>--max_pages<span class="w"> </span><span class="m">3</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1"># Output saved as: YYYY-MM-DD_ParserAppealsAL.json</span>
+<h3 id="daily-news-monitoring">Daily News Monitoring<a class="headerlink" href="#daily-news-monitoring" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="ch">#!/bin/bash</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="c1"># Daily news scrape</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="nv">DATE</span><span class="o">=</span><span class="k">$(</span>date<span class="w"> </span>+%Y-%m-%d<span class="k">)</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span>--url<span class="w"> </span><span class="s2">&quot;https://1819news.com/&quot;</span><span class="w"> </span>--parser<span class="w"> </span>Parser1819<span class="w"> </span>--max_pages<span class="w"> </span><span class="m">3</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;News saved to </span><span class="si">${</span><span class="nv">DATE</span><span class="si">}</span><span class="s2">_Parser1819.json&quot;</span>
 </code></pre></div>
-<h3 id="specific-court-monitoring">Specific Court Monitoring<a class="headerlink" href="#specific-court-monitoring" title="Permanent link">&para;</a></h3>
-<p>Since the parser extracts court information, you can filter results post-processing:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># Filter for specific court</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;2024-03-15_ParserAppealsAL.json&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<h3 id="keyword-analysis">Keyword Analysis<a class="headerlink" href="#keyword-analysis" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="c1"># Load parsed articles</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;2024-03-15_Parser1819.json&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
 <a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
 <a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
-<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="n">autauga_cases</span> <span class="o">=</span> <span class="p">[</span>
-<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>    <span class="n">case</span> <span class="k">for</span> <span class="n">case</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;cases&#39;</span><span class="p">]</span> 
-<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>    <span class="k">if</span> <span class="n">case</span><span class="p">[</span><span class="s1">&#39;court&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;01-AUTAUGA&#39;</span>
-<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="p">]</span>
-</code></pre></div></p>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="c1"># Search for keywords</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="n">keyword</span> <span class="o">=</span> <span class="s2">&quot;court&quot;</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="n">matching_articles</span> <span class="o">=</span> <span class="p">[]</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="k">for</span> <span class="n">article</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;articles&#39;</span><span class="p">]:</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>    <span class="n">content</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">article</span><span class="p">[</span><span class="s1">&#39;line_content&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">())</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>    <span class="k">if</span> <span class="n">keyword</span> <span class="ow">in</span> <span class="n">content</span><span class="p">:</span>
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>        <span class="n">matching_articles</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">article</span><span class="p">)</span>
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Found </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">matching_articles</span><span class="p">)</span><span class="si">}</span><span class="s2"> articles mentioning &#39;</span><span class="si">{</span><span class="n">keyword</span><span class="si">}</span><span class="s2">&#39;&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="author-tracking">Author Tracking<a class="headerlink" href="#author-tracking" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># Track articles by specific authors</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">Counter</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="n">author_counts</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>    <span class="n">article</span><span class="p">[</span><span class="s1">&#39;author&#39;</span><span class="p">]</span> 
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>    <span class="k">for</span> <span class="n">article</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;articles&#39;</span><span class="p">]</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="p">)</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Articles by author:&quot;</span><span class="p">)</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="k">for</span> <span class="n">author</span><span class="p">,</span> <span class="n">count</span> <span class="ow">in</span> <span class="n">author_counts</span><span class="o">.</span><span class="n">most_common</span><span class="p">():</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">author</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">count</span><span class="si">}</span><span class="s2"> articles&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="parser-specific-behavior">Parser-Specific Behavior<a class="headerlink" href="#parser-specific-behavior" title="Permanent link">&para;</a></h2>
+<h3 id="html-structure-handling">HTML Structure Handling<a class="headerlink" href="#html-structure-handling" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Looks for <code>div</code> with class <code>author-date</code> for metadata</li>
+<li>Extracts all <code>&lt;p&gt;</code> tags for article content</li>
+<li>Handles missing author/date gracefully</li>
+</ul>
+<h3 id="error-handling">Error Handling<a class="headerlink" href="#error-handling" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Returns "Unknown Author" if author not found</li>
+<li>Returns "Unknown Date" if date not found</li>
+<li>Continues processing even if some articles fail</li>
+</ul>
 <h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
 <h3 id="common-issues">Common Issues<a class="headerlink" href="#common-issues" title="Permanent link">&para;</a></h3>
-<p><strong>Chrome Driver Issues</strong>
-- The parser automatically installs ChromeDriver using webdriver-manager
-- Ensure Chrome/Chromium is installed on your system
-- Check Chrome version compatibility</p>
-<p><strong>Timeout Errors</strong>
-- Court website may be slow to respond
-- Parser includes WebDriverWait for dynamic content
-- Default timeout is 10 seconds</p>
-<p><strong>No Data Found</strong>
-- Verify the URL is correct
-- Check if the court website structure has changed
-- Enable non-headless mode for debugging</p>
-<h3 id="debug-mode">Debug Mode<a class="headerlink" href="#debug-mode" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># Run with visible browser for debugging</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">opal.court_case_parser</span><span class="w"> </span><span class="kn">import</span> <span class="n">ParserAppealsAL</span>
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="n">parser</span> <span class="o">=</span> <span class="n">ParserAppealsAL</span><span class="p">(</span><span class="n">headless</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<p><strong>No Articles Found</strong>
+- Verify the base URL is correct
+- Check if website structure has changed
+- Ensure suffix parameter matches actual URLs</p>
+<p><strong>Missing Metadata</strong>
+- Some articles may not have author information
+- Date format may vary
+- Parser provides defaults for missing data</p>
+<p><strong>Incomplete Content</strong>
+- Check for JavaScript-rendered content
+- Some articles may require authentication
+- Verify network connectivity</p>
+<h3 id="debug-tips">Debug Tips<a class="headerlink" href="#debug-tips" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># Run with verbose output</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span>--url<span class="w"> </span><span class="s2">&quot;https://1819news.com/&quot;</span><span class="w"> </span>--parser<span class="w"> </span>Parser1819<span class="w"> </span>--max_pages<span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="c1"># Check specific article structure</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>curl<span class="w"> </span>-s<span class="w"> </span><span class="s2">&quot;https://1819news.com/news/item/sample&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s2">&quot;(author-date|&lt;p&gt;)&quot;</span>
 </code></pre></div>
-<h2 id="performance-considerations">Performance Considerations<a class="headerlink" href="#performance-considerations" title="Permanent link">&para;</a></h2>
+<h2 id="performance-optimization">Performance Optimization<a class="headerlink" href="#performance-optimization" title="Permanent link">&para;</a></h2>
 <ol>
-<li><strong>Rate Limiting</strong>: Default 3-second delay between page requests</li>
-<li><strong>Memory Usage</strong>: Selenium requires more memory than simple HTTP requests</li>
-<li><strong>Processing Time</strong>: Each page takes 10-15 seconds to fully load and parse</li>
-<li><strong>Recommended Limits</strong>: Use <code>--max_pages</code> to limit scope</li>
+<li><strong>Use --max_pages</strong>: Limit pages to process</li>
+<li><strong>Filter with --suffix</strong>: Reduce unnecessary requests</li>
+<li><strong>Batch Processing</strong>: Process sections separately</li>
+<li><strong>Rate Limiting</strong>: Built-in delays prevent blocking</li>
 </ol>
-<h2 id="error-handling">Error Handling<a class="headerlink" href="#error-handling" title="Permanent link">&para;</a></h2>
-<p>The parser includes robust error handling for:
-- Network timeouts
-- Missing elements on page
-- Invalid page structures
-- Browser crashes</p>
-<p>Failed pages are logged but don't stop the entire process.</p>
+<h2 id="integration-examples">Integration Examples<a class="headerlink" href="#integration-examples" title="Permanent link">&para;</a></h2>
+<h3 id="csv-export">CSV Export<a class="headerlink" href="#csv-export" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">csv</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="c1"># Load JSON data</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;2024-03-15_Parser1819.json&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>    <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="c1"># Export to CSV</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;articles.csv&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>    <span class="n">writer</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictWriter</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">fieldnames</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;author&#39;</span><span class="p">,</span> <span class="s1">&#39;date&#39;</span><span class="p">,</span> <span class="s1">&#39;url&#39;</span><span class="p">])</span>
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>    <span class="n">writer</span><span class="o">.</span><span class="n">writeheader</span><span class="p">()</span>
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>    <span class="k">for</span> <span class="n">article</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;articles&#39;</span><span class="p">]:</span>
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>        <span class="n">writer</span><span class="o">.</span><span class="n">writerow</span><span class="p">({</span>
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>            <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="n">article</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">],</span>
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>            <span class="s1">&#39;author&#39;</span><span class="p">:</span> <span class="n">article</span><span class="p">[</span><span class="s1">&#39;author&#39;</span><span class="p">],</span>
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>            <span class="s1">&#39;date&#39;</span><span class="p">:</span> <span class="n">article</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">],</span>
+<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>            <span class="s1">&#39;url&#39;</span><span class="p">:</span> <span class="n">article</span><span class="p">[</span><span class="s1">&#39;url&#39;</span><span class="p">]</span>
+<a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>        <span class="p">})</span>
+</code></pre></div>
 <h2 id="related-topics">Related Topics<a class="headerlink" href="#related-topics" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../">Parser Overview</a></li>
-<li><a href="../Parser1819/">1819 News Parser</a></li>
+<li><a href="../ParserAppealsAL/">Alabama Appeals Court Parser</a></li>
 <li><a href="./ParserDailyNews.md">Daily News Parser</a></li>
 <li><a href="../../working-with-output-data/">Working with Output Data</a></li>
 </ul>
 <h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Try the <a href="../Parser1819/">Parser1819</a> for news coverage</li>
+<li>Try the <a href="./ParserDailyNews.md">ParserDailyNews</a> for other news sources</li>
 <li>Learn about <a href="../../../developer/creating-custom-parsers/">Creating Custom Parsers</a></li>
-<li>Explore <a href="../../common-use-cases/">Common Use Cases</a></li>
+<li>Explore <a href="../../output-examples/">Output Examples</a></li>
 </ul>
 
 
