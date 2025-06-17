@@ -1519,48 +1519,48 @@
 <tr>
 <td>ParserAppealsAL</td>
 <td>Alabama Appellate Courts</td>
-<td><code>appeals-al</code></td>
+<td><code>ParserAppealsAL</code></td>
 <td>Extracts appellate court decisions</td>
 </tr>
 <tr>
 <td>Parser1819</td>
 <td>1819 News</td>
-<td><code>parser-1819</code></td>
+<td><code>Parser1819</code></td>
 <td>Scrapes legal news from 1819 News</td>
 </tr>
 <tr>
 <td>ParserDailyNews</td>
 <td>Daily News sites</td>
-<td><code>daily-news</code></td>
+<td><code>ParserDailyNews</code></td>
 <td>Extracts court news from daily publications</td>
 </tr>
 </tbody>
 </table>
 <h2 id="parser-details">Parser Details<a class="headerlink" href="#parser-details" title="Permanent link">&para;</a></h2>
-<h3 id="alabama-appeals-court-parser"><a href="./appeals-al.md">Alabama Appeals Court Parser</a><a class="headerlink" href="#alabama-appeals-court-parser" title="Permanent link">&para;</a></h3>
-<p><span class="parser-badge">appeals-al</span></p>
+<h3 id="alabama-appeals-court-parser"><a href="ParserAppealsAL/">Alabama Appeals Court Parser</a><a class="headerlink" href="#alabama-appeals-court-parser" title="Permanent link">&para;</a></h3>
+<p><span class="parser-badge">ParserAppealsAL</span></p>
 <p>The primary parser for extracting appellate court decisions from Alabama's official court websites.</p>
 <p><strong>Key Features:</strong>
-- Date range filtering
-- Case type categorization
-- Full opinion text extraction
-- Metadata parsing (case numbers, parties, judges)</p>
+- JavaScript rendering with Selenium
+- Court case metadata extraction
+- Pagination handling
+- Rate limiting protection</p>
 <p><strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>opal<span class="w"> </span>parse<span class="w"> </span>appeals-al<span class="w"> </span>--start-date<span class="w"> </span><span class="m">2024</span>-01-01
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span>--url<span class="w"> </span><span class="s2">&quot;https://publicportal.alacourt.gov&quot;</span><span class="w"> </span>--parser<span class="w"> </span>ParserAppealsAL
 </code></pre></div></p>
-<h3 id="1819-news-parser"><a href="./parser-1819.md">1819 News Parser</a><a class="headerlink" href="#1819-news-parser" title="Permanent link">&para;</a></h3>
-<p><span class="parser-badge">parser-1819</span></p>
+<h3 id="1819-news-parser"><a href="Parser1819/">1819 News Parser</a><a class="headerlink" href="#1819-news-parser" title="Permanent link">&para;</a></h3>
+<p><span class="parser-badge">Parser1819</span></p>
 <p>Specialized parser for the 1819 News website, focusing on legal and court-related news.</p>
 <p><strong>Key Features:</strong>
-- Article categorization
-- Author extraction
-- Related case linking
-- Comment parsing</p>
+- Article text extraction
+- Author and date parsing
+- Line-by-line content storage
+- URL pattern filtering</p>
 <p><strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>opal<span class="w"> </span>parse<span class="w"> </span>parser-1819<span class="w"> </span>--category<span class="w"> </span>legal
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span>--url<span class="w"> </span><span class="s2">&quot;https://1819news.com/&quot;</span><span class="w"> </span>--parser<span class="w"> </span>Parser1819
 </code></pre></div></p>
-<h3 id="daily-news-parser"><a href="./daily-news.md">Daily News Parser</a><a class="headerlink" href="#daily-news-parser" title="Permanent link">&para;</a></h3>
-<p><span class="parser-badge">daily-news</span></p>
+<h3 id="daily-news-parser"><a href="ParserDailyNews/">Daily News Parser</a><a class="headerlink" href="#daily-news-parser" title="Permanent link">&para;</a></h3>
+<p><span class="parser-badge">ParserDailyNews</span></p>
 <p>General-purpose parser for various Alabama daily news websites covering court cases.</p>
 <p><strong>Key Features:</strong>
 - Multiple site support
