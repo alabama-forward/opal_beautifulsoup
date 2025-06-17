@@ -52,17 +52,17 @@ python -m opal --url "https://1819news.com/" --parser Parser1819
 ### [Daily News Parser](./ParserDailyNews.md)
 <span class="parser-badge">ParserDailyNews</span>
 
-General-purpose parser for various Alabama daily news websites covering court cases.
+Parser for Alabama Daily News and similar news websites with compatible HTML structures.
 
 **Key Features:**
-- Multiple site support
-- Flexible content extraction
-- Date-based filtering
-- Keyword search capabilities
+- Specific HTML class targeting
+- Author and date extraction
+- Paragraph-based content parsing
+- Error resilience with defaults
 
 **Example:**
 ```bash
-opal parse daily-news --site "montgomery-advertiser"
+python -m opal --url "https://alabamadailynews.com/" --parser ParserDailyNews
 ```
 
 ## Choosing the Right Parser
