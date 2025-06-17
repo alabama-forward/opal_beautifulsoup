@@ -33,7 +33,7 @@ python -m opal --url https://publicportal.alappeals.gov/portal/search/case/resul
 - **[Environment-Specific Guides](getting-started/environment-guides.md)** - Setup instructions for Windows, Mac, Linux, and cloud
 - **[Quick Start Tutorial](getting-started/quickstart-tutorial.md)** - Hands-on tutorial with real examples
 - **[Output Examples](user-guide/output-examples.md)** - See exactly what OPAL produces
-- **[User Guide](user-guide/cli-usage.md)** - Detailed usage instructions
+- **[User Guide](user-guide/cli-reference.md)** - Detailed usage instructions
 - **[Developer Guide](developer/architecture.md)** - Extend OPAL with new parsers
 
 ## Built by Alabama Forward

@@ -72,6 +72,6 @@ Special thanks to:
 
 ## Next Steps
 
-- [Get Started](../getting-started/) with OPAL
-- Read the [User Guide](../user-guide/)
-- Explore the [Developer Documentation](../developer/)
+- [Get Started](../getting-started/index.md) with OPAL
+- Read the [User Guide](../user-guide/index.md)
+- Explore the [Developer Documentation](../developer/index.md)
