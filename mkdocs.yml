@@ -71,7 +71,6 @@ markdown_extensions:
 
 nav:
   - Home: index.md 
-  - Components Showcase: components-showcase.md
   - Getting Started:
     - Overview: getting-started/index.md
     - Prerequisites Checker: getting-started/prerequisites-checker.md
