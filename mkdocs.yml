@@ -63,41 +63,44 @@ markdown_extensions:
 nav:
   - Home: index.md 
   - Getting Started:
-    - Complete Setup Guide: getting-started/complete-setup-guide.md
+    - Overview: getting-started/index.md
     - Prerequisites Checker: getting-started/prerequisites-checker.md
+    - Complete Setup Guide: getting-started/complete-setup-guide.md
     - Environment-Specific Guides: getting-started/environment-guides.md
-    - Quick Start Tutorial: getting-started/quickstart-tutorial.md
     - Configuration: getting-started/configuration.md
+    - Quick Start Tutorial: getting-started/quickstart-tutorial.md
   - User Guide:
+    - Overview: user-guide/index.md
     - CLI Reference: user-guide/cli-reference.md
     - Interactive Command Builder: user-guide/command-builder.md
+    - Parsers:
+      - Available Parsers: user-guide/parsers/index.md
+      - Alabama Appeals Court: user-guide/parsers/ParserAppealsAL.md
+      - 1819 News: user-guide/parsers/Parser1819.md
+      - Daily News: user-guide/parsers/ParserDailyNews.md
     - Visual Flow Diagrams: user-guide/visual-flow-diagrams.md
     - Output Examples: user-guide/output-examples.md
     - Common Use Cases: user-guide/common-use-cases.md
     - Working with Output Data: user-guide/working-with-output-data.md
     - Understanding Errors: user-guide/understanding-errors.md
     - Configurable Court Extractor: user-guide/configurable_court_extractor.md
-    - Available Parsers: user-guide/parsers.md
-  - Class Reference:
-    - Parser Classes Overview: reference/parser-classes-overview.md
-    - Data Structures: reference/data_structures.md
-    - ParserAppealsAL: reference/parser-appeals-al.md
-    - Parser1819: reference/parser-1819.md
-    - ParserDailyNews: reference/parser-daily-news.md
-    - Base Parser: reference/base-parser.md
-    - Court Extractor Classes: reference/court-extractor-classes.md
-    - Court URL Paginator: reference/court_url_paginator.md
   - Developer Guide:
+    - Overview: developer/index.md
     - Architecture: developer/architecture.md
     - Workflows: developer/workflows.md
-    - Error Handling: developer/error_handling.md
     - Creating Custom Parsers: developer/creating-custom-parsers.md
     - Creating Court Parsers: developer/creating-court-parsers.md
+    - Error Handling: developer/error_handling.md
+    - Class Reference:
+      - Overview: developer/class-reference/index.md
+      - Base Parser: reference/base-parser.md
+      - Parser Classes: reference/parser-classes-overview.md
+      - Data Structures: reference/data_structures.md
+      - Court Extractor Classes: reference/court-extractor-classes.md
+      - Court URL Paginator: reference/court_url_paginator.md
     - Court Extractor Design: developer/configurable_court_extractor_design.md
-    # - Court Scraper Analysis: developer/court_scraper_analysis.md
-    # - Court Scraper Requirements: developer/court_scraper_requirements.md
-    # - Alabama Appeals Instructions: developer/alabama_appeals_court_scraper_instructions.md
     - User Agent Headers Guide: developer/user_agent_headers_guide.md
   - About:
+    - Overview: about/index.md
     - Contributing: about/contributing.md
     - License: about/license.md
