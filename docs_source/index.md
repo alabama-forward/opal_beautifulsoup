@@ -15,24 +15,12 @@ title: "OPAL - Oppositional Positions in ALabama"
 
 OPAL is a specialized web scraping framework that makes it easy to extract structured data from Alabama news sites and court records. Built with researchers, journalists, and civic technologists in mind.
 
-<div class="stats-grid">
-  <div class="stat-card">
-    <p class="stat-number">3</p>
-    <p class="stat-label">Data Sources</p>
-  </div>
-  <div class="stat-card">
-    <p class="stat-number">5min</p>
-    <p class="stat-label">Setup Time</p>
-  </div>
-  <div class="stat-card">
-    <p class="stat-number">JSON</p>
-    <p class="stat-label">Export Format</p>
-  </div>
-  <div class="stat-card">
-    <p class="stat-number">100%</p>
-    <p class="stat-label">Open Source</p>
-  </div>
-</div>
+### Key Features
+
+- **3 Data Sources** - Scrape from Alabama Appeals Court, 1819 News, and Alabama Daily News
+- **5-Minute Setup** - Get up and running quickly with simple installation
+- **JSON Export Format** - Structured data output for easy analysis and integration
+- **100% Open Source** - Free to use, modify, and contribute
 
 ## Available Parsers
 
