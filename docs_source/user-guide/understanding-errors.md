@@ -225,7 +225,7 @@ selenium.common.exceptions.NoSuchElementException: Message: no such element: Una
 1. **Restart and try again**:
    ```bash
    # Simply run the command again
-   python -m opal --url https://publicportal.alappeals.gov/portal/search/case/results --parser court
+   python -m opal --url https://publicportal.alacourt.gov --parser ParserAppealsAL
    ```
 
 2. **Check available memory**:
@@ -235,7 +235,7 @@ selenium.common.exceptions.NoSuchElementException: Message: no such element: Una
 3. **Reduce page count**:
    ```bash
    # Process fewer pages at once
-   python -m opal --url https://publicportal.alappeals.gov/portal/search/case/results --parser court --max_pages 3
+   python -m opal --url https://publicportal.alacourt.gov --parser ParserAppealsAL --max_pages 3
    ```
 
 ## Data and Parsing Errors

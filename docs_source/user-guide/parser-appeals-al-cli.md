@@ -116,7 +116,7 @@ python -m opal \
 # Process only first 3 pages for faster results
 python -m opal \
     --url "https://publicportal.alappeals.gov/portal/search/case/results" \
-    --parser court \
+    --parser ParserAppealsAL \
     --max_pages 3 \
     --output quick_sample.json
 ```
@@ -127,7 +127,7 @@ python -m opal \
 # Enable detailed logging to monitor progress
 python -m opal \
     --url "https://publicportal.alappeals.gov/portal/search/case/results" \
-    --parser court \
+    --parser ParserAppealsAL \
     --log-level DEBUG \
     --output debug_cases.json
 ```
@@ -138,7 +138,7 @@ python -m opal \
 # Extract with timestamp in filename
 python -m opal \
     --url "https://publicportal.alappeals.gov/portal/search/case/results" \
-    --parser court \
+    --parser ParserAppealsAL \
     --max_pages 20 \
     --output "court_cases_$(date +%Y%m%d_%H%M%S).json" \
     --log-level INFO

@@ -24,7 +24,7 @@ pip install -e .
 python -m opal --url https://1819news.com/ --parser Parser1819 --suffix /news/item --max_pages 5
 
 # Scrape court cases
-python -m opal --url https://publicportal.alappeals.gov/portal/search/case/results --parser court
+python -m opal --url https://publicportal.alacourt.gov --parser ParserAppealsAL
 
 ## Documentation Overview
 
