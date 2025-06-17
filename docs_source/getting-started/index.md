@@ -43,11 +43,11 @@ Before you begin, ensure you have:
 <div class="highlight-section">
 <h3>New to OPAL?</h3>
 <p>Start with our Quick Start Tutorial to get scraping in under 5 minutes.</p>
-<a href="./quickstart-tutorial.md" class="md-button md-button--primary">Quick Start Tutorial</a>
+<a href="./quickstart-tutorial/" class="md-button md-button--primary">Quick Start Tutorial</a>
 </div>
 
 <div class="highlight-section">
 <h3>Experienced Developer?</h3>
 <p>Jump straight to the configuration guide for advanced setup options.</p>
-<a href="./configuration.md" class="md-button">Configuration Guide</a>
+<a href="./configuration/" class="md-button">Configuration Guide</a>
 </div>
