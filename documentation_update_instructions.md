@@ -182,8 +182,8 @@ docs/
 │   ├── index.md               # Developer overview
 │   ├── architecture.md        # System architecture
 │   ├── creating-parsers.md    # Parser development
-│   └── api/                   # API reference
-│       ├── index.md          # API overview
+│   └── reference/                   # class reference
+│       ├── index.md          # class overview
 │       ├── base-parser.md    # BaseParser class
 │       └── extractors.md     # Extractor classes
 └── about/
