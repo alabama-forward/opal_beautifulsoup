@@ -1,11 +1,12 @@
 site_name: OPAL - Oppositional Positions in Alabama
 site_description: Web scraper used to search Alabama websites
 site_author: Gabriel Cabán Cubero
-site_url: 
+site_url: https://alabama-forward.github.io/opal/
+use_directory_urls: true
 
-repo_name: opal 
-repo_url: 
-edit_uri:
+repo_name: alabama-forward/opal 
+repo_url: https://github.com/alabama-forward/opal
+edit_uri: edit/main/docs/
 
 theme:
   name: material
@@ -38,6 +39,12 @@ extra_css:
 
 extra_javascript:
   - https://unpkg.com/mermaid@10.6.1/dist/mermaid.min.js
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/alabama-forward/opal
+  homepage: https://alabama-forward.github.io/opal/
 
 plugins:
   - search

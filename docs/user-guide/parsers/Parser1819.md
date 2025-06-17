@@ -3,7 +3,7 @@ title: 1819 News Parser (Parser1819)
 description: Guide to using the Parser1819 for scraping articles from 1819 News
 ---
 
-[Home](/) > [User Guide](/user-guide/) > [Parsers](/user-guide/parsers/) > 1819 News Parser
+[Home](../../index.md) > [User Guide](../index.md) > [Parsers](./index.md) > 1819 News Parser
 
 # 1819 News Parser (Parser1819)
 

@@ -13,26 +13,26 @@ This section provides comprehensive documentation for all core classes in the OP
 
 | Class | Module | Description |
 |-------|--------|-------------|
-| [BaseParser](./base-parser.md) | `opal.base_parser` | Abstract base class for all parsers |
-| [ParserAppealsAL](./parser-appeals-al.md) | `opal.parser_module` | Alabama Appeals Court parser |
-| [Parser1819](./parser-1819.md) | `opal.parser_module` | 1819 News parser |
-| [ParserDailyNews](./parser-daily-news.md) | `opal.parser_module` | Daily news sites parser |
+| [BaseParser](../../reference/base-parser.md) | `opal.base_parser` | Abstract base class for all parsers |
+| [ParserAppealsAL](../../reference/parser-appeals-al.md) | `opal.parser_module` | Alabama Appeals Court parser |
+| [Parser1819](../../reference/parser-1819.md) | `opal.parser_module` | 1819 News parser |
+| [ParserDailyNews](../../reference/parser-daily-news.md) | `opal.parser_module` | Daily news sites parser |
 
 ### Extractor Classes
 
 | Class | Module | Description |
 |-------|--------|-------------|
-| [ConfigurableCourtExtractor](./configurable-court-extractor.md) | `opal.configurable_court_extractor` | Flexible court data extractor |
-| [CourtExtractor](./court-extractor.md) | `opal.court_case_parser` | Core extraction logic |
-| [URLPaginator](./url-paginator.md) | `opal.court_url_paginator` | Handles pagination |
+| [ConfigurableCourtExtractor](../../reference/court-extractor-classes.md) | `opal.configurable_court_extractor` | Flexible court data extractor |
+| [CourtExtractor](../../reference/court-extractor-classes.md) | `opal.court_case_parser` | Core extraction logic |
+| [URLPaginator](../../reference/court_url_paginator.md) | `opal.court_url_paginator` | Handles pagination |
 
 ### Data Structures
 
 | Class | Module | Description |
 |-------|--------|-------------|
-| [CourtCase](./court-case.md) | `opal.data_structures` | Court case data model |
-| [ParseResult](./parse-result.md) | `opal.data_structures` | Parser result container |
-| [ExtractorConfig](./extractor-config.md) | `opal.data_structures` | Configuration model |
+| [CourtCase](../../reference/data_structures.md) | `opal.data_structures` | Court case data model |
+| [ParseResult](../../reference/data_structures.md) | `opal.data_structures` | Parser result container |
+| [ExtractorConfig](../../reference/data_structures.md) | `opal.data_structures` | Configuration model |
 
 ## Class Hierarchy
 
@@ -168,6 +168,6 @@ court_cases = extractor.extract("https://example.com/cases")
 
 ## Next Steps
 
-- Review individual [class documentation](./base-parser.md)
+- Review individual [class documentation](../../reference/base-parser.md)
 - Learn about [creating custom parsers](../creating-custom-parsers.md)
 - Explore [architecture patterns](../architecture.md)

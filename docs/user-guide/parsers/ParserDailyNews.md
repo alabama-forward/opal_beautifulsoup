@@ -3,7 +3,7 @@ title: Alabama Daily News Parser (ParserDailyNews)
 description: Guide to using the ParserDailyNews for scraping Alabama Daily News articles
 ---
 
-[Home](/) > [User Guide](/user-guide/) > [Parsers](/user-guide/parsers/) > Alabama Daily News Parser
+[Home](../../index.md) > [User Guide](../index.md) > [Parsers](./index.md) > Alabama Daily News Parser
 
 # Alabama Daily News Parser (ParserDailyNews)
 

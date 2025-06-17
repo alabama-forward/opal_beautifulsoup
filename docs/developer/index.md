@@ -24,7 +24,7 @@ Specialized guide for creating parsers specifically for court websites.
 ### [Error Handling](./error_handling.md)
 Implement robust error handling and recovery in your parsers.
 
-### [Class Reference](./class-reference/)
+### [Class Reference](./class-reference/index.md)
 Detailed documentation of OPAL's core classes and their methods.
 
 ### [Configurable Court Extractor Design](./configurable_court_extractor_design.md)
@@ -133,4 +133,4 @@ Before contributing, please:
 
 - Explore the [Architecture](./architecture.md) to understand system design
 - Learn to [Create Custom Parsers](./creating-custom-parsers.md)
-- Review the [Class Reference](./class-reference/) for detailed API documentation
+- Review the [Class Reference](./class-reference/index.md) for detailed API documentation

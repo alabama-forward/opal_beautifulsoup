@@ -55,8 +55,8 @@ opal parse appeals-al --output-format csv
 ### Parser-Specific Guides
 
 - [Alabama Appeals Court Parser](./parser-appeals-al-cli.md)
-- [1819 News Parser](./parsers/parser-1819.md)
-- [Daily News Parser](./parsers/daily-news.md)
+- [1819 News Parser](./parsers/Parser1819.md)
+- [Daily News Parser](./parsers/ParserDailyNews.md)
 
 ## Most Common Tasks
 

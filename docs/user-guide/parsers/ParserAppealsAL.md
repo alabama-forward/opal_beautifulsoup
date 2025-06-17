@@ -3,7 +3,7 @@ title: Alabama Appeals Court Parser (ParserAppealsAL)
 description: Complete guide to using the ParserAppealsAL parser for scraping Alabama appellate court decisions
 ---
 
-[Home](/) > [User Guide](/user-guide/) > [Parsers](/user-guide/parsers/) > Alabama Appeals Court Parser
+[Home](../../index.md) > [User Guide](../index.md) > [Parsers](./index.md) > Alabama Appeals Court Parser
 
 # Alabama Appeals Court Parser (ParserAppealsAL)
 
