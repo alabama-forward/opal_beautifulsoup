@@ -81,22 +81,22 @@ python -m opal --url "https://alabamadailynews.com/" --parser ParserDailyNews
 
 ## Common Options
 
-All parsers support these common options:
+All parsers support these common command-line options:
 
 ```bash
-# Output format
---output-format [json|csv]
+# Required options
+--url          # Base URL of the website to scrape
+--parser       # Parser name (ParserAppealsAL, Parser1819, ParserDailyNews)
 
-# Date filtering
---start-date YYYY-MM-DD
---end-date YYYY-MM-DD
+# Optional options
+--suffix       # URL suffix to filter pages
+--max_pages    # Maximum number of pages to process
 
-# Verbose output
---verbose
-
-# Custom output file
---output-file path/to/file
+# Example with all options
+python -m opal --url "https://example.com" --parser Parser1819 --suffix "/news/" --max_pages 5
 ```
+
+Output files are automatically named with the format: `YYYY-MM-DD_ParserName.json`
 
 ## Parser Development
 
