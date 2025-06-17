@@ -1,5 +1,8 @@
 /* Custom CSS for OPAL Documentation */
 
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
+
 /* Root variables for consistent theming */
 :root {
   --opal-primary: #B53D1A;
@@ -16,6 +19,22 @@
   --alabama-crimson: #a6192e;
   --alabama-gray: #828a8f;
   --alabama-gold: #ffb71b;
+  
+  /* Semantic colors */
+  --success-color: #28a745;
+  --warning-color: #ffc107;
+  --error-color: #dc3545;
+  --info-color: #17a2b8;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  --shadow-md: 0 3px 6px rgba(0,0,0,0.15), 0 2px 4px rgba(0,0,0,0.12);
+  --shadow-lg: 0 10px 20px rgba(0,0,0,0.15), 0 3px 6px rgba(0,0,0,0.10);
+  
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-medium: 0.3s ease;
+  --transition-slow: 0.5s ease;
 }
 
 /* Dark mode variables */
@@ -316,4 +335,503 @@ button:focus {
   padding: 1rem;
   margin: 1rem 0;
   border-radius: 0 8px 8px 0;
+}
+
+/* ===== INTERACTIVE COMPONENTS ===== */
+
+/* 1. Feature Cards Grid */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.feature-card {
+  background: var(--opal-surface);
+  border: 1px solid var(--opal-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all var(--transition-medium);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--opal-primary) 0%, var(--opal-accent) 100%);
+  transform: translateX(-100%);
+  transition: transform var(--transition-medium);
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--opal-primary);
+}
+
+.feature-card:hover::before {
+  transform: translateX(0);
+}
+
+.feature-card h4 {
+  color: var(--opal-primary);
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.feature-card p {
+  color: var(--opal-text-primary);
+  margin: 0 0 1rem 0;
+  font-size: 0.9rem;
+}
+
+.feature-card code {
+  display: block;
+  background: var(--opal-code-bg);
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+/* 2. Interactive Command Builder */
+.command-builder {
+  background: var(--opal-surface);
+  border: 2px solid var(--opal-border);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.command-builder h3 {
+  color: var(--opal-primary);
+  margin-top: 0;
+}
+
+.command-option {
+  margin: 1rem 0;
+}
+
+.command-option label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--opal-text-primary);
+}
+
+.command-option select,
+.command-option input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--opal-border);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: border-color var(--transition-fast);
+}
+
+.command-option select:focus,
+.command-option input:focus {
+  outline: none;
+  border-color: var(--opal-primary);
+  box-shadow: 0 0 0 3px rgba(181, 61, 26, 0.1);
+}
+
+.command-output {
+  background: var(--opal-code-bg);
+  border: 1px solid var(--opal-border);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  font-family: 'Fira Code', monospace;
+  position: relative;
+}
+
+.copy-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: var(--opal-primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.copy-button:hover {
+  background: var(--opal-secondary);
+  transform: scale(1.05);
+}
+
+.copy-button.copied {
+  background: var(--success-color);
+}
+
+/* 3. Progress Tracker */
+.progress-tracker {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.progress-tracker::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--opal-border);
+  z-index: 0;
+}
+
+.progress-step {
+  background: var(--opal-surface);
+  border: 2px solid var(--opal-border);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+  transition: all var(--transition-medium);
+}
+
+.progress-step.completed {
+  background: var(--opal-primary);
+  color: white;
+  border-color: var(--opal-primary);
+}
+
+.progress-step.active {
+  background: var(--opal-accent);
+  color: white;
+  border-color: var(--opal-accent);
+  transform: scale(1.2);
+}
+
+.progress-step-label {
+  position: absolute;
+  top: 50px;
+  white-space: nowrap;
+  font-size: 0.85rem;
+  color: var(--opal-text-primary);
+}
+
+/* 4. Interactive Tabs */
+.tab-container {
+  margin: 2rem 0;
+}
+
+.tab-buttons {
+  display: flex;
+  border-bottom: 2px solid var(--opal-border);
+  gap: 0.5rem;
+}
+
+.tab-button {
+  background: none;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  color: var(--opal-text-primary);
+  cursor: pointer;
+  position: relative;
+  transition: all var(--transition-fast);
+}
+
+.tab-button::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--opal-primary);
+  transform: scaleX(0);
+  transition: transform var(--transition-medium);
+}
+
+.tab-button:hover {
+  color: var(--opal-primary);
+}
+
+.tab-button.active {
+  color: var(--opal-primary);
+}
+
+.tab-button.active::after {
+  transform: scaleX(1);
+}
+
+.tab-content {
+  padding: 1.5rem 0;
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.active {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 5. Interactive Code Examples */
+.code-example {
+  position: relative;
+  margin: 2rem 0;
+}
+
+.code-example-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--opal-secondary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px 8px 0 0;
+}
+
+.code-example-header .filename {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9rem;
+}
+
+.code-example-content {
+  border: 1px solid var(--opal-border);
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  overflow: hidden;
+}
+
+.code-example pre {
+  margin: 0;
+  border-radius: 0;
+}
+
+/* 6. Quick Start Hero */
+.quick-start-hero {
+  background: linear-gradient(135deg, var(--opal-primary) 0%, var(--opal-secondary) 100%);
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  text-align: center;
+  margin: 2rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.quick-start-hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  animation: pulse 15s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.quick-start-hero h2 {
+  color: white;
+  font-size: 2rem;
+  margin: 0 0 1rem 0;
+  position: relative;
+}
+
+.quick-start-hero p {
+  font-size: 1.1rem;
+  margin: 0 0 2rem 0;
+  opacity: 0.9;
+  position: relative;
+}
+
+.quick-start-hero .md-button {
+  background: white;
+  color: var(--opal-primary);
+  font-size: 1.1rem;
+  padding: 0.75rem 2rem;
+  position: relative;
+}
+
+.quick-start-hero .md-button:hover {
+  background: var(--opal-background);
+  transform: scale(1.05);
+}
+
+/* 7. Parser Comparison Table */
+.parser-comparison {
+  overflow-x: auto;
+  margin: 2rem 0;
+}
+
+.parser-comparison table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.parser-comparison th {
+  background: linear-gradient(135deg, var(--opal-primary) 0%, var(--opal-secondary) 100%);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.parser-comparison td {
+  text-align: center;
+}
+
+.parser-comparison .check {
+  color: var(--success-color);
+  font-size: 1.2rem;
+}
+
+.parser-comparison .cross {
+  color: var(--error-color);
+  font-size: 1.2rem;
+}
+
+/* 8. Animated Statistics */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.stat-card {
+  background: var(--opal-surface);
+  border: 1px solid var(--opal-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all var(--transition-medium);
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--opal-primary);
+  margin: 0;
+}
+
+.stat-label {
+  color: var(--opal-text-primary);
+  font-size: 0.9rem;
+  margin: 0.5rem 0 0 0;
+}
+
+/* 9. Interactive Terminal */
+.terminal-window {
+  background: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: var(--shadow-lg);
+  margin: 2rem 0;
+  overflow: hidden;
+}
+
+.terminal-header {
+  background: #323232;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.terminal-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.terminal-dot.red { background: #ff5f56; }
+.terminal-dot.yellow { background: #ffbd2e; }
+.terminal-dot.green { background: #27c93f; }
+
+.terminal-body {
+  padding: 1rem;
+  font-family: 'Fira Code', monospace;
+  color: #f0f0f0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.terminal-prompt {
+  color: #27c93f;
+}
+
+.terminal-command {
+  color: #f0f0f0;
+}
+
+.terminal-output {
+  color: #b0b0b0;
+  margin-top: 0.5rem;
+}
+
+/* 10. Interactive Flowchart */
+.flowchart-container {
+  background: var(--opal-surface);
+  border: 1px solid var(--opal-border);
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem 0;
+  overflow-x: auto;
+}
+
+.flowchart-container .mermaid {
+  text-align: center;
+}
+
+/* Enhanced responsive design */
+@media screen and (max-width: 768px) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .quick-start-hero {
+    padding: 2rem 1rem;
+  }
+  
+  .quick-start-hero h2 {
+    font-size: 1.5rem;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .progress-tracker {
+    overflow-x: auto;
+    padding-bottom: 3rem;
+  }
 }
