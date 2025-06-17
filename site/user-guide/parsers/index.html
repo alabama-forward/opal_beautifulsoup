@@ -6,17 +6,17 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Web scraper used to search Alabama websites">
+        <meta name="description" content="Overview of all parsers available in OPAL for scraping Alabama court data">
       
       
         <meta name="author" content="Gabriel Cabán Cubero">
       
       
       
-        <link rel="prev" href="../configurable_court_extractor/">
+        <link rel="prev" href="../command-builder/">
       
       
-        <link rel="next" href="../output-formats/">
+        <link rel="next" href="ParserAppealsAL/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -49,6 +49,8 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -232,7 +234,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../getting-started/installation/" class="md-tabs__link">
+        <a href="../../getting-started/" class="md-tabs__link">
           
   
   
@@ -254,7 +256,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../cli-usage/" class="md-tabs__link">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -274,27 +276,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../api_reference/" class="md-tabs__link">
-          
-  
-  
-  API Reference
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../developer/architecture/" class="md-tabs__link">
+        <a href="../../developer/" class="md-tabs__link">
           
   
   
@@ -314,7 +296,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../about/contributing/" class="md-tabs__link">
+        <a href="../../about/" class="md-tabs__link">
           
   
   
@@ -433,12 +415,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/installation/" class="md-nav__link">
+      <a href="../../getting-started/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Installation
+    Overview
     
   </span>
   
@@ -456,12 +438,58 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/quickstart/" class="md-nav__link">
+      <a href="../../getting-started/prerequisites-checker/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Quick Start
+    Prerequisites Checker
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/complete-setup-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Complete Setup Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/environment-guides/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Environment-Specific Guides
     
   </span>
   
@@ -485,6 +513,29 @@
   
   <span class="md-ellipsis">
     Configuration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/quickstart-tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quick Start Tutorial
     
   </span>
   
@@ -557,12 +608,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../cli-usage/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    CLI Usage
+    Overview
     
   </span>
   
@@ -580,12 +631,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../command_line_tools/" class="md-nav__link">
+      <a href="../cli-reference/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Command Line Tools
+    CLI Reference
     
   </span>
   
@@ -603,12 +654,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../configurable_court_extractor/" class="md-nav__link">
+      <a href="../command-builder/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Configurable Court Extractor
+    Interactive Command Builder
     
   </span>
   
@@ -618,6 +669,54 @@
   
 
               
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Parsers
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Parsers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -676,28 +775,46 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#news-parsers" class="md-nav__link">
+  <a href="#parser-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      News Parsers
+      Parser Overview
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="News Parsers">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parser-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parser Details
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parser Details">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#parser1819" class="md-nav__link">
+  <a href="#alabama-appeals-court-parser" class="md-nav__link">
     <span class="md-ellipsis">
-      Parser1819
+      Alabama Appeals Court Parser
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#parserdailynews" class="md-nav__link">
+  <a href="#1819-news-parser" class="md-nav__link">
     <span class="md-ellipsis">
-      ParserDailyNews
+      1819 News Parser
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#daily-news-parser" class="md-nav__link">
+    <span class="md-ellipsis">
+      Daily News Parser
     </span>
   </a>
   
@@ -709,19 +826,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#government-parsers" class="md-nav__link">
+  <a href="#choosing-the-right-parser" class="md-nav__link">
     <span class="md-ellipsis">
-      Government Parsers
+      Choosing the Right Parser
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Government Parsers">
+    <nav class="md-nav" aria-label="Choosing the Right Parser">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#court-parser-parserappealsal" class="md-nav__link">
+  <a href="#by-data-source" class="md-nav__link">
     <span class="md-ellipsis">
-      Court Parser (ParserAppealsAL)
+      By Data Source
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#by-use-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      By Use Case
     </span>
   </a>
   
@@ -733,18 +859,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#parser-capabilities" class="md-nav__link">
+  <a href="#common-options" class="md-nav__link">
     <span class="md-ellipsis">
-      Parser Capabilities
+      Common Options
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#adding-new-parsers" class="md-nav__link">
+  <a href="#parser-development" class="md-nav__link">
     <span class="md-ellipsis">
-      Adding New Parsers
+      Parser Development
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next Steps
     </span>
   </a>
   
@@ -766,12 +901,204 @@
   
   
     <li class="md-nav__item">
-      <a href="../output-formats/" class="md-nav__link">
+      <a href="ParserAppealsAL/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Output Formats
+    Alabama Appeals Court
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Parser1819/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1819 News
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ParserDailyNews/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Daily News
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visual-flow-diagrams/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Visual Flow Diagrams
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../output-examples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Output Examples
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common-use-cases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Common Use Cases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../working-with-output-data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Working with Output Data
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../understanding-errors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Understanding Errors
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configurable_court_extractor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configurable Court Extractor
     
   </span>
   
@@ -819,7 +1146,7 @@
   
   
   <span class="md-ellipsis">
-    API Reference
+    Developer Guide
     
   </span>
   
@@ -830,222 +1157,32 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            API Reference
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../api_reference/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Complete API Reference
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../api/data_structures/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Data Structures
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../api/parser-appeals-al/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    ParserAppealsAL
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../api/court_url_paginator/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Court URL Paginator
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../api/base-parser/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Base Parser
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../api/parser-1819/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Parser1819
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../api/parser-daily-news/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    ParserDailyNews
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Developer Guide
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
             Developer Guide
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1100,6 +1237,52 @@
   
   
     <li class="md-nav__item">
+      <a href="../../developer/creating-custom-parsers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Creating Custom Parsers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/creating-court-parsers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Creating Court Parsers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../developer/error_handling/" class="md-nav__link">
         
   
@@ -1122,13 +1305,58 @@
   
   
   
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Class Reference
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            Class Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../developer/BaseParser_web_scraping_guide/" class="md-nav__link">
+      <a href="../../developer/class-reference/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    BaseParser Guide
+    Overview
     
   </span>
   
@@ -1146,12 +1374,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../developer/creating-parsers/" class="md-nav__link">
+      <a href="../../reference/base-parser/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Creating New Parsers
+    Base Parser
     
   </span>
   
@@ -1169,17 +1397,94 @@
   
   
     <li class="md-nav__item">
-      <a href="../../developer/ParserAppealsAL_documentation/" class="md-nav__link">
+      <a href="../../reference/parser-classes-overview/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ParserAppealsAL Documentation
+    Parser Classes
     
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/data_structures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Structures
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/court-extractor-classes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Court Extractor Classes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/court_url_paginator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Court URL Paginator
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1198,75 +1503,6 @@
   
   <span class="md-ellipsis">
     Court Extractor Design
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../developer/court_scraper_analysis/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Court Scraper Analysis
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../developer/court_scraper_requirements/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Court Scraper Requirements
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../developer/alabama_appeals_court_scraper_instructions/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Alabama Appeals Instructions
     
   </span>
   
@@ -1329,10 +1565,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -1345,12 +1581,35 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             About
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1432,28 +1691,46 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#news-parsers" class="md-nav__link">
+  <a href="#parser-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      News Parsers
+      Parser Overview
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="News Parsers">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parser-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parser Details
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parser Details">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#parser1819" class="md-nav__link">
+  <a href="#alabama-appeals-court-parser" class="md-nav__link">
     <span class="md-ellipsis">
-      Parser1819
+      Alabama Appeals Court Parser
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#parserdailynews" class="md-nav__link">
+  <a href="#1819-news-parser" class="md-nav__link">
     <span class="md-ellipsis">
-      ParserDailyNews
+      1819 News Parser
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#daily-news-parser" class="md-nav__link">
+    <span class="md-ellipsis">
+      Daily News Parser
     </span>
   </a>
   
@@ -1465,19 +1742,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#government-parsers" class="md-nav__link">
+  <a href="#choosing-the-right-parser" class="md-nav__link">
     <span class="md-ellipsis">
-      Government Parsers
+      Choosing the Right Parser
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Government Parsers">
+    <nav class="md-nav" aria-label="Choosing the Right Parser">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#court-parser-parserappealsal" class="md-nav__link">
+  <a href="#by-data-source" class="md-nav__link">
     <span class="md-ellipsis">
-      Court Parser (ParserAppealsAL)
+      By Data Source
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#by-use-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      By Use Case
     </span>
   </a>
   
@@ -1489,18 +1775,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#parser-capabilities" class="md-nav__link">
+  <a href="#common-options" class="md-nav__link">
     <span class="md-ellipsis">
-      Parser Capabilities
+      Common Options
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#adding-new-parsers" class="md-nav__link">
+  <a href="#parser-development" class="md-nav__link">
     <span class="md-ellipsis">
-      Adding New Parsers
+      Parser Development
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next Steps
     </span>
   </a>
   
@@ -1523,76 +1818,116 @@
 
 
 <h1 id="available-parsers">Available Parsers<a class="headerlink" href="#available-parsers" title="Permanent link">&para;</a></h1>
-<p>OPAL includes several parsers for different Alabama news and government websites.</p>
-<h2 id="news-parsers">News Parsers<a class="headerlink" href="#news-parsers" title="Permanent link">&para;</a></h2>
-<h3 id="parser1819">Parser1819<a class="headerlink" href="#parser1819" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Website</strong>: <a href="https://1819news.com/">1819 News</a></li>
-<li><strong>Content</strong>: Conservative news outlet covering Alabama politics and culture</li>
-<li><strong>Usage</strong>: 
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span>--url<span class="w"> </span>https://1819news.com/<span class="w"> </span>--parser<span class="w"> </span>Parser1819<span class="w"> </span>--suffix<span class="w"> </span>/news/item
-</code></pre></div></li>
-</ul>
-<h3 id="parserdailynews">ParserDailyNews<a class="headerlink" href="#parserdailynews" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Website</strong>: <a href="https://www.aldailynews.com/">Alabama Daily News</a></li>
-<li><strong>Content</strong>: Daily news covering Alabama politics, business, and current events</li>
-<li><strong>Usage</strong>:
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span>--url<span class="w"> </span>https://www.aldailynews.com/<span class="w"> </span>--parser<span class="w"> </span>ParserDailyNews<span class="w"> </span>--suffix<span class="w"> </span>/news/item
-</code></pre></div></li>
-</ul>
-<h2 id="government-parsers">Government Parsers<a class="headerlink" href="#government-parsers" title="Permanent link">&para;</a></h2>
-<h3 id="court-parser-parserappealsal">Court Parser (ParserAppealsAL)<a class="headerlink" href="#court-parser-parserappealsal" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Website</strong>: <a href="https://publicportal.alappeals.gov/">Alabama Appeals Court Public Portal</a></li>
-<li><strong>Content</strong>: Court cases, opinions, and legal documents</li>
-<li><strong>Features</strong>:</li>
-<li>Automated Chrome WebDriver handling</li>
-<li>JavaScript-rendered content support</li>
-<li>Case details extraction</li>
-<li><strong>Usage</strong>:
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span>--url<span class="w"> </span>https://publicportal.alappeals.gov/portal/search/case/results<span class="w"> </span>--parser<span class="w"> </span>court
-</code></pre></div></li>
-</ul>
-<h2 id="parser-capabilities">Parser Capabilities<a class="headerlink" href="#parser-capabilities" title="Permanent link">&para;</a></h2>
+<p>OPAL includes several specialized parsers designed to extract court case data from different Alabama websites. Each parser is optimized for its specific data source.</p>
+<h2 id="parser-overview">Parser Overview<a class="headerlink" href="#parser-overview" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
 <th>Parser</th>
-<th>Pagination</th>
-<th>JavaScript Support</th>
-<th>Authentication</th>
+<th>Source</th>
+<th>Command</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td>ParserAppealsAL</td>
+<td>Alabama Appellate Courts</td>
+<td><code>ParserAppealsAL</code></td>
+<td>Extracts appellate court decisions</td>
+</tr>
+<tr>
 <td>Parser1819</td>
-<td>✓</td>
-<td>✗</td>
-<td>✗</td>
+<td>1819 News</td>
+<td><code>Parser1819</code></td>
+<td>Scrapes legal news from 1819 News</td>
 </tr>
 <tr>
 <td>ParserDailyNews</td>
-<td>✓</td>
-<td>✗</td>
-<td>✗</td>
-</tr>
-<tr>
-<td>ParserAppealsAL</td>
-<td>✓</td>
-<td>✓</td>
-<td>✗</td>
+<td>Daily News sites</td>
+<td><code>ParserDailyNews</code></td>
+<td>Extracts court news from daily publications</td>
 </tr>
 </tbody>
 </table>
-<h2 id="adding-new-parsers">Adding New Parsers<a class="headerlink" href="#adding-new-parsers" title="Permanent link">&para;</a></h2>
-<p>To add support for a new website, see the <a href="../../developer/creating-parsers/">Creating New Parsers</a> guide.</p>
+<h2 id="parser-details">Parser Details<a class="headerlink" href="#parser-details" title="Permanent link">&para;</a></h2>
+<h3 id="alabama-appeals-court-parser"><a href="ParserAppealsAL/">Alabama Appeals Court Parser</a><a class="headerlink" href="#alabama-appeals-court-parser" title="Permanent link">&para;</a></h3>
+<p><span class="parser-badge">ParserAppealsAL</span></p>
+<p>The primary parser for extracting appellate court decisions from Alabama's official court websites.</p>
+<p><strong>Key Features:</strong>
+- JavaScript rendering with Selenium
+- Court case metadata extraction
+- Pagination handling
+- Rate limiting protection</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span>--url<span class="w"> </span><span class="s2">&quot;https://publicportal.alacourt.gov&quot;</span><span class="w"> </span>--parser<span class="w"> </span>ParserAppealsAL
+</code></pre></div></p>
+<h3 id="1819-news-parser"><a href="Parser1819/">1819 News Parser</a><a class="headerlink" href="#1819-news-parser" title="Permanent link">&para;</a></h3>
+<p><span class="parser-badge">Parser1819</span></p>
+<p>Specialized parser for the 1819 News website, focusing on legal and court-related news.</p>
+<p><strong>Key Features:</strong>
+- Article text extraction
+- Author and date parsing
+- Line-by-line content storage
+- URL pattern filtering</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span>--url<span class="w"> </span><span class="s2">&quot;https://1819news.com/&quot;</span><span class="w"> </span>--parser<span class="w"> </span>Parser1819
+</code></pre></div></p>
+<h3 id="daily-news-parser"><a href="ParserDailyNews/">Daily News Parser</a><a class="headerlink" href="#daily-news-parser" title="Permanent link">&para;</a></h3>
+<p><span class="parser-badge">ParserDailyNews</span></p>
+<p>Parser for Alabama Daily News and similar news websites with compatible HTML structures.</p>
+<p><strong>Key Features:</strong>
+- Specific HTML class targeting
+- Author and date extraction
+- Paragraph-based content parsing
+- Error resilience with defaults</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span>--url<span class="w"> </span><span class="s2">&quot;https://alabamadailynews.com/&quot;</span><span class="w"> </span>--parser<span class="w"> </span>ParserDailyNews
+</code></pre></div></p>
+<h2 id="choosing-the-right-parser">Choosing the Right Parser<a class="headerlink" href="#choosing-the-right-parser" title="Permanent link">&para;</a></h2>
+<h3 id="by-data-source">By Data Source<a class="headerlink" href="#by-data-source" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Official Court Documents</strong>: Use <code>appeals-al</code> for authoritative appellate decisions</li>
+<li><strong>News Coverage</strong>: Use <code>parser-1819</code> or <code>daily-news</code> for journalistic coverage</li>
+<li><strong>Historical Data</strong>: Check parser-specific date ranges in individual guides</li>
+</ul>
+<h3 id="by-use-case">By Use Case<a class="headerlink" href="#by-use-case" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Legal Research</strong>: <code>appeals-al</code> provides full opinion texts</li>
+<li><strong>Media Monitoring</strong>: <code>parser-1819</code> and <code>daily-news</code> track news coverage</li>
+<li><strong>Comprehensive Analysis</strong>: Combine multiple parsers for complete coverage</li>
+</ul>
+<h2 id="common-options">Common Options<a class="headerlink" href="#common-options" title="Permanent link">&para;</a></h2>
+<p>All parsers support these common command-line options:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Required options</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>--url<span class="w">          </span><span class="c1"># Base URL of the website to scrape</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>--parser<span class="w">       </span><span class="c1"># Parser name (ParserAppealsAL, Parser1819, ParserDailyNews)</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="c1"># Optional options</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>--suffix<span class="w">       </span><span class="c1"># URL suffix to filter pages</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>--max_pages<span class="w">    </span><span class="c1"># Maximum number of pages to process</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="c1"># Example with all options</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span>--url<span class="w"> </span><span class="s2">&quot;https://example.com&quot;</span><span class="w"> </span>--parser<span class="w"> </span>Parser1819<span class="w"> </span>--suffix<span class="w"> </span><span class="s2">&quot;/news/&quot;</span><span class="w"> </span>--max_pages<span class="w"> </span><span class="m">5</span>
+</code></pre></div>
+<p>Output files are automatically named with the format: <code>YYYY-MM-DD_ParserName.json</code></p>
+<h2 id="parser-development">Parser Development<a class="headerlink" href="#parser-development" title="Permanent link">&para;</a></h2>
+<p>Interested in creating custom parsers? See our <a href="../../developer/creating-custom-parsers/">Developer Guide</a> for detailed instructions on extending OPAL with new parsers.</p>
+<h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Choose a parser and view its <a href="./appeals-al.md">detailed documentation</a></li>
+<li>Learn about <a href="../common-use-cases/">common use cases</a></li>
+<li>Explore <a href="../output-examples/">output formats</a></li>
+</ul>
 
 
 
 
 
 
+
+  
+  
 
 
 

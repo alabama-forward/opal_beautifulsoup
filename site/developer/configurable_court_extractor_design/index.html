@@ -13,10 +13,10 @@
       
       
       
-        <link rel="prev" href="../ParserAppealsAL_documentation/">
+        <link rel="prev" href="../../reference/court_url_paginator/">
       
       
-        <link rel="next" href="../court_scraper_analysis/">
+        <link rel="next" href="../user_agent_headers_guide/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Court Extractor Design - OPAL - Oppositional Positions in Alabama</title>
+        <title>Configurable Court Extractor Design - OPAL - Oppositional Positions in Alabama</title>
       
     
     
@@ -49,6 +49,8 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -110,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Court Extractor Design
+              Configurable Court Extractor Design
             
           </span>
         </div>
@@ -232,7 +234,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../getting-started/installation/" class="md-tabs__link">
+        <a href="../../getting-started/" class="md-tabs__link">
           
   
   
@@ -252,31 +254,11 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../user-guide/cli-usage/" class="md-tabs__link">
+        <a href="../../user-guide/" class="md-tabs__link">
           
   
   
   User Guide
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../api_reference/" class="md-tabs__link">
-          
-  
-  
-  API Reference
 
         </a>
       </li>
@@ -294,7 +276,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../architecture/" class="md-tabs__link">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -314,7 +296,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../about/contributing/" class="md-tabs__link">
+        <a href="../../about/" class="md-tabs__link">
           
   
   
@@ -433,12 +415,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/installation/" class="md-nav__link">
+      <a href="../../getting-started/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Installation
+    Overview
     
   </span>
   
@@ -456,12 +438,58 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/quickstart/" class="md-nav__link">
+      <a href="../../getting-started/prerequisites-checker/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Quick Start
+    Prerequisites Checker
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/complete-setup-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Complete Setup Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/environment-guides/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Environment-Specific Guides
     
   </span>
   
@@ -485,6 +513,29 @@
   
   <span class="md-ellipsis">
     Configuration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/quickstart-tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quick Start Tutorial
     
   </span>
   
@@ -554,12 +605,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../user-guide/cli-usage/" class="md-nav__link">
+      <a href="../../user-guide/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    CLI Usage
+    Overview
     
   </span>
   
@@ -577,12 +628,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../user-guide/command_line_tools/" class="md-nav__link">
+      <a href="../../user-guide/cli-reference/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Command Line Tools
+    CLI Reference
     
   </span>
   
@@ -600,12 +651,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../user-guide/configurable_court_extractor/" class="md-nav__link">
+      <a href="../../user-guide/command-builder/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Configurable Court Extractor
+    Interactive Command Builder
     
   </span>
   
@@ -615,6 +666,51 @@
   
 
               
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Parsers
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Parsers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -646,12 +742,58 @@
   
   
     <li class="md-nav__item">
-      <a href="../../user-guide/output-formats/" class="md-nav__link">
+      <a href="../../user-guide/parsers/ParserAppealsAL/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Output Formats
+    Alabama Appeals Court
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/parsers/Parser1819/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1819 News
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/parsers/ParserDailyNews/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Daily News
     
   </span>
   
@@ -668,51 +810,7 @@
     </li>
   
 
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    API Reference
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            API Reference
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+              
             
               
                 
@@ -721,12 +819,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api_reference/" class="md-nav__link">
+      <a href="../../user-guide/visual-flow-diagrams/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Complete API Reference
+    Visual Flow Diagrams
     
   </span>
   
@@ -744,12 +842,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api/data_structures/" class="md-nav__link">
+      <a href="../../user-guide/output-examples/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Data Structures
+    Output Examples
     
   </span>
   
@@ -767,12 +865,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api/parser-appeals-al/" class="md-nav__link">
+      <a href="../../user-guide/common-use-cases/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ParserAppealsAL
+    Common Use Cases
     
   </span>
   
@@ -790,12 +888,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api/court_url_paginator/" class="md-nav__link">
+      <a href="../../user-guide/working-with-output-data/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Court URL Paginator
+    Working with Output Data
     
   </span>
   
@@ -813,12 +911,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api/base-parser/" class="md-nav__link">
+      <a href="../../user-guide/understanding-errors/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Base Parser
+    Understanding Errors
     
   </span>
   
@@ -836,35 +934,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api/parser-1819/" class="md-nav__link">
+      <a href="../../user-guide/configurable_court_extractor/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Parser1819
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../api/parser-daily-news/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    ParserDailyNews
+    Configurable Court Extractor
     
   </span>
   
@@ -907,10 +982,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   
@@ -923,12 +998,35 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Developer Guide
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -983,6 +1081,52 @@
   
   
     <li class="md-nav__item">
+      <a href="../creating-custom-parsers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Creating Custom Parsers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../creating-court-parsers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Creating Court Parsers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../error_handling/" class="md-nav__link">
         
   
@@ -1005,13 +1149,61 @@
   
   
   
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Class Reference
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            Class Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../BaseParser_web_scraping_guide/" class="md-nav__link">
+      <a href="../class-reference/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    BaseParser Guide
+    Overview
     
   </span>
   
@@ -1029,12 +1221,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../creating-parsers/" class="md-nav__link">
+      <a href="../../reference/base-parser/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Creating New Parsers
+    Base Parser
     
   </span>
   
@@ -1052,17 +1244,94 @@
   
   
     <li class="md-nav__item">
-      <a href="../ParserAppealsAL_documentation/" class="md-nav__link">
+      <a href="../../reference/parser-classes-overview/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ParserAppealsAL Documentation
+    Parser Classes
     
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/data_structures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Structures
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/court-extractor-classes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Court Extractor Classes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/court_url_paginator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Court URL Paginator
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1158,6 +1427,21 @@
       1. CourtSearchBuilder Class
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="1. CourtSearchBuilder Class">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-i-designed-it-this-way" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why I designed it this way:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1345,9 +1629,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#solution-approach" class="md-nav__link">
+  <a href="#solution" class="md-nav__link">
     <span class="md-ellipsis">
-      Solution Approach
+      Solution
     </span>
   </a>
   
@@ -1419,13 +1703,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#advantages-over-current-implementation" class="md-nav__link">
+  <a href="#advantages-over-former-implementation" class="md-nav__link">
     <span class="md-ellipsis">
-      Advantages Over Current Implementation
+      Advantages Over Former Implementation
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Advantages Over Current Implementation">
+    <nav class="md-nav" aria-label="Advantages Over Former Implementation">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1516,15 +1800,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#additional-search-parameters" class="md-nav__link">
-    <span class="md-ellipsis">
-      Additional Search Parameters
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#advanced-features" class="md-nav__link">
     <span class="md-ellipsis">
       Advanced Features
@@ -1566,53 +1841,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#complete-implementation-code" class="md-nav__link">
+  <a href="#implementation-reference" class="md-nav__link">
     <span class="md-ellipsis">
-      Complete Implementation Code
+      Implementation Reference
     </span>
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#code-walkthrough" class="md-nav__link">
-    <span class="md-ellipsis">
-      Code Walkthrough
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Code Walkthrough">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#courtsearchbuilder-class" class="md-nav__link">
-    <span class="md-ellipsis">
-      CourtSearchBuilder Class
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#main-extraction-function" class="md-nav__link">
-    <span class="md-ellipsis">
-      Main Extraction Function
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#command-line-interface_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Command Line Interface
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1625,79 +1858,19 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../court_scraper_analysis/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Court Scraper Analysis
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../court_scraper_requirements/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Court Scraper Requirements
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../alabama_appeals_court_scraper_instructions/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Alabama Appeals Instructions
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -1755,10 +1928,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -1771,12 +1944,35 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             About
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1892,6 +2088,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="1. CourtSearchBuilder Class">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-i-designed-it-this-way" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why I designed it this way:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -2078,9 +2289,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#solution-approach" class="md-nav__link">
+  <a href="#solution" class="md-nav__link">
     <span class="md-ellipsis">
-      Solution Approach
+      Solution
     </span>
   </a>
   
@@ -2152,13 +2363,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#advantages-over-current-implementation" class="md-nav__link">
+  <a href="#advantages-over-former-implementation" class="md-nav__link">
     <span class="md-ellipsis">
-      Advantages Over Current Implementation
+      Advantages Over Former Implementation
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Advantages Over Current Implementation">
+    <nav class="md-nav" aria-label="Advantages Over Former Implementation">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2249,15 +2460,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#additional-search-parameters" class="md-nav__link">
-    <span class="md-ellipsis">
-      Additional Search Parameters
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#advanced-features" class="md-nav__link">
     <span class="md-ellipsis">
       Advanced Features
@@ -2299,53 +2501,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#complete-implementation-code" class="md-nav__link">
+  <a href="#implementation-reference" class="md-nav__link">
     <span class="md-ellipsis">
-      Complete Implementation Code
+      Implementation Reference
     </span>
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#code-walkthrough" class="md-nav__link">
-    <span class="md-ellipsis">
-      Code Walkthrough
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Code Walkthrough">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#courtsearchbuilder-class" class="md-nav__link">
-    <span class="md-ellipsis">
-      CourtSearchBuilder Class
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#main-extraction-function" class="md-nav__link">
-    <span class="md-ellipsis">
-      Main Extraction Function
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#command-line-interface_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Command Line Interface
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2353,6 +2513,15 @@
   <a href="#key-design-decisions-explained" class="md-nav__link">
     <span class="md-ellipsis">
       Key Design Decisions Explained
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
     </span>
   </a>
   
@@ -2376,7 +2545,7 @@
 
 <h1 id="configurable-court-extractor-design">Configurable Court Extractor Design<a class="headerlink" href="#configurable-court-extractor-design" title="Permanent link">&para;</a></h1>
 <h2 id="problem-statement">Problem Statement<a class="headerlink" href="#problem-statement" title="Permanent link">&para;</a></h2>
-<p>The current <code>extract_all_court_cases.py</code> has hardcoded search parameters in the URL, making it inflexible for different search criteria. Users cannot easily change:
+<p>A former version of <code>extract_all_court_cases.py</code> had hardcoded search parameters in the URL, making it inflexible for different search criteria. Users couldn't dynamically change:
 - Date ranges
 - Case number filters
 - Case title filters
@@ -2386,11 +2555,21 @@
 <h2 id="architecture">Architecture<a class="headerlink" href="#architecture" title="Permanent link">&para;</a></h2>
 <h3 id="1-courtsearchbuilder-class">1. CourtSearchBuilder Class<a class="headerlink" href="#1-courtsearchbuilder-class" title="Permanent link">&para;</a></h3>
 <p><strong>Purpose</strong>: Encapsulates the complex URL building logic for Alabama Appeals Court searches.</p>
-<p><strong>Why I designed it this way</strong>:
-- <strong>Separation of Concerns</strong>: URL building is separate from data extraction
-- <strong>Maintainability</strong>: Changes to URL structure only affect one class
-- <strong>Reusability</strong>: Can be used by different scripts or tools
-- <strong>Readability</strong>: Clear methods for each search parameter</p>
+<h4 id="why-i-designed-it-this-way"><strong>Why I designed it this way</strong>:<a class="headerlink" href="#why-i-designed-it-this-way" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><strong>Separation of Concerns</strong>: URL building is separate from data extraction</p>
+</li>
+<li>
+<p><strong>Maintainability</strong>: Changes to URL structure only affect one class</p>
+</li>
+<li>
+<p><strong>Reusability</strong>: Can be used by different scripts or tools</p>
+</li>
+<li>
+<p><strong>Readability</strong>: Clear methods for each search parameter</p>
+</li>
+</ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">CourtSearchBuilder</span><span class="p">:</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">base_url</span> <span class="o">=</span> <span class="s2">&quot;https://publicportal.alappeals.gov/portal/search/case/results&quot;</span>
@@ -2524,8 +2703,8 @@
 <h2 id="dynamic-court-id-discovery">Dynamic Court ID Discovery<a class="headerlink" href="#dynamic-court-id-discovery" title="Permanent link">&para;</a></h2>
 <h3 id="the-problem-with-dynamic-ids">The Problem with Dynamic IDs<a class="headerlink" href="#the-problem-with-dynamic-ids" title="Permanent link">&para;</a></h3>
 <p>Modern web applications often generate session-specific or dynamic identifiers that change between visits. The Alabama Appeals Court portal appears to use dynamic court IDs that are assigned during the user's session rather than being static, predictable values.</p>
-<h3 id="solution-approach">Solution Approach<a class="headerlink" href="#solution-approach" title="Permanent link">&para;</a></h3>
-<p><strong>Option 1: Automatic Discovery (Recommended)</strong>
+<h3 id="solution">Solution<a class="headerlink" href="#solution" title="Permanent link">&para;</a></h3>
+<p><strong>Chosen Solution: Automatic Discovery</strong>
 The <code>discover_court_ids()</code> method navigates to the court's search interface and programmatically extracts the current court IDs by:</p>
 <ol>
 <li><strong>Loading the search page</strong> - Navigates to the main case search interface</li>
@@ -2570,10 +2749,12 @@ When court ID discovery completely fails, users can:</p>
 <p>The Alabama Appeals Court portal uses a complex nested URL structure:
 <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>?criteria=~%28advanced~false~courtID~%27{court_id}~page~%28...%29~sort~%28...%29~case~%28...%29%29
 </code></pre></div></p>
-<p><strong>My approach</strong>:
-1. Build parameters as nested dictionaries
-2. Convert to the portal's specific encoding format
-3. Handle special characters and escaping automatically</p>
+<p><strong>My approach</strong>:</p>
+<ol>
+<li>Build parameters as nested dictionaries</li>
+<li>Convert to the portal's specific encoding format</li>
+<li>Handle special characters and escaping automatically</li>
+</ol>
 <h3 id="error-handling">Error Handling<a class="headerlink" href="#error-handling" title="Permanent link">&para;</a></h3>
 <p><strong>Graceful degradation</strong>:
 - If total page count can't be determined, process incrementally
@@ -2589,7 +2770,7 @@ When court ID discovery completely fails, users can:</p>
 <p><strong>Progress reporting</strong>:
 - Real-time feedback on processing status
 - Clear indication of completion</p>
-<h2 id="advantages-over-current-implementation">Advantages Over Current Implementation<a class="headerlink" href="#advantages-over-current-implementation" title="Permanent link">&para;</a></h2>
+<h2 id="advantages-over-former-implementation">Advantages Over Former Implementation<a class="headerlink" href="#advantages-over-former-implementation" title="Permanent link">&para;</a></h2>
 <h3 id="1-flexibility">1. Flexibility<a class="headerlink" href="#1-flexibility" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>Before</strong>: Fixed search parameters in hardcoded URL</li>
@@ -2626,18 +2807,11 @@ When court ID discovery completely fails, users can:</p>
 <li><strong>After</strong>: Automatic discovery → manual discovery → custom URL bypass</li>
 </ul>
 <h2 id="integration-with-existing-code">Integration with Existing Code<a class="headerlink" href="#integration-with-existing-code" title="Permanent link">&para;</a></h2>
-<p>The new extractor can coexist with the current implementation:
+<p>The new extractor coexists with the current implementation:
 - Uses the same <code>ParserAppealsAL</code> class
 - Produces the same JSON/CSV output format
 - Follows the same error handling patterns</p>
 <h2 id="future-enhancements">Future Enhancements<a class="headerlink" href="#future-enhancements" title="Permanent link">&para;</a></h2>
-<h3 id="additional-search-parameters">Additional Search Parameters<a class="headerlink" href="#additional-search-parameters" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Court type selection</li>
-<li>Attorney name filters</li>
-<li>Case status filters</li>
-<li>Judge name filters</li>
-</ul>
 <h3 id="advanced-features">Advanced Features<a class="headerlink" href="#advanced-features" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Save/load search configurations</li>
@@ -2676,675 +2850,10 @@ When court ID discovery completely fails, users can:</p>
 <li><strong>Documented</strong>: Self-documenting code with clear method names</li>
 </ol>
 <p>This design transforms a rigid, single-purpose script into a flexible, user-friendly tool that can adapt to various research needs while maintaining the reliability and performance of the original implementation.</p>
-<h2 id="complete-implementation-code">Complete Implementation Code<a class="headerlink" href="#complete-implementation-code" title="Permanent link">&para;</a></h2>
-<p>Below is the full implementation of the configurable court extractor:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="ch">#!/usr/bin/env python3</span>
-<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="sd">&quot;&quot;&quot;</span>
-<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="sd">Configurable Court Case Extractor for Alabama Appeals Court</span>
-<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="sd">Allows users to set custom search parameters OR use pre-built URLs</span>
-<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="sd">&quot;&quot;&quot;</span>
-<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
-<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="kn">import</span><span class="w"> </span><span class="nn">argparse</span>
-<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
-<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="kn">from</span><span class="w"> </span><span class="nn">urllib.parse</span><span class="w"> </span><span class="kn">import</span> <span class="n">quote</span>
-<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="kn">from</span><span class="w"> </span><span class="nn">opal.court_case_parser</span><span class="w"> </span><span class="kn">import</span> <span class="n">ParserAppealsAL</span>
-<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="kn">from</span><span class="w"> </span><span class="nn">opal.court_url_paginator</span><span class="w"> </span><span class="kn">import</span> <span class="n">parse_court_url</span>
-<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>
-<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a>
-<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a><span class="k">class</span><span class="w"> </span><span class="nc">CourtSearchBuilder</span><span class="p">:</span>
-<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Builder class for constructing Alabama Court search URLs with court-specific parameters&quot;&quot;&quot;</span>
-<a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a>
-<a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">base_url</span> <span class="o">=</span> <span class="s2">&quot;https://publicportal.alappeals.gov/portal/search/case/results&quot;</span>
-<a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a>
-<a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a>        <span class="c1"># Court definitions with their specific IDs and configurations</span>
-<a id="__codelineno-12-21" name="__codelineno-12-21" href="#__codelineno-12-21"></a>        <span class="c1"># NOTE: Court IDs may be dynamically assigned by the website</span>
-<a id="__codelineno-12-22" name="__codelineno-12-22" href="#__codelineno-12-22"></a>        <span class="c1"># These IDs should be discovered through session initialization</span>
-<a id="__codelineno-12-23" name="__codelineno-12-23" href="#__codelineno-12-23"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">courts</span> <span class="o">=</span> <span class="p">{</span>
-<a id="__codelineno-12-24" name="__codelineno-12-24" href="#__codelineno-12-24"></a>            <span class="s1">&#39;civil&#39;</span><span class="p">:</span> <span class="p">{</span>
-<a id="__codelineno-12-25" name="__codelineno-12-25" href="#__codelineno-12-25"></a>                <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Alabama Civil Court of Appeals&#39;</span><span class="p">,</span>
-<a id="__codelineno-12-26" name="__codelineno-12-26" href="#__codelineno-12-26"></a>                <span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>  <span class="c1"># Will be discovered dynamically</span>
-<a id="__codelineno-12-27" name="__codelineno-12-27" href="#__codelineno-12-27"></a>                <span class="s1">&#39;case_prefix&#39;</span><span class="p">:</span> <span class="s1">&#39;CL&#39;</span><span class="p">,</span>
-<a id="__codelineno-12-28" name="__codelineno-12-28" href="#__codelineno-12-28"></a>                <span class="s1">&#39;categories&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Appeal&#39;</span><span class="p">,</span> <span class="s1">&#39;Certiorari&#39;</span><span class="p">,</span> <span class="s1">&#39;Original Proceeding&#39;</span><span class="p">,</span> <span class="s1">&#39;Petition&#39;</span><span class="p">]</span>
-<a id="__codelineno-12-29" name="__codelineno-12-29" href="#__codelineno-12-29"></a>            <span class="p">},</span>
-<a id="__codelineno-12-30" name="__codelineno-12-30" href="#__codelineno-12-30"></a>            <span class="s1">&#39;criminal&#39;</span><span class="p">:</span> <span class="p">{</span>
-<a id="__codelineno-12-31" name="__codelineno-12-31" href="#__codelineno-12-31"></a>                <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Alabama Court of Criminal Appeals&#39;</span><span class="p">,</span> 
-<a id="__codelineno-12-32" name="__codelineno-12-32" href="#__codelineno-12-32"></a>                <span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>  <span class="c1"># Will be discovered dynamically</span>
-<a id="__codelineno-12-33" name="__codelineno-12-33" href="#__codelineno-12-33"></a>                <span class="s1">&#39;case_prefix&#39;</span><span class="p">:</span> <span class="s1">&#39;CR&#39;</span><span class="p">,</span>
-<a id="__codelineno-12-34" name="__codelineno-12-34" href="#__codelineno-12-34"></a>                <span class="s1">&#39;categories&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Appeal&#39;</span><span class="p">,</span> <span class="s1">&#39;Certiorari&#39;</span><span class="p">,</span> <span class="s1">&#39;Original Proceeding&#39;</span><span class="p">,</span> <span class="s1">&#39;Petition&#39;</span><span class="p">]</span>
-<a id="__codelineno-12-35" name="__codelineno-12-35" href="#__codelineno-12-35"></a>            <span class="p">},</span>
-<a id="__codelineno-12-36" name="__codelineno-12-36" href="#__codelineno-12-36"></a>            <span class="s1">&#39;supreme&#39;</span><span class="p">:</span> <span class="p">{</span>
-<a id="__codelineno-12-37" name="__codelineno-12-37" href="#__codelineno-12-37"></a>                <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Alabama Supreme Court&#39;</span><span class="p">,</span>
-<a id="__codelineno-12-38" name="__codelineno-12-38" href="#__codelineno-12-38"></a>                <span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>  <span class="c1"># Will be discovered dynamically</span>
-<a id="__codelineno-12-39" name="__codelineno-12-39" href="#__codelineno-12-39"></a>                <span class="s1">&#39;case_prefix&#39;</span><span class="p">:</span> <span class="s1">&#39;SC&#39;</span><span class="p">,</span>
-<a id="__codelineno-12-40" name="__codelineno-12-40" href="#__codelineno-12-40"></a>                <span class="s1">&#39;categories&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Appeal&#39;</span><span class="p">,</span> <span class="s1">&#39;Certiorari&#39;</span><span class="p">,</span> <span class="s1">&#39;Original Proceeding&#39;</span><span class="p">,</span> <span class="s1">&#39;Petition&#39;</span><span class="p">,</span> <span class="s1">&#39;Certified Question&#39;</span><span class="p">]</span>
-<a id="__codelineno-12-41" name="__codelineno-12-41" href="#__codelineno-12-41"></a>            <span class="p">}</span>
-<a id="__codelineno-12-42" name="__codelineno-12-42" href="#__codelineno-12-42"></a>        <span class="p">}</span>
-<a id="__codelineno-12-43" name="__codelineno-12-43" href="#__codelineno-12-43"></a>
-<a id="__codelineno-12-44" name="__codelineno-12-44" href="#__codelineno-12-44"></a>        <span class="c1"># Date period mappings</span>
-<a id="__codelineno-12-45" name="__codelineno-12-45" href="#__codelineno-12-45"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">date_periods</span> <span class="o">=</span> <span class="p">{</span>
-<a id="__codelineno-12-46" name="__codelineno-12-46" href="#__codelineno-12-46"></a>            <span class="s1">&#39;7d&#39;</span><span class="p">:</span> <span class="s1">&#39;-7d&#39;</span><span class="p">,</span>
-<a id="__codelineno-12-47" name="__codelineno-12-47" href="#__codelineno-12-47"></a>            <span class="s1">&#39;1m&#39;</span><span class="p">:</span> <span class="s1">&#39;-1m&#39;</span><span class="p">,</span> 
-<a id="__codelineno-12-48" name="__codelineno-12-48" href="#__codelineno-12-48"></a>            <span class="s1">&#39;3m&#39;</span><span class="p">:</span> <span class="s1">&#39;-3m&#39;</span><span class="p">,</span>
-<a id="__codelineno-12-49" name="__codelineno-12-49" href="#__codelineno-12-49"></a>            <span class="s1">&#39;6m&#39;</span><span class="p">:</span> <span class="s1">&#39;-6m&#39;</span><span class="p">,</span>
-<a id="__codelineno-12-50" name="__codelineno-12-50" href="#__codelineno-12-50"></a>            <span class="s1">&#39;1y&#39;</span><span class="p">:</span> <span class="s1">&#39;-1y&#39;</span><span class="p">,</span>
-<a id="__codelineno-12-51" name="__codelineno-12-51" href="#__codelineno-12-51"></a>            <span class="s1">&#39;custom&#39;</span><span class="p">:</span> <span class="s1">&#39;custom&#39;</span>
-<a id="__codelineno-12-52" name="__codelineno-12-52" href="#__codelineno-12-52"></a>        <span class="p">}</span>
-<a id="__codelineno-12-53" name="__codelineno-12-53" href="#__codelineno-12-53"></a>
-<a id="__codelineno-12-54" name="__codelineno-12-54" href="#__codelineno-12-54"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">current_court</span> <span class="o">=</span> <span class="s1">&#39;civil&#39;</span>  <span class="c1"># Default court</span>
-<a id="__codelineno-12-55" name="__codelineno-12-55" href="#__codelineno-12-55"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">session_initialized</span> <span class="o">=</span> <span class="kc">False</span>
-<a id="__codelineno-12-56" name="__codelineno-12-56" href="#__codelineno-12-56"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">reset_params</span><span class="p">()</span>
-<a id="__codelineno-12-57" name="__codelineno-12-57" href="#__codelineno-12-57"></a>
-<a id="__codelineno-12-58" name="__codelineno-12-58" href="#__codelineno-12-58"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">reset_params</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<a id="__codelineno-12-59" name="__codelineno-12-59" href="#__codelineno-12-59"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;Reset all parameters to defaults&quot;&quot;&quot;</span>
-<a id="__codelineno-12-60" name="__codelineno-12-60" href="#__codelineno-12-60"></a>        <span class="n">court_info</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">courts</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">current_court</span><span class="p">]</span>
-<a id="__codelineno-12-61" name="__codelineno-12-61" href="#__codelineno-12-61"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
-<a id="__codelineno-12-62" name="__codelineno-12-62" href="#__codelineno-12-62"></a>            <span class="s1">&#39;advanced&#39;</span><span class="p">:</span> <span class="s1">&#39;false&#39;</span><span class="p">,</span>
-<a id="__codelineno-12-63" name="__codelineno-12-63" href="#__codelineno-12-63"></a>            <span class="s1">&#39;courtID&#39;</span><span class="p">:</span> <span class="n">court_info</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">],</span>  <span class="c1"># May be None until discovered</span>
-<a id="__codelineno-12-64" name="__codelineno-12-64" href="#__codelineno-12-64"></a>            <span class="s1">&#39;page&#39;</span><span class="p">:</span> <span class="p">{</span>
-<a id="__codelineno-12-65" name="__codelineno-12-65" href="#__codelineno-12-65"></a>                <span class="s1">&#39;size&#39;</span><span class="p">:</span> <span class="mi">500</span><span class="p">,</span>
-<a id="__codelineno-12-66" name="__codelineno-12-66" href="#__codelineno-12-66"></a>                <span class="s1">&#39;number&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-<a id="__codelineno-12-67" name="__codelineno-12-67" href="#__codelineno-12-67"></a>                <span class="s1">&#39;totalElements&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-<a id="__codelineno-12-68" name="__codelineno-12-68" href="#__codelineno-12-68"></a>                <span class="s1">&#39;totalPages&#39;</span><span class="p">:</span> <span class="mi">0</span>
-<a id="__codelineno-12-69" name="__codelineno-12-69" href="#__codelineno-12-69"></a>            <span class="p">},</span>
-<a id="__codelineno-12-70" name="__codelineno-12-70" href="#__codelineno-12-70"></a>            <span class="s1">&#39;sort&#39;</span><span class="p">:</span> <span class="p">{</span>
-<a id="__codelineno-12-71" name="__codelineno-12-71" href="#__codelineno-12-71"></a>                <span class="s1">&#39;sortBy&#39;</span><span class="p">:</span> <span class="s1">&#39;caseHeader.filedDate&#39;</span><span class="p">,</span>
-<a id="__codelineno-12-72" name="__codelineno-12-72" href="#__codelineno-12-72"></a>                <span class="s1">&#39;sortDesc&#39;</span><span class="p">:</span> <span class="s1">&#39;true&#39;</span>
-<a id="__codelineno-12-73" name="__codelineno-12-73" href="#__codelineno-12-73"></a>            <span class="p">},</span>
-<a id="__codelineno-12-74" name="__codelineno-12-74" href="#__codelineno-12-74"></a>            <span class="s1">&#39;case&#39;</span><span class="p">:</span> <span class="p">{</span>
-<a id="__codelineno-12-75" name="__codelineno-12-75" href="#__codelineno-12-75"></a>                <span class="s1">&#39;caseCategoryID&#39;</span><span class="p">:</span> <span class="mi">1000000</span><span class="p">,</span>  <span class="c1"># All categories</span>
-<a id="__codelineno-12-76" name="__codelineno-12-76" href="#__codelineno-12-76"></a>                <span class="s1">&#39;caseNumberQueryTypeID&#39;</span><span class="p">:</span> <span class="mi">10463</span><span class="p">,</span>  <span class="c1"># Contains</span>
-<a id="__codelineno-12-77" name="__codelineno-12-77" href="#__codelineno-12-77"></a>                <span class="s1">&#39;caseTitleQueryTypeID&#39;</span><span class="p">:</span> <span class="mi">300054</span><span class="p">,</span>  <span class="c1"># Contains</span>
-<a id="__codelineno-12-78" name="__codelineno-12-78" href="#__codelineno-12-78"></a>                <span class="s1">&#39;filedDateChoice&#39;</span><span class="p">:</span> <span class="s1">&#39;1y&#39;</span><span class="p">,</span>  <span class="c1"># Last year</span>
-<a id="__codelineno-12-79" name="__codelineno-12-79" href="#__codelineno-12-79"></a>                <span class="s1">&#39;filedDateStart&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
-<a id="__codelineno-12-80" name="__codelineno-12-80" href="#__codelineno-12-80"></a>                <span class="s1">&#39;filedDateEnd&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
-<a id="__codelineno-12-81" name="__codelineno-12-81" href="#__codelineno-12-81"></a>                <span class="s1">&#39;excludeClosed&#39;</span><span class="p">:</span> <span class="s1">&#39;false&#39;</span>
-<a id="__codelineno-12-82" name="__codelineno-12-82" href="#__codelineno-12-82"></a>            <span class="p">}</span>
-<a id="__codelineno-12-83" name="__codelineno-12-83" href="#__codelineno-12-83"></a>        <span class="p">}</span>
-<a id="__codelineno-12-84" name="__codelineno-12-84" href="#__codelineno-12-84"></a>
-<a id="__codelineno-12-85" name="__codelineno-12-85" href="#__codelineno-12-85"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">discover_court_ids</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parser_instance</span><span class="p">):</span>
-<a id="__codelineno-12-86" name="__codelineno-12-86" href="#__codelineno-12-86"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<a id="__codelineno-12-87" name="__codelineno-12-87" href="#__codelineno-12-87"></a><span class="sd">        Discover court IDs by navigating to the website and inspecting the court selection interface</span>
-<a id="__codelineno-12-88" name="__codelineno-12-88" href="#__codelineno-12-88"></a>
-<a id="__codelineno-12-89" name="__codelineno-12-89" href="#__codelineno-12-89"></a><span class="sd">        Args:</span>
-<a id="__codelineno-12-90" name="__codelineno-12-90" href="#__codelineno-12-90"></a><span class="sd">            parser_instance: Instance of ParserAppealsAL with active WebDriver</span>
-<a id="__codelineno-12-91" name="__codelineno-12-91" href="#__codelineno-12-91"></a><span class="sd">        &quot;&quot;&quot;</span>
-<a id="__codelineno-12-92" name="__codelineno-12-92" href="#__codelineno-12-92"></a>        <span class="k">try</span><span class="p">:</span>
-<a id="__codelineno-12-93" name="__codelineno-12-93" href="#__codelineno-12-93"></a>            <span class="c1"># Navigate to the main search page</span>
-<a id="__codelineno-12-94" name="__codelineno-12-94" href="#__codelineno-12-94"></a>            <span class="n">search_page_url</span> <span class="o">=</span> <span class="s2">&quot;https://publicportal.alappeals.gov/portal/search/case&quot;</span>
-<a id="__codelineno-12-95" name="__codelineno-12-95" href="#__codelineno-12-95"></a>            <span class="n">parser_instance</span><span class="o">.</span><span class="n">driver</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">search_page_url</span><span class="p">)</span>
-<a id="__codelineno-12-96" name="__codelineno-12-96" href="#__codelineno-12-96"></a>
-<a id="__codelineno-12-97" name="__codelineno-12-97" href="#__codelineno-12-97"></a>            <span class="c1"># Wait for the page to load</span>
-<a id="__codelineno-12-98" name="__codelineno-12-98" href="#__codelineno-12-98"></a>            <span class="kn">from</span><span class="w"> </span><span class="nn">selenium.webdriver.support.ui</span><span class="w"> </span><span class="kn">import</span> <span class="n">WebDriverWait</span>
-<a id="__codelineno-12-99" name="__codelineno-12-99" href="#__codelineno-12-99"></a>            <span class="kn">from</span><span class="w"> </span><span class="nn">selenium.webdriver.support</span><span class="w"> </span><span class="kn">import</span> <span class="n">expected_conditions</span> <span class="k">as</span> <span class="n">EC</span>
-<a id="__codelineno-12-100" name="__codelineno-12-100" href="#__codelineno-12-100"></a>            <span class="kn">from</span><span class="w"> </span><span class="nn">selenium.webdriver.common.by</span><span class="w"> </span><span class="kn">import</span> <span class="n">By</span>
-<a id="__codelineno-12-101" name="__codelineno-12-101" href="#__codelineno-12-101"></a>
-<a id="__codelineno-12-102" name="__codelineno-12-102" href="#__codelineno-12-102"></a>            <span class="n">wait</span> <span class="o">=</span> <span class="n">WebDriverWait</span><span class="p">(</span><span class="n">parser_instance</span><span class="o">.</span><span class="n">driver</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
-<a id="__codelineno-12-103" name="__codelineno-12-103" href="#__codelineno-12-103"></a>
-<a id="__codelineno-12-104" name="__codelineno-12-104" href="#__codelineno-12-104"></a>            <span class="c1"># Look for court selection dropdown or options</span>
-<a id="__codelineno-12-105" name="__codelineno-12-105" href="#__codelineno-12-105"></a>            <span class="c1"># This is a placeholder - actual implementation would need to inspect the HTML structure</span>
-<a id="__codelineno-12-106" name="__codelineno-12-106" href="#__codelineno-12-106"></a>            <span class="n">court_selector</span> <span class="o">=</span> <span class="n">wait</span><span class="o">.</span><span class="n">until</span><span class="p">(</span><span class="n">EC</span><span class="o">.</span><span class="n">presence_of_element_located</span><span class="p">((</span><span class="n">By</span><span class="o">.</span><span class="n">ID</span><span class="p">,</span> <span class="s2">&quot;court-selector&quot;</span><span class="p">)))</span>
-<a id="__codelineno-12-107" name="__codelineno-12-107" href="#__codelineno-12-107"></a>
-<a id="__codelineno-12-108" name="__codelineno-12-108" href="#__codelineno-12-108"></a>            <span class="c1"># Extract court options and their IDs</span>
-<a id="__codelineno-12-109" name="__codelineno-12-109" href="#__codelineno-12-109"></a>            <span class="c1"># Implementation would parse the HTML to find court names and their corresponding IDs</span>
-<a id="__codelineno-12-110" name="__codelineno-12-110" href="#__codelineno-12-110"></a>            <span class="n">court_options</span> <span class="o">=</span> <span class="n">court_selector</span><span class="o">.</span><span class="n">find_elements</span><span class="p">(</span><span class="n">By</span><span class="o">.</span><span class="n">TAG_NAME</span><span class="p">,</span> <span class="s2">&quot;option&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-111" name="__codelineno-12-111" href="#__codelineno-12-111"></a>
-<a id="__codelineno-12-112" name="__codelineno-12-112" href="#__codelineno-12-112"></a>            <span class="k">for</span> <span class="n">option</span> <span class="ow">in</span> <span class="n">court_options</span><span class="p">:</span>
-<a id="__codelineno-12-113" name="__codelineno-12-113" href="#__codelineno-12-113"></a>                <span class="n">court_name</span> <span class="o">=</span> <span class="n">option</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
-<a id="__codelineno-12-114" name="__codelineno-12-114" href="#__codelineno-12-114"></a>                <span class="n">court_id</span> <span class="o">=</span> <span class="n">option</span><span class="o">.</span><span class="n">get_attribute</span><span class="p">(</span><span class="s2">&quot;value&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-115" name="__codelineno-12-115" href="#__codelineno-12-115"></a>
-<a id="__codelineno-12-116" name="__codelineno-12-116" href="#__codelineno-12-116"></a>                <span class="c1"># Map court names to our court keys</span>
-<a id="__codelineno-12-117" name="__codelineno-12-117" href="#__codelineno-12-117"></a>                <span class="k">if</span> <span class="s2">&quot;civil&quot;</span> <span class="ow">in</span> <span class="n">court_name</span> <span class="ow">and</span> <span class="s2">&quot;appeals&quot;</span> <span class="ow">in</span> <span class="n">court_name</span><span class="p">:</span>
-<a id="__codelineno-12-118" name="__codelineno-12-118" href="#__codelineno-12-118"></a>                    <span class="bp">self</span><span class="o">.</span><span class="n">courts</span><span class="p">[</span><span class="s1">&#39;civil&#39;</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">court_id</span>
-<a id="__codelineno-12-119" name="__codelineno-12-119" href="#__codelineno-12-119"></a>                <span class="k">elif</span> <span class="s2">&quot;criminal&quot;</span> <span class="ow">in</span> <span class="n">court_name</span> <span class="ow">and</span> <span class="s2">&quot;appeals&quot;</span> <span class="ow">in</span> <span class="n">court_name</span><span class="p">:</span>
-<a id="__codelineno-12-120" name="__codelineno-12-120" href="#__codelineno-12-120"></a>                    <span class="bp">self</span><span class="o">.</span><span class="n">courts</span><span class="p">[</span><span class="s1">&#39;criminal&#39;</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">court_id</span>
-<a id="__codelineno-12-121" name="__codelineno-12-121" href="#__codelineno-12-121"></a>                <span class="k">elif</span> <span class="s2">&quot;supreme&quot;</span> <span class="ow">in</span> <span class="n">court_name</span><span class="p">:</span>
-<a id="__codelineno-12-122" name="__codelineno-12-122" href="#__codelineno-12-122"></a>                    <span class="bp">self</span><span class="o">.</span><span class="n">courts</span><span class="p">[</span><span class="s1">&#39;supreme&#39;</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">court_id</span>
-<a id="__codelineno-12-123" name="__codelineno-12-123" href="#__codelineno-12-123"></a>
-<a id="__codelineno-12-124" name="__codelineno-12-124" href="#__codelineno-12-124"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">session_initialized</span> <span class="o">=</span> <span class="kc">True</span>
-<a id="__codelineno-12-125" name="__codelineno-12-125" href="#__codelineno-12-125"></a>            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Successfully discovered court IDs:&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-126" name="__codelineno-12-126" href="#__codelineno-12-126"></a>            <span class="k">for</span> <span class="n">court_key</span><span class="p">,</span> <span class="n">court_info</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">courts</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-<a id="__codelineno-12-127" name="__codelineno-12-127" href="#__codelineno-12-127"></a>                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  </span><span class="si">{</span><span class="n">court_info</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">court_info</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-128" name="__codelineno-12-128" href="#__codelineno-12-128"></a>
-<a id="__codelineno-12-129" name="__codelineno-12-129" href="#__codelineno-12-129"></a>        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-<a id="__codelineno-12-130" name="__codelineno-12-130" href="#__codelineno-12-130"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Warning: Could not discover court IDs automatically: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-131" name="__codelineno-12-131" href="#__codelineno-12-131"></a>            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Try running your search on the website and searching by URL populated by the search&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-132" name="__codelineno-12-132" href="#__codelineno-12-132"></a>
-<a id="__codelineno-12-133" name="__codelineno-12-133" href="#__codelineno-12-133"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">set_court_id_manually</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">court_key</span><span class="p">,</span> <span class="n">court_id</span><span class="p">):</span>
-<a id="__codelineno-12-134" name="__codelineno-12-134" href="#__codelineno-12-134"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<a id="__codelineno-12-135" name="__codelineno-12-135" href="#__codelineno-12-135"></a><span class="sd">        Set court ID manually</span>
-<a id="__codelineno-12-136" name="__codelineno-12-136" href="#__codelineno-12-136"></a>
-<a id="__codelineno-12-137" name="__codelineno-12-137" href="#__codelineno-12-137"></a><span class="sd">        Args:</span>
-<a id="__codelineno-12-138" name="__codelineno-12-138" href="#__codelineno-12-138"></a><span class="sd">            court_key: &#39;civil&#39;, &#39;criminal&#39;, or &#39;supreme&#39;</span>
-<a id="__codelineno-12-139" name="__codelineno-12-139" href="#__codelineno-12-139"></a><span class="sd">            court_id: The discovered court ID string</span>
-<a id="__codelineno-12-140" name="__codelineno-12-140" href="#__codelineno-12-140"></a><span class="sd">        &quot;&quot;&quot;</span>
-<a id="__codelineno-12-141" name="__codelineno-12-141" href="#__codelineno-12-141"></a>        <span class="k">if</span> <span class="n">court_key</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">courts</span><span class="p">:</span>
-<a id="__codelineno-12-142" name="__codelineno-12-142" href="#__codelineno-12-142"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">courts</span><span class="p">[</span><span class="n">court_key</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">court_id</span>
-<a id="__codelineno-12-143" name="__codelineno-12-143" href="#__codelineno-12-143"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Manually set </span><span class="si">{</span><span class="n">court_key</span><span class="si">}</span><span class="s2"> court ID to: </span><span class="si">{</span><span class="n">court_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-144" name="__codelineno-12-144" href="#__codelineno-12-144"></a>        <span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-12-145" name="__codelineno-12-145" href="#__codelineno-12-145"></a>            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Invalid court key: </span><span class="si">{</span><span class="n">court_key</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-146" name="__codelineno-12-146" href="#__codelineno-12-146"></a>
-<a id="__codelineno-12-147" name="__codelineno-12-147" href="#__codelineno-12-147"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">set_court</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">court_key</span><span class="p">):</span>
-<a id="__codelineno-12-148" name="__codelineno-12-148" href="#__codelineno-12-148"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<a id="__codelineno-12-149" name="__codelineno-12-149" href="#__codelineno-12-149"></a><span class="sd">        Set the court to search</span>
-<a id="__codelineno-12-150" name="__codelineno-12-150" href="#__codelineno-12-150"></a>
-<a id="__codelineno-12-151" name="__codelineno-12-151" href="#__codelineno-12-151"></a><span class="sd">        Args:</span>
-<a id="__codelineno-12-152" name="__codelineno-12-152" href="#__codelineno-12-152"></a><span class="sd">            court_key: &#39;civil&#39;, &#39;criminal&#39;, or &#39;supreme&#39;</span>
-<a id="__codelineno-12-153" name="__codelineno-12-153" href="#__codelineno-12-153"></a><span class="sd">        &quot;&quot;&quot;</span>
-<a id="__codelineno-12-154" name="__codelineno-12-154" href="#__codelineno-12-154"></a>        <span class="k">if</span> <span class="n">court_key</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">courts</span><span class="p">:</span>
-<a id="__codelineno-12-155" name="__codelineno-12-155" href="#__codelineno-12-155"></a>            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Invalid court: </span><span class="si">{</span><span class="n">court_key</span><span class="si">}</span><span class="s2">. Must be one of </span><span class="si">{</span><span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">courts</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-156" name="__codelineno-12-156" href="#__codelineno-12-156"></a>
-<a id="__codelineno-12-157" name="__codelineno-12-157" href="#__codelineno-12-157"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">current_court</span> <span class="o">=</span> <span class="n">court_key</span>
-<a id="__codelineno-12-158" name="__codelineno-12-158" href="#__codelineno-12-158"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">reset_params</span><span class="p">()</span>  <span class="c1"># Reset params with new court ID</span>
-<a id="__codelineno-12-159" name="__codelineno-12-159" href="#__codelineno-12-159"></a>
-<a id="__codelineno-12-160" name="__codelineno-12-160" href="#__codelineno-12-160"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">get_court_info</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<a id="__codelineno-12-161" name="__codelineno-12-161" href="#__codelineno-12-161"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;Get information about the current court&quot;&quot;&quot;</span>
-<a id="__codelineno-12-162" name="__codelineno-12-162" href="#__codelineno-12-162"></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">courts</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">current_court</span><span class="p">]</span>
-<a id="__codelineno-12-163" name="__codelineno-12-163" href="#__codelineno-12-163"></a>
-<a id="__codelineno-12-164" name="__codelineno-12-164" href="#__codelineno-12-164"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">validate_case_category</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">category</span><span class="p">):</span>
-<a id="__codelineno-12-165" name="__codelineno-12-165" href="#__codelineno-12-165"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;Validate that the category is available for the current court&quot;&quot;&quot;</span>
-<a id="__codelineno-12-166" name="__codelineno-12-166" href="#__codelineno-12-166"></a>        <span class="n">court_info</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">courts</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">current_court</span><span class="p">]</span>
-<a id="__codelineno-12-167" name="__codelineno-12-167" href="#__codelineno-12-167"></a>        <span class="k">if</span> <span class="n">category</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">court_info</span><span class="p">[</span><span class="s1">&#39;categories&#39;</span><span class="p">]:</span>
-<a id="__codelineno-12-168" name="__codelineno-12-168" href="#__codelineno-12-168"></a>            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Category &#39;</span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s2">&#39; not available for </span><span class="si">{</span><span class="n">court_info</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">. &quot;</span>
-<a id="__codelineno-12-169" name="__codelineno-12-169" href="#__codelineno-12-169"></a>                           <span class="sa">f</span><span class="s2">&quot;Available: </span><span class="si">{</span><span class="n">court_info</span><span class="p">[</span><span class="s1">&#39;categories&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-170" name="__codelineno-12-170" href="#__codelineno-12-170"></a>        <span class="k">return</span> <span class="kc">True</span>
-<a id="__codelineno-12-171" name="__codelineno-12-171" href="#__codelineno-12-171"></a>
-<a id="__codelineno-12-172" name="__codelineno-12-172" href="#__codelineno-12-172"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">format_case_number_suggestion</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">year</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-<a id="__codelineno-12-173" name="__codelineno-12-173" href="#__codelineno-12-173"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;Suggest proper case number format for current court&quot;&quot;&quot;</span>
-<a id="__codelineno-12-174" name="__codelineno-12-174" href="#__codelineno-12-174"></a>        <span class="n">court_info</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">courts</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">current_court</span><span class="p">]</span>
-<a id="__codelineno-12-175" name="__codelineno-12-175" href="#__codelineno-12-175"></a>        <span class="n">current_year</span> <span class="o">=</span> <span class="n">year</span> <span class="ow">or</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">year</span>
-<a id="__codelineno-12-176" name="__codelineno-12-176" href="#__codelineno-12-176"></a>        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">court_info</span><span class="p">[</span><span class="s1">&#39;case_prefix&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">-</span><span class="si">{</span><span class="n">current_year</span><span class="si">}</span><span class="s2">-####&quot;</span>
-<a id="__codelineno-12-177" name="__codelineno-12-177" href="#__codelineno-12-177"></a>
-<a id="__codelineno-12-178" name="__codelineno-12-178" href="#__codelineno-12-178"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">set_date_range</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">start_date</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">end_date</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">period</span><span class="o">=</span><span class="s1">&#39;1y&#39;</span><span class="p">):</span>
-<a id="__codelineno-12-179" name="__codelineno-12-179" href="#__codelineno-12-179"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<a id="__codelineno-12-180" name="__codelineno-12-180" href="#__codelineno-12-180"></a><span class="sd">        Set the date range for case searches</span>
-<a id="__codelineno-12-181" name="__codelineno-12-181" href="#__codelineno-12-181"></a>
-<a id="__codelineno-12-182" name="__codelineno-12-182" href="#__codelineno-12-182"></a><span class="sd">        Args:</span>
-<a id="__codelineno-12-183" name="__codelineno-12-183" href="#__codelineno-12-183"></a><span class="sd">            start_date: Start date (YYYY-MM-DD) or None</span>
-<a id="__codelineno-12-184" name="__codelineno-12-184" href="#__codelineno-12-184"></a><span class="sd">            end_date: End date (YYYY-MM-DD) or None  </span>
-<a id="__codelineno-12-185" name="__codelineno-12-185" href="#__codelineno-12-185"></a><span class="sd">            period: Predefined period (&#39;7d&#39;, &#39;1m&#39;, &#39;3m&#39;, &#39;6m&#39;, &#39;1y&#39;, &#39;custom&#39;)</span>
-<a id="__codelineno-12-186" name="__codelineno-12-186" href="#__codelineno-12-186"></a><span class="sd">        &quot;&quot;&quot;</span>
-<a id="__codelineno-12-187" name="__codelineno-12-187" href="#__codelineno-12-187"></a>        <span class="k">if</span> <span class="n">period</span> <span class="o">==</span> <span class="s1">&#39;custom&#39;</span> <span class="ow">and</span> <span class="n">start_date</span> <span class="ow">and</span> <span class="n">end_date</span><span class="p">:</span>
-<a id="__codelineno-12-188" name="__codelineno-12-188" href="#__codelineno-12-188"></a>            <span class="c1"># Convert dates to the format expected by the portal</span>
-<a id="__codelineno-12-189" name="__codelineno-12-189" href="#__codelineno-12-189"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="s1">&#39;case&#39;</span><span class="p">][</span><span class="s1">&#39;filedDateChoice&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;custom&#39;</span>
-<a id="__codelineno-12-190" name="__codelineno-12-190" href="#__codelineno-12-190"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="s1">&#39;case&#39;</span><span class="p">][</span><span class="s1">&#39;filedDateStart&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">start_date</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="s1">&#39;*2f&#39;</span><span class="p">)</span>
-<a id="__codelineno-12-191" name="__codelineno-12-191" href="#__codelineno-12-191"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="s1">&#39;case&#39;</span><span class="p">][</span><span class="s1">&#39;filedDateEnd&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">end_date</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="s1">&#39;*2f&#39;</span><span class="p">)</span>
-<a id="__codelineno-12-192" name="__codelineno-12-192" href="#__codelineno-12-192"></a>        <span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-12-193" name="__codelineno-12-193" href="#__codelineno-12-193"></a>            <span class="c1"># Use predefined period - validate it exists</span>
-<a id="__codelineno-12-194" name="__codelineno-12-194" href="#__codelineno-12-194"></a>            <span class="k">if</span> <span class="n">period</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">date_periods</span><span class="p">:</span>
-<a id="__codelineno-12-195" name="__codelineno-12-195" href="#__codelineno-12-195"></a>                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Invalid date period: </span><span class="si">{</span><span class="n">period</span><span class="si">}</span><span class="s2">. Must be one of </span><span class="si">{</span><span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">date_periods</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-196" name="__codelineno-12-196" href="#__codelineno-12-196"></a>
-<a id="__codelineno-12-197" name="__codelineno-12-197" href="#__codelineno-12-197"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="s1">&#39;case&#39;</span><span class="p">][</span><span class="s1">&#39;filedDateChoice&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">date_periods</span><span class="p">[</span><span class="n">period</span><span class="p">]</span>
-<a id="__codelineno-12-198" name="__codelineno-12-198" href="#__codelineno-12-198"></a>
-<a id="__codelineno-12-199" name="__codelineno-12-199" href="#__codelineno-12-199"></a>            <span class="c1"># Calculate dates for display purposes</span>
-<a id="__codelineno-12-200" name="__codelineno-12-200" href="#__codelineno-12-200"></a>            <span class="n">today</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
-<a id="__codelineno-12-201" name="__codelineno-12-201" href="#__codelineno-12-201"></a>            <span class="k">if</span> <span class="n">period</span> <span class="o">==</span> <span class="s1">&#39;7d&#39;</span><span class="p">:</span>
-<a id="__codelineno-12-202" name="__codelineno-12-202" href="#__codelineno-12-202"></a>                <span class="n">start</span> <span class="o">=</span> <span class="n">today</span> <span class="o">-</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>
-<a id="__codelineno-12-203" name="__codelineno-12-203" href="#__codelineno-12-203"></a>            <span class="k">elif</span> <span class="n">period</span> <span class="o">==</span> <span class="s1">&#39;1m&#39;</span><span class="p">:</span>
-<a id="__codelineno-12-204" name="__codelineno-12-204" href="#__codelineno-12-204"></a>                <span class="n">start</span> <span class="o">=</span> <span class="n">today</span> <span class="o">-</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
-<a id="__codelineno-12-205" name="__codelineno-12-205" href="#__codelineno-12-205"></a>            <span class="k">elif</span> <span class="n">period</span> <span class="o">==</span> <span class="s1">&#39;3m&#39;</span><span class="p">:</span>
-<a id="__codelineno-12-206" name="__codelineno-12-206" href="#__codelineno-12-206"></a>                <span class="n">start</span> <span class="o">=</span> <span class="n">today</span> <span class="o">-</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
-<a id="__codelineno-12-207" name="__codelineno-12-207" href="#__codelineno-12-207"></a>            <span class="k">elif</span> <span class="n">period</span> <span class="o">==</span> <span class="s1">&#39;6m&#39;</span><span class="p">:</span>
-<a id="__codelineno-12-208" name="__codelineno-12-208" href="#__codelineno-12-208"></a>                <span class="n">start</span> <span class="o">=</span> <span class="n">today</span> <span class="o">-</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">180</span><span class="p">)</span>
-<a id="__codelineno-12-209" name="__codelineno-12-209" href="#__codelineno-12-209"></a>            <span class="k">elif</span> <span class="n">period</span> <span class="o">==</span> <span class="s1">&#39;1y&#39;</span><span class="p">:</span>
-<a id="__codelineno-12-210" name="__codelineno-12-210" href="#__codelineno-12-210"></a>                <span class="n">start</span> <span class="o">=</span> <span class="n">today</span> <span class="o">-</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">365</span><span class="p">)</span>
-<a id="__codelineno-12-211" name="__codelineno-12-211" href="#__codelineno-12-211"></a>            <span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-12-212" name="__codelineno-12-212" href="#__codelineno-12-212"></a>                <span class="n">start</span> <span class="o">=</span> <span class="n">today</span> <span class="o">-</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">365</span><span class="p">)</span>
-<a id="__codelineno-12-213" name="__codelineno-12-213" href="#__codelineno-12-213"></a>
-<a id="__codelineno-12-214" name="__codelineno-12-214" href="#__codelineno-12-214"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="s1">&#39;case&#39;</span><span class="p">][</span><span class="s1">&#39;filedDateStart&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">start</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%m*2f</span><span class="si">%d</span><span class="s1">*2f%Y&#39;</span><span class="p">)</span>
-<a id="__codelineno-12-215" name="__codelineno-12-215" href="#__codelineno-12-215"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="s1">&#39;case&#39;</span><span class="p">][</span><span class="s1">&#39;filedDateEnd&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">today</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%m*2f</span><span class="si">%d</span><span class="s1">*2f%Y&#39;</span><span class="p">)</span>
-<a id="__codelineno-12-216" name="__codelineno-12-216" href="#__codelineno-12-216"></a>
-<a id="__codelineno-12-217" name="__codelineno-12-217" href="#__codelineno-12-217"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">set_case_category</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">category_name</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-<a id="__codelineno-12-218" name="__codelineno-12-218" href="#__codelineno-12-218"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<a id="__codelineno-12-219" name="__codelineno-12-219" href="#__codelineno-12-219"></a><span class="sd">        Set case category filter</span>
-<a id="__codelineno-12-220" name="__codelineno-12-220" href="#__codelineno-12-220"></a>
-<a id="__codelineno-12-221" name="__codelineno-12-221" href="#__codelineno-12-221"></a><span class="sd">        Args:</span>
-<a id="__codelineno-12-222" name="__codelineno-12-222" href="#__codelineno-12-222"></a><span class="sd">            category_name: Category name (&#39;Appeal&#39;, &#39;Certiorari&#39;, &#39;Original Proceeding&#39;, </span>
-<a id="__codelineno-12-223" name="__codelineno-12-223" href="#__codelineno-12-223"></a><span class="sd">                          &#39;Petition&#39;, &#39;Certified Question&#39;) or None for all</span>
-<a id="__codelineno-12-224" name="__codelineno-12-224" href="#__codelineno-12-224"></a><span class="sd">        &quot;&quot;&quot;</span>
-<a id="__codelineno-12-225" name="__codelineno-12-225" href="#__codelineno-12-225"></a>        <span class="k">if</span> <span class="n">category_name</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-<a id="__codelineno-12-226" name="__codelineno-12-226" href="#__codelineno-12-226"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="s1">&#39;case&#39;</span><span class="p">][</span><span class="s1">&#39;caseCategoryID&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1000000</span>  <span class="c1"># All categories</span>
-<a id="__codelineno-12-227" name="__codelineno-12-227" href="#__codelineno-12-227"></a>            <span class="k">return</span>
-<a id="__codelineno-12-228" name="__codelineno-12-228" href="#__codelineno-12-228"></a>
-<a id="__codelineno-12-229" name="__codelineno-12-229" href="#__codelineno-12-229"></a>        <span class="c1"># Validate category is available for current court</span>
-<a id="__codelineno-12-230" name="__codelineno-12-230" href="#__codelineno-12-230"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">validate_case_category</span><span class="p">(</span><span class="n">category_name</span><span class="p">)</span>
-<a id="__codelineno-12-231" name="__codelineno-12-231" href="#__codelineno-12-231"></a>
-<a id="__codelineno-12-232" name="__codelineno-12-232" href="#__codelineno-12-232"></a>        <span class="c1"># Map category names to IDs (these would need to be discovered from the portal)</span>
-<a id="__codelineno-12-233" name="__codelineno-12-233" href="#__codelineno-12-233"></a>        <span class="n">category_map</span> <span class="o">=</span> <span class="p">{</span>
-<a id="__codelineno-12-234" name="__codelineno-12-234" href="#__codelineno-12-234"></a>            <span class="s1">&#39;Appeal&#39;</span><span class="p">:</span> <span class="mi">1000001</span><span class="p">,</span>
-<a id="__codelineno-12-235" name="__codelineno-12-235" href="#__codelineno-12-235"></a>            <span class="s1">&#39;Certiorari&#39;</span><span class="p">:</span> <span class="mi">1000002</span><span class="p">,</span> 
-<a id="__codelineno-12-236" name="__codelineno-12-236" href="#__codelineno-12-236"></a>            <span class="s1">&#39;Original Proceeding&#39;</span><span class="p">:</span> <span class="mi">1000003</span><span class="p">,</span>
-<a id="__codelineno-12-237" name="__codelineno-12-237" href="#__codelineno-12-237"></a>            <span class="s1">&#39;Petition&#39;</span><span class="p">:</span> <span class="mi">1000004</span><span class="p">,</span>
-<a id="__codelineno-12-238" name="__codelineno-12-238" href="#__codelineno-12-238"></a>            <span class="s1">&#39;Certified Question&#39;</span><span class="p">:</span> <span class="mi">1000005</span>  <span class="c1"># Supreme Court only</span>
-<a id="__codelineno-12-239" name="__codelineno-12-239" href="#__codelineno-12-239"></a>        <span class="p">}</span>
-<a id="__codelineno-12-240" name="__codelineno-12-240" href="#__codelineno-12-240"></a>
-<a id="__codelineno-12-241" name="__codelineno-12-241" href="#__codelineno-12-241"></a>        <span class="k">if</span> <span class="n">category_name</span> <span class="ow">in</span> <span class="n">category_map</span><span class="p">:</span>
-<a id="__codelineno-12-242" name="__codelineno-12-242" href="#__codelineno-12-242"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="s1">&#39;case&#39;</span><span class="p">][</span><span class="s1">&#39;caseCategoryID&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">category_map</span><span class="p">[</span><span class="n">category_name</span><span class="p">]</span>
-<a id="__codelineno-12-243" name="__codelineno-12-243" href="#__codelineno-12-243"></a>        <span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-12-244" name="__codelineno-12-244" href="#__codelineno-12-244"></a>            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Unknown category: </span><span class="si">{</span><span class="n">category_name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-245" name="__codelineno-12-245" href="#__codelineno-12-245"></a>
-<a id="__codelineno-12-246" name="__codelineno-12-246" href="#__codelineno-12-246"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">set_case_number_filter</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">case_number</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">query_type</span><span class="o">=</span><span class="mi">10463</span><span class="p">):</span>
-<a id="__codelineno-12-247" name="__codelineno-12-247" href="#__codelineno-12-247"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<a id="__codelineno-12-248" name="__codelineno-12-248" href="#__codelineno-12-248"></a><span class="sd">        Set case number filter</span>
-<a id="__codelineno-12-249" name="__codelineno-12-249" href="#__codelineno-12-249"></a>
-<a id="__codelineno-12-250" name="__codelineno-12-250" href="#__codelineno-12-250"></a><span class="sd">        Args:</span>
-<a id="__codelineno-12-251" name="__codelineno-12-251" href="#__codelineno-12-251"></a><span class="sd">            case_number: Case number to search for</span>
-<a id="__codelineno-12-252" name="__codelineno-12-252" href="#__codelineno-12-252"></a><span class="sd">            query_type: Query type (10463=contains, check portal for others)</span>
-<a id="__codelineno-12-253" name="__codelineno-12-253" href="#__codelineno-12-253"></a><span class="sd">        &quot;&quot;&quot;</span>
-<a id="__codelineno-12-254" name="__codelineno-12-254" href="#__codelineno-12-254"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="s1">&#39;case&#39;</span><span class="p">][</span><span class="s1">&#39;caseNumberQueryTypeID&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">query_type</span>
-<a id="__codelineno-12-255" name="__codelineno-12-255" href="#__codelineno-12-255"></a>        <span class="k">if</span> <span class="n">case_number</span><span class="p">:</span>
-<a id="__codelineno-12-256" name="__codelineno-12-256" href="#__codelineno-12-256"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="s1">&#39;case&#39;</span><span class="p">][</span><span class="s1">&#39;caseNumber&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">case_number</span>
-<a id="__codelineno-12-257" name="__codelineno-12-257" href="#__codelineno-12-257"></a>
-<a id="__codelineno-12-258" name="__codelineno-12-258" href="#__codelineno-12-258"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">set_case_title_filter</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">query_type</span><span class="o">=</span><span class="mi">300054</span><span class="p">):</span>
-<a id="__codelineno-12-259" name="__codelineno-12-259" href="#__codelineno-12-259"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<a id="__codelineno-12-260" name="__codelineno-12-260" href="#__codelineno-12-260"></a><span class="sd">        Set case title filter</span>
-<a id="__codelineno-12-261" name="__codelineno-12-261" href="#__codelineno-12-261"></a>
-<a id="__codelineno-12-262" name="__codelineno-12-262" href="#__codelineno-12-262"></a><span class="sd">        Args:</span>
-<a id="__codelineno-12-263" name="__codelineno-12-263" href="#__codelineno-12-263"></a><span class="sd">            title: Title text to search for</span>
-<a id="__codelineno-12-264" name="__codelineno-12-264" href="#__codelineno-12-264"></a><span class="sd">            query_type: Query type (300054=contains, check portal for others)</span>
-<a id="__codelineno-12-265" name="__codelineno-12-265" href="#__codelineno-12-265"></a><span class="sd">        &quot;&quot;&quot;</span>
-<a id="__codelineno-12-266" name="__codelineno-12-266" href="#__codelineno-12-266"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="s1">&#39;case&#39;</span><span class="p">][</span><span class="s1">&#39;caseTitleQueryTypeID&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">query_type</span>
-<a id="__codelineno-12-267" name="__codelineno-12-267" href="#__codelineno-12-267"></a>        <span class="k">if</span> <span class="n">title</span><span class="p">:</span>
-<a id="__codelineno-12-268" name="__codelineno-12-268" href="#__codelineno-12-268"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="s1">&#39;case&#39;</span><span class="p">][</span><span class="s1">&#39;caseTitle&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">title</span>
-<a id="__codelineno-12-269" name="__codelineno-12-269" href="#__codelineno-12-269"></a>
-<a id="__codelineno-12-270" name="__codelineno-12-270" href="#__codelineno-12-270"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">set_exclude_closed</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">exclude</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
-<a id="__codelineno-12-271" name="__codelineno-12-271" href="#__codelineno-12-271"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<a id="__codelineno-12-272" name="__codelineno-12-272" href="#__codelineno-12-272"></a><span class="sd">        Set whether to exclude closed cases</span>
-<a id="__codelineno-12-273" name="__codelineno-12-273" href="#__codelineno-12-273"></a>
-<a id="__codelineno-12-274" name="__codelineno-12-274" href="#__codelineno-12-274"></a><span class="sd">        Args:</span>
-<a id="__codelineno-12-275" name="__codelineno-12-275" href="#__codelineno-12-275"></a><span class="sd">            exclude: True to exclude closed cases, False to include all</span>
-<a id="__codelineno-12-276" name="__codelineno-12-276" href="#__codelineno-12-276"></a><span class="sd">        &quot;&quot;&quot;</span>
-<a id="__codelineno-12-277" name="__codelineno-12-277" href="#__codelineno-12-277"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="s1">&#39;case&#39;</span><span class="p">][</span><span class="s1">&#39;excludeClosed&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;true&#39;</span> <span class="k">if</span> <span class="n">exclude</span> <span class="k">else</span> <span class="s1">&#39;false&#39;</span>
-<a id="__codelineno-12-278" name="__codelineno-12-278" href="#__codelineno-12-278"></a>
-<a id="__codelineno-12-279" name="__codelineno-12-279" href="#__codelineno-12-279"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">set_sort_order</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sort_by</span><span class="o">=</span><span class="s1">&#39;caseHeader.filedDate&#39;</span><span class="p">,</span> <span class="n">descending</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
-<a id="__codelineno-12-280" name="__codelineno-12-280" href="#__codelineno-12-280"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<a id="__codelineno-12-281" name="__codelineno-12-281" href="#__codelineno-12-281"></a><span class="sd">        Set sort order for results</span>
-<a id="__codelineno-12-282" name="__codelineno-12-282" href="#__codelineno-12-282"></a>
-<a id="__codelineno-12-283" name="__codelineno-12-283" href="#__codelineno-12-283"></a><span class="sd">        Args:</span>
-<a id="__codelineno-12-284" name="__codelineno-12-284" href="#__codelineno-12-284"></a><span class="sd">            sort_by: Field to sort by</span>
-<a id="__codelineno-12-285" name="__codelineno-12-285" href="#__codelineno-12-285"></a><span class="sd">            descending: True for descending, False for ascending</span>
-<a id="__codelineno-12-286" name="__codelineno-12-286" href="#__codelineno-12-286"></a><span class="sd">        &quot;&quot;&quot;</span>
-<a id="__codelineno-12-287" name="__codelineno-12-287" href="#__codelineno-12-287"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="s1">&#39;sort&#39;</span><span class="p">][</span><span class="s1">&#39;sortBy&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">sort_by</span>
-<a id="__codelineno-12-288" name="__codelineno-12-288" href="#__codelineno-12-288"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="s1">&#39;sort&#39;</span><span class="p">][</span><span class="s1">&#39;sortDesc&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;true&#39;</span> <span class="k">if</span> <span class="n">descending</span> <span class="k">else</span> <span class="s1">&#39;false&#39;</span>
-<a id="__codelineno-12-289" name="__codelineno-12-289" href="#__codelineno-12-289"></a>
-<a id="__codelineno-12-290" name="__codelineno-12-290" href="#__codelineno-12-290"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">set_page_info</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">page_number</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">page_size</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span> <span class="n">total_elements</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">total_pages</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
-<a id="__codelineno-12-291" name="__codelineno-12-291" href="#__codelineno-12-291"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;Set pagination information&quot;&quot;&quot;</span>
-<a id="__codelineno-12-292" name="__codelineno-12-292" href="#__codelineno-12-292"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="s1">&#39;page&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">({</span>
-<a id="__codelineno-12-293" name="__codelineno-12-293" href="#__codelineno-12-293"></a>            <span class="s1">&#39;number&#39;</span><span class="p">:</span> <span class="n">page_number</span><span class="p">,</span>
-<a id="__codelineno-12-294" name="__codelineno-12-294" href="#__codelineno-12-294"></a>            <span class="s1">&#39;size&#39;</span><span class="p">:</span> <span class="n">page_size</span><span class="p">,</span>
-<a id="__codelineno-12-295" name="__codelineno-12-295" href="#__codelineno-12-295"></a>            <span class="s1">&#39;totalElements&#39;</span><span class="p">:</span> <span class="n">total_elements</span><span class="p">,</span>
-<a id="__codelineno-12-296" name="__codelineno-12-296" href="#__codelineno-12-296"></a>            <span class="s1">&#39;totalPages&#39;</span><span class="p">:</span> <span class="n">total_pages</span>
-<a id="__codelineno-12-297" name="__codelineno-12-297" href="#__codelineno-12-297"></a>        <span class="p">})</span>
-<a id="__codelineno-12-298" name="__codelineno-12-298" href="#__codelineno-12-298"></a>
-<a id="__codelineno-12-299" name="__codelineno-12-299" href="#__codelineno-12-299"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">build_criteria_string</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<a id="__codelineno-12-300" name="__codelineno-12-300" href="#__codelineno-12-300"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;Build the criteria string for the URL&quot;&quot;&quot;</span>
-<a id="__codelineno-12-301" name="__codelineno-12-301" href="#__codelineno-12-301"></a>        <span class="n">criteria_parts</span> <span class="o">=</span> <span class="p">[]</span>
-<a id="__codelineno-12-302" name="__codelineno-12-302" href="#__codelineno-12-302"></a>
-<a id="__codelineno-12-303" name="__codelineno-12-303" href="#__codelineno-12-303"></a>        <span class="c1"># Basic parameters</span>
-<a id="__codelineno-12-304" name="__codelineno-12-304" href="#__codelineno-12-304"></a>        <span class="n">criteria_parts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;advanced~</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="s1">&#39;advanced&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-305" name="__codelineno-12-305" href="#__codelineno-12-305"></a>        <span class="n">criteria_parts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;courtID~%27</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="s1">&#39;courtID&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-306" name="__codelineno-12-306" href="#__codelineno-12-306"></a>
-<a id="__codelineno-12-307" name="__codelineno-12-307" href="#__codelineno-12-307"></a>        <span class="c1"># Page parameters</span>
-<a id="__codelineno-12-308" name="__codelineno-12-308" href="#__codelineno-12-308"></a>        <span class="n">page</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="s1">&#39;page&#39;</span><span class="p">]</span>
-<a id="__codelineno-12-309" name="__codelineno-12-309" href="#__codelineno-12-309"></a>        <span class="n">page_str</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;page~%28size~</span><span class="si">{</span><span class="n">page</span><span class="p">[</span><span class="s1">&#39;size&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">~number~</span><span class="si">{</span><span class="n">page</span><span class="p">[</span><span class="s1">&#39;number&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">~totalElements~</span><span class="si">{</span><span class="n">page</span><span class="p">[</span><span class="s1">&#39;totalElements&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">~totalPages~</span><span class="si">{</span><span class="n">page</span><span class="p">[</span><span class="s1">&#39;totalPages&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">%29&quot;</span>
-<a id="__codelineno-12-310" name="__codelineno-12-310" href="#__codelineno-12-310"></a>        <span class="n">criteria_parts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">page_str</span><span class="p">)</span>
-<a id="__codelineno-12-311" name="__codelineno-12-311" href="#__codelineno-12-311"></a>
-<a id="__codelineno-12-312" name="__codelineno-12-312" href="#__codelineno-12-312"></a>        <span class="c1"># Sort parameters</span>
-<a id="__codelineno-12-313" name="__codelineno-12-313" href="#__codelineno-12-313"></a>        <span class="n">sort</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="s1">&#39;sort&#39;</span><span class="p">]</span>
-<a id="__codelineno-12-314" name="__codelineno-12-314" href="#__codelineno-12-314"></a>        <span class="n">sort_str</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;sort~%28sortBy~%27</span><span class="si">{</span><span class="n">sort</span><span class="p">[</span><span class="s1">&#39;sortBy&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">~sortDesc~</span><span class="si">{</span><span class="n">sort</span><span class="p">[</span><span class="s1">&#39;sortDesc&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">%29&quot;</span>
-<a id="__codelineno-12-315" name="__codelineno-12-315" href="#__codelineno-12-315"></a>        <span class="n">criteria_parts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sort_str</span><span class="p">)</span>
-<a id="__codelineno-12-316" name="__codelineno-12-316" href="#__codelineno-12-316"></a>
-<a id="__codelineno-12-317" name="__codelineno-12-317" href="#__codelineno-12-317"></a>        <span class="c1"># Case parameters</span>
-<a id="__codelineno-12-318" name="__codelineno-12-318" href="#__codelineno-12-318"></a>        <span class="n">case</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="s1">&#39;case&#39;</span><span class="p">]</span>
-<a id="__codelineno-12-319" name="__codelineno-12-319" href="#__codelineno-12-319"></a>        <span class="n">case_parts</span> <span class="o">=</span> <span class="p">[]</span>
-<a id="__codelineno-12-320" name="__codelineno-12-320" href="#__codelineno-12-320"></a>        <span class="n">case_parts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;caseCategoryID~</span><span class="si">{</span><span class="n">case</span><span class="p">[</span><span class="s1">&#39;caseCategoryID&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-321" name="__codelineno-12-321" href="#__codelineno-12-321"></a>        <span class="n">case_parts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;caseNumberQueryTypeID~</span><span class="si">{</span><span class="n">case</span><span class="p">[</span><span class="s1">&#39;caseNumberQueryTypeID&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-322" name="__codelineno-12-322" href="#__codelineno-12-322"></a>        <span class="n">case_parts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;caseTitleQueryTypeID~</span><span class="si">{</span><span class="n">case</span><span class="p">[</span><span class="s1">&#39;caseTitleQueryTypeID&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-323" name="__codelineno-12-323" href="#__codelineno-12-323"></a>        <span class="n">case_parts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;filedDateChoice~%27</span><span class="si">{</span><span class="n">case</span><span class="p">[</span><span class="s1">&#39;filedDateChoice&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-324" name="__codelineno-12-324" href="#__codelineno-12-324"></a>        <span class="n">case_parts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;filedDateStart~%27</span><span class="si">{</span><span class="n">case</span><span class="p">[</span><span class="s1">&#39;filedDateStart&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-325" name="__codelineno-12-325" href="#__codelineno-12-325"></a>        <span class="n">case_parts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;filedDateEnd~%27</span><span class="si">{</span><span class="n">case</span><span class="p">[</span><span class="s1">&#39;filedDateEnd&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-326" name="__codelineno-12-326" href="#__codelineno-12-326"></a>        <span class="n">case_parts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;excludeClosed~</span><span class="si">{</span><span class="n">case</span><span class="p">[</span><span class="s1">&#39;excludeClosed&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-327" name="__codelineno-12-327" href="#__codelineno-12-327"></a>
-<a id="__codelineno-12-328" name="__codelineno-12-328" href="#__codelineno-12-328"></a>        <span class="c1"># Add optional case filters</span>
-<a id="__codelineno-12-329" name="__codelineno-12-329" href="#__codelineno-12-329"></a>        <span class="k">if</span> <span class="s1">&#39;caseNumber&#39;</span> <span class="ow">in</span> <span class="n">case</span><span class="p">:</span>
-<a id="__codelineno-12-330" name="__codelineno-12-330" href="#__codelineno-12-330"></a>            <span class="n">case_parts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;caseNumber~</span><span class="si">{</span><span class="n">quote</span><span class="p">(</span><span class="n">case</span><span class="p">[</span><span class="s1">&#39;caseNumber&#39;</span><span class="p">])</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-331" name="__codelineno-12-331" href="#__codelineno-12-331"></a>        <span class="k">if</span> <span class="s1">&#39;caseTitle&#39;</span> <span class="ow">in</span> <span class="n">case</span><span class="p">:</span>
-<a id="__codelineno-12-332" name="__codelineno-12-332" href="#__codelineno-12-332"></a>            <span class="n">case_parts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;caseTitle~</span><span class="si">{</span><span class="n">quote</span><span class="p">(</span><span class="n">case</span><span class="p">[</span><span class="s1">&#39;caseTitle&#39;</span><span class="p">])</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-333" name="__codelineno-12-333" href="#__codelineno-12-333"></a>
-<a id="__codelineno-12-334" name="__codelineno-12-334" href="#__codelineno-12-334"></a>        <span class="n">case_str</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;case~%28</span><span class="si">{</span><span class="s1">&#39;~&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">case_parts</span><span class="p">)</span><span class="si">}</span><span class="s2">%29&quot;</span>
-<a id="__codelineno-12-335" name="__codelineno-12-335" href="#__codelineno-12-335"></a>        <span class="n">criteria_parts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">case_str</span><span class="p">)</span>
-<a id="__codelineno-12-336" name="__codelineno-12-336" href="#__codelineno-12-336"></a>
-<a id="__codelineno-12-337" name="__codelineno-12-337" href="#__codelineno-12-337"></a>        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;~%28</span><span class="si">{</span><span class="s1">&#39;~&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">criteria_parts</span><span class="p">)</span><span class="si">}</span><span class="s2">%29&quot;</span>
-<a id="__codelineno-12-338" name="__codelineno-12-338" href="#__codelineno-12-338"></a>
-<a id="__codelineno-12-339" name="__codelineno-12-339" href="#__codelineno-12-339"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">build_url</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">page_number</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
-<a id="__codelineno-12-340" name="__codelineno-12-340" href="#__codelineno-12-340"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;Build complete search URL&quot;&quot;&quot;</span>
-<a id="__codelineno-12-341" name="__codelineno-12-341" href="#__codelineno-12-341"></a>        <span class="c1"># Update page number</span>
-<a id="__codelineno-12-342" name="__codelineno-12-342" href="#__codelineno-12-342"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">set_page_info</span><span class="p">(</span><span class="n">page_number</span><span class="o">=</span><span class="n">page_number</span><span class="p">,</span> 
-<a id="__codelineno-12-343" name="__codelineno-12-343" href="#__codelineno-12-343"></a>                          <span class="n">page_size</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="s1">&#39;page&#39;</span><span class="p">][</span><span class="s1">&#39;size&#39;</span><span class="p">],</span>
-<a id="__codelineno-12-344" name="__codelineno-12-344" href="#__codelineno-12-344"></a>                          <span class="n">total_elements</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="s1">&#39;page&#39;</span><span class="p">][</span><span class="s1">&#39;totalElements&#39;</span><span class="p">],</span>
-<a id="__codelineno-12-345" name="__codelineno-12-345" href="#__codelineno-12-345"></a>                          <span class="n">total_pages</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="s1">&#39;page&#39;</span><span class="p">][</span><span class="s1">&#39;totalPages&#39;</span><span class="p">])</span>
-<a id="__codelineno-12-346" name="__codelineno-12-346" href="#__codelineno-12-346"></a>
-<a id="__codelineno-12-347" name="__codelineno-12-347" href="#__codelineno-12-347"></a>        <span class="n">criteria</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">build_criteria_string</span><span class="p">()</span>
-<a id="__codelineno-12-348" name="__codelineno-12-348" href="#__codelineno-12-348"></a>        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="si">}</span><span class="s2">?criteria=</span><span class="si">{</span><span class="n">criteria</span><span class="si">}</span><span class="s2">&quot;</span>
-<a id="__codelineno-12-349" name="__codelineno-12-349" href="#__codelineno-12-349"></a>
-<a id="__codelineno-12-350" name="__codelineno-12-350" href="#__codelineno-12-350"></a>
-<a id="__codelineno-12-351" name="__codelineno-12-351" href="#__codelineno-12-351"></a><span class="k">def</span><span class="w"> </span><span class="nf">extract_court_cases_with_params</span><span class="p">(</span>
-<a id="__codelineno-12-352" name="__codelineno-12-352" href="#__codelineno-12-352"></a>    <span class="n">court</span><span class="o">=</span><span class="s1">&#39;civil&#39;</span><span class="p">,</span>
-<a id="__codelineno-12-353" name="__codelineno-12-353" href="#__codelineno-12-353"></a>    <span class="n">date_period</span><span class="o">=</span><span class="s1">&#39;1y&#39;</span><span class="p">,</span>
-<a id="__codelineno-12-354" name="__codelineno-12-354" href="#__codelineno-12-354"></a>    <span class="n">start_date</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-<a id="__codelineno-12-355" name="__codelineno-12-355" href="#__codelineno-12-355"></a>    <span class="n">end_date</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-<a id="__codelineno-12-356" name="__codelineno-12-356" href="#__codelineno-12-356"></a>    <span class="n">case_number</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-<a id="__codelineno-12-357" name="__codelineno-12-357" href="#__codelineno-12-357"></a>    <span class="n">case_title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-<a id="__codelineno-12-358" name="__codelineno-12-358" href="#__codelineno-12-358"></a>    <span class="n">case_category</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-<a id="__codelineno-12-359" name="__codelineno-12-359" href="#__codelineno-12-359"></a>    <span class="n">exclude_closed</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-<a id="__codelineno-12-360" name="__codelineno-12-360" href="#__codelineno-12-360"></a>    <span class="n">max_pages</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-<a id="__codelineno-12-361" name="__codelineno-12-361" href="#__codelineno-12-361"></a>    <span class="n">output_prefix</span><span class="o">=</span><span class="s2">&quot;court_cases&quot;</span><span class="p">,</span>
-<a id="__codelineno-12-362" name="__codelineno-12-362" href="#__codelineno-12-362"></a>    <span class="n">custom_url</span><span class="o">=</span><span class="kc">None</span>
-<a id="__codelineno-12-363" name="__codelineno-12-363" href="#__codelineno-12-363"></a><span class="p">):</span>
-<a id="__codelineno-12-364" name="__codelineno-12-364" href="#__codelineno-12-364"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<a id="__codelineno-12-365" name="__codelineno-12-365" href="#__codelineno-12-365"></a><span class="sd">    Extract court cases with configurable search parameters OR a pre-built URL</span>
-<a id="__codelineno-12-366" name="__codelineno-12-366" href="#__codelineno-12-366"></a>
-<a id="__codelineno-12-367" name="__codelineno-12-367" href="#__codelineno-12-367"></a><span class="sd">    Args:</span>
-<a id="__codelineno-12-368" name="__codelineno-12-368" href="#__codelineno-12-368"></a><span class="sd">        court: Court to search (&#39;civil&#39;, &#39;criminal&#39;, &#39;supreme&#39;) - ignored if custom_url provided</span>
-<a id="__codelineno-12-369" name="__codelineno-12-369" href="#__codelineno-12-369"></a><span class="sd">        date_period: Date period (&#39;7d&#39;, &#39;1m&#39;, &#39;3m&#39;, &#39;6m&#39;, &#39;1y&#39;, &#39;custom&#39;) - ignored if custom_url provided</span>
-<a id="__codelineno-12-370" name="__codelineno-12-370" href="#__codelineno-12-370"></a><span class="sd">        start_date: Start date for custom range (YYYY-MM-DD) - ignored if custom_url provided</span>
-<a id="__codelineno-12-371" name="__codelineno-12-371" href="#__codelineno-12-371"></a><span class="sd">        end_date: End date for custom range (YYYY-MM-DD) - ignored if custom_url provided</span>
-<a id="__codelineno-12-372" name="__codelineno-12-372" href="#__codelineno-12-372"></a><span class="sd">        case_number: Filter by case number (partial match) - ignored if custom_url provided</span>
-<a id="__codelineno-12-373" name="__codelineno-12-373" href="#__codelineno-12-373"></a><span class="sd">        case_title: Filter by case title (partial match) - ignored if custom_url provided</span>
-<a id="__codelineno-12-374" name="__codelineno-12-374" href="#__codelineno-12-374"></a><span class="sd">        case_category: Filter by category (&#39;Appeal&#39;, &#39;Certiorari&#39;, etc.) - ignored if custom_url provided</span>
-<a id="__codelineno-12-375" name="__codelineno-12-375" href="#__codelineno-12-375"></a><span class="sd">        exclude_closed: Whether to exclude closed cases - ignored if custom_url provided</span>
-<a id="__codelineno-12-376" name="__codelineno-12-376" href="#__codelineno-12-376"></a><span class="sd">        max_pages: Maximum pages to process (None for all)</span>
-<a id="__codelineno-12-377" name="__codelineno-12-377" href="#__codelineno-12-377"></a><span class="sd">        output_prefix: Prefix for output files</span>
-<a id="__codelineno-12-378" name="__codelineno-12-378" href="#__codelineno-12-378"></a><span class="sd">        custom_url: Pre-built search URL with embedded parameters (overrides all other search params)</span>
-<a id="__codelineno-12-379" name="__codelineno-12-379" href="#__codelineno-12-379"></a><span class="sd">    &quot;&quot;&quot;</span>
-<a id="__codelineno-12-380" name="__codelineno-12-380" href="#__codelineno-12-380"></a>
-<a id="__codelineno-12-381" name="__codelineno-12-381" href="#__codelineno-12-381"></a>    <span class="k">if</span> <span class="n">custom_url</span><span class="p">:</span>
-<a id="__codelineno-12-382" name="__codelineno-12-382" href="#__codelineno-12-382"></a>        <span class="c1"># Use the provided URL directly</span>
-<a id="__codelineno-12-383" name="__codelineno-12-383" href="#__codelineno-12-383"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Using custom URL with embedded search parameters&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-384" name="__codelineno-12-384" href="#__codelineno-12-384"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;⚠️  WARNING: Custom URLs contain session-specific parameters that expire.&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-385" name="__codelineno-12-385" href="#__codelineno-12-385"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;   This URL will only work temporarily and may become invalid after your browser session ends.&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-386" name="__codelineno-12-386" href="#__codelineno-12-386"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;   For reliable, repeatable searches, use the CLI search parameters instead of --url option.&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-387" name="__codelineno-12-387" href="#__codelineno-12-387"></a>        <span class="nb">print</span><span class="p">()</span>
-<a id="__codelineno-12-388" name="__codelineno-12-388" href="#__codelineno-12-388"></a>        <span class="n">base_url</span> <span class="o">=</span> <span class="n">custom_url</span>
-<a id="__codelineno-12-389" name="__codelineno-12-389" href="#__codelineno-12-389"></a>        <span class="n">court_name</span> <span class="o">=</span> <span class="s2">&quot;Custom Search&quot;</span>  <span class="c1"># Generic name since we don&#39;t know the court</span>
-<a id="__codelineno-12-390" name="__codelineno-12-390" href="#__codelineno-12-390"></a>    <span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-12-391" name="__codelineno-12-391" href="#__codelineno-12-391"></a>        <span class="c1"># Build search URL from parameters</span>
-<a id="__codelineno-12-392" name="__codelineno-12-392" href="#__codelineno-12-392"></a>        <span class="n">search_builder</span> <span class="o">=</span> <span class="n">CourtSearchBuilder</span><span class="p">()</span>
-<a id="__codelineno-12-393" name="__codelineno-12-393" href="#__codelineno-12-393"></a>
-<a id="__codelineno-12-394" name="__codelineno-12-394" href="#__codelineno-12-394"></a>        <span class="c1"># Create parser instance early for court ID discovery</span>
-<a id="__codelineno-12-395" name="__codelineno-12-395" href="#__codelineno-12-395"></a>        <span class="n">parser</span> <span class="o">=</span> <span class="n">ParserAppealsAL</span><span class="p">(</span><span class="n">headless</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">rate_limit_seconds</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-<a id="__codelineno-12-396" name="__codelineno-12-396" href="#__codelineno-12-396"></a>
-<a id="__codelineno-12-397" name="__codelineno-12-397" href="#__codelineno-12-397"></a>        <span class="c1"># Discover court IDs if not already done</span>
-<a id="__codelineno-12-398" name="__codelineno-12-398" href="#__codelineno-12-398"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="n">search_builder</span><span class="o">.</span><span class="n">session_initialized</span><span class="p">:</span>
-<a id="__codelineno-12-399" name="__codelineno-12-399" href="#__codelineno-12-399"></a>            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Discovering court IDs from website...&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-400" name="__codelineno-12-400" href="#__codelineno-12-400"></a>            <span class="n">search_builder</span><span class="o">.</span><span class="n">discover_court_ids</span><span class="p">(</span><span class="n">parser</span><span class="p">)</span>
-<a id="__codelineno-12-401" name="__codelineno-12-401" href="#__codelineno-12-401"></a>
-<a id="__codelineno-12-402" name="__codelineno-12-402" href="#__codelineno-12-402"></a>        <span class="c1"># Set court</span>
-<a id="__codelineno-12-403" name="__codelineno-12-403" href="#__codelineno-12-403"></a>        <span class="n">search_builder</span><span class="o">.</span><span class="n">set_court</span><span class="p">(</span><span class="n">court</span><span class="p">)</span>
-<a id="__codelineno-12-404" name="__codelineno-12-404" href="#__codelineno-12-404"></a>        <span class="n">court_info</span> <span class="o">=</span> <span class="n">search_builder</span><span class="o">.</span><span class="n">get_court_info</span><span class="p">()</span>
-<a id="__codelineno-12-405" name="__codelineno-12-405" href="#__codelineno-12-405"></a>        <span class="n">court_name</span> <span class="o">=</span> <span class="n">court_info</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span>
-<a id="__codelineno-12-406" name="__codelineno-12-406" href="#__codelineno-12-406"></a>
-<a id="__codelineno-12-407" name="__codelineno-12-407" href="#__codelineno-12-407"></a>        <span class="c1"># Verify court ID was discovered</span>
-<a id="__codelineno-12-408" name="__codelineno-12-408" href="#__codelineno-12-408"></a>        <span class="k">if</span> <span class="n">court_info</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-<a id="__codelineno-12-409" name="__codelineno-12-409" href="#__codelineno-12-409"></a>            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Could not discover court ID for </span><span class="si">{</span><span class="n">court_name</span><span class="si">}</span><span class="s2">. &quot;</span>
-<a id="__codelineno-12-410" name="__codelineno-12-410" href="#__codelineno-12-410"></a>                           <span class="s2">&quot;Try using the --url option with a pre-built search URL instead.&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-411" name="__codelineno-12-411" href="#__codelineno-12-411"></a>
-<a id="__codelineno-12-412" name="__codelineno-12-412" href="#__codelineno-12-412"></a>        <span class="c1"># Set date range</span>
-<a id="__codelineno-12-413" name="__codelineno-12-413" href="#__codelineno-12-413"></a>        <span class="k">if</span> <span class="n">date_period</span> <span class="o">==</span> <span class="s1">&#39;custom&#39;</span><span class="p">:</span>
-<a id="__codelineno-12-414" name="__codelineno-12-414" href="#__codelineno-12-414"></a>            <span class="k">if</span> <span class="ow">not</span> <span class="n">start_date</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">end_date</span><span class="p">:</span>
-<a id="__codelineno-12-415" name="__codelineno-12-415" href="#__codelineno-12-415"></a>                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Custom date range requires both start_date and end_date&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-416" name="__codelineno-12-416" href="#__codelineno-12-416"></a>            <span class="n">search_builder</span><span class="o">.</span><span class="n">set_date_range</span><span class="p">(</span><span class="n">start_date</span><span class="p">,</span> <span class="n">end_date</span><span class="p">,</span> <span class="s1">&#39;custom&#39;</span><span class="p">)</span>
-<a id="__codelineno-12-417" name="__codelineno-12-417" href="#__codelineno-12-417"></a>        <span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-12-418" name="__codelineno-12-418" href="#__codelineno-12-418"></a>            <span class="n">search_builder</span><span class="o">.</span><span class="n">set_date_range</span><span class="p">(</span><span class="n">period</span><span class="o">=</span><span class="n">date_period</span><span class="p">)</span>
-<a id="__codelineno-12-419" name="__codelineno-12-419" href="#__codelineno-12-419"></a>
-<a id="__codelineno-12-420" name="__codelineno-12-420" href="#__codelineno-12-420"></a>        <span class="c1"># Set filters</span>
-<a id="__codelineno-12-421" name="__codelineno-12-421" href="#__codelineno-12-421"></a>        <span class="k">if</span> <span class="n">case_number</span><span class="p">:</span>
-<a id="__codelineno-12-422" name="__codelineno-12-422" href="#__codelineno-12-422"></a>            <span class="n">search_builder</span><span class="o">.</span><span class="n">set_case_number_filter</span><span class="p">(</span><span class="n">case_number</span><span class="p">)</span>
-<a id="__codelineno-12-423" name="__codelineno-12-423" href="#__codelineno-12-423"></a>        <span class="k">if</span> <span class="n">case_title</span><span class="p">:</span>
-<a id="__codelineno-12-424" name="__codelineno-12-424" href="#__codelineno-12-424"></a>            <span class="n">search_builder</span><span class="o">.</span><span class="n">set_case_title_filter</span><span class="p">(</span><span class="n">case_title</span><span class="p">)</span>
-<a id="__codelineno-12-425" name="__codelineno-12-425" href="#__codelineno-12-425"></a>        <span class="k">if</span> <span class="n">case_category</span><span class="p">:</span>
-<a id="__codelineno-12-426" name="__codelineno-12-426" href="#__codelineno-12-426"></a>            <span class="n">search_builder</span><span class="o">.</span><span class="n">set_case_category</span><span class="p">(</span><span class="n">case_category</span><span class="p">)</span>
-<a id="__codelineno-12-427" name="__codelineno-12-427" href="#__codelineno-12-427"></a>
-<a id="__codelineno-12-428" name="__codelineno-12-428" href="#__codelineno-12-428"></a>        <span class="n">search_builder</span><span class="o">.</span><span class="n">set_exclude_closed</span><span class="p">(</span><span class="n">exclude_closed</span><span class="p">)</span>
-<a id="__codelineno-12-429" name="__codelineno-12-429" href="#__codelineno-12-429"></a>
-<a id="__codelineno-12-430" name="__codelineno-12-430" href="#__codelineno-12-430"></a>        <span class="c1"># Build initial URL</span>
-<a id="__codelineno-12-431" name="__codelineno-12-431" href="#__codelineno-12-431"></a>        <span class="n">base_url</span> <span class="o">=</span> <span class="n">search_builder</span><span class="o">.</span><span class="n">build_url</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-<a id="__codelineno-12-432" name="__codelineno-12-432" href="#__codelineno-12-432"></a>
-<a id="__codelineno-12-433" name="__codelineno-12-433" href="#__codelineno-12-433"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Alabama Appeals Court - Configurable Data Extraction&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-434" name="__codelineno-12-434" href="#__codelineno-12-434"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="mi">55</span><span class="p">)</span>
-<a id="__codelineno-12-435" name="__codelineno-12-435" href="#__codelineno-12-435"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Start time: </span><span class="si">{</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1"> %H:%M:%S&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-436" name="__codelineno-12-436" href="#__codelineno-12-436"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Date period: </span><span class="si">{</span><span class="n">date_period</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-437" name="__codelineno-12-437" href="#__codelineno-12-437"></a>    <span class="k">if</span> <span class="n">date_period</span> <span class="o">==</span> <span class="s1">&#39;custom&#39;</span><span class="p">:</span>
-<a id="__codelineno-12-438" name="__codelineno-12-438" href="#__codelineno-12-438"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Date range: </span><span class="si">{</span><span class="n">start_date</span><span class="si">}</span><span class="s2"> to </span><span class="si">{</span><span class="n">end_date</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-439" name="__codelineno-12-439" href="#__codelineno-12-439"></a>    <span class="k">if</span> <span class="n">case_number</span><span class="p">:</span>
-<a id="__codelineno-12-440" name="__codelineno-12-440" href="#__codelineno-12-440"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Case number filter: </span><span class="si">{</span><span class="n">case_number</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-441" name="__codelineno-12-441" href="#__codelineno-12-441"></a>    <span class="k">if</span> <span class="n">case_title</span><span class="p">:</span>
-<a id="__codelineno-12-442" name="__codelineno-12-442" href="#__codelineno-12-442"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Case title filter: </span><span class="si">{</span><span class="n">case_title</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-443" name="__codelineno-12-443" href="#__codelineno-12-443"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Exclude closed: </span><span class="si">{</span><span class="n">exclude_closed</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-444" name="__codelineno-12-444" href="#__codelineno-12-444"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Max pages: </span><span class="si">{</span><span class="n">max_pages</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="s1">&#39;All available&#39;</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-445" name="__codelineno-12-445" href="#__codelineno-12-445"></a>    <span class="nb">print</span><span class="p">()</span>
-<a id="__codelineno-12-446" name="__codelineno-12-446" href="#__codelineno-12-446"></a>
-<a id="__codelineno-12-447" name="__codelineno-12-447" href="#__codelineno-12-447"></a>    <span class="c1"># Create parser instance (may have been created earlier for court ID discovery)</span>
-<a id="__codelineno-12-448" name="__codelineno-12-448" href="#__codelineno-12-448"></a>    <span class="k">if</span> <span class="s1">&#39;parser&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="nb">locals</span><span class="p">():</span>
-<a id="__codelineno-12-449" name="__codelineno-12-449" href="#__codelineno-12-449"></a>        <span class="n">parser</span> <span class="o">=</span> <span class="n">ParserAppealsAL</span><span class="p">(</span><span class="n">headless</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">rate_limit_seconds</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-<a id="__codelineno-12-450" name="__codelineno-12-450" href="#__codelineno-12-450"></a>
-<a id="__codelineno-12-451" name="__codelineno-12-451" href="#__codelineno-12-451"></a>    <span class="k">try</span><span class="p">:</span>
-<a id="__codelineno-12-452" name="__codelineno-12-452" href="#__codelineno-12-452"></a>        <span class="c1"># First, get the first page to determine total pages</span>
-<a id="__codelineno-12-453" name="__codelineno-12-453" href="#__codelineno-12-453"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Loading first page to determine total results...&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-454" name="__codelineno-12-454" href="#__codelineno-12-454"></a>        <span class="n">result</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_article</span><span class="p">(</span><span class="n">base_url</span><span class="p">)</span>
-<a id="__codelineno-12-455" name="__codelineno-12-455" href="#__codelineno-12-455"></a>
-<a id="__codelineno-12-456" name="__codelineno-12-456" href="#__codelineno-12-456"></a>        <span class="k">if</span> <span class="s2">&quot;cases&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">result</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;cases&#39;</span><span class="p">]:</span>
-<a id="__codelineno-12-457" name="__codelineno-12-457" href="#__codelineno-12-457"></a>            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No cases found with the specified criteria.&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-458" name="__codelineno-12-458" href="#__codelineno-12-458"></a>            <span class="k">return</span>
-<a id="__codelineno-12-459" name="__codelineno-12-459" href="#__codelineno-12-459"></a>
-<a id="__codelineno-12-460" name="__codelineno-12-460" href="#__codelineno-12-460"></a>        <span class="c1"># Try to get total pages from the URL after JavaScript execution</span>
-<a id="__codelineno-12-461" name="__codelineno-12-461" href="#__codelineno-12-461"></a>        <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">parser</span><span class="p">,</span> <span class="s1">&#39;driver&#39;</span><span class="p">)</span> <span class="ow">and</span> <span class="n">parser</span><span class="o">.</span><span class="n">driver</span><span class="p">:</span>
-<a id="__codelineno-12-462" name="__codelineno-12-462" href="#__codelineno-12-462"></a>            <span class="n">current_url</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">driver</span><span class="o">.</span><span class="n">current_url</span>
-<a id="__codelineno-12-463" name="__codelineno-12-463" href="#__codelineno-12-463"></a>            <span class="n">_</span><span class="p">,</span> <span class="n">total_pages</span> <span class="o">=</span> <span class="n">parse_court_url</span><span class="p">(</span><span class="n">current_url</span><span class="p">)</span>
-<a id="__codelineno-12-464" name="__codelineno-12-464" href="#__codelineno-12-464"></a>
-<a id="__codelineno-12-465" name="__codelineno-12-465" href="#__codelineno-12-465"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="n">total_pages</span><span class="p">:</span>
-<a id="__codelineno-12-466" name="__codelineno-12-466" href="#__codelineno-12-466"></a>            <span class="c1"># Estimate based on first page results</span>
-<a id="__codelineno-12-467" name="__codelineno-12-467" href="#__codelineno-12-467"></a>            <span class="n">total_pages</span> <span class="o">=</span> <span class="mi">1</span>
-<a id="__codelineno-12-468" name="__codelineno-12-468" href="#__codelineno-12-468"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Could not determine total pages, will process incrementally&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-469" name="__codelineno-12-469" href="#__codelineno-12-469"></a>        <span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-12-470" name="__codelineno-12-470" href="#__codelineno-12-470"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Found </span><span class="si">{</span><span class="n">total_pages</span><span class="si">}</span><span class="s2"> total pages&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-471" name="__codelineno-12-471" href="#__codelineno-12-471"></a>
-<a id="__codelineno-12-472" name="__codelineno-12-472" href="#__codelineno-12-472"></a>        <span class="c1"># Apply max_pages limit</span>
-<a id="__codelineno-12-473" name="__codelineno-12-473" href="#__codelineno-12-473"></a>        <span class="k">if</span> <span class="n">max_pages</span> <span class="ow">and</span> <span class="n">max_pages</span> <span class="o">&lt;</span> <span class="n">total_pages</span><span class="p">:</span>
-<a id="__codelineno-12-474" name="__codelineno-12-474" href="#__codelineno-12-474"></a>            <span class="n">total_pages</span> <span class="o">=</span> <span class="n">max_pages</span>
-<a id="__codelineno-12-475" name="__codelineno-12-475" href="#__codelineno-12-475"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Limited to </span><span class="si">{</span><span class="n">max_pages</span><span class="si">}</span><span class="s2"> pages&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-476" name="__codelineno-12-476" href="#__codelineno-12-476"></a>
-<a id="__codelineno-12-477" name="__codelineno-12-477" href="#__codelineno-12-477"></a>        <span class="n">all_cases</span> <span class="o">=</span> <span class="p">[]</span>
-<a id="__codelineno-12-478" name="__codelineno-12-478" href="#__codelineno-12-478"></a>
-<a id="__codelineno-12-479" name="__codelineno-12-479" href="#__codelineno-12-479"></a>        <span class="c1"># Process all pages</span>
-<a id="__codelineno-12-480" name="__codelineno-12-480" href="#__codelineno-12-480"></a>        <span class="k">for</span> <span class="n">page_num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">total_pages</span><span class="p">):</span>
-<a id="__codelineno-12-481" name="__codelineno-12-481" href="#__codelineno-12-481"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Processing page </span><span class="si">{</span><span class="n">page_num</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2">...&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<a id="__codelineno-12-482" name="__codelineno-12-482" href="#__codelineno-12-482"></a>
-<a id="__codelineno-12-483" name="__codelineno-12-483" href="#__codelineno-12-483"></a>            <span class="k">if</span> <span class="n">page_num</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-<a id="__codelineno-12-484" name="__codelineno-12-484" href="#__codelineno-12-484"></a>                <span class="c1"># Use result from first page</span>
-<a id="__codelineno-12-485" name="__codelineno-12-485" href="#__codelineno-12-485"></a>                <span class="n">page_result</span> <span class="o">=</span> <span class="n">result</span>
-<a id="__codelineno-12-486" name="__codelineno-12-486" href="#__codelineno-12-486"></a>            <span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-12-487" name="__codelineno-12-487" href="#__codelineno-12-487"></a>                <span class="c1"># Build URL for subsequent pages only if not using custom URL</span>
-<a id="__codelineno-12-488" name="__codelineno-12-488" href="#__codelineno-12-488"></a>                <span class="k">if</span> <span class="n">custom_url</span><span class="p">:</span>
-<a id="__codelineno-12-489" name="__codelineno-12-489" href="#__codelineno-12-489"></a>                    <span class="c1"># For custom URLs, we need to modify pagination manually</span>
-<a id="__codelineno-12-490" name="__codelineno-12-490" href="#__codelineno-12-490"></a>                    <span class="c1"># This is a simplified approach - in practice, you&#39;d need to parse and modify the URL</span>
-<a id="__codelineno-12-491" name="__codelineno-12-491" href="#__codelineno-12-491"></a>                    <span class="n">page_url</span> <span class="o">=</span> <span class="n">custom_url</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;number~0&#39;</span><span class="p">,</span> <span class="sa">f</span><span class="s1">&#39;number~</span><span class="si">{</span><span class="n">page_num</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-<a id="__codelineno-12-492" name="__codelineno-12-492" href="#__codelineno-12-492"></a>                <span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-12-493" name="__codelineno-12-493" href="#__codelineno-12-493"></a>                    <span class="n">page_url</span> <span class="o">=</span> <span class="n">search_builder</span><span class="o">.</span><span class="n">build_url</span><span class="p">(</span><span class="n">page_num</span><span class="p">)</span>
-<a id="__codelineno-12-494" name="__codelineno-12-494" href="#__codelineno-12-494"></a>                <span class="n">page_result</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_article</span><span class="p">(</span><span class="n">page_url</span><span class="p">)</span>
-<a id="__codelineno-12-495" name="__codelineno-12-495" href="#__codelineno-12-495"></a>
-<a id="__codelineno-12-496" name="__codelineno-12-496" href="#__codelineno-12-496"></a>            <span class="k">if</span> <span class="s2">&quot;cases&quot;</span> <span class="ow">in</span> <span class="n">page_result</span> <span class="ow">and</span> <span class="n">page_result</span><span class="p">[</span><span class="s1">&#39;cases&#39;</span><span class="p">]:</span>
-<a id="__codelineno-12-497" name="__codelineno-12-497" href="#__codelineno-12-497"></a>                <span class="n">all_cases</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">page_result</span><span class="p">[</span><span class="s1">&#39;cases&#39;</span><span class="p">])</span>
-<a id="__codelineno-12-498" name="__codelineno-12-498" href="#__codelineno-12-498"></a>                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot; Found </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">page_result</span><span class="p">[</span><span class="s1">&#39;cases&#39;</span><span class="p">])</span><span class="si">}</span><span class="s2"> cases&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-499" name="__codelineno-12-499" href="#__codelineno-12-499"></a>            <span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-12-500" name="__codelineno-12-500" href="#__codelineno-12-500"></a>                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; No cases found&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-501" name="__codelineno-12-501" href="#__codelineno-12-501"></a>                <span class="c1"># If no cases on this page, we might have reached the end</span>
-<a id="__codelineno-12-502" name="__codelineno-12-502" href="#__codelineno-12-502"></a>                <span class="k">break</span>
-<a id="__codelineno-12-503" name="__codelineno-12-503" href="#__codelineno-12-503"></a>
-<a id="__codelineno-12-504" name="__codelineno-12-504" href="#__codelineno-12-504"></a>        <span class="c1"># Create output data</span>
-<a id="__codelineno-12-505" name="__codelineno-12-505" href="#__codelineno-12-505"></a>        <span class="n">output_data</span> <span class="o">=</span> <span class="p">{</span>
-<a id="__codelineno-12-506" name="__codelineno-12-506" href="#__codelineno-12-506"></a>            <span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;success&quot;</span><span class="p">,</span>
-<a id="__codelineno-12-507" name="__codelineno-12-507" href="#__codelineno-12-507"></a>            <span class="s2">&quot;search_parameters&quot;</span><span class="p">:</span> <span class="p">{</span>
-<a id="__codelineno-12-508" name="__codelineno-12-508" href="#__codelineno-12-508"></a>                <span class="s2">&quot;court&quot;</span><span class="p">:</span> <span class="n">court</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">custom_url</span> <span class="k">else</span> <span class="s2">&quot;Custom URL&quot;</span><span class="p">,</span>
-<a id="__codelineno-12-509" name="__codelineno-12-509" href="#__codelineno-12-509"></a>                <span class="s2">&quot;date_period&quot;</span><span class="p">:</span> <span class="n">date_period</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">custom_url</span> <span class="k">else</span> <span class="s2">&quot;Custom URL&quot;</span><span class="p">,</span>
-<a id="__codelineno-12-510" name="__codelineno-12-510" href="#__codelineno-12-510"></a>                <span class="s2">&quot;start_date&quot;</span><span class="p">:</span> <span class="n">start_date</span><span class="p">,</span>
-<a id="__codelineno-12-511" name="__codelineno-12-511" href="#__codelineno-12-511"></a>                <span class="s2">&quot;end_date&quot;</span><span class="p">:</span> <span class="n">end_date</span><span class="p">,</span>
-<a id="__codelineno-12-512" name="__codelineno-12-512" href="#__codelineno-12-512"></a>                <span class="s2">&quot;case_number_filter&quot;</span><span class="p">:</span> <span class="n">case_number</span><span class="p">,</span>
-<a id="__codelineno-12-513" name="__codelineno-12-513" href="#__codelineno-12-513"></a>                <span class="s2">&quot;case_title_filter&quot;</span><span class="p">:</span> <span class="n">case_title</span><span class="p">,</span>
-<a id="__codelineno-12-514" name="__codelineno-12-514" href="#__codelineno-12-514"></a>                <span class="s2">&quot;case_category&quot;</span><span class="p">:</span> <span class="n">case_category</span><span class="p">,</span>
-<a id="__codelineno-12-515" name="__codelineno-12-515" href="#__codelineno-12-515"></a>                <span class="s2">&quot;exclude_closed&quot;</span><span class="p">:</span> <span class="n">exclude_closed</span><span class="p">,</span>
-<a id="__codelineno-12-516" name="__codelineno-12-516" href="#__codelineno-12-516"></a>                <span class="s2">&quot;custom_url&quot;</span><span class="p">:</span> <span class="n">custom_url</span>
-<a id="__codelineno-12-517" name="__codelineno-12-517" href="#__codelineno-12-517"></a>            <span class="p">},</span>
-<a id="__codelineno-12-518" name="__codelineno-12-518" href="#__codelineno-12-518"></a>            <span class="s2">&quot;total_cases&quot;</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">all_cases</span><span class="p">),</span>
-<a id="__codelineno-12-519" name="__codelineno-12-519" href="#__codelineno-12-519"></a>            <span class="s2">&quot;extraction_date&quot;</span><span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y-%m-</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">),</span>
-<a id="__codelineno-12-520" name="__codelineno-12-520" href="#__codelineno-12-520"></a>            <span class="s2">&quot;extraction_time&quot;</span><span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%H:%M:%S&quot;</span><span class="p">),</span>
-<a id="__codelineno-12-521" name="__codelineno-12-521" href="#__codelineno-12-521"></a>            <span class="s2">&quot;pages_processed&quot;</span><span class="p">:</span> <span class="n">page_num</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span>
-<a id="__codelineno-12-522" name="__codelineno-12-522" href="#__codelineno-12-522"></a>            <span class="s2">&quot;cases&quot;</span><span class="p">:</span> <span class="n">all_cases</span>
-<a id="__codelineno-12-523" name="__codelineno-12-523" href="#__codelineno-12-523"></a>        <span class="p">}</span>
-<a id="__codelineno-12-524" name="__codelineno-12-524" href="#__codelineno-12-524"></a>
-<a id="__codelineno-12-525" name="__codelineno-12-525" href="#__codelineno-12-525"></a>        <span class="c1"># Save results</span>
-<a id="__codelineno-12-526" name="__codelineno-12-526" href="#__codelineno-12-526"></a>        <span class="n">timestamp</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y%m</span><span class="si">%d</span><span class="s1">_%H%M%S&#39;</span><span class="p">)</span>
-<a id="__codelineno-12-527" name="__codelineno-12-527" href="#__codelineno-12-527"></a>        <span class="n">json_filename</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">output_prefix</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">timestamp</span><span class="si">}</span><span class="s2">.json&quot;</span>
-<a id="__codelineno-12-528" name="__codelineno-12-528" href="#__codelineno-12-528"></a>
-<a id="__codelineno-12-529" name="__codelineno-12-529" href="#__codelineno-12-529"></a>        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">json_filename</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-<a id="__codelineno-12-530" name="__codelineno-12-530" href="#__codelineno-12-530"></a>            <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">output_data</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<a id="__codelineno-12-531" name="__codelineno-12-531" href="#__codelineno-12-531"></a>
-<a id="__codelineno-12-532" name="__codelineno-12-532" href="#__codelineno-12-532"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">✓ Successfully extracted </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">all_cases</span><span class="p">)</span><span class="si">}</span><span class="s2"> court cases&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-533" name="__codelineno-12-533" href="#__codelineno-12-533"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;✓ Results saved to </span><span class="si">{</span><span class="n">json_filename</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-534" name="__codelineno-12-534" href="#__codelineno-12-534"></a>
-<a id="__codelineno-12-535" name="__codelineno-12-535" href="#__codelineno-12-535"></a>        <span class="c1"># Create CSV if there are results</span>
-<a id="__codelineno-12-536" name="__codelineno-12-536" href="#__codelineno-12-536"></a>        <span class="k">if</span> <span class="n">all_cases</span><span class="p">:</span>
-<a id="__codelineno-12-537" name="__codelineno-12-537" href="#__codelineno-12-537"></a>            <span class="n">csv_filename</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">output_prefix</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">timestamp</span><span class="si">}</span><span class="s2">.csv&quot;</span>
-<a id="__codelineno-12-538" name="__codelineno-12-538" href="#__codelineno-12-538"></a>            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">csv_filename</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-<a id="__codelineno-12-539" name="__codelineno-12-539" href="#__codelineno-12-539"></a>                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Court,Case Number,Case Title,Classification,Filed Date,Status,Case Link</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-540" name="__codelineno-12-540" href="#__codelineno-12-540"></a>
-<a id="__codelineno-12-541" name="__codelineno-12-541" href="#__codelineno-12-541"></a>                <span class="k">for</span> <span class="n">case</span> <span class="ow">in</span> <span class="n">all_cases</span><span class="p">:</span>
-<a id="__codelineno-12-542" name="__codelineno-12-542" href="#__codelineno-12-542"></a>                    <span class="n">court</span> <span class="o">=</span> <span class="n">case</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;court&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="s1">&#39;;&#39;</span><span class="p">)</span>
-<a id="__codelineno-12-543" name="__codelineno-12-543" href="#__codelineno-12-543"></a>                    <span class="n">case_num</span> <span class="o">=</span> <span class="n">case</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;case_number&#39;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;text&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="s1">&#39;;&#39;</span><span class="p">)</span>
-<a id="__codelineno-12-544" name="__codelineno-12-544" href="#__codelineno-12-544"></a>                    <span class="n">title</span> <span class="o">=</span> <span class="n">case</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;case_title&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="s1">&#39;;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;&quot;&#39;</span><span class="p">,</span> <span class="s2">&quot;&#39;&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-545" name="__codelineno-12-545" href="#__codelineno-12-545"></a>                    <span class="n">classification</span> <span class="o">=</span> <span class="n">case</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;classification&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="s1">&#39;;&#39;</span><span class="p">)</span>
-<a id="__codelineno-12-546" name="__codelineno-12-546" href="#__codelineno-12-546"></a>                    <span class="n">filed</span> <span class="o">=</span> <span class="n">case</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;filed_date&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
-<a id="__codelineno-12-547" name="__codelineno-12-547" href="#__codelineno-12-547"></a>                    <span class="n">status</span> <span class="o">=</span> <span class="n">case</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;status&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
-<a id="__codelineno-12-548" name="__codelineno-12-548" href="#__codelineno-12-548"></a>                    <span class="n">link</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;https://publicportal.alappeals.gov</span><span class="si">{</span><span class="n">case</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;case_number&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;link&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span>
-<a id="__codelineno-12-549" name="__codelineno-12-549" href="#__codelineno-12-549"></a>
-<a id="__codelineno-12-550" name="__codelineno-12-550" href="#__codelineno-12-550"></a>                    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;&quot;</span><span class="si">{</span><span class="n">court</span><span class="si">}</span><span class="s1">&quot;,&quot;</span><span class="si">{</span><span class="n">case_num</span><span class="si">}</span><span class="s1">&quot;,&quot;</span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="s1">&quot;,&quot;</span><span class="si">{</span><span class="n">classification</span><span class="si">}</span><span class="s1">&quot;,&quot;</span><span class="si">{</span><span class="n">filed</span><span class="si">}</span><span class="s1">&quot;,&quot;</span><span class="si">{</span><span class="n">status</span><span class="si">}</span><span class="s1">&quot;,&quot;</span><span class="si">{</span><span class="n">link</span><span class="si">}</span><span class="s1">&quot;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
-<a id="__codelineno-12-551" name="__codelineno-12-551" href="#__codelineno-12-551"></a>
-<a id="__codelineno-12-552" name="__codelineno-12-552" href="#__codelineno-12-552"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;✓ CSV table saved to </span><span class="si">{</span><span class="n">csv_filename</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-553" name="__codelineno-12-553" href="#__codelineno-12-553"></a>
-<a id="__codelineno-12-554" name="__codelineno-12-554" href="#__codelineno-12-554"></a>        <span class="k">return</span> <span class="n">output_data</span>
-<a id="__codelineno-12-555" name="__codelineno-12-555" href="#__codelineno-12-555"></a>
-<a id="__codelineno-12-556" name="__codelineno-12-556" href="#__codelineno-12-556"></a>    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-<a id="__codelineno-12-557" name="__codelineno-12-557" href="#__codelineno-12-557"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Error occurred: </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-558" name="__codelineno-12-558" href="#__codelineno-12-558"></a>        <span class="kn">import</span><span class="w"> </span><span class="nn">traceback</span>
-<a id="__codelineno-12-559" name="__codelineno-12-559" href="#__codelineno-12-559"></a>        <span class="n">traceback</span><span class="o">.</span><span class="n">print_exc</span><span class="p">()</span>
-<a id="__codelineno-12-560" name="__codelineno-12-560" href="#__codelineno-12-560"></a>        <span class="k">return</span> <span class="kc">None</span>
-<a id="__codelineno-12-561" name="__codelineno-12-561" href="#__codelineno-12-561"></a>    <span class="k">finally</span><span class="p">:</span>
-<a id="__codelineno-12-562" name="__codelineno-12-562" href="#__codelineno-12-562"></a>        <span class="n">parser</span><span class="o">.</span><span class="n">_close_driver</span><span class="p">()</span>
-<a id="__codelineno-12-563" name="__codelineno-12-563" href="#__codelineno-12-563"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">End time: </span><span class="si">{</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1"> %H:%M:%S&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-564" name="__codelineno-12-564" href="#__codelineno-12-564"></a>
-<a id="__codelineno-12-565" name="__codelineno-12-565" href="#__codelineno-12-565"></a>
-<a id="__codelineno-12-566" name="__codelineno-12-566" href="#__codelineno-12-566"></a><span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
-<a id="__codelineno-12-567" name="__codelineno-12-567" href="#__codelineno-12-567"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Command line interface for the configurable court extractor&quot;&quot;&quot;</span>
-<a id="__codelineno-12-568" name="__codelineno-12-568" href="#__codelineno-12-568"></a>    <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Extract Alabama Court cases with configurable search parameters OR custom URL&#39;</span><span class="p">)</span>
-<a id="__codelineno-12-569" name="__codelineno-12-569" href="#__codelineno-12-569"></a>
-<a id="__codelineno-12-570" name="__codelineno-12-570" href="#__codelineno-12-570"></a>    <span class="c1"># URL option that overrides all search parameters</span>
-<a id="__codelineno-12-571" name="__codelineno-12-571" href="#__codelineno-12-571"></a>    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--url&#39;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Pre-built search URL with embedded parameters (overrides all search options)&#39;</span><span class="p">)</span>
-<a id="__codelineno-12-572" name="__codelineno-12-572" href="#__codelineno-12-572"></a>
-<a id="__codelineno-12-573" name="__codelineno-12-573" href="#__codelineno-12-573"></a>    <span class="c1"># Search parameter arguments (ignored if --url is provided)</span>
-<a id="__codelineno-12-574" name="__codelineno-12-574" href="#__codelineno-12-574"></a>    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--court&#39;</span><span class="p">,</span> <span class="n">choices</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;civil&#39;</span><span class="p">,</span> <span class="s1">&#39;criminal&#39;</span><span class="p">,</span> <span class="s1">&#39;supreme&#39;</span><span class="p">],</span> 
-<a id="__codelineno-12-575" name="__codelineno-12-575" href="#__codelineno-12-575"></a>                       <span class="n">default</span><span class="o">=</span><span class="s1">&#39;civil&#39;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Court to search (default: civil)&#39;</span><span class="p">)</span>
-<a id="__codelineno-12-576" name="__codelineno-12-576" href="#__codelineno-12-576"></a>    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--date-period&#39;</span><span class="p">,</span> <span class="n">choices</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;7d&#39;</span><span class="p">,</span> <span class="s1">&#39;1m&#39;</span><span class="p">,</span> <span class="s1">&#39;3m&#39;</span><span class="p">,</span> <span class="s1">&#39;6m&#39;</span><span class="p">,</span> <span class="s1">&#39;1y&#39;</span><span class="p">,</span> <span class="s1">&#39;custom&#39;</span><span class="p">],</span> 
-<a id="__codelineno-12-577" name="__codelineno-12-577" href="#__codelineno-12-577"></a>                       <span class="n">default</span><span class="o">=</span><span class="s1">&#39;1y&#39;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Date period for case search (default: 1y)&#39;</span><span class="p">)</span>
-<a id="__codelineno-12-578" name="__codelineno-12-578" href="#__codelineno-12-578"></a>    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--start-date&#39;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Start date for custom range (YYYY-MM-DD)&#39;</span><span class="p">)</span>
-<a id="__codelineno-12-579" name="__codelineno-12-579" href="#__codelineno-12-579"></a>    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--end-date&#39;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;End date for custom range (YYYY-MM-DD)&#39;</span><span class="p">)</span>
-<a id="__codelineno-12-580" name="__codelineno-12-580" href="#__codelineno-12-580"></a>    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--case-number&#39;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Filter by case number (e.g., CL-2024-, CR-2024-, SC-2024-)&#39;</span><span class="p">)</span>
-<a id="__codelineno-12-581" name="__codelineno-12-581" href="#__codelineno-12-581"></a>    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--case-title&#39;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Filter by case title (partial match)&#39;</span><span class="p">)</span>
-<a id="__codelineno-12-582" name="__codelineno-12-582" href="#__codelineno-12-582"></a>    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--case-category&#39;</span><span class="p">,</span> 
-<a id="__codelineno-12-583" name="__codelineno-12-583" href="#__codelineno-12-583"></a>                       <span class="n">choices</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Appeal&#39;</span><span class="p">,</span> <span class="s1">&#39;Certiorari&#39;</span><span class="p">,</span> <span class="s1">&#39;Original Proceeding&#39;</span><span class="p">,</span> <span class="s1">&#39;Petition&#39;</span><span class="p">,</span> <span class="s1">&#39;Certified Question&#39;</span><span class="p">],</span>
-<a id="__codelineno-12-584" name="__codelineno-12-584" href="#__codelineno-12-584"></a>                       <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Filter by case category&#39;</span><span class="p">)</span>
-<a id="__codelineno-12-585" name="__codelineno-12-585" href="#__codelineno-12-585"></a>    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--exclude-closed&#39;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store_true&#39;</span><span class="p">,</span> 
-<a id="__codelineno-12-586" name="__codelineno-12-586" href="#__codelineno-12-586"></a>                       <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Exclude closed cases from results&#39;</span><span class="p">)</span>
-<a id="__codelineno-12-587" name="__codelineno-12-587" href="#__codelineno-12-587"></a>
-<a id="__codelineno-12-588" name="__codelineno-12-588" href="#__codelineno-12-588"></a>    <span class="c1"># Output options (always available)</span>
-<a id="__codelineno-12-589" name="__codelineno-12-589" href="#__codelineno-12-589"></a>    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--max-pages&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span> 
-<a id="__codelineno-12-590" name="__codelineno-12-590" href="#__codelineno-12-590"></a>                       <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Maximum number of pages to process (default: all)&#39;</span><span class="p">)</span>
-<a id="__codelineno-12-591" name="__codelineno-12-591" href="#__codelineno-12-591"></a>    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--output-prefix&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="s1">&#39;court_cases&#39;</span><span class="p">,</span>
-<a id="__codelineno-12-592" name="__codelineno-12-592" href="#__codelineno-12-592"></a>                       <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Prefix for output files (default: court_cases)&#39;</span><span class="p">)</span>
-<a id="__codelineno-12-593" name="__codelineno-12-593" href="#__codelineno-12-593"></a>
-<a id="__codelineno-12-594" name="__codelineno-12-594" href="#__codelineno-12-594"></a>    <span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">()</span>
-<a id="__codelineno-12-595" name="__codelineno-12-595" href="#__codelineno-12-595"></a>
-<a id="__codelineno-12-596" name="__codelineno-12-596" href="#__codelineno-12-596"></a>    <span class="c1"># If URL is provided, skip all parameter validation</span>
-<a id="__codelineno-12-597" name="__codelineno-12-597" href="#__codelineno-12-597"></a>    <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">url</span><span class="p">:</span>
-<a id="__codelineno-12-598" name="__codelineno-12-598" href="#__codelineno-12-598"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Using custom URL - all search parameter options will be ignored&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-599" name="__codelineno-12-599" href="#__codelineno-12-599"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;⚠️  IMPORTANT: Custom URLs are session-based and temporary!&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-600" name="__codelineno-12-600" href="#__codelineno-12-600"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;   Your URL may stop working when the court website session expires.&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-601" name="__codelineno-12-601" href="#__codelineno-12-601"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;   Consider using CLI search parameters for reliable, repeatable searches.&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-602" name="__codelineno-12-602" href="#__codelineno-12-602"></a>        <span class="nb">print</span><span class="p">()</span>
-<a id="__codelineno-12-603" name="__codelineno-12-603" href="#__codelineno-12-603"></a>        <span class="n">extract_court_cases_with_params</span><span class="p">(</span>
-<a id="__codelineno-12-604" name="__codelineno-12-604" href="#__codelineno-12-604"></a>            <span class="n">custom_url</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">url</span><span class="p">,</span>
-<a id="__codelineno-12-605" name="__codelineno-12-605" href="#__codelineno-12-605"></a>            <span class="n">max_pages</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">max_pages</span><span class="p">,</span>
-<a id="__codelineno-12-606" name="__codelineno-12-606" href="#__codelineno-12-606"></a>            <span class="n">output_prefix</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">output_prefix</span>
-<a id="__codelineno-12-607" name="__codelineno-12-607" href="#__codelineno-12-607"></a>        <span class="p">)</span>
-<a id="__codelineno-12-608" name="__codelineno-12-608" href="#__codelineno-12-608"></a>        <span class="k">return</span>
-<a id="__codelineno-12-609" name="__codelineno-12-609" href="#__codelineno-12-609"></a>
-<a id="__codelineno-12-610" name="__codelineno-12-610" href="#__codelineno-12-610"></a>    <span class="c1"># Validate custom date range</span>
-<a id="__codelineno-12-611" name="__codelineno-12-611" href="#__codelineno-12-611"></a>    <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">date_period</span> <span class="o">==</span> <span class="s1">&#39;custom&#39;</span><span class="p">:</span>
-<a id="__codelineno-12-612" name="__codelineno-12-612" href="#__codelineno-12-612"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="n">args</span><span class="o">.</span><span class="n">start_date</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">args</span><span class="o">.</span><span class="n">end_date</span><span class="p">:</span>
-<a id="__codelineno-12-613" name="__codelineno-12-613" href="#__codelineno-12-613"></a>            <span class="n">parser</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot;Custom date period requires both --start-date and --end-date&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-614" name="__codelineno-12-614" href="#__codelineno-12-614"></a>
-<a id="__codelineno-12-615" name="__codelineno-12-615" href="#__codelineno-12-615"></a>    <span class="c1"># Validate case category for court</span>
-<a id="__codelineno-12-616" name="__codelineno-12-616" href="#__codelineno-12-616"></a>    <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">case_category</span><span class="p">:</span>
-<a id="__codelineno-12-617" name="__codelineno-12-617" href="#__codelineno-12-617"></a>        <span class="n">builder</span> <span class="o">=</span> <span class="n">CourtSearchBuilder</span><span class="p">()</span>
-<a id="__codelineno-12-618" name="__codelineno-12-618" href="#__codelineno-12-618"></a>        <span class="n">builder</span><span class="o">.</span><span class="n">set_court</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">court</span><span class="p">)</span>
-<a id="__codelineno-12-619" name="__codelineno-12-619" href="#__codelineno-12-619"></a>        <span class="k">try</span><span class="p">:</span>
-<a id="__codelineno-12-620" name="__codelineno-12-620" href="#__codelineno-12-620"></a>            <span class="n">builder</span><span class="o">.</span><span class="n">validate_case_category</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">case_category</span><span class="p">)</span>
-<a id="__codelineno-12-621" name="__codelineno-12-621" href="#__codelineno-12-621"></a>        <span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-<a id="__codelineno-12-622" name="__codelineno-12-622" href="#__codelineno-12-622"></a>            <span class="n">parser</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
-<a id="__codelineno-12-623" name="__codelineno-12-623" href="#__codelineno-12-623"></a>
-<a id="__codelineno-12-624" name="__codelineno-12-624" href="#__codelineno-12-624"></a>    <span class="c1"># Show case number format suggestion</span>
-<a id="__codelineno-12-625" name="__codelineno-12-625" href="#__codelineno-12-625"></a>    <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">case_number</span><span class="p">:</span>
-<a id="__codelineno-12-626" name="__codelineno-12-626" href="#__codelineno-12-626"></a>        <span class="n">builder</span> <span class="o">=</span> <span class="n">CourtSearchBuilder</span><span class="p">()</span>
-<a id="__codelineno-12-627" name="__codelineno-12-627" href="#__codelineno-12-627"></a>        <span class="n">builder</span><span class="o">.</span><span class="n">set_court</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">court</span><span class="p">)</span>
-<a id="__codelineno-12-628" name="__codelineno-12-628" href="#__codelineno-12-628"></a>        <span class="n">suggested_format</span> <span class="o">=</span> <span class="n">builder</span><span class="o">.</span><span class="n">format_case_number_suggestion</span><span class="p">()</span>
-<a id="__codelineno-12-629" name="__codelineno-12-629" href="#__codelineno-12-629"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Case number format for </span><span class="si">{</span><span class="n">builder</span><span class="o">.</span><span class="n">get_court_info</span><span class="p">()[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">suggested_format</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-630" name="__codelineno-12-630" href="#__codelineno-12-630"></a>
-<a id="__codelineno-12-631" name="__codelineno-12-631" href="#__codelineno-12-631"></a>    <span class="c1"># Extract cases using search parameters</span>
-<a id="__codelineno-12-632" name="__codelineno-12-632" href="#__codelineno-12-632"></a>    <span class="n">extract_court_cases_with_params</span><span class="p">(</span>
-<a id="__codelineno-12-633" name="__codelineno-12-633" href="#__codelineno-12-633"></a>        <span class="n">court</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">court</span><span class="p">,</span>
-<a id="__codelineno-12-634" name="__codelineno-12-634" href="#__codelineno-12-634"></a>        <span class="n">date_period</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">date_period</span><span class="p">,</span>
-<a id="__codelineno-12-635" name="__codelineno-12-635" href="#__codelineno-12-635"></a>        <span class="n">start_date</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">start_date</span><span class="p">,</span>
-<a id="__codelineno-12-636" name="__codelineno-12-636" href="#__codelineno-12-636"></a>        <span class="n">end_date</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">end_date</span><span class="p">,</span>
-<a id="__codelineno-12-637" name="__codelineno-12-637" href="#__codelineno-12-637"></a>        <span class="n">case_number</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">case_number</span><span class="p">,</span>
-<a id="__codelineno-12-638" name="__codelineno-12-638" href="#__codelineno-12-638"></a>        <span class="n">case_title</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">case_title</span><span class="p">,</span>
-<a id="__codelineno-12-639" name="__codelineno-12-639" href="#__codelineno-12-639"></a>        <span class="n">case_category</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">case_category</span><span class="p">,</span>
-<a id="__codelineno-12-640" name="__codelineno-12-640" href="#__codelineno-12-640"></a>        <span class="n">exclude_closed</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">exclude_closed</span><span class="p">,</span>
-<a id="__codelineno-12-641" name="__codelineno-12-641" href="#__codelineno-12-641"></a>        <span class="n">max_pages</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">max_pages</span><span class="p">,</span>
-<a id="__codelineno-12-642" name="__codelineno-12-642" href="#__codelineno-12-642"></a>        <span class="n">output_prefix</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">output_prefix</span>
-<a id="__codelineno-12-643" name="__codelineno-12-643" href="#__codelineno-12-643"></a>    <span class="p">)</span>
-<a id="__codelineno-12-644" name="__codelineno-12-644" href="#__codelineno-12-644"></a>
-<a id="__codelineno-12-645" name="__codelineno-12-645" href="#__codelineno-12-645"></a>
-<a id="__codelineno-12-646" name="__codelineno-12-646" href="#__codelineno-12-646"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
-<a id="__codelineno-12-647" name="__codelineno-12-647" href="#__codelineno-12-647"></a>    <span class="n">main</span><span class="p">()</span>
-</code></pre></div>
-<h2 id="code-walkthrough">Code Walkthrough<a class="headerlink" href="#code-walkthrough" title="Permanent link">&para;</a></h2>
-<h3 id="courtsearchbuilder-class">CourtSearchBuilder Class<a class="headerlink" href="#courtsearchbuilder-class" title="Permanent link">&para;</a></h3>
-<p><strong>Line 12-17</strong>: Initialize with base URL and court ID constants. The <code>reset_params()</code> method sets up the default parameter structure.</p>
-<p><strong>Line 19-46</strong>: The <code>reset_params()</code> method creates a nested dictionary structure that mirrors the complex URL parameters used by the Alabama Appeals Court portal.</p>
-<p><strong>Line 48-74</strong>: <code>set_date_range()</code> handles both predefined periods and custom date ranges. It converts standard YYYY-MM-DD format to the portal's <code>*2f</code> encoding format.</p>
-<p><strong>Line 140-169</strong>: <code>build_criteria_string()</code> is the core URL building logic. It constructs the complex nested parameter string with proper URL encoding.</p>
-<p><strong>Line 171-180</strong>: <code>build_url()</code> ties everything together, updating pagination and returning the complete URL.</p>
-<h3 id="main-extraction-function">Main Extraction Function<a class="headerlink" href="#main-extraction-function" title="Permanent link">&para;</a></h3>
-<p><strong>Line 584-596</strong>: Function signature with comprehensive parameters including <code>custom_url</code> option for pre-built URLs.</p>
-<p><strong>Line 614-647</strong>: Dual-mode logic - uses custom URL directly OR builds URL from search parameters.</p>
-<p><strong>Line 649-661</strong>: Initial setup and parameter display for user feedback, with custom URL handling.</p>
-<p><strong>Line 666-689</strong>: First page processing to determine total results and pages available.</p>
-<p><strong>Line 694-713</strong>: Main processing loop that handles pagination dynamically for both custom URLs and built URLs.</p>
-<p><strong>Line 719-738</strong>: Output data structure creation with search parameters preserved for reproducibility, including custom URL tracking.</p>
-<p><strong>Line 740-760</strong>: File saving logic for both JSON and CSV formats.</p>
-<h3 id="command-line-interface_1">Command Line Interface<a class="headerlink" href="#command-line-interface_1" title="Permanent link">&para;</a></h3>
-<p><strong>Line 781-807</strong>: Argument parser setup with <code>--url</code> option and all configuration options with help text.</p>
-<p><strong>Line 811-819</strong>: Custom URL handling that bypasses all parameter validation when <code>--url</code> is provided.</p>
-<p><strong>Line 821-854</strong>: Parameter validation and function execution for search-parameter mode.</p>
+<h2 id="implementation-reference">Implementation Reference<a class="headerlink" href="#implementation-reference" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><strong>Note</strong>: The complete implementation code has been moved to the reference documentation for better organization. Please refer to the <a href="/reference/configurable_court_extractor/">Configurable Court Extractor Reference</a> for the full source code, API documentation, and detailed implementation examples.</p>
+</blockquote>
 <h2 id="key-design-decisions-explained">Key Design Decisions Explained<a class="headerlink" href="#key-design-decisions-explained" title="Permanent link">&para;</a></h2>
 <ol>
 <li><strong>Builder Pattern</strong>: Separates URL construction complexity from business logic</li>
@@ -3356,12 +2865,17 @@ When court ID discovery completely fails, users can:</p>
 <li><strong>User Feedback</strong>: Real-time progress and parameter confirmation</li>
 <li><strong>URL Flexibility</strong>: Custom URLs override all search parameters for maximum flexibility</li>
 </ol>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<p>This design transforms a rigid, single-purpose script into a flexible, user-friendly tool that can adapt to various research needs while maintaining the reliability and performance of the original implementation. The modular architecture ensures that each component has a single responsibility, making the system easy to extend, test, and maintain.</p>
 
 
 
 
 
 
+
+  
+  
 
 
 

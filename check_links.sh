@@ -136,9 +136,9 @@ echo ""
 temp_file=$(mktemp)
 
 # Find all linked files
-find "$DOCS_DIR" -name "*.md" -type f | while read -r file; do
-    grep -oE '\[([^\]]*)\]\(([^)]+)\)' "$file" | while read -r match; do
-        url=$(echo "$match" | sed -E 's/\[[^\]]*\]\(([^)]+)\)/\1/')
+while IFS= read -r file; do
+    grep -oE '\[[^]]+\]\([^)]+\)' "$file" 2>/dev/null | while IFS= read -r match; do
+        url=$(echo "$match" | sed -E 's/\[[^]]*\]\(([^)]+)\)/\1/')
         file_dir=$(dirname "$file")
         resolved=$(resolve_path "$file_dir" "$url")
         
@@ -146,7 +146,7 @@ find "$DOCS_DIR" -name "*.md" -type f | while read -r file; do
             echo "$resolved" >> "$temp_file"
         fi
     done
-done
+done < <(find "$DOCS_DIR" -name "*.md" -type f)
 
 # Find orphaned files
 find "$DOCS_DIR" -name "*.md" -type f | while read -r file; do
