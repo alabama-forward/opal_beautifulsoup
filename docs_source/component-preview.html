@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPAL Interactive Components Preview</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/extra.css">
+    <style>
+        body {
+            font-family: Inter, system-ui, -apple-system, sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            color: #363D4A;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #B53D1A;
+            border-bottom: 2px solid #B53D1A;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        section {
+            margin: 50px 0;
+        }
+        section h2 {
+            color: #363D4A;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>OPAL Interactive Components Preview</h1>
+        
+        <section>
+            <h2>1. Quick Start Hero</h2>
+            <div class="quick-start-hero">
+                <h2>Extract Alabama Court Data & News with Ease</h2>
+                <p>A powerful web scraping tool designed specifically for Alabama public records</p>
+                <a href="#" class="md-button">Start Scraping in 5 Minutes →</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Feature Cards</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h4>⚖️ Alabama Appeals Court</h4>
+                    <p>Extract appellate court decisions with full metadata</p>
+                    <code>opal parse appeals-al</code>
+                </div>
+                <div class="feature-card">
+                    <h4>📰 1819 News</h4>
+                    <p>Scrape articles from Alabama's independent news source</p>
+                    <code>opal parse parser-1819</code>
+                </div>
+                <div class="feature-card">
+                    <h4>📊 Alabama Daily News</h4>
+                    <p>Parse daily news articles with structured data</p>
+                    <code>opal parse daily-news</code>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>3. Interactive Terminal</h2>
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-dot red"></div>
+                    <div class="terminal-dot yellow"></div>
+                    <div class="terminal-dot green"></div>
+                </div>
+                <div class="terminal-body">
+                    <div>
+                        <span class="terminal-prompt">$</span>
+                        <span class="terminal-command">opal parse appeals-al --date 2024-01-15</span>
+                    </div>
+                    <div class="terminal-output">
+                        Initializing Alabama Appeals Court parser...<br>
+                        Found 12 cases<br>
+                        Successfully scraped to appeals_al_2024-01-15.json
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>4. Statistics Grid</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <p class="stat-number">3</p>
+                    <p class="stat-label">Available Parsers</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-number">10k+</p>
+                    <p class="stat-label">Documents Scraped</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-number">5min</p>
+                    <p class="stat-label">Setup Time</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-number">100%</p>
+                    <p class="stat-label">Open Source</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>5. Progress Tracker</h2>
+            <div class="progress-tracker">
+                <div class="progress-step completed">
+                    <span>1</span>
+                    <span class="progress-step-label">Install</span>
+                </div>
+                <div class="progress-step completed">
+                    <span>2</span>
+                    <span class="progress-step-label">Configure</span>
+                </div>
+                <div class="progress-step active">
+                    <span>3</span>
+                    <span class="progress-step-label">First Scrape</span>
+                </div>
+                <div class="progress-step">
+                    <span>4</span>
+                    <span class="progress-step-label">Process Data</span>
+                </div>
+                <div class="progress-step">
+                    <span>5</span>
+                    <span class="progress-step-label">Automate</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>6. Interactive Tabs</h2>
+            <div class="tab-container">
+                <div class="tab-buttons">
+                    <button class="tab-button active" onclick="showTab('tab1')">Installation</button>
+                    <button class="tab-button" onclick="showTab('tab2')">Configuration</button>
+                    <button class="tab-button" onclick="showTab('tab3')">Usage</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div id="tab1" class="tab-panel active">
+                        <h3>Installation Guide</h3>
+                        <p>Install OPAL using pip: <code>pip install opal-scraper</code></p>
+                    </div>
+                    
+                    <div id="tab2" class="tab-panel">
+                        <h3>Configuration Options</h3>
+                        <p>Configure OPAL with environment variables or config files.</p>
+                    </div>
+                    
+                    <div id="tab3" class="tab-panel">
+                        <h3>Basic Usage</h3>
+                        <p>Run OPAL from the command line with various options.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>7. Code Example with Header</h2>
+            <div class="code-example">
+                <div class="code-example-header">
+                    <span class="filename">scrape_appeals.py</span>
+                    <button class="copy-button" onclick="copyCode(this)">Copy</button>
+                </div>
+                <div class="code-example-content">
+                    <pre><code>from opal import AppealsALParser
+
+# Initialize the parser
+parser = AppealsALParser()
+
+# Scrape recent decisions
+decisions = parser.scrape(date="2024-01-15")</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>8. Command Builder</h2>
+            <div class="command-builder">
+                <h3>Build Your Command</h3>
+                
+                <div class="command-option">
+                    <label for="parser-select">Select Parser:</label>
+                    <select id="parser-select" onchange="updateCommand()">
+                        <option value="appeals-al">Alabama Appeals Court</option>
+                        <option value="parser-1819">1819 News</option>
+                        <option value="daily-news">Daily News</option>
+                    </select>
+                </div>
+                
+                <div class="command-option">
+                    <label for="date-input">Date (optional):</label>
+                    <input type="date" id="date-input" onchange="updateCommand()" />
+                </div>
+                
+                <div class="command-output">
+                    <span id="generated-command">opal parse appeals-al</span>
+                    <button class="copy-button" onclick="copyCommand()">Copy</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function showTab(tabName) {
+            document.querySelectorAll('.tab-panel').forEach(panel => {
+                panel.classList.remove('active');
+            });
+            document.querySelectorAll('.tab-button').forEach(button => {
+                button.classList.remove('active');
+            });
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        function updateCommand() {
+            const parser = document.getElementById('parser-select').value;
+            const date = document.getElementById('date-input').value;
+            
+            let command = `opal parse ${parser}`;
+            if (date) command += ` --date ${date}`;
+            
+            document.getElementById('generated-command').textContent = command;
+        }
+
+        function copyCommand() {
+            const command = document.getElementById('generated-command').textContent;
+            navigator.clipboard.writeText(command);
+            
+            const button = event.target;
+            button.textContent = 'Copied!';
+            button.classList.add('copied');
+            
+            setTimeout(() => {
+                button.textContent = 'Copy';
+                button.classList.remove('copied');
+            }, 2000);
+        }
+
+        function copyCode(button) {
+            const codeBlock = button.closest('.code-example').querySelector('code');
+            navigator.clipboard.writeText(codeBlock.textContent);
+            
+            button.textContent = 'Copied!';
+            button.classList.add('copied');
+            
+            setTimeout(() => {
+                button.textContent = 'Copy';
+                button.classList.remove('copied');
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
