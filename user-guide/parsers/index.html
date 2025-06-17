@@ -1584,20 +1584,19 @@
 <li><strong>Comprehensive Analysis</strong>: Combine multiple parsers for complete coverage</li>
 </ul>
 <h2 id="common-options">Common Options<a class="headerlink" href="#common-options" title="Permanent link">&para;</a></h2>
-<p>All parsers support these common options:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Output format</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>--output-format<span class="w"> </span><span class="o">[</span>json<span class="p">|</span>csv<span class="o">]</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># Date filtering</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>--start-date<span class="w"> </span>YYYY-MM-DD
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>--end-date<span class="w"> </span>YYYY-MM-DD
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="c1"># Verbose output</span>
-<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>--verbose
-<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
-<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="c1"># Custom output file</span>
-<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>--output-file<span class="w"> </span>path/to/file
+<p>All parsers support these common command-line options:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Required options</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>--url<span class="w">          </span><span class="c1"># Base URL of the website to scrape</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>--parser<span class="w">       </span><span class="c1"># Parser name (ParserAppealsAL, Parser1819, ParserDailyNews)</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="c1"># Optional options</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>--suffix<span class="w">       </span><span class="c1"># URL suffix to filter pages</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>--max_pages<span class="w">    </span><span class="c1"># Maximum number of pages to process</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="c1"># Example with all options</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>python<span class="w"> </span>-m<span class="w"> </span>opal<span class="w"> </span>--url<span class="w"> </span><span class="s2">&quot;https://example.com&quot;</span><span class="w"> </span>--parser<span class="w"> </span>Parser1819<span class="w"> </span>--suffix<span class="w"> </span><span class="s2">&quot;/news/&quot;</span><span class="w"> </span>--max_pages<span class="w"> </span><span class="m">5</span>
 </code></pre></div>
+<p>Output files are automatically named with the format: <code>YYYY-MM-DD_ParserName.json</code></p>
 <h2 id="parser-development">Parser Development<a class="headerlink" href="#parser-development" title="Permanent link">&para;</a></h2>
 <p>Interested in creating custom parsers? See our <a href="../../developer/creating-custom-parsers/">Developer Guide</a> for detailed instructions on extending OPAL with new parsers.</p>
 <h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h2>
