@@ -25,20 +25,20 @@ OPAL is a specialized web scraping framework that makes it easy to extract struc
 ## Available Parsers
 
 <div class="feature-grid">
-  <div class="feature-card" onclick="window.location.href='user-guide/parsers/parserAppealsAL/'">
+  <div class="feature-card" onclick="window.location.href='user-guide/parsers/ParserAppealsAL/'">
     <h4>⚖️ Alabama Appeals Court</h4>
     <p>Extract appellate court decisions with full metadata including case numbers, parties, and opinions</p>
-    <code>opal parse appeals-al</code>
+    <code>python -m opal --parser ParserAppealsAL</code>
   </div>
-  <div class="feature-card" onclick="window.location.href='user-guide/parsers/parser1819/'">
+  <div class="feature-card" onclick="window.location.href='user-guide/parsers/Parser1819/'">
     <h4>📰 1819 News</h4>
     <p>Scrape articles from Alabama's independent news source with author, date, and content extraction</p>
-    <code>opal parse parser-1819</code>
+    <code>python -m opal --parser Parser1819</code>
   </div>
-  <div class="feature-card" onclick="window.location.href='user-guide/parsers/daily-news/'">
+  <div class="feature-card" onclick="window.location.href='user-guide/parsers/ParserDailyNews/'">
     <h4>📊 Alabama Daily News</h4>
     <p>Parse daily news articles with structured data extraction and category classification</p>
-    <code>opal parse daily-news</code>
+    <code>python -m opal --parser ParserDailyNews</code>
   </div>
 </div>
 
@@ -58,12 +58,12 @@ OPAL is a specialized web scraping framework that makes it easy to extract struc
     <div class="terminal-output">Successfully installed opal-scraper</div>
     <div style="margin-top: 0.5rem;">
       <span class="terminal-prompt">$</span>
-      <span class="terminal-command">opal parse appeals-al --date 2024-01-15</span>
+      <span class="terminal-command">python -m opal --url https://publicportal.alacourt.gov --parser ParserAppealsAL</span>
     </div>
     <div class="terminal-output">
-      Initializing Alabama Appeals Court parser...<br>
-      Found 12 cases<br>
-      Successfully scraped to appeals_al_2024-01-15.json
+      Processing court case data...<br>
+      Found 12 pages to process<br>
+      Successfully scraped court cases
     </div>
   </div>
 </div>
