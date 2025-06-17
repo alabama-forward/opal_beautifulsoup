@@ -3,6 +3,8 @@ site_description: Web scraper used to search Alabama websites
 site_author: Gabriel Cabán Cubero
 site_url: https://alabama-forward.github.io/opal/
 use_directory_urls: true
+docs_dir: docs
+site_dir: site
 
 repo_name: alabama-forward/opal 
 repo_url: https://github.com/alabama-forward/opal
